@@ -46,4 +46,4 @@ Readings remain on the device unless the user explicitly saves or exports them. 
 
 ## Feedback
 
-[Complete the friend preview survey](https://docs.google.com/forms/d/e/1FAIpQLSfKsgh5DuaJZm0mpYEAmB-ClBB0TzHHBjiOUlRnFB0bu9d6Aw/viewform)
+[Complete the survey](https://docs.google.com/forms/d/e/1FAIpQLSfKsgh5DuaJZm0mpYEAmB-ClBB0TzHHBjiOUlRnFB0bu9d6Aw/viewform)
