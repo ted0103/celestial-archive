@@ -1,4 +1,4 @@
-# The Celestial Archive · 天穹秘典
+# The Celestial Archive · 天穹秘典✨
 
 A local-first bilingual 78-card tarot reflection experience for friends. (Hand Ritual still in developement)
 
