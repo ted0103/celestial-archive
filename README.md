@@ -7,7 +7,7 @@ A local-first bilingual 78-card tarot reflection experience for friends. (Hand R
 - **iPhone, iPad, Android, and desktop:** [Open The Celestial Archive](https://ted0103.github.io/)
 - **All installation options:** [Open the illustrated download guide](https://ted0103.github.io/download.html)
 - **Android APK:** [Download celestial-archive-android-v0.2.0.apk](https://github.com/ted0103/celestial-archive/releases/download/v0.2.0/celestial-archive-android-v0.2.0.apk)
-- **Offline ZIP:** [Download the latest friend preview](https://github.com/ted0103/celestial-archive/releases/latest)
+- **Offline ZIP:** [Download the latest preview](https://github.com/ted0103/celestial-archive/releases/latest)
 
 ### iPhone and iPad
 
