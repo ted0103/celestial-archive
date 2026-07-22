@@ -88,11 +88,14 @@
     h2 { margin: 8px 0 0; font-size: clamp(2.3rem, 5.8vw, 5.2rem); line-height: .95; letter-spacing: -.035em; }
     .section-note { margin: 0; color: var(--paper-dim); line-height: 1.7; }
     .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
-    .card { min-height: 280px; padding: clamp(24px, 4vw, 46px); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .card { min-height: 300px; padding: clamp(24px, 4vw, 46px); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
     .card h3 { margin: 18px 0 12px; font-size: clamp(1.4rem, 2.5vw, 2rem); line-height: 1.15; }
     .card p, .card ol { color: var(--paper-dim); font-size: .88rem; line-height: 1.75; }
     .card ol { margin: 0; padding-left: 1.2rem; }
-    .card .button { margin-top: 22px; }
+    .card > .button { margin-top: 22px; }
+    .card .actions { margin-top: 22px; gap: 8px; }
+    .card .actions .button { flex: 1 1 180px; }
+    .note { margin: 18px 0 0; padding-left: 14px; border-left: 1px solid var(--line); }
     footer { padding: 28px 0 52px; color: var(--paper-dim); font-size: .72rem; line-height: 1.7; }
     footer a { color: var(--gold); }
     @media (max-width: 760px) {
@@ -119,7 +122,8 @@
       </div>
       <div class="actions">
         <a class="button primary" href="./">Enter the Archive ↗</a>
-        <a class="button" href="https://github.com/ted0103/celestial-archive/releases/latest">Download from GitHub ↓</a>
+        <a class="button" href="https://github.com/ted0103/celestial-archive/releases/latest">GitHub Downloads ↓</a>
+        <a class="button" href="https://github.com/ted0103/celestial-archive/releases/download/v0.1.0/celestial-archive-android-v0.1.0.apk">Android APK ↓</a>
       </div>
     </section>
 
@@ -129,7 +133,7 @@
           <p class="label">Installation field notes</p>
           <h2>Choose your threshold.</h2>
         </div>
-        <p class="section-note">The direct website is recommended for phones and tablets. The offline ZIP is available for desktop users who want a local copy.</p>
+        <p class="section-note">The direct website is recommended for phones and tablets. Android users may also install the standalone APK. The offline ZIP is available for Windows and Mac.</p>
       </div>
 
       <div class="grid">
@@ -141,9 +145,13 @@
         </article>
         <article class="card">
           <p class="label">02 · Android</p>
-          <h3>Open in Chrome</h3>
-          <ol><li>Open the direct website.</li><li>Use Chrome's menu.</li><li>Choose Install app or Add to Home screen.</li></ol>
-          <a class="button" href="./">Open website</a>
+          <h3>Open or install</h3>
+          <ol><li>For instant access, open the website in Chrome.</li><li>Use Chrome's menu and choose Install app or Add to Home screen.</li><li>For a standalone copy, download the APK below.</li></ol>
+          <p class="note">Because this friend preview is shared outside Google Play, Android may ask you to allow installs from this source.</p>
+          <div class="actions">
+            <a class="button" href="./">Open website</a>
+            <a class="button" href="https://github.com/ted0103/celestial-archive/releases/download/v0.1.0/celestial-archive-android-v0.1.0.apk">Download APK</a>
+          </div>
         </article>
         <article class="card">
           <p class="label">03 · Windows</p>
