@@ -26,6 +26,8 @@ jobs:
           mkdir site
           unzip -q app.zip -d site
           cp download.html site/download.html
+          mkdir -p site/.well-known
+          cp .well-known/assetlinks.json site/.well-known/assetlinks.json
       - name: Configure Pages
         uses: actions/configure-pages@v5
       - name: Upload Pages artifact
