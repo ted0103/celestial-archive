@@ -6,6 +6,7 @@ A local-first bilingual 78-card tarot reflection experience for friends.
 
 - **iPhone, iPad, Android, and desktop:** [Open The Celestial Archive](https://ted0103.github.io/celestial-archive/)
 - **All installation options:** [Open the illustrated download guide](https://ted0103.github.io/celestial-archive/download.html)
+- **Android APK:** [Download celestial-archive-android-v0.1.0.apk](https://github.com/ted0103/celestial-archive/releases/download/v0.1.0/celestial-archive-android-v0.1.0.apk)
 - **Offline ZIP:** [Download the latest friend preview](https://github.com/ted0103/celestial-archive/releases/latest)
 
 ### iPhone and iPad
@@ -20,7 +21,7 @@ The website is the iPhone/iPad version. Apple devices do not use Android APK fil
 
 1. Open the [direct website](https://ted0103.github.io/celestial-archive/) in Chrome.
 2. Open Chrome's menu and choose **Add to Home screen** or **Install app**.
-3. An APK download will also appear under the [latest release](https://github.com/ted0103/celestial-archive/releases/latest) when available.
+3. For a standalone Android package, download [celestial-archive-android-v0.1.0.apk](https://github.com/ted0103/celestial-archive/releases/download/v0.1.0/celestial-archive-android-v0.1.0.apk). Android may ask you to allow installs from this source because this friend preview is shared outside Google Play.
 
 ### Windows
 
