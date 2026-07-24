@@ -3,46 +3,60 @@ name: Deploy The Celestial Archive
 on:
   push:
     branches: [main]
+  pull_request:
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 concurrency:
-  group: pages
-  cancel-in-progress: false
+  group: celestial-archive-pages-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
     steps:
-      - name: Checkout guide
-        uses: actions/checkout@v6
-      - name: Prepare release site
+      - name: Check out release guide
+        uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
+        with:
+          persist-credentials: false
+      - name: Prepare path-scoped release site
         run: |
-          curl -fsSL -o app.zip https://github.com/ted0103/celestial-archive/releases/download/v0.1.0/celestial-archive-friend-preview-v0.1.0.zip
+          curl -fsSL -o app.zip https://github.com/ted0103/celestial-archive/releases/download/v0.2.0/celestial-archive-friend-preview-v0.2.0.zip
           mkdir site
           unzip -q app.zip -d site
           cp download.html site/download.html
           touch site/.nojekyll
-          mkdir -p site/.well-known
-          cp .well-known/assetlinks.json site/.well-known/assetlinks.json
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
+          jq '.id = "./" | .start_url = "./" | .scope = "./"' site/manifest.webmanifest > site/manifest.tmp
+          mv site/manifest.tmp site/manifest.webmanifest
+          test "$(jq -r .start_url site/manifest.webmanifest)" = "./"
+          test "$(jq -r .scope site/manifest.webmanifest)" = "./"
+          test -f site/index.html
+      - name: Package Pages artifact
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        run: tar --dereference --hard-dereference --directory site -cvf "$RUNNER_TEMP/artifact.tar" --exclude=.git --exclude=.github .
       - name: Upload Pages artifact
-        uses: actions/upload-pages-artifact@v4
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
         with:
-          path: site
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: 1
+          if-no-files-found: error
 
   deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
-    runs-on: ubuntu-latest
-    needs: build
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128

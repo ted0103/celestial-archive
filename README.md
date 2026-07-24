@@ -6,8 +6,8 @@
 
 Explore a complete 78-card tarot collection through a private and immersive experience designed for personal reflection and sharing with friends.
 
-[![Live Demo](https://img.shields.io/badge/Open_Live_Demo-6C4CCF?style=for-the-badge\&logo=googlechrome\&logoColor=white)](https://ted0103.github.io/)
-[![Installation Guide](https://img.shields.io/badge/Installation_Guide-171717?style=for-the-badge\&logo=readthedocs\&logoColor=white)](https://ted0103.github.io/download.html)
+[![Live Demo](https://img.shields.io/badge/Open_Live_Demo-6C4CCF?style=for-the-badge\&logo=googlechrome\&logoColor=white)](https://ted0103.github.io/celestial-archive/)
+[![Installation Guide](https://img.shields.io/badge/Installation_Guide-171717?style=for-the-badge\&logo=readthedocs\&logoColor=white)](https://ted0103.github.io/celestial-archive/download.html)
 [![Latest Release](https://img.shields.io/github/v/release/ted0103/celestial-archive?style=for-the-badge\&label=Latest%20Release)](https://github.com/ted0103/celestial-archive/releases/latest)
 
 </div>
@@ -36,8 +36,8 @@ The core tarot experience works without hand tracking. An optional gesture-based
 
 | Method                 | Best for                                  | Link                                                                                                                                      |
 | ---------------------- | ----------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------- |
-| **Live web app**       | iPhone, iPad, Android, Windows, and macOS | [Open The Celestial Archive](https://ted0103.github.io/)                                                                                  |
-| **Installation guide** | Step-by-step setup instructions           | [View the illustrated guide](https://ted0103.github.io/download.html)                                                                     |
+| **Live web app**       | iPhone, iPad, Android, Windows, and macOS | [Open The Celestial Archive](https://ted0103.github.io/celestial-archive/)                                                                 |
+| **Installation guide** | Step-by-step setup instructions           | [View the illustrated guide](https://ted0103.github.io/celestial-archive/download.html)                                                    |
 | **Android APK**        | Standalone Android installation           | [Download Android APK v0.2.0](https://github.com/ted0103/celestial-archive/releases/download/v0.2.0/celestial-archive-android-v0.2.0.apk) |
 | **Offline package**    | Desktop use and local hosting             | [View the latest release](https://github.com/ted0103/celestial-archive/releases/latest)                                                   |
 
@@ -46,7 +46,7 @@ The core tarot experience works without hand tracking. An optional gesture-based
 <details>
 <summary><strong>iPhone and iPad</strong></summary>
 
-1. Open the [live website](https://ted0103.github.io/) in Safari.
+1. Open the [live website](https://ted0103.github.io/celestial-archive/) in Safari.
 2. Tap the **Share** button.
 3. Select **Add to Home Screen**.
 4. Tap **Add**.
@@ -60,7 +60,7 @@ The website is the supported version for iPhone and iPad. Apple devices do not u
 
 ### Install from the website
 
-1. Open the [live website](https://ted0103.github.io/) in Chrome.
+1. Open the [live website](https://ted0103.github.io/celestial-archive/) in Chrome.
 2. Open the Chrome menu.
 3. Select **Add to Home screen** or **Install app**.
 
