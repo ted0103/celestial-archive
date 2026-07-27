@@ -11,9 +11,12 @@ const data=JSON.parse(raw.replace(/^window\.CELESTIAL_DECK = /,'').replace(/;\s*
 const failures=[];
 
 if(data.cards.length!==78)failures.push(`Expected 78 production cards, received ${data.cards.length}`);
-for(const key of ['id','name','zh','src','meaning','meaningZh','shadow','shadowZh','reflection','reflectionZh','practice','practiceZh']){
+for(const key of ['id','name','zh','src']){
   const missing=data.cards.filter(card=>!String(card[key]||'').trim());if(missing.length)failures.push(`${missing.length} cards missing ${key}`);
 }
+const localized=value=>value&&Object.keys(value).sort().join(',')==='en,zh'&&String(value.en).trim()&&String(value.zh).trim();
+for(const card of data.cards){if(!localized(card.keywords))failures.push(`${card.id} has invalid keywords`);for(const orientation of ['upright','reversed']){if(Object.keys(card[orientation]||{}).sort().join(',')!=='action,core,reflection,tension')failures.push(`${card.id}.${orientation} has invalid keys`);for(const field of ['core','tension','reflection','action'])if(!localized(card[orientation]?.[field]))failures.push(`${card.id}.${orientation}.${field} is incomplete`);}if(Object.keys(card.position||{}).sort().join(',')!=='challenge,guidance,situation')failures.push(`${card.id}.position has invalid keys`);for(const position of ['situation','challenge','guidance'])if(!localized(card.position?.[position]))failures.push(`${card.id}.position.${position} is incomplete`);}
+if(data.deckVersion!=='R2.0'||data.meaningEdition!=='CA-MEANINGS-2026.1')failures.push('Deck or meaning edition was not incremented');
 for(const [label,values] of [['IDs',data.cards.map(card=>card.id)],['English names',data.cards.map(card=>card.name)],['Chinese names',data.cards.map(card=>card.zh)],['image paths',data.cards.map(card=>card.src)]])if(new Set(values).size!==78)failures.push(`${label} are not unique`);
 for(const card of data.cards){try{const info=await stat(resolve(root,'app',card.src));if(!info.isFile())failures.push(`Not a file: ${card.src}`);}catch{failures.push(`Missing image: ${card.src}`);}}
 try{await stat(resolve(root,'app',data.back));}catch{failures.push(`Missing card back: ${data.back}`);}
@@ -56,7 +59,7 @@ if(!css.includes('letter-spacing:.1em!important')||!css.includes('rgba(7,9,9,.72
 for(const breakpoint of ['@media(max-width:900px)','@media(max-width:700px)','@media(max-width:430px)','@media(max-height:620px)'])if(!css.includes(breakpoint))failures.push(`Missing responsive containment rule ${breakpoint}`);
 try{await stat(resolve(root,'app/assets/backgrounds/grimoire-celestial-pigeon-4k.jpg'));}catch{failures.push('Missing generated 4K Grimoire celestial-pigeon background');}
 try{await stat(resolve(root,'app/assets/backgrounds/gateway-editorial-collage-v2.png'));}catch{failures.push('Missing generated editorial gateway background');}
-for(const asset of ['hands.js','hands.binarypb','hand_landmark_lite.tflite','hands_solution_simd_wasm_bin.wasm'])try{await stat(resolve(root,'app/assets/vendor/mediapipe-hands',asset));}catch{failures.push(`Missing local hand-model asset: ${asset}`);}
+for(const asset of ['hands.js','hands.binarypb','hand_landmark_lite.tflite','hands_solution_simd_wasm_bin.js','hands_solution_simd_wasm_bin.wasm','hands_solution_wasm_bin.js','hands_solution_wasm_bin.wasm'])try{await stat(resolve(root,'app/assets/vendor/mediapipe-hands',asset));}catch{failures.push(`Missing local hand-model asset: ${asset}`);}
 if(!app.includes("$('#save-reading').addEventListener('click',saveReading)"))failures.push('Explicit save control is not wired');
 if(!app.includes("$('#export-reading').addEventListener('click',event=>exportReading(null,event.currentTarget))"))failures.push('Explicit export control is not wired');
 

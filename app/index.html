@@ -8,7 +8,7 @@
   <title>The Celestial Archive · 天穹秘典</title>
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=20260722-2">
+  <link rel="stylesheet" href="styles.css?v=20260727-2">
 </head>
 <body>
   <div class="film" aria-hidden="true"></div>
@@ -109,6 +109,7 @@
           <div class="question-panel" id="question-panel">
             <label for="question" data-i18n="questionLabel">Your question · optional</label>
             <textarea id="question" maxlength="280" data-i18n-placeholder="questionPlaceholder" placeholder="What deserves my attention now?"></textarea>
+            <small>The question stays as your context; this local reading does not analyze its meaning. · 问题只作为你的背景；本地解读不会分析其语义。</small>
             <div class="question-actions">
               <button class="button gold" id="begin-ritual" type="button" data-i18n="begin">Begin shuffle</button>
               <button class="button ghost" id="hand-ritual" type="button"><span aria-hidden="true">◌</span> <span data-i18n="handRitual">Hand Ritual</span></button>
@@ -232,7 +233,7 @@
         </div>
       </section>
       <section class="setting-list">
-        <label><span><b data-i18n="music">Ambient music</b><small data-i18n="musicNote">Original adaptive violin-like theme</small></span><input id="music-setting" type="checkbox" checked></label>
+        <label><span><b data-i18n="music">Ambient music</b><small data-i18n="musicNote">Local redistribution-cleared recording</small></span><input id="music-setting" type="checkbox" checked></label>
         <label class="volume-setting"><span><b>Music volume · 音乐音量</b><small id="music-volume-value">70%</small></span><input id="music-volume" type="range" min="0" max="100" step="1" value="70"></label>
         <label><span><b data-i18n="sfx">Interaction sound</b><small data-i18n="sfxNote">Menus, cards, save, export, and gestures</small></span><input id="sfx-setting" type="checkbox" checked></label>
         <label class="volume-setting"><span><b>SFX volume · 音效音量</b><small id="sfx-volume-value">80%</small></span><input id="sfx-volume" type="range" min="0" max="100" step="1" value="80"></label>
@@ -386,9 +387,9 @@
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
   </div>
 
-  <script src="data.js?v=20260722-2"></script>
-  <script src="logic.js?v=20260722-2"></script>
+  <script src="data.js?v=20260727-2"></script>
+  <script src="logic.js?v=20260727-2"></script>
   <script src="assets/vendor/mediapipe-hands/hands.js"></script>
-  <script src="app.js?v=20260722-2"></script>
+  <script src="app.js?v=20260727-2"></script>
 </body>
 </html>

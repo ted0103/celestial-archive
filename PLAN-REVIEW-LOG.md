@@ -44,3 +44,31 @@ VERDICT: APPROVED
 ### Codex's response
 
 Accepted both wording cleanups. The plan now consistently requires complete structured editorial review and describes the TWA as mapping to the deployed release rather than embedding the web assets.
+
+## Act 3 — build and verification
+
+### Build round 1
+
+- Implemented the supplied MP3, dual MediaPipe runtime packaging and staged diagnostics, the `CA-MEANINGS-2026.1` bilingual schema, deterministic synthesis, immutable saved snapshots, safer service-worker activation, release records, and expanded validation.
+- Built the local web candidate and Android TWA configuration.
+
+VERDICT: FIX
+
+- The first 78-card rewrite still reused mechanical prose frames too heavily, and the snapshot test did not prove that every captured meaning remained immutable.
+
+### Fix round 1
+
+- Rewrote the repeated prose, strengthened the per-field uniqueness and snapshot assertions, and rebuilt successfully.
+
+VERDICT: ACCEPTED FOR INDEPENDENT QA
+
+### Independent QA
+
+- `npm test` passes for all 78 cards, runtime logic, reading schema, production integration, and the release manifest.
+- Chrome production QA confirmed the supplied soundtrack starts after Enter, the three-card bilingual reading reaches Situation → Challenge → Guidance plus synthesis, and the Hand Ritual tap/simulation fallback selects all three cards without console errors.
+- Browser QA exposed and fixed one additional root-cause collision: the runtime orientation flag had overwritten each card's `reversed` meaning object. The orientation now uses `isReversed`, saved records are hydrated safely, and a regression assertion covers the failure.
+- Signed Android APK verification passes for v1/v2/v3 signatures, zip alignment, package/version mapping, and the Digital Asset Links certificate digest.
+
+VERDICT: LOCAL CANDIDATE READY FOR HUMAN COMMIT GATE
+
+Publication remains blocked until the 936-row editorial checklist, forced non-SIMD inference, physical Android camera/TWA, deployed HTTPS release-ID, offline-after-preparation, and multi-tab upgrade gates are completed.

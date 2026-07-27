@@ -4,7 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "node scripts/build-release.mjs",
-    "test": "node tests/validate-deck.mjs && node tests/validate-runtime-logic.mjs && node tests/validate-production-app.mjs && npm run test:release",
+    "test": "node tests/validate-deck.mjs && node tests/validate-runtime-logic.mjs && node tests/validate-reading-edition.mjs && node tests/validate-production-app.mjs && npm run test:release",
     "build:catalog": "node scripts/build-review-catalog.cjs",
     "render:catalog": "node scripts/render-catalog.cjs",
     "qa:catalog": "node scripts/qa-catalog.cjs",

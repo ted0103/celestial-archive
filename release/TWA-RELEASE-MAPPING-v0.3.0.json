@@ -1,0 +1,14 @@
+{
+  "androidVersionName": "0.3.0",
+  "androidVersionCode": 4,
+  "websiteReleaseId": "debd0956919ced01",
+  "meaningEdition": "CA-MEANINGS-2026.1",
+  "apkSha256": "0353d91ca484ad12acaca1ad6be7dce69f08b6257111664b6befd2f7bee8ebca",
+  "signingCertificateSha256": "50378c91ff832068a8dfc81a9362fe764e48a3b828c09357ef90a2e4d588bcc2",
+  "status": "local-candidate-unpublished",
+  "requiredBeforeRelease": [
+    "Deploy this exact website release",
+    "Verify the deployed worker reports debd0956919ced01",
+    "Complete physical Android Chrome and TWA checks"
+  ]
+}

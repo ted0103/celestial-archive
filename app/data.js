@@ -1,6 +1,6 @@
 window.CELESTIAL_DECK = {
   "version": "card-schema@1",
-  "deckVersion": "R1.0",
+  "deckVersion": "R2.0",
   "catalogApprovedAt": "2026-07-18T03:56:31Z",
   "back": "assets/cards/r1/approved/card-back-lunar-seal.png",
   "groups": [
@@ -45,18 +45,62 @@ window.CELESTIAL_DECK = {
       "zh": "愚人",
       "motif": "threshold wanderer",
       "rationale": "A pearl figure steps from a crescent ledge beneath one untethered star.",
-      "keywords": "beginnings · trust · and open possibility",
-      "keywordsZh": "开始 · 信任与开放的可能",
-      "meaning": "beginnings, trust, and open possibility",
-      "meaningZh": "开始、信任与开放的可能",
-      "shadow": "recklessness, hesitation, or an ungrounded leap",
-      "shadowZh": "鲁莽、犹豫或缺乏根基的跃进",
-      "reflection": "Where is beginnings, trust, and open possibility asking for your attention rather than certainty?",
-      "reflectionZh": "开始、信任与开放的可能正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "beginnings · trust · and open possibility",
+        "zh": "开始 · 信任与开放的可能"
+      },
       "src": "assets/cards/r1/approved/major-00-the-fool.png",
-      "sha256": "9a6682ae5a9814782ecf3c6977743edc268ff0278749cbe42827731a844125d4"
+      "sha256": "9a6682ae5a9814782ecf3c6977743edc268ff0278749cbe42827731a844125d4",
+      "upright": {
+        "core": {
+          "en": "Beginnings, trust, and open possibility.",
+          "zh": "开始、信任与开放的可能。"
+        },
+        "tension": {
+          "en": "Hold the uncertainty long enough to ask: Is caution protecting you, or keeping you at the threshold? If it applies, name the real risk, add one safeguard, and decide whether to step forward.",
+          "zh": "容纳不确定，直到你能问：谨慎是在保护你，还是把你困在门槛上？ 若符合现况，写出真正的风险，加上一项保护措施，再决定是否前进。"
+        },
+        "reflection": {
+          "en": "What could you begin before every detail is known?",
+          "zh": "哪件事不必等到一切明朗才可以开始？"
+        },
+        "action": {
+          "en": "Take one low-risk first step and write down what it teaches you.",
+          "zh": "先迈出一个风险可控的小步，并记下你学到什么。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Reversed, recklessness, hesitation, or an ungrounded leap may be blocked, delayed, private, or excessive.",
+          "zh": "逆位时，鲁莽、犹豫或缺乏根基的跃进可能受阻、延迟、转向内在或表现过度。"
+        },
+        "tension": {
+          "en": "The Fool turns inward when its central quality has no honest outlet.",
+          "zh": "当开始、信任与开放的可能没有诚实出口时，愚人会转向内在。"
+        },
+        "reflection": {
+          "en": "Is caution protecting you, or keeping you at the threshold?",
+          "zh": "谨慎是在保护你，还是把你困在门槛上？"
+        },
+        "action": {
+          "en": "Name the real risk, add one safeguard, and decide whether to step forward.",
+          "zh": "写出真正的风险，加上一项保护措施，再决定是否前进。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The Fool places beginnings, trust, and open possibility at the center of the present moment.",
+          "zh": "愚人把开始、信任与开放的可能放在当下核心。"
+        },
+        "challenge": {
+          "en": "The challenge is to answer this honestly: Is caution protecting you, or keeping you at the threshold?",
+          "zh": "挑战在于诚实回答：谨慎是在保护你，还是把你困在门槛上？"
+        },
+        "guidance": {
+          "en": "Put the card to work now: take one low-risk first step and write down what it teaches you.",
+          "zh": "现在把这张牌用在行动上：先迈出一个风险可控的小步，并记下你学到什么。"
+        }
+      }
     },
     {
       "id": "MAJOR-01",
@@ -67,18 +111,62 @@ window.CELESTIAL_DECK = {
       "zh": "魔术师",
       "motif": "infinity conductor",
       "rationale": "An ivory hand conducts four suit relics beneath an infinity orbit.",
-      "keywords": "agency · skill · and focused manifestation",
-      "keywordsZh": "主动性 · 技艺与专注显化",
-      "meaning": "agency, skill, and focused manifestation",
-      "meaningZh": "主动性、技艺与专注显化",
-      "shadow": "misdirection, unused talent, or scattered power",
-      "shadowZh": "误导、未用的天赋或分散的力量",
-      "reflection": "Where is agency, skill, and focused manifestation asking for your attention rather than certainty?",
-      "reflectionZh": "主动性、技艺与专注显化正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "agency · skill · and focused manifestation",
+        "zh": "主动性 · 技艺与专注显化"
+      },
       "src": "assets/cards/r1/generated/major-01-the-magician.png",
-      "sha256": "afbe9573b7db28ab4eda04a90e5ff4902d98ef48ed3d76ff9753f1f136cb449b"
+      "sha256": "afbe9573b7db28ab4eda04a90e5ff4902d98ef48ed3d76ff9753f1f136cb449b",
+      "upright": {
+        "core": {
+          "en": "Agency, skill, and focused manifestation.",
+          "zh": "主动性、技艺与专注显化。"
+        },
+        "tension": {
+          "en": "The card makes one demand for honesty: Where are cleverness and control replacing honest work? If it applies, stop one distracting tactic and complete the plain task underneath it.",
+          "zh": "这张牌只要求一件诚实的事：聪明手段和控制欲正在哪里取代诚实行动？ 若符合现况，停止一个分散注意的手段，完成它底下那件朴素的任务。"
+        },
+        "reflection": {
+          "en": "Which ability is ready to be used with full attention?",
+          "zh": "哪一种能力已经准备好被你专心使用？"
+        },
+        "action": {
+          "en": "Choose one tool you already have and use it for thirty focused minutes.",
+          "zh": "选一个现有工具，专注使用三十分钟。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "This orientation turns misdirection, unused talent, or scattered power inward for closer examination.",
+          "zh": "这个方向让误导、未用的天赋或分散的力量转向内在，接受更仔细的检视。"
+        },
+        "tension": {
+          "en": "Its inner work is to recover agency, skill, and focused manifestation without forcing it.",
+          "zh": "它的内在功课是恢复主动性、技艺与专注显化，但不强迫。"
+        },
+        "reflection": {
+          "en": "Where are cleverness and control replacing honest work?",
+          "zh": "聪明手段和控制欲正在哪里取代诚实行动？"
+        },
+        "action": {
+          "en": "Stop one distracting tactic and complete the plain task underneath it.",
+          "zh": "停止一个分散注意的手段，完成它底下那件朴素的任务。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The Magician shows the current pattern through agency, skill, and focused manifestation.",
+          "zh": "魔术师以主动性、技艺与专注显化呈现当前模式。"
+        },
+        "challenge": {
+          "en": "Do not call it fate; work with the question: Where are cleverness and control replacing honest work?",
+          "zh": "不要把它称为命运；请处理这个问题：聪明手段和控制欲正在哪里取代诚实行动？"
+        },
+        "guidance": {
+          "en": "Guidance becomes credible through action: choose one tool you already have and use it for thirty focused minutes.",
+          "zh": "指引通过行动变得可信：选一个现有工具，专注使用三十分钟。"
+        }
+      }
     },
     {
       "id": "MAJOR-02",
@@ -89,18 +177,62 @@ window.CELESTIAL_DECK = {
       "zh": "女祭司",
       "motif": "veiled lunar gate",
       "rationale": "Twin pillars frame a veiled moon and a single descending key.",
-      "keywords": "intuition · mystery · and inner knowing",
-      "keywordsZh": "直觉 · 神秘与内在知觉",
-      "meaning": "intuition, mystery, and inner knowing",
-      "meaningZh": "直觉、神秘与内在知觉",
-      "shadow": "hidden information or distrust of intuition",
-      "shadowZh": "隐藏的信息或对直觉的不信任",
-      "reflection": "Where is intuition, mystery, and inner knowing asking for your attention rather than certainty?",
-      "reflectionZh": "直觉、神秘与内在知觉正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "intuition · mystery · and inner knowing",
+        "zh": "直觉 · 神秘与内在知觉"
+      },
       "src": "assets/cards/r1/generated/major-02-the-high-priestess.png",
-      "sha256": "b84766617104304471f11413ea5ae6846b4d2f00cec6088898f3aeb6ff0796e7"
+      "sha256": "b84766617104304471f11413ea5ae6846b4d2f00cec6088898f3aeb6ff0796e7",
+      "upright": {
+        "core": {
+          "en": "Intuition, mystery, and inner knowing.",
+          "zh": "直觉、神秘与内在知觉。"
+        },
+        "tension": {
+          "en": "This tension is workable once you consider: Are secrecy or doubt making your intuition impossible to test? If it applies, separate what you sensed from what you assumed in two written columns.",
+          "zh": "当你考虑这个问题，张力就能被处理：保密或怀疑是否让直觉无法被检验？ 若符合现况，把感受到的和自行假设的分成两栏写下。"
+        },
+        "reflection": {
+          "en": "What do you know quietly, before other voices enter?",
+          "zh": "在别人开口之前，你内心安静地知道什么？"
+        },
+        "action": {
+          "en": "Sit without input for ten minutes, then record the first clear impression.",
+          "zh": "停止接收资讯十分钟，然后写下第一个清楚的感受。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The reversal asks how hidden information or distrust of intuition is being withheld or overused.",
+          "zh": "逆位追问隐藏的信息或对直觉的不信任如何被压住或过度使用。"
+        },
+        "tension": {
+          "en": "The symbol asks how intuition, mystery, and inner knowing became blocked inside.",
+          "zh": "象征追问直觉、神秘与内在知觉如何在心里受阻。"
+        },
+        "reflection": {
+          "en": "Are secrecy or doubt making your intuition impossible to test?",
+          "zh": "保密或怀疑是否让直觉无法被检验？"
+        },
+        "action": {
+          "en": "Separate what you sensed from what you assumed in two written columns.",
+          "zh": "把感受到的和自行假设的分成两栏写下。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "Here, intuition, mystery, and inner knowing is already shaping what happens next.",
+          "zh": "此刻，直觉、神秘与内在知觉已经在影响下一步。"
+        },
+        "challenge": {
+          "en": "The difficult work begins here: Are secrecy or doubt making your intuition impossible to test?",
+          "zh": "困难功课从这里开始：保密或怀疑是否让直觉无法被检验？"
+        },
+        "guidance": {
+          "en": "The grounded response is direct: sit without input for ten minutes, then record the first clear impression.",
+          "zh": "可落实的回应很直接：停止接收资讯十分钟，然后写下第一个清楚的感受。"
+        }
+      }
     },
     {
       "id": "MAJOR-03",
@@ -111,18 +243,62 @@ window.CELESTIAL_DECK = {
       "zh": "皇后",
       "motif": "crowned garden",
       "rationale": "A pomegranate crown opens into a fertile spiral of leaves and stars.",
-      "keywords": "nurture · abundance · and embodied creativity",
-      "keywordsZh": "滋养 · 丰盛与具身创造",
-      "meaning": "nurture, abundance, and embodied creativity",
-      "meaningZh": "滋养、丰盛与具身创造",
-      "shadow": "creative depletion or care without boundaries",
-      "shadowZh": "创造力耗竭或没有边界的照顾",
-      "reflection": "Where is nurture, abundance, and embodied creativity asking for your attention rather than certainty?",
-      "reflectionZh": "滋养、丰盛与具身创造正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "nurture · abundance · and embodied creativity",
+        "zh": "滋养 · 丰盛与具身创造"
+      },
       "src": "assets/cards/r1/generated/major-03-the-empress.png",
-      "sha256": "e4fc93168856997eb0484ba7cf7c46565dd911ef38dbdd8a929ac795c480faba"
+      "sha256": "e4fc93168856997eb0484ba7cf7c46565dd911ef38dbdd8a929ac795c480faba",
+      "upright": {
+        "core": {
+          "en": "Nurture, abundance, and embodied creativity.",
+          "zh": "滋养、丰盛与具身创造。"
+        },
+        "tension": {
+          "en": "The challenge is neither fixed nor hidden: Has caring become depletion, indulgence, or control? If it applies, set one caring boundary and keep enough energy for yourself.",
+          "zh": "挑战并非固定，也不隐藏：照顾是否已经变成耗竭、纵容或控制？ 若符合现况，设下一条照顾的边界，也为自己保留足够精力。"
+        },
+        "reflection": {
+          "en": "What needs steady nourishment rather than more pressure?",
+          "zh": "什么需要稳定滋养，而不是更多压力？"
+        },
+        "action": {
+          "en": "Give one person, project, or part of your body a specific form of care today.",
+          "zh": "今天为一个人、一项计划或身体的一部分提供具体照顾。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Here, creative depletion or care without boundaries is present but cannot yet move cleanly.",
+          "zh": "此时，创造力耗竭或没有边界的照顾仍然存在，却尚未顺畅流动。"
+        },
+        "tension": {
+          "en": "A private struggle forms where nurture, abundance, and embodied creativity cannot be expressed safely.",
+          "zh": "当滋养、丰盛与具身创造无法安全表达，私下挣扎就会形成。"
+        },
+        "reflection": {
+          "en": "Has caring become depletion, indulgence, or control?",
+          "zh": "照顾是否已经变成耗竭、纵容或控制？"
+        },
+        "action": {
+          "en": "Set one caring boundary and keep enough energy for yourself.",
+          "zh": "设下一条照顾的边界，也为自己保留足够精力。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The scene begins with nurture, abundance, and embodied creativity, not with a prediction.",
+          "zh": "画面从滋养、丰盛与具身创造开始，而不是从预言开始。"
+        },
+        "challenge": {
+          "en": "This position sharpens one issue: Has caring become depletion, indulgence, or control?",
+          "zh": "这个位置让一个议题变得尖锐：照顾是否已经变成耗竭、纵容或控制？"
+        },
+        "guidance": {
+          "en": "Use the image as a prompt for one move: give one person, project, or part of your body a specific form of care today.",
+          "zh": "把图像当成一次行动提示：今天为一个人、一项计划或身体的一部分提供具体照顾。"
+        }
+      }
     },
     {
       "id": "MAJOR-04",
@@ -133,18 +309,62 @@ window.CELESTIAL_DECK = {
       "zh": "皇帝",
       "motif": "ram throne",
       "rationale": "Angular ram horns guard a square solar throne and four foundation stones.",
-      "keywords": "structure · authority · and stable direction",
-      "keywordsZh": "结构 · 权威与稳定方向",
-      "meaning": "structure, authority, and stable direction",
-      "meaningZh": "结构、权威与稳定方向",
-      "shadow": "rigidity, domination, or brittle control",
-      "shadowZh": "僵化、支配或脆弱的控制",
-      "reflection": "Where is structure, authority, and stable direction asking for your attention rather than certainty?",
-      "reflectionZh": "结构、权威与稳定方向正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "structure · authority · and stable direction",
+        "zh": "结构 · 权威与稳定方向"
+      },
       "src": "assets/cards/r1/generated/major-04-the-emperor.png",
-      "sha256": "1e02921c449821f808b471133174a9b28b17f1b26f730c1ffce126a67c4bd437"
+      "sha256": "1e02921c449821f808b471133174a9b28b17f1b26f730c1ffce126a67c4bd437",
+      "upright": {
+        "core": {
+          "en": "Structure, authority, and stable direction.",
+          "zh": "结构、权威与稳定方向。"
+        },
+        "tension": {
+          "en": "Use the difficult edge of the image to ask: Is order becoming rigidity or authority becoming domination? If it applies, replace one command with a clear agreement and a review date.",
+          "zh": "利用图像困难的一面提问：秩序是否变得僵硬，权威是否变成支配？ 若符合现况，把一项命令改成清楚约定，并设定复盘日期。"
+        },
+        "reflection": {
+          "en": "Which structure would make responsibility easier to carry?",
+          "zh": "哪一种结构能让责任更容易承担？"
+        },
+        "action": {
+          "en": "Write one rule, deadline, and owner for the task that lacks direction.",
+          "zh": "为缺乏方向的任务写下规则、期限和负责人。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The card revisits rigidity, domination, or brittle control through delay, interiority, or excess.",
+          "zh": "这张牌通过延迟、内在化或过度重新检视僵化、支配或脆弱的控制。"
+        },
+        "tension": {
+          "en": "The reversed image holds structure, authority, and stable direction behind the surface.",
+          "zh": "逆位图像把结构、权威与稳定方向留在表面之下。"
+        },
+        "reflection": {
+          "en": "Is order becoming rigidity or authority becoming domination?",
+          "zh": "秩序是否变得僵硬，权威是否变成支配？"
+        },
+        "action": {
+          "en": "Replace one command with a clear agreement and a review date.",
+          "zh": "把一项命令改成清楚约定，并设定复盘日期。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The Emperor brings the lived reality of structure, authority, and stable direction into view.",
+          "zh": "皇帝让结构、权威与稳定方向的现实处境显现出来。"
+        },
+        "challenge": {
+          "en": "The obstacle becomes clearer when you ask: Is order becoming rigidity or authority becoming domination?",
+          "zh": "当你这样提问，障碍会更清楚：秩序是否变得僵硬，权威是否变成支配？"
+        },
+        "guidance": {
+          "en": "This card offers a practical direction: write one rule, deadline, and owner for the task that lacks direction.",
+          "zh": "这张牌提供务实方向：为缺乏方向的任务写下规则、期限和负责人。"
+        }
+      }
     },
     {
       "id": "MAJOR-05",
@@ -155,18 +375,62 @@ window.CELESTIAL_DECK = {
       "zh": "教皇",
       "motif": "triple key temple",
       "rationale": "Three ascending keys meet beneath a ceremonial arch and teaching flame.",
-      "keywords": "tradition · mentorship · and shared belief",
-      "keywordsZh": "传统 · 导师与共同信念",
-      "meaning": "tradition, mentorship, and shared belief",
-      "meaningZh": "传统、导师与共同信念",
-      "shadow": "dogma, rebellion, or inherited rules under review",
-      "shadowZh": "教条、反叛或需要重审的规则",
-      "reflection": "Where is tradition, mentorship, and shared belief asking for your attention rather than certainty?",
-      "reflectionZh": "传统、导师与共同信念正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "tradition · mentorship · and shared belief",
+        "zh": "传统 · 导师与共同信念"
+      },
       "src": "assets/cards/r1/generated/major-05-the-hierophant.png",
-      "sha256": "04b28245dd14e59246991ce31c311616e1ae18bc1c0914a627e0e1afa043c1eb"
+      "sha256": "04b28245dd14e59246991ce31c311616e1ae18bc1c0914a627e0e1afa043c1eb",
+      "upright": {
+        "core": {
+          "en": "Tradition, mentorship, and shared belief.",
+          "zh": "传统、导师与共同信念。"
+        },
+        "tension": {
+          "en": "The spread places pressure on this question: Are you obeying or rejecting a tradition without understanding it? If it applies, state the rule in your own words and test whether it still serves its purpose.",
+          "zh": "牌阵把压力放在这个问题上：你是否在不了解传统的情况下盲从或反抗？ 若符合现况，用自己的话说明那条规则，并检验它是否仍服务原本目的。"
+        },
+        "reflection": {
+          "en": "Which teaching deserves respect, and which part needs examination?",
+          "zh": "哪一种教导值得尊重，哪一部分需要检视？"
+        },
+        "action": {
+          "en": "Ask a trusted mentor one precise question, then compare the answer with experience.",
+          "zh": "向可信任的导师提出一个准确问题，再用经验核对答案。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Reversal makes the current condition of dogma, rebellion, or inherited rules under review visible.",
+          "zh": "逆位让教条、反叛或需要重审的规则当前的状态显现出来。"
+        },
+        "tension": {
+          "en": "Its delay concerns the missing conditions for tradition, mentorship, and shared belief.",
+          "zh": "它的延迟与传统、导师与共同信念所缺少的条件有关。"
+        },
+        "reflection": {
+          "en": "Are you obeying or rejecting a tradition without understanding it?",
+          "zh": "你是否在不了解传统的情况下盲从或反抗？"
+        },
+        "action": {
+          "en": "State the rule in your own words and test whether it still serves its purpose.",
+          "zh": "用自己的话说明那条规则，并检验它是否仍服务原本目的。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "At present, the card's The Hierophant points to tradition, mentorship, and shared belief.",
+          "zh": "目前，这张牌的教皇指向传统、导师与共同信念。"
+        },
+        "challenge": {
+          "en": "What needs attention is not punishment but inquiry: Are you obeying or rejecting a tradition without understanding it?",
+          "zh": "需要的不是惩罚，而是追问：你是否在不了解传统的情况下盲从或反抗？"
+        },
+        "guidance": {
+          "en": "Let the guidance end in something observable: ask a trusted mentor one precise question, then compare the answer with experience.",
+          "zh": "让指引结束在可观察的事上：向可信任的导师提出一个准确问题，再用经验核对答案。"
+        }
+      }
     },
     {
       "id": "MAJOR-06",
@@ -177,18 +441,62 @@ window.CELESTIAL_DECK = {
       "zh": "恋人",
       "motif": "twin soul orbit",
       "rationale": "Two mirrored profiles share one radiant heart inside a solar covenant.",
-      "keywords": "alignment · intimacy · and conscious choice",
-      "keywordsZh": "契合 · 亲密与有意识的选择",
-      "meaning": "alignment, intimacy, and conscious choice",
-      "meaningZh": "契合、亲密与有意识的选择",
-      "shadow": "misalignment, avoidance, or divided values",
-      "shadowZh": "失衡、逃避或价值观分裂",
-      "reflection": "Where is alignment, intimacy, and conscious choice asking for your attention rather than certainty?",
-      "reflectionZh": "契合、亲密与有意识的选择正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "alignment · intimacy · and conscious choice",
+        "zh": "契合 · 亲密与有意识的选择"
+      },
       "src": "assets/cards/r1/generated/major-06-the-lovers.png",
-      "sha256": "1314dcd111463fc1f42e5f3d7b5cfa1503cd95c0c8af692acd2fbc441a11c9f6"
+      "sha256": "1314dcd111463fc1f42e5f3d7b5cfa1503cd95c0c8af692acd2fbc441a11c9f6",
+      "upright": {
+        "core": {
+          "en": "Alignment, intimacy, and conscious choice.",
+          "zh": "契合、亲密与有意识的选择。"
+        },
+        "tension": {
+          "en": "The obstacle is best approached through inquiry: Where are desire, avoidance, and commitment pulling apart? If it applies, pause the promise you cannot honor and clarify what you can genuinely offer.",
+          "zh": "最适合以追问接近这个障碍：欲望、逃避与承诺正在哪里彼此拉扯？ 若符合现况，暂停无法兑现的承诺，说明你真正能够给予什么。"
+        },
+        "reflection": {
+          "en": "Which choice matches both your values and your relationships?",
+          "zh": "哪一个选择同时符合你的价值观与关系？"
+        },
+        "action": {
+          "en": "Name the value you will protect, then have the conversation the choice requires.",
+          "zh": "说出你要守护的价值，然后进行这个选择所需要的对话。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The energy of misalignment, avoidance, or divided values needs recalibration rather than rejection.",
+          "zh": "失衡、逃避或价值观分裂的能量需要重新调整，而不是被否定。"
+        },
+        "tension": {
+          "en": "Energy gathers internally around the need for alignment, intimacy, and conscious choice.",
+          "zh": "能量围绕对契合、亲密与有意识的选择的需要向内聚集。"
+        },
+        "reflection": {
+          "en": "Where are desire, avoidance, and commitment pulling apart?",
+          "zh": "欲望、逃避与承诺正在哪里彼此拉扯？"
+        },
+        "action": {
+          "en": "Pause the promise you cannot honor and clarify what you can genuinely offer.",
+          "zh": "暂停无法兑现的承诺，说明你真正能够给予什么。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "What is happening now is best read as alignment, intimacy, and conscious choice.",
+          "zh": "眼前发生的事，可以先理解为契合、亲密与有意识的选择。"
+        },
+        "challenge": {
+          "en": "The card tests your response through this question: Where are desire, avoidance, and commitment pulling apart?",
+          "zh": "这张牌通过这个问题检验你的回应：欲望、逃避与承诺正在哪里彼此拉扯？"
+        },
+        "guidance": {
+          "en": "The next response can remain modest: name the value you will protect, then have the conversation the choice requires.",
+          "zh": "下一步可以保持朴素：说出你要守护的价值，然后进行这个选择所需要的对话。"
+        }
+      }
     },
     {
       "id": "MAJOR-07",
@@ -199,18 +507,62 @@ window.CELESTIAL_DECK = {
       "zh": "战车",
       "motif": "winged wheel",
       "rationale": "A winged helm rides above opposed wheels joined by a disciplined axis.",
-      "keywords": "momentum · resolve · and directed victory",
-      "keywordsZh": "动能 · 决心与有方向的胜利",
-      "meaning": "momentum, resolve, and directed victory",
-      "meaningZh": "动能、决心与有方向的胜利",
-      "shadow": "loss of direction or force without coordination",
-      "shadowZh": "失去方向或缺乏协调的强推",
-      "reflection": "Where is momentum, resolve, and directed victory asking for your attention rather than certainty?",
-      "reflectionZh": "动能、决心与有方向的胜利正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "momentum · resolve · and directed victory",
+        "zh": "动能 · 决心与有方向的胜利"
+      },
       "src": "assets/cards/r1/generated/major-07-the-chariot.png",
-      "sha256": "b1c534774080c44862428ad4fd6efe1f778ceb5959ac497f00438c748dc159c3"
+      "sha256": "b1c534774080c44862428ad4fd6efe1f778ceb5959ac497f00438c748dc159c3",
+      "upright": {
+        "core": {
+          "en": "Momentum, resolve, and directed victory.",
+          "zh": "动能、决心与有方向的胜利。"
+        },
+        "tension": {
+          "en": "Let the challenge interrupt certainty: Are opposing drives making speed look like progress? If it applies, slow down long enough to align motive, route, and consequence.",
+          "zh": "让挑战打断确定感：互相冲突的动力是否让速度看起来像进展？ 若符合现况，先放慢，直到动机、路线和后果彼此一致。"
+        },
+        "reflection": {
+          "en": "What deserves firm direction instead of more acceleration?",
+          "zh": "什么需要明确方向，而不是继续加速？"
+        },
+        "action": {
+          "en": "Pick one destination, remove one competing route, and set the next checkpoint.",
+          "zh": "选定一个目的地，取消一条竞争路线，并设下下个检查点。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "This side of the card shows loss of direction or force without coordination working below the surface.",
+          "zh": "这张牌的一面显示失去方向或缺乏协调的强推正在表面之下运作。"
+        },
+        "tension": {
+          "en": "The Chariot becomes defensive when momentum, resolve, and directed victory feels unavailable.",
+          "zh": "当动能、决心与有方向的胜利显得无法取得，战车会变得防御。"
+        },
+        "reflection": {
+          "en": "Are opposing drives making speed look like progress?",
+          "zh": "互相冲突的动力是否让速度看起来像进展？"
+        },
+        "action": {
+          "en": "Slow down long enough to align motive, route, and consequence.",
+          "zh": "先放慢，直到动机、路线和后果彼此一致。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The Chariot marks a situation organized around momentum, resolve, and directed victory.",
+          "zh": "战车标示出一个围绕动能、决心与有方向的胜利形成的处境。"
+        },
+        "challenge": {
+          "en": "Face the tension without dramatizing it: Are opposing drives making speed look like progress?",
+          "zh": "面对张力，但不要把它戏剧化：互相冲突的动力是否让速度看起来像进展？"
+        },
+        "guidance": {
+          "en": "Translate the symbol into daily life: pick one destination, remove one competing route, and set the next checkpoint.",
+          "zh": "把象征翻译进日常生活：选定一个目的地，取消一条竞争路线，并设下下个检查点。"
+        }
+      }
     },
     {
       "id": "MAJOR-08",
@@ -221,18 +573,62 @@ window.CELESTIAL_DECK = {
       "zh": "力量",
       "motif": "gentled lion",
       "rationale": "An infinity halo rests above an ivory lion held by an open hand.",
-      "keywords": "courage · compassion · and quiet influence",
-      "keywordsZh": "勇气 · 慈悲与温和影响",
-      "meaning": "courage, compassion, and quiet influence",
-      "meaningZh": "勇气、慈悲与温和影响",
-      "shadow": "self-doubt, suppressed instinct, or forcefulness",
-      "shadowZh": "自我怀疑、压抑本能或用力过度",
-      "reflection": "Where is courage, compassion, and quiet influence asking for your attention rather than certainty?",
-      "reflectionZh": "勇气、慈悲与温和影响正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "courage · compassion · and quiet influence",
+        "zh": "勇气 · 慈悲与温和影响"
+      },
       "src": "assets/cards/r1/generated/major-08-strength.png",
-      "sha256": "1a1fa55b9987f54865b2101fe3524c003a5be7550d48b5dbeb210a0c21895fdc"
+      "sha256": "1a1fa55b9987f54865b2101fe3524c003a5be7550d48b5dbeb210a0c21895fdc",
+      "upright": {
+        "core": {
+          "en": "Courage, compassion, and quiet influence.",
+          "zh": "勇气、慈悲与温和影响。"
+        },
+        "tension": {
+          "en": "The card turns resistance into a useful question: Is fear being suppressed until it leaks out as control? If it applies, name the fear privately, relax your body, then respond at half the intensity.",
+          "zh": "这张牌把阻力转成有用问题：恐惧是否被压住，最后以控制的形式泄露？ 若符合现况，先私下说出恐惧，放松身体，再用一半的强度回应。"
+        },
+        "reflection": {
+          "en": "Where would calm courage work better than force?",
+          "zh": "哪里更需要平静的勇气，而不是强硬？"
+        },
+        "action": {
+          "en": "Approach one difficult moment gently and keep your boundary without raising the heat.",
+          "zh": "温和地面对一个困难时刻，在不升高冲突的情况下守住边界。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "In reversal, self-doubt, suppressed instinct, or forcefulness may need recovery, restraint, or more time.",
+          "zh": "逆位时，自我怀疑、压抑本能或用力过度可能需要恢复、节制或更多时间。"
+        },
+        "tension": {
+          "en": "Overexpression can hide a deeper lack of courage, compassion, and quiet influence.",
+          "zh": "过度表现可能掩盖更深的勇气、慈悲与温和影响不足。"
+        },
+        "reflection": {
+          "en": "Is fear being suppressed until it leaks out as control?",
+          "zh": "恐惧是否被压住，最后以控制的形式泄露？"
+        },
+        "action": {
+          "en": "Name the fear privately, relax your body, then respond at half the intensity.",
+          "zh": "先私下说出恐惧，放松身体，再用一半的强度回应。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "courage, compassion, and quiet influence describes the ground beneath this reading.",
+          "zh": "勇气、慈悲与温和影响描述了这次解读脚下的地面。"
+        },
+        "challenge": {
+          "en": "The challenge stays practical when framed this way: Is fear being suppressed until it leaks out as control?",
+          "zh": "这样表达，挑战就会保持务实：恐惧是否被压住，最后以控制的形式泄露？"
+        },
+        "guidance": {
+          "en": "The card points toward a bounded action: approach one difficult moment gently and keep your boundary without raising the heat.",
+          "zh": "这张牌指向一项有边界的行动：温和地面对一个困难时刻，在不升高冲突的情况下守住边界。"
+        }
+      }
     },
     {
       "id": "MAJOR-09",
@@ -243,18 +639,62 @@ window.CELESTIAL_DECK = {
       "zh": "隐士",
       "motif": "solitary lantern",
       "rationale": "A hooded peak carries a six-rayed lantern through concentric silence.",
-      "keywords": "reflection · solitude · and earned wisdom",
-      "keywordsZh": "反思 · 独处与经验智慧",
-      "meaning": "reflection, solitude, and earned wisdom",
-      "meaningZh": "反思、独处与经验智慧",
-      "shadow": "isolation, withdrawal, or refusing guidance",
-      "shadowZh": "孤立、退缩或拒绝引导",
-      "reflection": "Where is reflection, solitude, and earned wisdom asking for your attention rather than certainty?",
-      "reflectionZh": "反思、独处与经验智慧正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "reflection · solitude · and earned wisdom",
+        "zh": "反思 · 独处与经验智慧"
+      },
       "src": "assets/cards/r1/generated/major-09-the-hermit.png",
-      "sha256": "09bfaa31a5b4adc9c4c01c280ffbe5743b0aef6ebd489a1052d39600a256c791"
+      "sha256": "09bfaa31a5b4adc9c4c01c280ffbe5743b0aef6ebd489a1052d39600a256c791",
+      "upright": {
+        "core": {
+          "en": "Reflection, solitude, and earned wisdom.",
+          "zh": "反思、独处与经验智慧。"
+        },
+        "tension": {
+          "en": "This position asks for courage, not prediction: Has useful solitude hardened into disconnection? If it applies, contact one wise person and share the question you have been carrying alone.",
+          "zh": "这个位置要求勇气，而非预测：有益的独处是否已经变成隔绝？ 若符合现况，联系一位有智慧的人，说出你一直独自承担的问题。"
+        },
+        "reflection": {
+          "en": "Which answer requires solitude before advice?",
+          "zh": "哪一个答案需要先独处，再听建议？"
+        },
+        "action": {
+          "en": "Take a short walk alone and return with one sentence of earned insight.",
+          "zh": "独自走一小段路，回来时写下一句真正领悟的话。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The image turns inward to examine how isolation, withdrawal, or refusing guidance is functioning.",
+          "zh": "图像转向内在，检视孤立、退缩或拒绝引导如何运作。"
+        },
+        "tension": {
+          "en": "The card internalizes the unfinished work of reflection, solitude, and earned wisdom.",
+          "zh": "这张牌把反思、独处与经验智慧未完成的功课内化。"
+        },
+        "reflection": {
+          "en": "Has useful solitude hardened into disconnection?",
+          "zh": "有益的独处是否已经变成隔绝？"
+        },
+        "action": {
+          "en": "Contact one wise person and share the question you have been carrying alone.",
+          "zh": "联系一位有智慧的人，说出你一直独自承担的问题。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The Hermit locates the present issue in reflection, solitude, and earned wisdom.",
+          "zh": "隐士把当前议题定位在反思、独处与经验智慧。"
+        },
+        "challenge": {
+          "en": "This is the knot to examine: Has useful solitude hardened into disconnection?",
+          "zh": "这是需要检视的结：有益的独处是否已经变成隔绝？"
+        },
+        "guidance": {
+          "en": "Keep the guidance concrete: take a short walk alone and return with one sentence of earned insight.",
+          "zh": "让指引保持具体：独自走一小段路，回来时写下一句真正领悟的话。"
+        }
+      }
     },
     {
       "id": "MAJOR-10",
@@ -265,18 +705,62 @@ window.CELESTIAL_DECK = {
       "zh": "命运之轮",
       "motif": "turning zodiac",
       "rationale": "A twelve-spoked wheel rotates through four elemental guardians.",
-      "keywords": "cycles · change · and timely opportunity",
-      "keywordsZh": "循环 · 变化与时机",
-      "meaning": "cycles, change, and timely opportunity",
-      "meaningZh": "循环、变化与时机",
-      "shadow": "resistance, repetition, or a delayed turning point",
-      "shadowZh": "抗拒、重复或延迟的转折",
-      "reflection": "Where is cycles, change, and timely opportunity asking for your attention rather than certainty?",
-      "reflectionZh": "循环、变化与时机正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "cycles · change · and timely opportunity",
+        "zh": "循环 · 变化与时机"
+      },
       "src": "assets/cards/r1/generated/major-10-wheel-of-fortune.png",
-      "sha256": "f968a07c1a3d0ec1a3c29b560977ea5da16c10fe1dd010459004d23ec0768e87"
+      "sha256": "f968a07c1a3d0ec1a3c29b560977ea5da16c10fe1dd010459004d23ec0768e87",
+      "upright": {
+        "core": {
+          "en": "Cycles, change, and timely opportunity.",
+          "zh": "循环、变化与时机。"
+        },
+        "tension": {
+          "en": "The tension has a clear doorway: Are you waiting for luck while repeating the same move? If it applies, change one repeated behavior before asking circumstances to change.",
+          "zh": "张力有一个清楚入口：你是否一边重复旧动作，一边等待运气？ 若符合现况，先改变一个重复行为，再要求环境发生变化。"
+        },
+        "reflection": {
+          "en": "What part of this cycle can you influence today?",
+          "zh": "这个循环中，今天哪一部分仍由你影响？"
+        },
+        "action": {
+          "en": "Mark what is changing, what is repeating, and one response you can choose.",
+          "zh": "标出正在变化的、不断重复的，以及你能选择的一种回应。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "This orientation treats resistance, repetition, or a delayed turning point as unavailable, private, or overextended.",
+          "zh": "这个方向把抗拒、重复或延迟的转折视为暂时难以取得、私密或过度延伸。"
+        },
+        "tension": {
+          "en": "Its inward face asks what prevents cycles, change, and timely opportunity from moving.",
+          "zh": "它向内的一面追问什么阻止循环、变化与时机流动。"
+        },
+        "reflection": {
+          "en": "Are you waiting for luck while repeating the same move?",
+          "zh": "你是否一边重复旧动作，一边等待运气？"
+        },
+        "action": {
+          "en": "Change one repeated behavior before asking circumstances to change.",
+          "zh": "先改变一个重复行为，再要求环境发生变化。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The immediate landscape carries cycles, change, and timely opportunity.",
+          "zh": "眼前的环境带着循环、变化与时机。"
+        },
+        "challenge": {
+          "en": "Rather than predict an outcome, ask: Are you waiting for luck while repeating the same move?",
+          "zh": "不要预测结果，而要问：你是否一边重复旧动作，一边等待运气？"
+        },
+        "guidance": {
+          "en": "A useful response is available now: mark what is changing, what is repeating, and one response you can choose.",
+          "zh": "现在已经有可用的回应：标出正在变化的、不断重复的，以及你能选择的一种回应。"
+        }
+      }
     },
     {
       "id": "MAJOR-11",
@@ -287,18 +771,62 @@ window.CELESTIAL_DECK = {
       "zh": "正义",
       "motif": "sword and scales",
       "rationale": "A vertical blade divides perfectly balanced lunar and solar scales.",
-      "keywords": "truth · accountability · and fair consequence",
-      "keywordsZh": "真相 · 责任与公正结果",
-      "meaning": "truth, accountability, and fair consequence",
-      "meaningZh": "真相、责任与公正结果",
-      "shadow": "bias, evasion, or an unresolved imbalance",
-      "shadowZh": "偏见、逃避或未解决的失衡",
-      "reflection": "Where is truth, accountability, and fair consequence asking for your attention rather than certainty?",
-      "reflectionZh": "真相、责任与公正结果正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "truth · accountability · and fair consequence",
+        "zh": "真相 · 责任与公正结果"
+      },
       "src": "assets/cards/r1/generated/major-11-justice.png",
-      "sha256": "7ab27a93e5cd974fce72898668d2bc636a7e18d26b9e00b8f45f78bba819935e"
+      "sha256": "7ab27a93e5cd974fce72898668d2bc636a7e18d26b9e00b8f45f78bba819935e",
+      "upright": {
+        "core": {
+          "en": "Truth, accountability, and fair consequence.",
+          "zh": "真相、责任与公正结果。"
+        },
+        "tension": {
+          "en": "Work the problem from this angle: Where are bias or self-protection bending the scales? If it applies, invite one affected person to correct your account of what happened.",
+          "zh": "从这个角度处理问题：偏见或自我保护正在哪里让天平倾斜？ 若符合现况，请一位受影响的人纠正你对事件的叙述。"
+        },
+        "reflection": {
+          "en": "What fact and consequence need to be faced without editing?",
+          "zh": "哪项事实与后果需要不加修饰地面对？"
+        },
+        "action": {
+          "en": "Write the decision, the evidence, and who bears its cost before acting.",
+          "zh": "行动前写下决定、证据，以及由谁承担代价。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The reversed current asks for a more workable form of bias, evasion, or an unresolved imbalance.",
+          "zh": "逆位流动要求偏见、逃避或未解决的失衡找到更可行的形式。"
+        },
+        "tension": {
+          "en": "The reversal contains truth, accountability, and fair consequence without yet releasing it.",
+          "zh": "逆位容纳着真相、责任与公正结果，但尚未释放。"
+        },
+        "reflection": {
+          "en": "Where are bias or self-protection bending the scales?",
+          "zh": "偏见或自我保护正在哪里让天平倾斜？"
+        },
+        "action": {
+          "en": "Invite one affected person to correct your account of what happened.",
+          "zh": "请一位受影响的人纠正你对事件的叙述。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "This position makes truth, accountability, and fair consequence the fact to notice first.",
+          "zh": "这个位置让真相、责任与公正结果成为首先要留意的事实。"
+        },
+        "challenge": {
+          "en": "The position exposes a decision point: Where are bias or self-protection bending the scales?",
+          "zh": "这个位置揭示一个决定点：偏见或自我保护正在哪里让天平倾斜？"
+        },
+        "guidance": {
+          "en": "Rather than wait for certainty: write the decision, the evidence, and who bears its cost before acting.",
+          "zh": "不必等待完全确定：行动前写下决定、证据，以及由谁承担代价。"
+        }
+      }
     },
     {
       "id": "MAJOR-12",
@@ -309,18 +837,62 @@ window.CELESTIAL_DECK = {
       "zh": "倒吊人",
       "motif": "suspended halo",
       "rationale": "An inverted figure hangs calmly from a flowering tau-shaped branch.",
-      "keywords": "surrender · pause · and a changed perspective",
-      "keywordsZh": "放下 · 暂停与视角转换",
-      "meaning": "surrender, pause, and a changed perspective",
-      "meaningZh": "放下、暂停与视角转换",
-      "shadow": "stalling, martyrdom, or resisting release",
-      "shadowZh": "停滞、殷牲或拒绝放手",
-      "reflection": "Where is surrender, pause, and a changed perspective asking for your attention rather than certainty?",
-      "reflectionZh": "放下、暂停与视角转换正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "surrender · pause · and a changed perspective",
+        "zh": "放下 · 暂停与视角转换"
+      },
       "src": "assets/cards/r1/generated/major-12-the-hanged-man.png",
-      "sha256": "fddadf0bae74f00631ea225a20c13fdba70945d8255cc47942f87d4df7ca063c"
+      "sha256": "fddadf0bae74f00631ea225a20c13fdba70945d8255cc47942f87d4df7ca063c",
+      "upright": {
+        "core": {
+          "en": "Surrender, pause, and a changed perspective.",
+          "zh": "放下、暂停与视角转换。"
+        },
+        "tension": {
+          "en": "The challenge becomes specific in one question: Is surrender becoming avoidance or sacrifice becoming identity? If it applies, set an end time for the pause and name what would justify resuming.",
+          "zh": "挑战在一个问题中变得具体：放下是否变成逃避，牺牲是否变成身份？ 若符合现况，为暂停设定结束时间，并说明什么条件会让你重新行动。"
+        },
+        "reflection": {
+          "en": "What becomes visible when you stop forcing movement?",
+          "zh": "当你停止强推事情时，什么会显现？"
+        },
+        "action": {
+          "en": "Delay one non-urgent decision for a day and observe what changes in perspective.",
+          "zh": "把一个不紧急的决定延后一天，观察视角有何变化。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Delay exposes what stalling, martyrdom, or resisting release needs before it can move outward.",
+          "zh": "延迟揭示停滞、殷牲或拒绝放手向外流动前所需要的条件。"
+        },
+        "tension": {
+          "en": "A bottleneck appears between intention and surrender, pause, and a changed perspective.",
+          "zh": "意图与放下、暂停与视角转换之间出现瓶颈。"
+        },
+        "reflection": {
+          "en": "Is surrender becoming avoidance or sacrifice becoming identity?",
+          "zh": "放下是否变成逃避，牺牲是否变成身份？"
+        },
+        "action": {
+          "en": "Set an end time for the pause and name what would justify resuming.",
+          "zh": "为暂停设定结束时间，并说明什么条件会让你重新行动。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The card opens on surrender, pause, and a changed perspective as the active condition.",
+          "zh": "这张牌以放下、暂停与视角转换作为活跃条件展开。"
+        },
+        "challenge": {
+          "en": "The friction in the spread can be named simply: Is surrender becoming avoidance or sacrifice becoming identity?",
+          "zh": "牌阵中的摩擦可以简单说成：放下是否变成逃避，牺牲是否变成身份？"
+        },
+        "guidance": {
+          "en": "The image earns its meaning through this step: delay one non-urgent decision for a day and observe what changes in perspective.",
+          "zh": "图像通过这一步获得意义：把一个不紧急的决定延后一天，观察视角有何变化。"
+        }
+      }
     },
     {
       "id": "MAJOR-13",
@@ -331,18 +903,62 @@ window.CELESTIAL_DECK = {
       "zh": "死神",
       "motif": "skull rose eclipse",
       "rationale": "A bone-white rose grows through an eclipsed skull and fallen crown.",
-      "keywords": "ending · release · and irreversible renewal",
-      "keywordsZh": "结束 · 释放与不可逆的更新",
-      "meaning": "ending, release, and irreversible renewal",
-      "meaningZh": "结束、释放与不可逆的更新",
-      "shadow": "clinging, stagnation, or fear of transition",
-      "shadowZh": "执着、停滞或对转变的恐惧",
-      "reflection": "Where is ending, release, and irreversible renewal asking for your attention rather than certainty?",
-      "reflectionZh": "结束、释放与不可逆的更新正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "ending · release · and irreversible renewal",
+        "zh": "结束 · 释放与不可逆的更新"
+      },
       "src": "assets/cards/r1/generated/major-13-death.png",
-      "sha256": "8e54f3686bff15bed4154ac7fdde09b1012e3b7974679e65c611a11f84de2669"
+      "sha256": "8e54f3686bff15bed4154ac7fdde09b1012e3b7974679e65c611a11f84de2669",
+      "upright": {
+        "core": {
+          "en": "Ending, release, and irreversible renewal.",
+          "zh": "结束、释放与不可逆的更新。"
+        },
+        "tension": {
+          "en": "The challenge is to answer this honestly: What are you preserving only because release feels unfamiliar? If it applies, create a small closing ritual, then redirect the freed time or space.",
+          "zh": "挑战在于诚实回答：你保留了什么，只因为放手令人陌生？ 若符合现况，做一个简单的结束仪式，再重新安排腾出的时间或空间。"
+        },
+        "reflection": {
+          "en": "What has ended even if part of you still negotiates with it?",
+          "zh": "什么已经结束，即使你仍在心里讨价还价？"
+        },
+        "action": {
+          "en": "Remove one object, obligation, or routine that belongs to the finished chapter.",
+          "zh": "移除一件属于旧章节的物品、义务或习惯。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The card holds clinging, stagnation, or fear of transition inside until its proportion becomes clearer.",
+          "zh": "这张牌把执着、停滞或对转变的恐惧留在内在，直到比例变得清楚。"
+        },
+        "tension": {
+          "en": "The private tension is how to make room for ending, release, and irreversible renewal.",
+          "zh": "私下张力在于如何为结束、释放与不可逆的更新腾出空间。"
+        },
+        "reflection": {
+          "en": "What are you preserving only because release feels unfamiliar?",
+          "zh": "你保留了什么，只因为放手令人陌生？"
+        },
+        "action": {
+          "en": "Create a small closing ritual, then redirect the freed time or space.",
+          "zh": "做一个简单的结束仪式，再重新安排腾出的时间或空间。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The Death reflects a present shaped by ending, release, and irreversible renewal.",
+          "zh": "死神映照出一个由结束、释放与不可逆的更新塑造的当下。"
+        },
+        "challenge": {
+          "en": "Hold the uncertainty long enough to ask: What are you preserving only because release feels unfamiliar?",
+          "zh": "容纳不确定，直到你能问：你保留了什么，只因为放手令人陌生？"
+        },
+        "guidance": {
+          "en": "Guidance here is behavioral, not predictive: remove one object, obligation, or routine that belongs to the finished chapter.",
+          "zh": "这里的指引关于行为，而非预测：移除一件属于旧章节的物品、义务或习惯。"
+        }
+      }
     },
     {
       "id": "MAJOR-14",
@@ -353,18 +969,62 @@ window.CELESTIAL_DECK = {
       "zh": "节制",
       "motif": "alchemical vessels",
       "rationale": "Two suspended cups exchange one unbroken silver-gold current.",
-      "keywords": "balance · integration · and patient adjustment",
-      "keywordsZh": "平衡 · 整合与耐心调整",
-      "meaning": "balance, integration, and patient adjustment",
-      "meaningZh": "平衡、整合与耐心调整",
-      "shadow": "excess, fragmentation, or poor timing",
-      "shadowZh": "过度、分裂或时机不当",
-      "reflection": "Where is balance, integration, and patient adjustment asking for your attention rather than certainty?",
-      "reflectionZh": "平衡、整合与耐心调整正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "balance · integration · and patient adjustment",
+        "zh": "平衡 · 整合与耐心调整"
+      },
       "src": "assets/cards/r1/generated/major-14-temperance.png",
-      "sha256": "1f6ff44f7c0e92506b3518306daa4a0965a8740762cf5d403c9f6d03b0aadd6d"
+      "sha256": "1f6ff44f7c0e92506b3518306daa4a0965a8740762cf5d403c9f6d03b0aadd6d",
+      "upright": {
+        "core": {
+          "en": "Balance, integration, and patient adjustment.",
+          "zh": "平衡、整合与耐心调整。"
+        },
+        "tension": {
+          "en": "Do not call it fate; work with the question: Where has moderation become dilution or delay? If it applies, choose a measurable middle point instead of an undefined compromise.",
+          "zh": "不要把它称为命运；请处理这个问题：节制在哪里变成稀释或拖延？ 若符合现况，选择一个可衡量的中点，而不是含糊的妥协。"
+        },
+        "reflection": {
+          "en": "Which two needs can be adjusted rather than made enemies?",
+          "zh": "哪两种需要可以调整，而不必互相敌对？"
+        },
+        "action": {
+          "en": "Change one ratio—time, money, effort, or attention—and review the effect tomorrow.",
+          "zh": "调整一个比例——时间、金钱、精力或注意——并在明天检视效果。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Reversal brings the blocked or excessive side of excess, fragmentation, or poor timing into view.",
+          "zh": "逆位让过度、分裂或时机不当受阻或过度的一面进入视野。"
+        },
+        "tension": {
+          "en": "The symbol folds back on itself around balance, integration, and patient adjustment.",
+          "zh": "象征围绕平衡、整合与耐心调整折回自身。"
+        },
+        "reflection": {
+          "en": "Where has moderation become dilution or delay?",
+          "zh": "节制在哪里变成稀释或拖延？"
+        },
+        "action": {
+          "en": "Choose a measurable middle point instead of an undefined compromise.",
+          "zh": "选择一个可衡量的中点，而不是含糊的妥协。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "Before choosing a response, recognize balance, integration, and patient adjustment.",
+          "zh": "选择回应前，先承认平衡、整合与耐心调整。"
+        },
+        "challenge": {
+          "en": "The card makes one demand for honesty: Where has moderation become dilution or delay?",
+          "zh": "这张牌只要求一件诚实的事：节制在哪里变成稀释或拖延？"
+        },
+        "guidance": {
+          "en": "Carry the card forward by doing this: change one ratio—time, money, effort, or attention—and review the effect tomorrow.",
+          "zh": "用这个行动把牌带往前方：调整一个比例——时间、金钱、精力或注意——并在明天检视效果。"
+        }
+      }
     },
     {
       "id": "MAJOR-15",
@@ -375,18 +1035,62 @@ window.CELESTIAL_DECK = {
       "zh": "恶魔",
       "motif": "horned chain mask",
       "rationale": "A horned mask floats above two chains with visibly open clasps.",
-      "keywords": "attachment · appetite · and shadow awareness",
-      "keywordsZh": "依附 · 欲望与阴影觉察",
-      "meaning": "attachment, appetite, and shadow awareness",
-      "meaningZh": "依附、欲望与阴影觉察",
-      "shadow": "release, denial, or a hidden dependency",
-      "shadowZh": "解脱、否认或隐藏的依赖",
-      "reflection": "Where is attachment, appetite, and shadow awareness asking for your attention rather than certainty?",
-      "reflectionZh": "依附、欲望与阴影觉察正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "attachment · appetite · and shadow awareness",
+        "zh": "依附 · 欲望与阴影觉察"
+      },
       "src": "assets/cards/r1/generated/major-15-the-devil.png",
-      "sha256": "df1d171a74e11761d6b069b7f7919db4bbbecb6aeb78fdb90914bcdf9ad816db"
+      "sha256": "df1d171a74e11761d6b069b7f7919db4bbbecb6aeb78fdb90914bcdf9ad816db",
+      "upright": {
+        "core": {
+          "en": "Attachment, appetite, and shadow awareness.",
+          "zh": "依附、欲望与阴影觉察。"
+        },
+        "tension": {
+          "en": "The difficult work begins here: Are you denying a dependency because admitting it feels shameful? If it applies, tell one safe person the pattern and remove its easiest point of access.",
+          "zh": "困难功课从这里开始：你是否因为羞耻而否认某种依赖？ 若符合现况，向一个安全的人说明这个模式，并移除最容易接近它的入口。"
+        },
+        "reflection": {
+          "en": "Which attachment gains power when it remains unnamed?",
+          "zh": "哪一种依附因为没有被说出而更有力量？"
+        },
+        "action": {
+          "en": "Identify the trigger, the reward, and one interruption you can place between them.",
+          "zh": "找出触发点、奖励，以及你能放在两者之间的一次中断。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The quality of release, denial, or a hidden dependency is active inwardly, even if little is visible.",
+          "zh": "解脱、否认或隐藏的依赖正在内在活跃，即使外在几乎看不见。"
+        },
+        "tension": {
+          "en": "The card delays action until attachment, appetite, and shadow awareness can become workable.",
+          "zh": "这张牌延迟行动，直到依附、欲望与阴影觉察变得可行。"
+        },
+        "reflection": {
+          "en": "Are you denying a dependency because admitting it feels shameful?",
+          "zh": "你是否因为羞耻而否认某种依赖？"
+        },
+        "action": {
+          "en": "Tell one safe person the pattern and remove its easiest point of access.",
+          "zh": "向一个安全的人说明这个模式，并移除最容易接近它的入口。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The Devil says the situation is already carrying attachment, appetite, and shadow awareness.",
+          "zh": "恶魔说明现状已经承载着依附、欲望与阴影觉察。"
+        },
+        "challenge": {
+          "en": "This tension is workable once you consider: Are you denying a dependency because admitting it feels shameful?",
+          "zh": "当你考虑这个问题，张力就能被处理：你是否因为羞耻而否认某种依赖？"
+        },
+        "guidance": {
+          "en": "The spread closes with a practical choice: identify the trigger, the reward, and one interruption you can place between them.",
+          "zh": "牌阵以一个务实选择收尾：找出触发点、奖励，以及你能放在两者之间的一次中断。"
+        }
+      }
     },
     {
       "id": "MAJOR-16",
@@ -397,18 +1101,62 @@ window.CELESTIAL_DECK = {
       "zh": "高塔",
       "motif": "lightning rupture",
       "rationale": "A black tower splits under a white bolt as its crown becomes stars.",
-      "keywords": "disruption · revelation · and necessary collapse",
-      "keywordsZh": "震荡 · 揭示与必要的崩解",
-      "meaning": "disruption, revelation, and necessary collapse",
-      "meaningZh": "震荡、揭示与必要的崩解",
-      "shadow": "avoided change or a private internal upheaval",
-      "shadowZh": "逃避改变或内在的剧烈震动",
-      "reflection": "Where is disruption, revelation, and necessary collapse asking for your attention rather than certainty?",
-      "reflectionZh": "震荡、揭示与必要的崩解正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "disruption · revelation · and necessary collapse",
+        "zh": "震荡 · 揭示与必要的崩解"
+      },
       "src": "assets/cards/r1/generated/major-16-the-tower.png",
-      "sha256": "9e59602e9424eb8436ceccc186a2a8d16c6fe9ec451d75d2d4c470245796180b"
+      "sha256": "9e59602e9424eb8436ceccc186a2a8d16c6fe9ec451d75d2d4c470245796180b",
+      "upright": {
+        "core": {
+          "en": "Disruption, revelation, and necessary collapse.",
+          "zh": "震荡、揭示与必要的崩解。"
+        },
+        "tension": {
+          "en": "This position sharpens one issue: Are you maintaining appearances while pressure moves inward? If it applies, stop cosmetic repairs and inspect the foundation with someone qualified.",
+          "zh": "这个位置让一个议题变得尖锐：你是否维持表面完整，却让压力转向内部？ 若符合现况，停止表面修补，与合适的人一起检查基础。"
+        },
+        "reflection": {
+          "en": "Which unstable structure is already showing cracks?",
+          "zh": "哪一个不稳定的结构已经出现裂缝？"
+        },
+        "action": {
+          "en": "Secure what protects people first, then document what must be rebuilt.",
+          "zh": "先保护人员安全，再记录必须重建的部分。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "This position asks whether avoided change or a private internal upheaval has stalled or gone too far.",
+          "zh": "这个位置追问逃避改变或内在的剧烈震动是否已经停滞或走得太远。"
+        },
+        "tension": {
+          "en": "Inside, the image wrestles with access to disruption, revelation, and necessary collapse.",
+          "zh": "图像在内心与如何取得震荡、揭示与必要的崩解搏斗。"
+        },
+        "reflection": {
+          "en": "Are you maintaining appearances while pressure moves inward?",
+          "zh": "你是否维持表面完整，却让压力转向内部？"
+        },
+        "action": {
+          "en": "Stop cosmetic repairs and inspect the foundation with someone qualified.",
+          "zh": "停止表面修补，与合适的人一起检查基础。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The current chapter has the texture of disruption, revelation, and necessary collapse.",
+          "zh": "当前章节带着震荡、揭示与必要的崩解的质感。"
+        },
+        "challenge": {
+          "en": "The challenge is neither fixed nor hidden: Are you maintaining appearances while pressure moves inward?",
+          "zh": "挑战并非固定，也不隐藏：你是否维持表面完整，却让压力转向内部？"
+        },
+        "guidance": {
+          "en": "Make the symbol accountable to reality: secure what protects people first, then document what must be rebuilt.",
+          "zh": "让象征接受现实检验：先保护人员安全，再记录必须重建的部分。"
+        }
+      }
     },
     {
       "id": "MAJOR-17",
@@ -419,18 +1167,62 @@ window.CELESTIAL_DECK = {
       "zh": "星星",
       "motif": "eight-point wellspring",
       "rationale": "An eight-point star pours twin streams into earth and sky.",
-      "keywords": "hope · renewal · and authentic direction",
-      "keywordsZh": "希望 · 复苏与真实方向",
-      "meaning": "hope, renewal, and authentic direction",
-      "meaningZh": "希望、复苏与真实方向",
-      "shadow": "discouragement, exposure, or dimmed faith",
-      "shadowZh": "气馁、脆弱暴露或信心黯淡",
-      "reflection": "Where is hope, renewal, and authentic direction asking for your attention rather than certainty?",
-      "reflectionZh": "希望、复苏与真实方向正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "hope · renewal · and authentic direction",
+        "zh": "希望 · 复苏与真实方向"
+      },
       "src": "assets/cards/r1/generated/major-17-the-star.png",
-      "sha256": "5db764506aa44bc4ddad26284f8f1721874c3420a0ce108789f07ab3bb17c7b8"
+      "sha256": "5db764506aa44bc4ddad26284f8f1721874c3420a0ce108789f07ab3bb17c7b8",
+      "upright": {
+        "core": {
+          "en": "Hope, renewal, and authentic direction.",
+          "zh": "希望、复苏与真实方向。"
+        },
+        "tension": {
+          "en": "The obstacle becomes clearer when you ask: Has disappointment made hope feel embarrassing or unsafe? If it applies, choose one credible source of support and return to it consistently for a week.",
+          "zh": "当你这样提问，障碍会更清楚：失望是否让希望显得尴尬或不安全？ 若符合现况，选择一个可信的支持来源，连续一周稳定回到那里。"
+        },
+        "reflection": {
+          "en": "What modest sign of renewal deserves trust?",
+          "zh": "哪一个微小的复苏迹象值得信任？"
+        },
+        "action": {
+          "en": "Do one restorative act that can be repeated tomorrow, not a dramatic reset.",
+          "zh": "做一件明天也能重复的修复行动，而不是追求戏剧性重启。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The reversed image slows discouragement, exposure, or dimmed faith so its distortion can be noticed.",
+          "zh": "逆位图像放慢气馁、脆弱暴露或信心黯淡，让扭曲能够被察觉。"
+        },
+        "tension": {
+          "en": "The reversed current searches for a proportionate form of hope, renewal, and authentic direction.",
+          "zh": "逆位流动正在寻找希望、复苏与真实方向的适当形式。"
+        },
+        "reflection": {
+          "en": "Has disappointment made hope feel embarrassing or unsafe?",
+          "zh": "失望是否让希望显得尴尬或不安全？"
+        },
+        "action": {
+          "en": "Choose one credible source of support and return to it consistently for a week.",
+          "zh": "选择一个可信的支持来源，连续一周稳定回到那里。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "In the Situation place, hope, renewal, and authentic direction is the starting evidence.",
+          "zh": "在现状位置，希望、复苏与真实方向是起始证据。"
+        },
+        "challenge": {
+          "en": "Use the difficult edge of the image to ask: Has disappointment made hope feel embarrassing or unsafe?",
+          "zh": "利用图像困难的一面提问：失望是否让希望显得尴尬或不安全？"
+        },
+        "guidance": {
+          "en": "The card recommends a testable response: do one restorative act that can be repeated tomorrow, not a dramatic reset.",
+          "zh": "这张牌建议一个可检验的回应：做一件明天也能重复的修复行动，而不是追求戏剧性重启。"
+        }
+      }
     },
     {
       "id": "MAJOR-18",
@@ -441,18 +1233,62 @@ window.CELESTIAL_DECK = {
       "zh": "月亮",
       "motif": "lunar path",
       "rationale": "A long path crosses dark water between twin towers toward a triple moon.",
-      "keywords": "dreams · ambiguity · and subconscious signals",
-      "keywordsZh": "梦境 · 暧昧与潜意识信号",
-      "meaning": "dreams, ambiguity, and subconscious signals",
-      "meaningZh": "梦境、暧昧与潜意识信号",
-      "shadow": "confusion lifting or fear distorting perception",
-      "shadowZh": "迷雾消散或恐惧扭曲感知",
-      "reflection": "Where is dreams, ambiguity, and subconscious signals asking for your attention rather than certainty?",
-      "reflectionZh": "梦境、暧昧与潜意识信号正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "dreams · ambiguity · and subconscious signals",
+        "zh": "梦境 · 暧昧与潜意识信号"
+      },
       "src": "assets/cards/r1/approved/major-18-the-moon.png",
-      "sha256": "a8a5c05d8c10c2a4f48b9ea2cc34a6017fbabfd3cd0fc517985a329b075b3817"
+      "sha256": "a8a5c05d8c10c2a4f48b9ea2cc34a6017fbabfd3cd0fc517985a329b075b3817",
+      "upright": {
+        "core": {
+          "en": "Dreams, ambiguity, and subconscious signals.",
+          "zh": "梦境、暧昧与潜意识信号。"
+        },
+        "tension": {
+          "en": "What needs attention is not punishment but inquiry: Is relief making you dismiss a warning, or fear making shadows look solid? If it applies, wait for one confirming fact and reduce exposure to rumor tonight.",
+          "zh": "需要的不是惩罚，而是追问：轻松是否让你忽略警讯，恐惧是否让影子显得真实？ 若符合现况，等待一项确认事实，今晚减少接触传闻。"
+        },
+        "reflection": {
+          "en": "What is uncertain, and what is merely frightening?",
+          "zh": "什么是真的不确定，什么只是令人害怕？"
+        },
+        "action": {
+          "en": "List verified facts separately from dreams, fears, and impressions before deciding.",
+          "zh": "决定前把已验证事实与梦境、恐惧和印象分开列出。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Inside the card, confusion lifting or fear distorting perception is being renegotiated.",
+          "zh": "在这张牌内部，迷雾消散或恐惧扭曲感知正在被重新协商。"
+        },
+        "tension": {
+          "en": "Its hidden labor is restoring dreams, ambiguity, and subconscious signals.",
+          "zh": "它隐藏的工作是恢复梦境、暧昧与潜意识信号。"
+        },
+        "reflection": {
+          "en": "Is relief making you dismiss a warning, or fear making shadows look solid?",
+          "zh": "轻松是否让你忽略警讯，恐惧是否让影子显得真实？"
+        },
+        "action": {
+          "en": "Wait for one confirming fact and reduce exposure to rumor tonight.",
+          "zh": "等待一项确认事实，今晚减少接触传闻。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "This moment is asking to be seen through dreams, ambiguity, and subconscious signals.",
+          "zh": "这一刻需要透过梦境、暧昧与潜意识信号被看见。"
+        },
+        "challenge": {
+          "en": "The spread places pressure on this question: Is relief making you dismiss a warning, or fear making shadows look solid?",
+          "zh": "牌阵把压力放在这个问题上：轻松是否让你忽略警讯，恐惧是否让影子显得真实？"
+        },
+        "guidance": {
+          "en": "Use the available agency in this step: list verified facts separately from dreams, fears, and impressions before deciding.",
+          "zh": "在这一步使用你现有的主动权：决定前把已验证事实与梦境、恐惧和印象分开列出。"
+        }
+      }
     },
     {
       "id": "MAJOR-19",
@@ -463,18 +1299,62 @@ window.CELESTIAL_DECK = {
       "zh": "太阳",
       "motif": "radiant garden",
       "rationale": "A many-rayed sun rises over four ivory blooms and an open gate.",
-      "keywords": "clarity · vitality · and wholehearted joy",
-      "keywordsZh": "清晰 · 活力与真挚喜悦",
-      "meaning": "clarity, vitality, and wholehearted joy",
-      "meaningZh": "清晰、活力与真挚喜悦",
-      "shadow": "temporary clouds, burnout, or forced optimism",
-      "shadowZh": "暂时阴影、耗竭或勉强乐观",
-      "reflection": "Where is clarity, vitality, and wholehearted joy asking for your attention rather than certainty?",
-      "reflectionZh": "清晰、活力与真挚喜悦正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "clarity · vitality · and wholehearted joy",
+        "zh": "清晰 · 活力与真挚喜悦"
+      },
       "src": "assets/cards/r1/generated/major-19-the-sun.png",
-      "sha256": "80a6f443f0ab8bd75455e1256046582aaacb1b1e71537980c317e8cf906a4301"
+      "sha256": "80a6f443f0ab8bd75455e1256046582aaacb1b1e71537980c317e8cf906a4301",
+      "upright": {
+        "core": {
+          "en": "Clarity, vitality, and wholehearted joy.",
+          "zh": "清晰、活力与真挚喜悦。"
+        },
+        "tension": {
+          "en": "The card tests your response through this question: Are exhaustion or forced positivity hiding what needs care? If it applies, drop the cheerful performance and name one need plainly.",
+          "zh": "这张牌通过这个问题检验你的回应：疲惫或强装乐观是否掩盖了需要照顾的事？ 若符合现况，停止表演愉快，直接说出一个需要。"
+        },
+        "reflection": {
+          "en": "Where can uncomplicated warmth be received without suspicion?",
+          "zh": "哪里可以不带怀疑地接受单纯温暖？"
+        },
+        "action": {
+          "en": "Spend twenty undistracted minutes in daylight, play, or honest company.",
+          "zh": "在阳光、玩乐或真诚陪伴中度过二十分钟，不要分心。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Reversal does not negate temporary clouds, burnout, or forced optimism; it questions its timing and expression.",
+          "zh": "逆位不否定暂时阴影、耗竭或勉强乐观；它质问时机与表达方式。"
+        },
+        "tension": {
+          "en": "The Sun protects a wounded relationship with clarity, vitality, and wholehearted joy.",
+          "zh": "太阳保护着一段与清晰、活力与真挚喜悦有关的受伤关系。"
+        },
+        "reflection": {
+          "en": "Are exhaustion or forced positivity hiding what needs care?",
+          "zh": "疲惫或强装乐观是否掩盖了需要照顾的事？"
+        },
+        "action": {
+          "en": "Drop the cheerful performance and name one need plainly.",
+          "zh": "停止表演愉快，直接说出一个需要。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The visible pattern is clarity, vitality, and wholehearted joy, held in the image of the The Sun.",
+          "zh": "可见模式是清晰、活力与真挚喜悦，并由太阳具体呈现。"
+        },
+        "challenge": {
+          "en": "The obstacle is best approached through inquiry: Are exhaustion or forced positivity hiding what needs care?",
+          "zh": "最适合以追问接近这个障碍：疲惫或强装乐观是否掩盖了需要照顾的事？"
+        },
+        "guidance": {
+          "en": "The direction is small enough to begin: spend twenty undistracted minutes in daylight, play, or honest company.",
+          "zh": "这个方向足够小，可以开始：在阳光、玩乐或真诚陪伴中度过二十分钟，不要分心。"
+        }
+      }
     },
     {
       "id": "MAJOR-20",
@@ -485,18 +1365,62 @@ window.CELESTIAL_DECK = {
       "zh": "审判",
       "motif": "awakening trumpet",
       "rationale": "A winged trumpet calls three rising forms through concentric sound rings.",
-      "keywords": "awakening · reckoning · and a decisive calling",
-      "keywordsZh": "觉醒 · 反省与决定性召唤",
-      "meaning": "awakening, reckoning, and a decisive calling",
-      "meaningZh": "觉醒、反省与决定性召唤",
-      "shadow": "self-judgment, avoidance, or a call unanswered",
-      "shadowZh": "自我审判、回避或未回应的召唤",
-      "reflection": "Where is awakening, reckoning, and a decisive calling asking for your attention rather than certainty?",
-      "reflectionZh": "觉醒、反省与决定性召唤正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "awakening · reckoning · and a decisive calling",
+        "zh": "觉醒 · 反省与决定性召唤"
+      },
       "src": "assets/cards/r1/generated/major-20-judgement.png",
-      "sha256": "2c593d9ba7b9c60e43f6dba0cde6ed681efc96c04f7b15dbd681c111815d58f0"
+      "sha256": "2c593d9ba7b9c60e43f6dba0cde6ed681efc96c04f7b15dbd681c111815d58f0",
+      "upright": {
+        "core": {
+          "en": "Awakening, reckoning, and a decisive calling.",
+          "zh": "觉醒、反省与决定性召唤。"
+        },
+        "tension": {
+          "en": "Face the tension without dramatizing it: Is harsh self-judgment preventing a real response? If it applies, replace one accusation against yourself with a specific repair commitment.",
+          "zh": "面对张力，但不要把它戏剧化：严厉自责是否阻碍了真正回应？ 若符合现况，把一句自我指责改成一项具体的修复承诺。"
+        },
+        "reflection": {
+          "en": "Which call asks for accountability rather than self-punishment?",
+          "zh": "哪一种召唤要求负责，而不是惩罚自己？"
+        },
+        "action": {
+          "en": "Review one past choice, repair what is possible, and state what changes now.",
+          "zh": "回顾一个过去选择，修补仍可修补的，并说明现在要改变什么。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The energy turns private where self-judgment, avoidance, or a call unanswered lacks a safe outlet.",
+          "zh": "当自我审判、回避或未回应的召唤缺少安全出口，能量就会转为私密。"
+        },
+        "tension": {
+          "en": "This orientation makes awakening, reckoning, and a decisive calling an internal negotiation.",
+          "zh": "这个方向让觉醒、反省与决定性召唤成为内在协商。"
+        },
+        "reflection": {
+          "en": "Is harsh self-judgment preventing a real response?",
+          "zh": "严厉自责是否阻碍了真正回应？"
+        },
+        "action": {
+          "en": "Replace one accusation against yourself with a specific repair commitment.",
+          "zh": "把一句自我指责改成一项具体的修复承诺。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "Judgement names awakening, reckoning, and a decisive calling as the condition already present.",
+          "zh": "审判把觉醒、反省与决定性召唤说成已经存在的条件。"
+        },
+        "challenge": {
+          "en": "Let the challenge interrupt certainty: Is harsh self-judgment preventing a real response?",
+          "zh": "让挑战打断确定感：严厉自责是否阻碍了真正回应？"
+        },
+        "guidance": {
+          "en": "Ground the reading in a visible act: review one past choice, repair what is possible, and state what changes now.",
+          "zh": "用一个可见行动落实解读：回顾一个过去选择，修补仍可修补的，并说明现在要改变什么。"
+        }
+      }
     },
     {
       "id": "MAJOR-21",
@@ -507,18 +1431,62 @@ window.CELESTIAL_DECK = {
       "zh": "世界",
       "motif": "laurel cosmos",
       "rationale": "A dancing axis turns inside a laurel oval watched by four fixed stars.",
-      "keywords": "completion · integration · and belonging",
-      "keywordsZh": "完成 · 整合与归属",
-      "meaning": "completion, integration, and belonging",
-      "meaningZh": "完成、整合与归属",
-      "shadow": "unfinished business or difficulty crossing the threshold",
-      "shadowZh": "未竟之事或难以跨越门槛",
-      "reflection": "Where is completion, integration, and belonging asking for your attention rather than certainty?",
-      "reflectionZh": "完成、整合与归属正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Name one choice that expresses this card with care.",
-      "practiceZh": "说出一个能谨慎体现这张牌的选择。",
+      "keywords": {
+        "en": "completion · integration · and belonging",
+        "zh": "完成 · 整合与归属"
+      },
       "src": "assets/cards/r1/generated/major-21-the-world.png",
-      "sha256": "41bbc8059b2eb4da4389c442d5118af1d1869f09b8bcd5c4654348ab7cd8fe76"
+      "sha256": "41bbc8059b2eb4da4389c442d5118af1d1869f09b8bcd5c4654348ab7cd8fe76",
+      "upright": {
+        "core": {
+          "en": "Completion, integration, and belonging.",
+          "zh": "完成、整合与归属。"
+        },
+        "tension": {
+          "en": "The challenge stays practical when framed this way: Which loose end keeps you from inhabiting what is already complete? If it applies, choose one unfinished detail and give it a firm completion date.",
+          "zh": "这样表达，挑战就会保持务实：哪一个未了事项让你无法安住于已经完成的成果？ 若符合现况，选择一个未完细节，为它设下明确完成日期。"
+        },
+        "reflection": {
+          "en": "What deserves to be completed, integrated, and released?",
+          "zh": "什么值得完成、整合并放下？"
+        },
+        "action": {
+          "en": "Finish the final ten percent, acknowledge everyone involved, and close the loop.",
+          "zh": "完成最后百分之十，感谢参与者，然后正式收尾。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "This orientation shows unfinished business or difficulty crossing the threshold caught between restraint and excess.",
+          "zh": "这个方向显示未竟之事或难以跨越门槛卡在压抑与过度之间。"
+        },
+        "tension": {
+          "en": "The card may compensate loudly for missing completion, integration, and belonging.",
+          "zh": "这张牌可能用高调表现补偿缺失的完成、整合与归属。"
+        },
+        "reflection": {
+          "en": "Which loose end keeps you from inhabiting what is already complete?",
+          "zh": "哪一个未了事项让你无法安住于已经完成的成果？"
+        },
+        "action": {
+          "en": "Choose one unfinished detail and give it a firm completion date.",
+          "zh": "选择一个未完细节，为它设下明确完成日期。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The reading starts where completion, integration, and belonging meets daily life.",
+          "zh": "解读从完成、整合与归属进入日常生活的地方开始。"
+        },
+        "challenge": {
+          "en": "The card turns resistance into a useful question: Which loose end keeps you from inhabiting what is already complete?",
+          "zh": "这张牌把阻力转成有用问题：哪一个未了事项让你无法安住于已经完成的成果？"
+        },
+        "guidance": {
+          "en": "The card becomes useful when you act: finish the final ten percent, acknowledge everyone involved, and close the loop.",
+          "zh": "当你行动，这张牌才真正有用：完成最后百分之十，感谢参与者，然后正式收尾。"
+        }
+      }
     },
     {
       "id": "WANDS-01",
@@ -529,18 +1497,62 @@ window.CELESTIAL_DECK = {
       "zh": "权杖一",
       "motif": "kindled branch",
       "rationale": "An original kindled branch composition translates the traditional Ace of Wands scene into this deck’s celestial line language.",
-      "keywords": "creative ignition · desire · and the courage to begin",
-      "keywordsZh": "创意点燃 · 渴望，以及开始的勇气",
-      "meaning": "creative ignition, desire, and the courage to begin",
-      "meaningZh": "创意点燃、渴望，以及开始的勇气",
-      "shadow": "low energy, delayed inspiration, or a spark without fuel",
-      "shadowZh": "能量低落、灵感延迟，或火花缺少燃料",
-      "reflection": "Where is creative ignition, desire, and the courage to begin asking for your attention rather than certainty?",
-      "reflectionZh": "创意点燃、渴望，以及开始的勇气正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Choose one small action that gives this energy a clear direction.",
-      "practiceZh": "选择一个小行动，让这股能量获得清晰方向。",
+      "keywords": {
+        "en": "creative ignition · desire · and the courage to begin",
+        "zh": "创意点燃 · 渴望，以及开始的勇气"
+      },
       "src": "assets/cards/r1/generated/wands-01-ace-of-wands.png",
-      "sha256": "69e40a802b1dfa8b824828e55ecdcab56ae2bd4306ad21ce0e3e8c56c78060ce"
+      "sha256": "69e40a802b1dfa8b824828e55ecdcab56ae2bd4306ad21ce0e3e8c56c78060ce",
+      "upright": {
+        "core": {
+          "en": "Creative ignition, desire, and the courage to begin.",
+          "zh": "创意点燃、渴望，以及开始的勇气。"
+        },
+        "tension": {
+          "en": "This is the knot to examine: Has the spark faded because it never received fuel or rest? If it applies, clear one hour, gather the minimum materials, and try again once.",
+          "zh": "这是需要检视的结：火花是否因为没有燃料或休息而熄灭？ 若符合现况，空出一小时，准备最少材料，再试一次。"
+        },
+        "reflection": {
+          "en": "What idea gives you energy before it has proof?",
+          "zh": "哪一个想法在尚未被证明前就让你有活力？"
+        },
+        "action": {
+          "en": "Make a rough prototype in one sitting; judge it only after it exists.",
+          "zh": "一次完成一个粗略原型；先让它存在，再评价。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The card asks how low energy, delayed inspiration, or a spark without fuel can return without repeating the old pattern.",
+          "zh": "这张牌追问能量低落、灵感延迟，或火花缺少燃料如何回来，同时不重复旧模式。"
+        },
+        "tension": {
+          "en": "Its inward turn asks for a safer route toward creative ignition, desire, and the courage to begin.",
+          "zh": "它向内转，寻找通往创意点燃、渴望，以及开始的勇气的更安全路线。"
+        },
+        "reflection": {
+          "en": "Has the spark faded because it never received fuel or rest?",
+          "zh": "火花是否因为没有燃料或休息而熄灭？"
+        },
+        "action": {
+          "en": "Clear one hour, gather the minimum materials, and try again once.",
+          "zh": "空出一小时，准备最少材料，再试一次。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The Ace of Wands makes creative ignition, desire, and the courage to begin the present-tense concern.",
+          "zh": "权杖一让创意点燃、渴望，以及开始的勇气成为当下议题。"
+        },
+        "challenge": {
+          "en": "This position asks for courage, not prediction: Has the spark faded because it never received fuel or rest?",
+          "zh": "这个位置要求勇气，而非预测：火花是否因为没有燃料或休息而熄灭？"
+        },
+        "guidance": {
+          "en": "Let this be the response, not a promise about the future: make a rough prototype in one sitting; judge it only after it exists.",
+          "zh": "让这成为回应，而不是未来承诺：一次完成一个粗略原型；先让它存在，再评价。"
+        }
+      }
     },
     {
       "id": "WANDS-02",
@@ -551,18 +1563,62 @@ window.CELESTIAL_DECK = {
       "zh": "权杖二",
       "motif": "world between staffs",
       "rationale": "An original world between staffs composition translates the traditional Two of Wands scene into this deck’s celestial line language.",
-      "keywords": "planning the next horizon and choosing a direction",
-      "keywordsZh": "规划下一段远方，并选择方向",
-      "meaning": "planning the next horizon and choosing a direction",
-      "meaningZh": "规划下一段远方，并选择方向",
-      "shadow": "playing safe, fearing change, or planning without vision",
-      "shadowZh": "过度求稳、害怕改变，或缺少远见的计划",
-      "reflection": "Where is planning the next horizon and choosing a direction asking for your attention rather than certainty?",
-      "reflectionZh": "规划下一段远方，并选择方向正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Choose one small action that gives this energy a clear direction.",
-      "practiceZh": "选择一个小行动，让这股能量获得清晰方向。",
+      "keywords": {
+        "en": "planning the next horizon and choosing a direction",
+        "zh": "规划下一段远方，并选择方向"
+      },
       "src": "assets/cards/r1/generated/wands-02-two-of-wands.png",
-      "sha256": "e2d2220306789be62e32f35f38fc1574c5e38317c1a8579d86ebcc9dc6236dda"
+      "sha256": "e2d2220306789be62e32f35f38fc1574c5e38317c1a8579d86ebcc9dc6236dda",
+      "upright": {
+        "core": {
+          "en": "Planning the next horizon and choosing a direction.",
+          "zh": "规划下一段远方，并选择方向。"
+        },
+        "tension": {
+          "en": "Rather than predict an outcome, ask: Are endless plans protecting you from leaving familiar ground? If it applies, set a decision deadline and remove the option you know you will not take.",
+          "zh": "不要预测结果，而要问：无止境的计划是否在保护你不离开熟悉之地？ 若符合现况，设定决定期限，并删掉你明知不会选择的选项。"
+        },
+        "reflection": {
+          "en": "Which horizon is worth choosing over the comfortable default?",
+          "zh": "哪一个远方值得你放下舒适的默认选择？"
+        },
+        "action": {
+          "en": "Compare two routes on one page, choose one, and book the first step.",
+          "zh": "在一页纸上比较两条路线，选一条并安排第一步。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "A delayed or internalized form of playing safe, fearing change, or planning without vision is seeking room.",
+          "zh": "延迟或内化的过度求稳、害怕改变，或缺少远见的计划正在寻找空间。"
+        },
+        "tension": {
+          "en": "Delay reveals where planning the next horizon and choosing a direction lacks support.",
+          "zh": "延迟揭示规划下一段远方，并选择方向在哪里缺乏支持。"
+        },
+        "reflection": {
+          "en": "Are endless plans protecting you from leaving familiar ground?",
+          "zh": "无止境的计划是否在保护你不离开熟悉之地？"
+        },
+        "action": {
+          "en": "Set a decision deadline and remove the option you know you will not take.",
+          "zh": "设定决定期限，并删掉你明知不会选择的选项。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The first card establishes planning the next horizon and choosing a direction as the working context.",
+          "zh": "第一张牌把规划下一段远方，并选择方向建立为可工作的背景。"
+        },
+        "challenge": {
+          "en": "The tension has a clear doorway: Are endless plans protecting you from leaving familiar ground?",
+          "zh": "张力有一个清楚入口：无止境的计划是否在保护你不离开熟悉之地？"
+        },
+        "guidance": {
+          "en": "Guidance takes form in one task: compare two routes on one page, choose one, and book the first step.",
+          "zh": "指引在一项任务中成形：在一页纸上比较两条路线，选一条并安排第一步。"
+        }
+      }
     },
     {
       "id": "WANDS-03",
@@ -573,18 +1629,62 @@ window.CELESTIAL_DECK = {
       "zh": "权杖三",
       "motif": "harbor lookout",
       "rationale": "An original harbor lookout composition translates the traditional Three of Wands scene into this deck’s celestial line language.",
-      "keywords": "expansion · foresight · and progress already in motion",
-      "keywordsZh": "拓展 · 远见，以及已经启动的进展",
-      "meaning": "expansion, foresight, and progress already in motion",
-      "meaningZh": "拓展、远见，以及已经启动的进展",
-      "shadow": "delays, blocked growth, or frustration with the pace",
-      "shadowZh": "延误、成长受阻，或对进度感到挫败",
-      "reflection": "Where is expansion, foresight, and progress already in motion asking for your attention rather than certainty?",
-      "reflectionZh": "拓展、远见，以及已经启动的进展正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Choose one small action that gives this energy a clear direction.",
-      "practiceZh": "选择一个小行动，让这股能量获得清晰方向。",
+      "keywords": {
+        "en": "expansion · foresight · and progress already in motion",
+        "zh": "拓展 · 远见，以及已经启动的进展"
+      },
       "src": "assets/cards/r1/generated/wands-03-three-of-wands.png",
-      "sha256": "f31604800bfb6e0980f132751a0a0a230ab5c32f81ed58226e1a696488b98a82"
+      "sha256": "f31604800bfb6e0980f132751a0a0a230ab5c32f81ed58226e1a696488b98a82",
+      "upright": {
+        "core": {
+          "en": "Expansion, foresight, and progress already in motion.",
+          "zh": "拓展、远见，以及已经启动的进展。"
+        },
+        "tension": {
+          "en": "The position exposes a decision point: Are delays being treated as failure before the journey has matured? If it applies, check the actual bottleneck and revise the schedule rather than abandoning the aim.",
+          "zh": "这个位置揭示一个决定点：事情尚未成熟时，你是否把延迟当成失败？ 若符合现况，检查真正的瓶颈，调整进度，而不是放弃目标。"
+        },
+        "reflection": {
+          "en": "What early result shows that your effort is travelling outward?",
+          "zh": "哪一个早期结果说明你的努力正在向外延伸？"
+        },
+        "action": {
+          "en": "Send the work, request one response, and note the next expansion point.",
+          "zh": "把成果送出去，请求一次反馈，并记下下个扩展点。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Reversed, the lesson of delays, blocked growth, or frustration with the pace is still being integrated.",
+          "zh": "逆位时，延误、成长受阻，或对进度感到挫败的功课仍在整合。"
+        },
+        "tension": {
+          "en": "The symbol contains more expansion, foresight, and progress already in motion than it can currently use.",
+          "zh": "象征容纳了超过当前能使用的拓展、远见，以及已经启动的进展。"
+        },
+        "reflection": {
+          "en": "Are delays being treated as failure before the journey has matured?",
+          "zh": "事情尚未成熟时，你是否把延迟当成失败？"
+        },
+        "action": {
+          "en": "Check the actual bottleneck and revise the schedule rather than abandoning the aim.",
+          "zh": "检查真正的瓶颈，调整进度，而不是放弃目标。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The situation carries expansion, foresight, and progress already in motion; the image makes it concrete.",
+          "zh": "现状承载着拓展、远见，以及已经启动的进展；图像让它变得具体。"
+        },
+        "challenge": {
+          "en": "Work the problem from this angle: Are delays being treated as failure before the journey has matured?",
+          "zh": "从这个角度处理问题：事情尚未成熟时，你是否把延迟当成失败？"
+        },
+        "guidance": {
+          "en": "Bring the image down to earth: send the work, request one response, and note the next expansion point.",
+          "zh": "让图像落到现实地面：把成果送出去，请求一次反馈，并记下下个扩展点。"
+        }
+      }
     },
     {
       "id": "WANDS-04",
@@ -595,18 +1695,62 @@ window.CELESTIAL_DECK = {
       "zh": "权杖四",
       "motif": "garland threshold",
       "rationale": "An original garland threshold composition translates the traditional Four of Wands scene into this deck’s celestial line language.",
-      "keywords": "belonging · homecoming · and a milestone worth celebrating",
-      "keywordsZh": "归属 · 归家，以及值得庆祝的里程碑",
-      "meaning": "belonging, homecoming, and a milestone worth celebrating",
-      "meaningZh": "归属、归家，以及值得庆祝的里程碑",
-      "shadow": "unstable support, temporary roots, or tension at home",
-      "shadowZh": "支持不稳、根基短暂，或家庭张力",
-      "reflection": "Where is belonging, homecoming, and a milestone worth celebrating asking for your attention rather than certainty?",
-      "reflectionZh": "归属、归家，以及值得庆祝的里程碑正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Choose one small action that gives this energy a clear direction.",
-      "practiceZh": "选择一个小行动，让这股能量获得清晰方向。",
+      "keywords": {
+        "en": "belonging · homecoming · and a milestone worth celebrating",
+        "zh": "归属 · 归家，以及值得庆祝的里程碑"
+      },
       "src": "assets/cards/r1/generated/wands-04-four-of-wands.png",
-      "sha256": "5c0a1af8bfbe9082e124aca11e9389a11c0fba778c3fdb5f61a5caebebf3efb7"
+      "sha256": "5c0a1af8bfbe9082e124aca11e9389a11c0fba778c3fdb5f61a5caebebf3efb7",
+      "upright": {
+        "core": {
+          "en": "Belonging, homecoming, and a milestone worth celebrating.",
+          "zh": "归属、归家，以及值得庆祝的里程碑。"
+        },
+        "tension": {
+          "en": "The friction in the spread can be named simply: Is the appearance of harmony covering instability at home or in the team? If it applies, repair one practical source of tension before planning the celebration.",
+          "zh": "牌阵中的摩擦可以简单说成：和谐的表面是否掩盖家庭或团队的不稳定？ 若符合现况，计划庆祝前，先修复一个实际的紧张来源。"
+        },
+        "reflection": {
+          "en": "Which milestone deserves to be marked with other people?",
+          "zh": "哪一个里程碑值得与他人共同纪念？"
+        },
+        "action": {
+          "en": "Invite the people who helped, name the achievement, and celebrate within your means.",
+          "zh": "邀请提供帮助的人，说出成果，并在能力范围内庆祝。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The current cannot flow until unstable support, temporary roots, or tension at home becomes honest and proportionate.",
+          "zh": "在支持不稳、根基短暂，或家庭张力变得诚实且适度前，流动无法恢复。"
+        },
+        "tension": {
+          "en": "Reversal asks for integration before belonging, homecoming, and a milestone worth celebrating returns outward.",
+          "zh": "逆位要求先整合，再让归属、归家，以及值得庆祝的里程碑回到外在。"
+        },
+        "reflection": {
+          "en": "Is the appearance of harmony covering instability at home or in the team?",
+          "zh": "和谐的表面是否掩盖家庭或团队的不稳定？"
+        },
+        "action": {
+          "en": "Repair one practical source of tension before planning the celebration.",
+          "zh": "计划庆祝前，先修复一个实际的紧张来源。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "belonging, homecoming, and a milestone worth celebrating is the atmosphere this card asks you to acknowledge.",
+          "zh": "归属、归家，以及值得庆祝的里程碑是这张牌请你承认的氛围。"
+        },
+        "challenge": {
+          "en": "The challenge becomes specific in one question: Is the appearance of harmony covering instability at home or in the team?",
+          "zh": "挑战在一个问题中变得具体：和谐的表面是否掩盖家庭或团队的不稳定？"
+        },
+        "guidance": {
+          "en": "End reflection with this concrete move: invite the people who helped, name the achievement, and celebrate within your means.",
+          "zh": "用这个具体行动结束反思：邀请提供帮助的人，说出成果，并在能力范围内庆祝。"
+        }
+      }
     },
     {
       "id": "WANDS-05",
@@ -617,18 +1761,62 @@ window.CELESTIAL_DECK = {
       "zh": "权杖五",
       "motif": "crossed practice staffs",
       "rationale": "An original crossed practice staffs composition translates the traditional Five of Wands scene into this deck’s celestial line language.",
-      "keywords": "competition · productive friction · and clashing ambitions",
-      "keywordsZh": "竞争 · 有益摩擦，以及彼此碰撞的企图心",
-      "meaning": "competition, productive friction, and clashing ambitions",
-      "meaningZh": "竞争、有益摩擦，以及彼此碰撞的企图心",
-      "shadow": "conflict avoidance or learning to respect difference",
-      "shadowZh": "回避冲突，或学习尊重差异",
-      "reflection": "Where is competition, productive friction, and clashing ambitions asking for your attention rather than certainty?",
-      "reflectionZh": "竞争、有益摩擦，以及彼此碰撞的企图心正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Choose one small action that gives this energy a clear direction.",
-      "practiceZh": "选择一个小行动，让这股能量获得清晰方向。",
+      "keywords": {
+        "en": "competition · productive friction · and clashing ambitions",
+        "zh": "竞争 · 有益摩擦，以及彼此碰撞的企图心"
+      },
       "src": "assets/cards/r1/generated/wands-05-five-of-wands.png",
-      "sha256": "4e0c52404ad84e08845afa3eaf61262bd91b5656dc11724151f996d241c7b016"
+      "sha256": "4e0c52404ad84e08845afa3eaf61262bd91b5656dc11724151f996d241c7b016",
+      "upright": {
+        "core": {
+          "en": "Competition, productive friction, and clashing ambitions.",
+          "zh": "竞争、有益摩擦，以及彼此碰撞的企图心。"
+        },
+        "tension": {
+          "en": "Hold the uncertainty long enough to ask: Are you avoiding useful friction or turning difference into a contest? If it applies, move the debate to criteria and evidence; stop scoring personalities.",
+          "zh": "容纳不确定，直到你能问：你是在逃避有用摩擦，还是把差异变成比赛？ 若符合现况，把争论移到标准与证据上，不再给人格打分。"
+        },
+        "reflection": {
+          "en": "Which disagreement could sharpen the work instead of damaging trust?",
+          "zh": "哪一种分歧可以让工作更清楚，而不是伤害信任？"
+        },
+        "action": {
+          "en": "Give each person two minutes to state their aim, then write the shared constraint.",
+          "zh": "让每个人用两分钟说明目标，再写下共同限制。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Reversed, conflict avoidance or learning to respect difference may be blocked, delayed, private, or excessive.",
+          "zh": "逆位时，回避冲突，或学习尊重差异可能受阻、延迟、转向内在或表现过度。"
+        },
+        "tension": {
+          "en": "The Five of Wands turns inward when its central quality has no honest outlet.",
+          "zh": "当竞争、有益摩擦，以及彼此碰撞的企图心没有诚实出口时，权杖五会转向内在。"
+        },
+        "reflection": {
+          "en": "Are you avoiding useful friction or turning difference into a contest?",
+          "zh": "你是在逃避有用摩擦，还是把差异变成比赛？"
+        },
+        "action": {
+          "en": "Move the debate to criteria and evidence; stop scoring personalities.",
+          "zh": "把争论移到标准与证据上，不再给人格打分。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The Five of Wands places competition, productive friction, and clashing ambitions at the center of the present moment.",
+          "zh": "权杖五把竞争、有益摩擦，以及彼此碰撞的企图心放在当下核心。"
+        },
+        "challenge": {
+          "en": "The challenge is to answer this honestly: Are you avoiding useful friction or turning difference into a contest?",
+          "zh": "挑战在于诚实回答：你是在逃避有用摩擦，还是把差异变成比赛？"
+        },
+        "guidance": {
+          "en": "Put the card to work now: give each person two minutes to state their aim, then write the shared constraint.",
+          "zh": "现在把这张牌用在行动上：让每个人用两分钟说明目标，再写下共同限制。"
+        }
+      }
     },
     {
       "id": "WANDS-06",
@@ -639,18 +1827,62 @@ window.CELESTIAL_DECK = {
       "zh": "权杖六",
       "motif": "laurel procession",
       "rationale": "An original laurel procession composition translates the traditional Six of Wands scene into this deck’s celestial line language.",
-      "keywords": "earned recognition · confidence · and visible progress",
-      "keywordsZh": "赢得认可 · 自信，以及看得见的进展",
-      "meaning": "earned recognition, confidence, and visible progress",
-      "meaningZh": "赢得认可、自信，以及看得见的进展",
-      "shadow": "pride, poor recognition, or depending on applause",
-      "shadowZh": "骄傲、缺少认可，或过度依赖掌声",
-      "reflection": "Where is earned recognition, confidence, and visible progress asking for your attention rather than certainty?",
-      "reflectionZh": "赢得认可、自信，以及看得见的进展正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Choose one small action that gives this energy a clear direction.",
-      "practiceZh": "选择一个小行动，让这股能量获得清晰方向。",
+      "keywords": {
+        "en": "earned recognition · confidence · and visible progress",
+        "zh": "赢得认可 · 自信，以及看得见的进展"
+      },
       "src": "assets/cards/r1/generated/wands-06-six-of-wands.png",
-      "sha256": "7f0d583ef581f3c7390f999f7df784887130628203f238aadafd8385b5f2df4c"
+      "sha256": "7f0d583ef581f3c7390f999f7df784887130628203f238aadafd8385b5f2df4c",
+      "upright": {
+        "core": {
+          "en": "Earned recognition, confidence, and visible progress.",
+          "zh": "赢得认可、自信，以及看得见的进展。"
+        },
+        "tension": {
+          "en": "The card makes one demand for honesty: Has applause become the measure of whether the work matters? If it applies, complete one worthwhile action that nobody will publicly reward.",
+          "zh": "这张牌只要求一件诚实的事：掌声是否已经成为衡量工作价值的标准？ 若符合现况，完成一件值得做、却不会得到公开奖励的事。"
+        },
+        "reflection": {
+          "en": "What progress deserves recognition without becoming your identity?",
+          "zh": "哪一项进展值得肯定，却不必成为你的身份？"
+        },
+        "action": {
+          "en": "Record the result, thank the contributors, and define the next quiet task.",
+          "zh": "记录成果，感谢贡献者，再定义下一项安静的任务。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "This orientation turns pride, poor recognition, or depending on applause inward for closer examination.",
+          "zh": "这个方向让骄傲、缺少认可，或过度依赖掌声转向内在，接受更仔细的检视。"
+        },
+        "tension": {
+          "en": "Its inner work is to recover earned recognition, confidence, and visible progress without forcing it.",
+          "zh": "它的内在功课是恢复赢得认可、自信，以及看得见的进展，但不强迫。"
+        },
+        "reflection": {
+          "en": "Has applause become the measure of whether the work matters?",
+          "zh": "掌声是否已经成为衡量工作价值的标准？"
+        },
+        "action": {
+          "en": "Complete one worthwhile action that nobody will publicly reward.",
+          "zh": "完成一件值得做、却不会得到公开奖励的事。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "Six of Wands shows the current pattern through earned recognition, confidence, and visible progress.",
+          "zh": "权杖六以赢得认可、自信，以及看得见的进展呈现当前模式。"
+        },
+        "challenge": {
+          "en": "Do not call it fate; work with the question: Has applause become the measure of whether the work matters?",
+          "zh": "不要把它称为命运；请处理这个问题：掌声是否已经成为衡量工作价值的标准？"
+        },
+        "guidance": {
+          "en": "Guidance becomes credible through action: record the result, thank the contributors, and define the next quiet task.",
+          "zh": "指引通过行动变得可信：记录成果，感谢贡献者，再定义下一项安静的任务。"
+        }
+      }
     },
     {
       "id": "WANDS-07",
@@ -661,18 +1893,62 @@ window.CELESTIAL_DECK = {
       "zh": "权杖七",
       "motif": "hilltop guardian",
       "rationale": "An original hilltop guardian composition translates the traditional Seven of Wands scene into this deck’s celestial line language.",
-      "keywords": "holding your ground with conviction and stamina",
-      "keywordsZh": "以信念与耐力守住立场",
-      "meaning": "holding your ground with conviction and stamina",
-      "meaningZh": "以信念与耐力守住立场",
-      "shadow": "feeling outnumbered, overwhelmed, or ready to surrender",
-      "shadowZh": "感到势单力薄、不堪重负，或准备放弃",
-      "reflection": "Where is holding your ground with conviction and stamina asking for your attention rather than certainty?",
-      "reflectionZh": "以信念与耐力守住立场正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Choose one small action that gives this energy a clear direction.",
-      "practiceZh": "选择一个小行动，让这股能量获得清晰方向。",
+      "keywords": {
+        "en": "holding your ground with conviction and stamina",
+        "zh": "以信念与耐力守住立场"
+      },
       "src": "assets/cards/r1/generated/wands-07-seven-of-wands.png",
-      "sha256": "25fc7f02ca2923d1fe1361c12ea7a79e6e1abd0eb3f12f4c11543b82c08eccb7"
+      "sha256": "25fc7f02ca2923d1fe1361c12ea7a79e6e1abd0eb3f12f4c11543b82c08eccb7",
+      "upright": {
+        "core": {
+          "en": "Holding your ground with conviction and stamina.",
+          "zh": "以信念与耐力守住立场。"
+        },
+        "tension": {
+          "en": "This tension is workable once you consider: Are you defending every position because yielding feels like defeat? If it applies, choose the principle that matters; release one lesser argument.",
+          "zh": "当你考虑这个问题，张力就能被处理：你是否因为退让像失败，而防守所有立场？ 若符合现况，选出真正重要的原则，放下一个次要争论。"
+        },
+        "reflection": {
+          "en": "Which boundary protects work you genuinely believe in?",
+          "zh": "哪一条边界正在保护你真正相信的事？"
+        },
+        "action": {
+          "en": "State one non-negotiable clearly and prepare the evidence behind it.",
+          "zh": "清楚说明一项不可妥协之处，并准备支持它的证据。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The reversal asks how feeling outnumbered, overwhelmed, or ready to surrender is being withheld or overused.",
+          "zh": "逆位追问感到势单力薄、不堪重负，或准备放弃如何被压住或过度使用。"
+        },
+        "tension": {
+          "en": "The symbol asks how holding your ground with conviction and stamina became blocked inside.",
+          "zh": "象征追问以信念与耐力守住立场如何在心里受阻。"
+        },
+        "reflection": {
+          "en": "Are you defending every position because yielding feels like defeat?",
+          "zh": "你是否因为退让像失败，而防守所有立场？"
+        },
+        "action": {
+          "en": "Choose the principle that matters; release one lesser argument.",
+          "zh": "选出真正重要的原则，放下一个次要争论。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "Here, holding your ground with conviction and stamina is already shaping what happens next.",
+          "zh": "此刻，以信念与耐力守住立场已经在影响下一步。"
+        },
+        "challenge": {
+          "en": "The difficult work begins here: Are you defending every position because yielding feels like defeat?",
+          "zh": "困难功课从这里开始：你是否因为退让像失败，而防守所有立场？"
+        },
+        "guidance": {
+          "en": "The grounded response is direct: state one non-negotiable clearly and prepare the evidence behind it.",
+          "zh": "可落实的回应很直接：清楚说明一项不可妥协之处，并准备支持它的证据。"
+        }
+      }
     },
     {
       "id": "WANDS-08",
@@ -683,18 +1959,62 @@ window.CELESTIAL_DECK = {
       "zh": "权杖八",
       "motif": "eight airborne branches",
       "rationale": "An original eight airborne branches composition translates the traditional Eight of Wands scene into this deck’s celestial line language.",
-      "keywords": "swift movement · decisive messages · and aligned momentum",
-      "keywordsZh": "迅速行动 · 明确消息，以及一致的动能",
-      "meaning": "swift movement, decisive messages, and aligned momentum",
-      "meaningZh": "迅速行动、明确消息，以及一致的动能",
-      "shadow": "haste, crossed signals, or momentum slowing down",
-      "shadowZh": "仓促、讯息交错，或动能减缓",
-      "reflection": "Where is swift movement, decisive messages, and aligned momentum asking for your attention rather than certainty?",
-      "reflectionZh": "迅速行动、明确消息，以及一致的动能正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Choose one small action that gives this energy a clear direction.",
-      "practiceZh": "选择一个小行动，让这股能量获得清晰方向。",
+      "keywords": {
+        "en": "swift movement · decisive messages · and aligned momentum",
+        "zh": "迅速行动 · 明确消息，以及一致的动能"
+      },
       "src": "assets/cards/r1/generated/wands-08-eight-of-wands.png",
-      "sha256": "47d1d2d161147b35547385af658b2ee193b60d45bc087c09c698ab57594104fa"
+      "sha256": "47d1d2d161147b35547385af658b2ee193b60d45bc087c09c698ab57594104fa",
+      "upright": {
+        "core": {
+          "en": "Swift movement, decisive messages, and aligned momentum.",
+          "zh": "迅速行动、明确消息，以及一致的动能。"
+        },
+        "tension": {
+          "en": "The challenge is neither fixed nor hidden: Has speed created crossed signals or action without coordination? If it applies, pause the chain, confirm the recipient and purpose, then resend one clear instruction.",
+          "zh": "挑战并非固定，也不隐藏：速度是否造成讯息交错或行动失去协调？ 若符合现况，暂停传递，确认对象与目的，再重发一条清楚指示。"
+        },
+        "reflection": {
+          "en": "Which message or decision needs to move while the path is open?",
+          "zh": "哪一个讯息或决定需要趁道路畅通时推进？"
+        },
+        "action": {
+          "en": "Send the concise message today and include the requested next step.",
+          "zh": "今天发送简洁讯息，并写明希望对方采取的下一步。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Here, haste, crossed signals, or momentum slowing down is present but cannot yet move cleanly.",
+          "zh": "此时，仓促、讯息交错，或动能减缓仍然存在，却尚未顺畅流动。"
+        },
+        "tension": {
+          "en": "A private struggle forms where swift movement, decisive messages, and aligned momentum cannot be expressed safely.",
+          "zh": "当迅速行动、明确消息，以及一致的动能无法安全表达，私下挣扎就会形成。"
+        },
+        "reflection": {
+          "en": "Has speed created crossed signals or action without coordination?",
+          "zh": "速度是否造成讯息交错或行动失去协调？"
+        },
+        "action": {
+          "en": "Pause the chain, confirm the recipient and purpose, then resend one clear instruction.",
+          "zh": "暂停传递，确认对象与目的，再重发一条清楚指示。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The scene begins with swift movement, decisive messages, and aligned momentum, not with a prediction.",
+          "zh": "画面从迅速行动、明确消息，以及一致的动能开始，而不是从预言开始。"
+        },
+        "challenge": {
+          "en": "This position sharpens one issue: Has speed created crossed signals or action without coordination?",
+          "zh": "这个位置让一个议题变得尖锐：速度是否造成讯息交错或行动失去协调？"
+        },
+        "guidance": {
+          "en": "Use the image as a prompt for one move: send the concise message today and include the requested next step.",
+          "zh": "把图像当成一次行动提示：今天发送简洁讯息，并写明希望对方采取的下一步。"
+        }
+      }
     },
     {
       "id": "WANDS-09",
@@ -705,18 +2025,62 @@ window.CELESTIAL_DECK = {
       "zh": "权杖九",
       "motif": "scarred sentinel",
       "rationale": "An original scarred sentinel composition translates the traditional Nine of Wands scene into this deck’s celestial line language.",
-      "keywords": "resilience · boundaries · and one final reserve of strength",
-      "keywordsZh": "韧性 · 边界，以及最后一份力量储备",
-      "meaning": "resilience, boundaries, and one final reserve of strength",
-      "meaningZh": "韧性、边界，以及最后一份力量储备",
-      "shadow": "fatigue, defensiveness, or doubting why you persist",
-      "shadowZh": "疲惫、过度防御，或怀疑坚持的理由",
-      "reflection": "Where is resilience, boundaries, and one final reserve of strength asking for your attention rather than certainty?",
-      "reflectionZh": "韧性、边界，以及最后一份力量储备正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Choose one small action that gives this energy a clear direction.",
-      "practiceZh": "选择一个小行动，让这股能量获得清晰方向。",
+      "keywords": {
+        "en": "resilience · boundaries · and one final reserve of strength",
+        "zh": "韧性 · 边界，以及最后一份力量储备"
+      },
       "src": "assets/cards/r1/generated/wands-09-nine-of-wands.png",
-      "sha256": "3d32f0fb4fc1bb10c9fbef323253c6a74062988e85a96f6e59bda8c23975e1b5"
+      "sha256": "3d32f0fb4fc1bb10c9fbef323253c6a74062988e85a96f6e59bda8c23975e1b5",
+      "upright": {
+        "core": {
+          "en": "Resilience, boundaries, and one final reserve of strength.",
+          "zh": "韧性、边界，以及最后一份力量储备。"
+        },
+        "tension": {
+          "en": "Use the difficult edge of the image to ask: Is vigilance consuming the strength it was meant to protect? If it applies, lower one unnecessary guard and keep only the boundary tied to evidence.",
+          "zh": "利用图像困难的一面提问：警戒是否正在耗尽它本来要保护的力量？ 若符合现况，放下一项不必要的防备，只保留有证据支持的边界。"
+        },
+        "reflection": {
+          "en": "What have you survived that now deserves a wiser boundary?",
+          "zh": "你经历过什么，如今值得用更明智的边界保护？"
+        },
+        "action": {
+          "en": "Write the warning signs and decide what you will do when the first one appears.",
+          "zh": "写下警讯，并决定第一个警讯出现时要做什么。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The card revisits fatigue, defensiveness, or doubting why you persist through delay, interiority, or excess.",
+          "zh": "这张牌通过延迟、内在化或过度重新检视疲惫、过度防御，或怀疑坚持的理由。"
+        },
+        "tension": {
+          "en": "The reversed image holds resilience, boundaries, and one final reserve of strength behind the surface.",
+          "zh": "逆位图像把韧性、边界，以及最后一份力量储备留在表面之下。"
+        },
+        "reflection": {
+          "en": "Is vigilance consuming the strength it was meant to protect?",
+          "zh": "警戒是否正在耗尽它本来要保护的力量？"
+        },
+        "action": {
+          "en": "Lower one unnecessary guard and keep only the boundary tied to evidence.",
+          "zh": "放下一项不必要的防备，只保留有证据支持的边界。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "Nine of Wands brings the lived reality of resilience, boundaries, and one final reserve of strength into view.",
+          "zh": "权杖九让韧性、边界，以及最后一份力量储备的现实处境显现出来。"
+        },
+        "challenge": {
+          "en": "The obstacle becomes clearer when you ask: Is vigilance consuming the strength it was meant to protect?",
+          "zh": "当你这样提问，障碍会更清楚：警戒是否正在耗尽它本来要保护的力量？"
+        },
+        "guidance": {
+          "en": "This card offers a practical direction: write the warning signs and decide what you will do when the first one appears.",
+          "zh": "这张牌提供务实方向：写下警讯，并决定第一个警讯出现时要做什么。"
+        }
+      }
     },
     {
       "id": "WANDS-10",
@@ -727,18 +2091,62 @@ window.CELESTIAL_DECK = {
       "zh": "权杖十",
       "motif": "bundle at the summit",
       "rationale": "An original bundle at the summit composition translates the traditional Ten of Wands scene into this deck’s celestial line language.",
-      "keywords": "achievement carrying real weight and responsibility",
-      "keywordsZh": "带着真实重量与责任的成就",
-      "meaning": "achievement carrying real weight and responsibility",
-      "meaningZh": "带着真实重量与责任的成就",
-      "shadow": "overload, poor delegation, or burnout near completion",
-      "shadowZh": "负荷过重、不会分工，或临近完成时耗竭",
-      "reflection": "Where is achievement carrying real weight and responsibility asking for your attention rather than certainty?",
-      "reflectionZh": "带着真实重量与责任的成就正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Choose one small action that gives this energy a clear direction.",
-      "practiceZh": "选择一个小行动，让这股能量获得清晰方向。",
+      "keywords": {
+        "en": "achievement carrying real weight and responsibility",
+        "zh": "带着真实重量与责任的成就"
+      },
       "src": "assets/cards/r1/generated/wands-10-ten-of-wands.png",
-      "sha256": "3978b0b52006f6292139fa2434ae186a7c52e1ed5ea6fa2e872dd463b8e4c788"
+      "sha256": "3978b0b52006f6292139fa2434ae186a7c52e1ed5ea6fa2e872dd463b8e4c788",
+      "upright": {
+        "core": {
+          "en": "Achievement carrying real weight and responsibility.",
+          "zh": "带着真实重量与责任的成就。"
+        },
+        "tension": {
+          "en": "The spread places pressure on this question: Are you proving commitment by carrying what others could share? If it applies, ask one named person for one named piece of help today.",
+          "zh": "牌阵把压力放在这个问题上：你是否用独自承担来证明投入？ 若符合现况，今天向一个明确的人请求一项明确的帮助。"
+        },
+        "reflection": {
+          "en": "Which burden belongs to the goal, and which did you collect by habit?",
+          "zh": "哪一项负担属于目标，哪一项只是习惯性揽下？"
+        },
+        "action": {
+          "en": "Delegate, defer, or delete one task before accepting another.",
+          "zh": "接受新任务前，委派、延后或删除一项旧任务。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Reversal makes the current condition of overload, poor delegation, or burnout near completion visible.",
+          "zh": "逆位让负荷过重、不会分工，或临近完成时耗竭当前的状态显现出来。"
+        },
+        "tension": {
+          "en": "Its delay concerns the missing conditions for achievement carrying real weight and responsibility.",
+          "zh": "它的延迟与带着真实重量与责任的成就所缺少的条件有关。"
+        },
+        "reflection": {
+          "en": "Are you proving commitment by carrying what others could share?",
+          "zh": "你是否用独自承担来证明投入？"
+        },
+        "action": {
+          "en": "Ask one named person for one named piece of help today.",
+          "zh": "今天向一个明确的人请求一项明确的帮助。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "At present, the card's Ten of Wands points to achievement carrying real weight and responsibility.",
+          "zh": "目前，这张牌的权杖十指向带着真实重量与责任的成就。"
+        },
+        "challenge": {
+          "en": "What needs attention is not punishment but inquiry: Are you proving commitment by carrying what others could share?",
+          "zh": "需要的不是惩罚，而是追问：你是否用独自承担来证明投入？"
+        },
+        "guidance": {
+          "en": "Let the guidance end in something observable: delegate, defer, or delete one task before accepting another.",
+          "zh": "让指引结束在可观察的事上：接受新任务前，委派、延后或删除一项旧任务。"
+        }
+      }
     },
     {
       "id": "WANDS-11",
@@ -749,18 +2157,62 @@ window.CELESTIAL_DECK = {
       "zh": "权杖侍从",
       "motif": "wand-seeking messenger",
       "rationale": "An original wand-seeking messenger composition translates the traditional Page of Wands scene into this deck’s celestial line language.",
-      "keywords": "curiosity · exploration · and an exciting first signal",
-      "keywordsZh": "好奇 · 探索，以及令人振奋的初始讯号",
-      "meaning": "curiosity, exploration, and an exciting first signal",
-      "meaningZh": "好奇、探索，以及令人振奋的初始讯号",
-      "shadow": "procrastination, mixed direction, or excitement that provokes conflict",
-      "shadowZh": "拖延、方向混乱，或兴奋引发冲突",
-      "reflection": "Where is curiosity, exploration, and an exciting first signal asking for your attention rather than certainty?",
-      "reflectionZh": "好奇、探索，以及令人振奋的初始讯号正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Choose one small action that gives this energy a clear direction.",
-      "practiceZh": "选择一个小行动，让这股能量获得清晰方向。",
+      "keywords": {
+        "en": "curiosity · exploration · and an exciting first signal",
+        "zh": "好奇 · 探索，以及令人振奋的初始讯号"
+      },
       "src": "assets/cards/r1/generated/wands-11-page-of-wands.png",
-      "sha256": "ff0f0e3e948a076aa03c390eed63281f692dbb3830f19cd409d86e67e3f3329a"
+      "sha256": "ff0f0e3e948a076aa03c390eed63281f692dbb3830f19cd409d86e67e3f3329a",
+      "upright": {
+        "core": {
+          "en": "Curiosity, exploration, and an exciting first signal.",
+          "zh": "好奇、探索，以及令人振奋的初始讯号。"
+        },
+        "tension": {
+          "en": "The obstacle is best approached through inquiry: Is restless enthusiasm scattering attention or starting needless conflict? If it applies, choose one experiment, cap its cost, and finish it before opening another.",
+          "zh": "最适合以追问接近这个障碍：躁动的热情是否分散注意或制造无谓冲突？ 若符合现况，选择一个实验，限制成本，完成后再开启下一个。"
+        },
+        "reflection": {
+          "en": "What invitation to explore feels alive enough to follow?",
+          "zh": "哪一个探索邀请让你感到真正有生命力？"
+        },
+        "action": {
+          "en": "Research one unfamiliar route and share the most promising discovery.",
+          "zh": "研究一条陌生路线，并分享最有希望的发现。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The energy of procrastination, mixed direction, or excitement that provokes conflict needs recalibration rather than rejection.",
+          "zh": "拖延、方向混乱，或兴奋引发冲突的能量需要重新调整，而不是被否定。"
+        },
+        "tension": {
+          "en": "Energy gathers internally around the need for curiosity, exploration, and an exciting first signal.",
+          "zh": "能量围绕对好奇、探索，以及令人振奋的初始讯号的需要向内聚集。"
+        },
+        "reflection": {
+          "en": "Is restless enthusiasm scattering attention or starting needless conflict?",
+          "zh": "躁动的热情是否分散注意或制造无谓冲突？"
+        },
+        "action": {
+          "en": "Choose one experiment, cap its cost, and finish it before opening another.",
+          "zh": "选择一个实验，限制成本，完成后再开启下一个。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "What is happening now is best read as curiosity, exploration, and an exciting first signal.",
+          "zh": "眼前发生的事，可以先理解为好奇、探索，以及令人振奋的初始讯号。"
+        },
+        "challenge": {
+          "en": "The card tests your response through this question: Is restless enthusiasm scattering attention or starting needless conflict?",
+          "zh": "这张牌通过这个问题检验你的回应：躁动的热情是否分散注意或制造无谓冲突？"
+        },
+        "guidance": {
+          "en": "The next response can remain modest: research one unfamiliar route and share the most promising discovery.",
+          "zh": "下一步可以保持朴素：研究一条陌生路线，并分享最有希望的发现。"
+        }
+      }
     },
     {
       "id": "WANDS-12",
@@ -771,18 +2223,62 @@ window.CELESTIAL_DECK = {
       "zh": "权杖骑士",
       "motif": "firebound rider",
       "rationale": "An original firebound rider composition translates the traditional Knight of Wands scene into this deck’s celestial line language.",
-      "keywords": "bold pursuit · adventure · and fearless forward motion",
-      "keywordsZh": "大胆追求 · 冒险，以及无畏前行",
-      "meaning": "bold pursuit, adventure, and fearless forward motion",
-      "meaningZh": "大胆追求、冒险，以及无畏前行",
-      "shadow": "impulsiveness, anger, or speed without judgment",
-      "shadowZh": "冲动、愤怒，或缺少判断的速度",
-      "reflection": "Where is bold pursuit, adventure, and fearless forward motion asking for your attention rather than certainty?",
-      "reflectionZh": "大胆追求、冒险，以及无畏前行正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Choose one small action that gives this energy a clear direction.",
-      "practiceZh": "选择一个小行动，让这股能量获得清晰方向。",
+      "keywords": {
+        "en": "bold pursuit · adventure · and fearless forward motion",
+        "zh": "大胆追求 · 冒险，以及无畏前行"
+      },
       "src": "assets/cards/r1/generated/wands-12-knight-of-wands.png",
-      "sha256": "20c580a8067e72afa7f483cc5a38340677da3772440d8797d8aa75f9bd9eabeb"
+      "sha256": "20c580a8067e72afa7f483cc5a38340677da3772440d8797d8aa75f9bd9eabeb",
+      "upright": {
+        "core": {
+          "en": "Bold pursuit, adventure, and fearless forward motion.",
+          "zh": "大胆追求、冒险，以及无畏前行。"
+        },
+        "tension": {
+          "en": "Let the challenge interrupt certainty: Are anger and impulse driving faster than judgment? If it applies, wait through one full breath cycle, reread the consequence, then choose.",
+          "zh": "让挑战打断确定感：愤怒与冲动是否跑得比判断更快？ 若符合现况，完整呼吸一轮，重读后果，然后再选择。"
+        },
+        "reflection": {
+          "en": "Which bold move is worth the heat it will create?",
+          "zh": "哪一个大胆行动值得它将带来的热度？"
+        },
+        "action": {
+          "en": "Define the destination and one safety check before accelerating.",
+          "zh": "加速前先定义目的地和一项安全检查。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "This side of the card shows impulsiveness, anger, or speed without judgment working below the surface.",
+          "zh": "这张牌的一面显示冲动、愤怒，或缺少判断的速度正在表面之下运作。"
+        },
+        "tension": {
+          "en": "The Knight of Wands becomes defensive when bold pursuit, adventure, and fearless forward motion feels unavailable.",
+          "zh": "当大胆追求、冒险，以及无畏前行显得无法取得，权杖骑士会变得防御。"
+        },
+        "reflection": {
+          "en": "Are anger and impulse driving faster than judgment?",
+          "zh": "愤怒与冲动是否跑得比判断更快？"
+        },
+        "action": {
+          "en": "Wait through one full breath cycle, reread the consequence, then choose.",
+          "zh": "完整呼吸一轮，重读后果，然后再选择。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The Knight of Wands marks a situation organized around bold pursuit, adventure, and fearless forward motion.",
+          "zh": "权杖骑士标示出一个围绕大胆追求、冒险，以及无畏前行形成的处境。"
+        },
+        "challenge": {
+          "en": "Face the tension without dramatizing it: Are anger and impulse driving faster than judgment?",
+          "zh": "面对张力，但不要把它戏剧化：愤怒与冲动是否跑得比判断更快？"
+        },
+        "guidance": {
+          "en": "Translate the symbol into daily life: define the destination and one safety check before accelerating.",
+          "zh": "把象征翻译进日常生活：加速前先定义目的地和一项安全检查。"
+        }
+      }
     },
     {
       "id": "WANDS-13",
@@ -793,18 +2289,62 @@ window.CELESTIAL_DECK = {
       "zh": "权杖王后",
       "motif": "sunflower sovereign",
       "rationale": "An original sunflower sovereign composition translates the traditional Queen of Wands scene into this deck’s celestial line language.",
-      "keywords": "warm courage · determination · and magnetic self-trust",
-      "keywordsZh": "温暖的勇气 · 决心，以及有感染力的自信",
-      "meaning": "warm courage, determination, and magnetic self-trust",
-      "meaningZh": "温暖的勇气、决心，以及有感染力的自信",
-      "shadow": "jealousy, insecurity, or attention turned selfish",
-      "shadowZh": "嫉妒、不安，或把注意力变成自我中心",
-      "reflection": "Where is warm courage, determination, and magnetic self-trust asking for your attention rather than certainty?",
-      "reflectionZh": "温暖的勇气、决心，以及有感染力的自信正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Choose one small action that gives this energy a clear direction.",
-      "practiceZh": "选择一个小行动，让这股能量获得清晰方向。",
+      "keywords": {
+        "en": "warm courage · determination · and magnetic self-trust",
+        "zh": "温暖的勇气 · 决心，以及有感染力的自信"
+      },
       "src": "assets/cards/r1/approved/wands-queen-queen-of-wands.png",
-      "sha256": "272d2dbaa1c017eb796860cc95eddeccfcf236ed62b79a11a10a85d55c0c2455"
+      "sha256": "272d2dbaa1c017eb796860cc95eddeccfcf236ed62b79a11a10a85d55c0c2455",
+      "upright": {
+        "core": {
+          "en": "Warm courage, determination, and magnetic self-trust.",
+          "zh": "温暖的勇气、决心，以及有感染力的自信。"
+        },
+        "tension": {
+          "en": "The card turns resistance into a useful question: Is comparison turning warmth into jealousy or performance? If it applies, compliment one peer sincerely and return attention to your own work.",
+          "zh": "这张牌把阻力转成有用问题：比较是否把温暖变成嫉妒或表演？ 若符合现况，真诚肯定一位同伴，再把注意带回自己的工作。"
+        },
+        "reflection": {
+          "en": "Where would visible confidence help others act?",
+          "zh": "哪里需要你展现信心，帮助别人也行动？"
+        },
+        "action": {
+          "en": "Enter one room prepared, speak first, and make space for another voice.",
+          "zh": "准备好进入一个场合，先发言，再为另一声音留空间。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "In reversal, jealousy, insecurity, or attention turned selfish may need recovery, restraint, or more time.",
+          "zh": "逆位时，嫉妒、不安，或把注意力变成自我中心可能需要恢复、节制或更多时间。"
+        },
+        "tension": {
+          "en": "Overexpression can hide a deeper lack of warm courage, determination, and magnetic self-trust.",
+          "zh": "过度表现可能掩盖更深的温暖的勇气、决心，以及有感染力的自信不足。"
+        },
+        "reflection": {
+          "en": "Is comparison turning warmth into jealousy or performance?",
+          "zh": "比较是否把温暖变成嫉妒或表演？"
+        },
+        "action": {
+          "en": "Compliment one peer sincerely and return attention to your own work.",
+          "zh": "真诚肯定一位同伴，再把注意带回自己的工作。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "warm courage, determination, and magnetic self-trust describes the ground beneath this reading.",
+          "zh": "温暖的勇气、决心，以及有感染力的自信描述了这次解读脚下的地面。"
+        },
+        "challenge": {
+          "en": "The challenge stays practical when framed this way: Is comparison turning warmth into jealousy or performance?",
+          "zh": "这样表达，挑战就会保持务实：比较是否把温暖变成嫉妒或表演？"
+        },
+        "guidance": {
+          "en": "The card points toward a bounded action: enter one room prepared, speak first, and make space for another voice.",
+          "zh": "这张牌指向一项有边界的行动：准备好进入一个场合，先发言，再为另一声音留空间。"
+        }
+      }
     },
     {
       "id": "WANDS-14",
@@ -815,18 +2355,62 @@ window.CELESTIAL_DECK = {
       "zh": "权杖国王",
       "motif": "salamander throne",
       "rationale": "An original salamander throne composition translates the traditional King of Wands scene into this deck’s celestial line language.",
-      "keywords": "visionary leadership and mastery of the larger pattern",
-      "keywordsZh": "具远见的领导力，以及掌握整体格局",
-      "meaning": "visionary leadership and mastery of the larger pattern",
-      "meaningZh": "具远见的领导力，以及掌握整体格局",
-      "shadow": "overbearing action, impatience, or impossible expectations",
-      "shadowZh": "强势行动、缺乏耐心，或不切实际的期待",
-      "reflection": "Where is visionary leadership and mastery of the larger pattern asking for your attention rather than certainty?",
-      "reflectionZh": "具远见的领导力，以及掌握整体格局正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Choose one small action that gives this energy a clear direction.",
-      "practiceZh": "选择一个小行动，让这股能量获得清晰方向。",
+      "keywords": {
+        "en": "visionary leadership and mastery of the larger pattern",
+        "zh": "具远见的领导力，以及掌握整体格局"
+      },
       "src": "assets/cards/r1/generated/wands-14-king-of-wands.png",
-      "sha256": "20e7e13ac8cb437a99009299518be2cee1baeb29658a9b2e0be9f244bcc0b8a9"
+      "sha256": "20e7e13ac8cb437a99009299518be2cee1baeb29658a9b2e0be9f244bcc0b8a9",
+      "upright": {
+        "core": {
+          "en": "Visionary leadership and mastery of the larger pattern.",
+          "zh": "具远见的领导力，以及掌握整体格局。"
+        },
+        "tension": {
+          "en": "This position asks for courage, not prediction: Has vision become impatience with people who cannot see the whole map? If it applies, translate the plan into one achievable milestone and listen to implementation concerns.",
+          "zh": "这个位置要求勇气，而非预测：愿景是否变成对看不见全图之人的不耐？ 若符合现况，把计划翻译成一个可达里程碑，并听取执行上的顾虑。"
+        },
+        "reflection": {
+          "en": "Which vision needs leadership at the level of systems?",
+          "zh": "哪一个愿景需要系统层面的领导？"
+        },
+        "action": {
+          "en": "Explain the destination, assign the first owners, and remove one obstacle.",
+          "zh": "说明目的地，指定第一批负责人，并移除一个障碍。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The image turns inward to examine how overbearing action, impatience, or impossible expectations is functioning.",
+          "zh": "图像转向内在，检视强势行动、缺乏耐心，或不切实际的期待如何运作。"
+        },
+        "tension": {
+          "en": "The card internalizes the unfinished work of visionary leadership and mastery of the larger pattern.",
+          "zh": "这张牌把具远见的领导力，以及掌握整体格局未完成的功课内化。"
+        },
+        "reflection": {
+          "en": "Has vision become impatience with people who cannot see the whole map?",
+          "zh": "愿景是否变成对看不见全图之人的不耐？"
+        },
+        "action": {
+          "en": "Translate the plan into one achievable milestone and listen to implementation concerns.",
+          "zh": "把计划翻译成一个可达里程碑，并听取执行上的顾虑。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "King of Wands locates the present issue in visionary leadership and mastery of the larger pattern.",
+          "zh": "权杖国王把当前议题定位在具远见的领导力，以及掌握整体格局。"
+        },
+        "challenge": {
+          "en": "This is the knot to examine: Has vision become impatience with people who cannot see the whole map?",
+          "zh": "这是需要检视的结：愿景是否变成对看不见全图之人的不耐？"
+        },
+        "guidance": {
+          "en": "Keep the guidance concrete: explain the destination, assign the first owners, and remove one obstacle.",
+          "zh": "让指引保持具体：说明目的地，指定第一批负责人，并移除一个障碍。"
+        }
+      }
     },
     {
       "id": "CUPS-01",
@@ -837,18 +2421,62 @@ window.CELESTIAL_DECK = {
       "zh": "圣杯一",
       "motif": "overflowing chalice",
       "rationale": "An original overflowing chalice composition translates the traditional Ace of Cups scene into this deck’s celestial line language.",
-      "keywords": "a new emotional current · intuition · and receptive openness",
-      "keywordsZh": "新的情感流动 · 直觉，以及愿意接纳",
-      "meaning": "a new emotional current, intuition, and receptive openness",
-      "meaningZh": "新的情感流动、直觉，以及愿意接纳",
-      "shadow": "emotional emptiness, blocked creativity, or love withheld",
-      "shadowZh": "情感空洞、创造力受阻，或爱被收回",
-      "reflection": "Where is a new emotional current, intuition, and receptive openness asking for your attention rather than certainty?",
-      "reflectionZh": "新的情感流动、直觉，以及愿意接纳正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Make room for the feeling, then give it one honest boundary or invitation.",
-      "practiceZh": "为这份感受留出空间，再给它一个诚实的边界或邀请。",
+      "keywords": {
+        "en": "a new emotional current · intuition · and receptive openness",
+        "zh": "新的情感流动 · 直觉，以及愿意接纳"
+      },
       "src": "assets/cards/r1/approved/cups-01-ace-of-cups.png",
-      "sha256": "edbca998c7546fbde597fd89548a70a3d5b7a0eacb0800494b1d40df8f8e6872"
+      "sha256": "edbca998c7546fbde597fd89548a70a3d5b7a0eacb0800494b1d40df8f8e6872",
+      "upright": {
+        "core": {
+          "en": "A new emotional current, intuition, and receptive openness.",
+          "zh": "新的情感流动、直觉，以及愿意接纳。"
+        },
+        "tension": {
+          "en": "The tension has a clear doorway: Are you withholding affection or creative feeling to avoid vulnerability? If it applies, share one honest sentence with a safe person instead of waiting to feel certain.",
+          "zh": "张力有一个清楚入口：你是否为了避免脆弱而压住感情或创造力？ 若符合现况，向安全的人说一句真话，不必等到完全确定。"
+        },
+        "reflection": {
+          "en": "What feeling is ready to be welcomed rather than managed away?",
+          "zh": "哪一种感受已经准备好被接纳，而不是被消除？"
+        },
+        "action": {
+          "en": "Name it, locate it in the body, and offer it ten uninterrupted minutes.",
+          "zh": "说出它，在身体中找到它，并给它十分钟完整空间。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "This orientation treats emotional emptiness, blocked creativity, or love withheld as unavailable, private, or overextended.",
+          "zh": "这个方向把情感空洞、创造力受阻，或爱被收回视为暂时难以取得、私密或过度延伸。"
+        },
+        "tension": {
+          "en": "Its inward face asks what prevents a new emotional current, intuition, and receptive openness from moving.",
+          "zh": "它向内的一面追问什么阻止新的情感流动、直觉，以及愿意接纳流动。"
+        },
+        "reflection": {
+          "en": "Are you withholding affection or creative feeling to avoid vulnerability?",
+          "zh": "你是否为了避免脆弱而压住感情或创造力？"
+        },
+        "action": {
+          "en": "Share one honest sentence with a safe person instead of waiting to feel certain.",
+          "zh": "向安全的人说一句真话，不必等到完全确定。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The immediate landscape carries a new emotional current, intuition, and receptive openness.",
+          "zh": "眼前的环境带着新的情感流动、直觉，以及愿意接纳。"
+        },
+        "challenge": {
+          "en": "Rather than predict an outcome, ask: Are you withholding affection or creative feeling to avoid vulnerability?",
+          "zh": "不要预测结果，而要问：你是否为了避免脆弱而压住感情或创造力？"
+        },
+        "guidance": {
+          "en": "A useful response is available now: name it, locate it in the body, and offer it ten uninterrupted minutes.",
+          "zh": "现在已经有可用的回应：说出它，在身体中找到它，并给它十分钟完整空间。"
+        }
+      }
     },
     {
       "id": "CUPS-02",
@@ -859,18 +2487,62 @@ window.CELESTIAL_DECK = {
       "zh": "圣杯二",
       "motif": "mirrored vessels",
       "rationale": "An original mirrored vessels composition translates the traditional Two of Cups scene into this deck’s celestial line language.",
-      "keywords": "mutual recognition · partnership · and an honest bond",
-      "keywordsZh": "彼此看见 · 伙伴关系，以及真诚连结",
-      "meaning": "mutual recognition, partnership, and an honest bond",
-      "meaningZh": "彼此看见、伙伴关系，以及真诚连结",
-      "shadow": "imbalance, poor communication, or tension between two people",
-      "shadowZh": "失衡、沟通不良，或两人之间的张力",
-      "reflection": "Where is mutual recognition, partnership, and an honest bond asking for your attention rather than certainty?",
-      "reflectionZh": "彼此看见、伙伴关系，以及真诚连结正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Make room for the feeling, then give it one honest boundary or invitation.",
-      "practiceZh": "为这份感受留出空间，再给它一个诚实的边界或邀请。",
+      "keywords": {
+        "en": "mutual recognition · partnership · and an honest bond",
+        "zh": "彼此看见 · 伙伴关系，以及真诚连结"
+      },
       "src": "assets/cards/r1/generated/cups-02-two-of-cups.png",
-      "sha256": "b2dfefbe7a23784f2316326f2f193f868e52241c6d14ec915e2ae7de9eafe81c"
+      "sha256": "b2dfefbe7a23784f2316326f2f193f868e52241c6d14ec915e2ae7de9eafe81c",
+      "upright": {
+        "core": {
+          "en": "Mutual recognition, partnership, and an honest bond.",
+          "zh": "彼此看见、伙伴关系，以及真诚连结。"
+        },
+        "tension": {
+          "en": "Work the problem from this angle: Is the bond carrying unequal effort or unspoken resentment? If it applies, renegotiate one responsibility instead of testing whether the other person notices.",
+          "zh": "从这个角度处理问题：这段关系是否承载不平等付出或未说出的怨气？ 若符合现况，重新协商一项责任，不要继续测试对方是否会察觉。"
+        },
+        "reflection": {
+          "en": "What would equal exchange look like between you and another person?",
+          "zh": "你与另一个人之间，平等交换会是什么样子？"
+        },
+        "action": {
+          "en": "Ask what each person needs and write one mutual commitment.",
+          "zh": "询问双方需要什么，并写下一项共同承诺。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The reversed current asks for a more workable form of imbalance, poor communication, or tension between two people.",
+          "zh": "逆位流动要求失衡、沟通不良，或两人之间的张力找到更可行的形式。"
+        },
+        "tension": {
+          "en": "The reversal contains mutual recognition, partnership, and an honest bond without yet releasing it.",
+          "zh": "逆位容纳着彼此看见、伙伴关系，以及真诚连结，但尚未释放。"
+        },
+        "reflection": {
+          "en": "Is the bond carrying unequal effort or unspoken resentment?",
+          "zh": "这段关系是否承载不平等付出或未说出的怨气？"
+        },
+        "action": {
+          "en": "Renegotiate one responsibility instead of testing whether the other person notices.",
+          "zh": "重新协商一项责任，不要继续测试对方是否会察觉。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "This position makes mutual recognition, partnership, and an honest bond the fact to notice first.",
+          "zh": "这个位置让彼此看见、伙伴关系，以及真诚连结成为首先要留意的事实。"
+        },
+        "challenge": {
+          "en": "The position exposes a decision point: Is the bond carrying unequal effort or unspoken resentment?",
+          "zh": "这个位置揭示一个决定点：这段关系是否承载不平等付出或未说出的怨气？"
+        },
+        "guidance": {
+          "en": "Rather than wait for certainty: ask what each person needs and write one mutual commitment.",
+          "zh": "不必等待完全确定：询问双方需要什么，并写下一项共同承诺。"
+        }
+      }
     },
     {
       "id": "CUPS-03",
@@ -881,18 +2553,62 @@ window.CELESTIAL_DECK = {
       "zh": "圣杯三",
       "motif": "three raised cups",
       "rationale": "An original three raised cups composition translates the traditional Three of Cups scene into this deck’s celestial line language.",
-      "keywords": "friendship · shared joy · and a supportive circle",
-      "keywordsZh": "友谊 · 共同喜悦，以及互相支持的圈子",
-      "meaning": "friendship, shared joy, and a supportive circle",
-      "meaningZh": "友谊、共同喜悦，以及互相支持的圈子",
-      "shadow": "overindulgence, gossip, or feeling outside the group",
-      "shadowZh": "过度放纵、流言，或被排除在群体之外",
-      "reflection": "Where is friendship, shared joy, and a supportive circle asking for your attention rather than certainty?",
-      "reflectionZh": "友谊、共同喜悦，以及互相支持的圈子正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Make room for the feeling, then give it one honest boundary or invitation.",
-      "practiceZh": "为这份感受留出空间，再给它一个诚实的边界或邀请。",
+      "keywords": {
+        "en": "friendship · shared joy · and a supportive circle",
+        "zh": "友谊 · 共同喜悦，以及互相支持的圈子"
+      },
       "src": "assets/cards/r1/generated/cups-03-three-of-cups.png",
-      "sha256": "9e48676a7ada8be3abaaf25a1c821e1bd642a114ecd7c538744d1a69e3021ac4"
+      "sha256": "9e48676a7ada8be3abaaf25a1c821e1bd642a114ecd7c538744d1a69e3021ac4",
+      "upright": {
+        "core": {
+          "en": "Friendship, shared joy, and a supportive circle.",
+          "zh": "友谊、共同喜悦，以及互相支持的圈子。"
+        },
+        "tension": {
+          "en": "The challenge becomes specific in one question: Has belonging turned into gossip, excess, or exclusion? If it applies, leave one harmful group habit and welcome the person at the edge.",
+          "zh": "挑战在一个问题中变得具体：归属感是否变成闲话、过度或排斥？ 若符合现况，离开一个有害的群体习惯，并欢迎边缘的人。"
+        },
+        "reflection": {
+          "en": "Which joy grows when it is shared generously?",
+          "zh": "哪一种喜悦会在慷慨分享时增长？"
+        },
+        "action": {
+          "en": "Contact two friends and make one simple plan with a clear time.",
+          "zh": "联系两位朋友，订下一个时间明确的简单计划。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Delay exposes what overindulgence, gossip, or feeling outside the group needs before it can move outward.",
+          "zh": "延迟揭示过度放纵、流言，或被排除在群体之外向外流动前所需要的条件。"
+        },
+        "tension": {
+          "en": "A bottleneck appears between intention and friendship, shared joy, and a supportive circle.",
+          "zh": "意图与友谊、共同喜悦，以及互相支持的圈子之间出现瓶颈。"
+        },
+        "reflection": {
+          "en": "Has belonging turned into gossip, excess, or exclusion?",
+          "zh": "归属感是否变成闲话、过度或排斥？"
+        },
+        "action": {
+          "en": "Leave one harmful group habit and welcome the person at the edge.",
+          "zh": "离开一个有害的群体习惯，并欢迎边缘的人。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The card opens on friendship, shared joy, and a supportive circle as the active condition.",
+          "zh": "这张牌以友谊、共同喜悦，以及互相支持的圈子作为活跃条件展开。"
+        },
+        "challenge": {
+          "en": "The friction in the spread can be named simply: Has belonging turned into gossip, excess, or exclusion?",
+          "zh": "牌阵中的摩擦可以简单说成：归属感是否变成闲话、过度或排斥？"
+        },
+        "guidance": {
+          "en": "The image earns its meaning through this step: contact two friends and make one simple plan with a clear time.",
+          "zh": "图像通过这一步获得意义：联系两位朋友，订下一个时间明确的简单计划。"
+        }
+      }
     },
     {
       "id": "CUPS-04",
@@ -903,18 +2619,62 @@ window.CELESTIAL_DECK = {
       "zh": "圣杯四",
       "motif": "offered fourth cup",
       "rationale": "An original offered fourth cup composition translates the traditional Four of Cups scene into this deck’s celestial line language.",
-      "keywords": "withdrawal · contemplation · and questioning what satisfies",
-      "keywordsZh": "退回内心 · 沉思，以及重新询问何为满足",
-      "meaning": "withdrawal, contemplation, and questioning what satisfies",
-      "meaningZh": "退回内心、沉思，以及重新询问何为满足",
-      "shadow": "renewed awareness, acceptance, or choosing to re-engage",
-      "shadowZh": "重新觉察、接纳，或选择再次投入",
-      "reflection": "Where is withdrawal, contemplation, and questioning what satisfies asking for your attention rather than certainty?",
-      "reflectionZh": "退回内心、沉思，以及重新询问何为满足正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Make room for the feeling, then give it one honest boundary or invitation.",
-      "practiceZh": "为这份感受留出空间，再给它一个诚实的边界或邀请。",
+      "keywords": {
+        "en": "withdrawal · contemplation · and questioning what satisfies",
+        "zh": "退回内心 · 沉思，以及重新询问何为满足"
+      },
       "src": "assets/cards/r1/generated/cups-04-four-of-cups.png",
-      "sha256": "b25600edca058016ec7a787841275744551c9d2af7bdc661a1106d786f798945"
+      "sha256": "b25600edca058016ec7a787841275744551c9d2af7bdc661a1106d786f798945",
+      "upright": {
+        "core": {
+          "en": "Withdrawal, contemplation, and questioning what satisfies.",
+          "zh": "退回内心、沉思，以及重新询问何为满足。"
+        },
+        "tension": {
+          "en": "The challenge is to answer this honestly: Is re-engagement genuine, or just an escape from necessary solitude? If it applies, choose one offer only after naming why the previous options felt empty.",
+          "zh": "挑战在于诚实回答：重新参与是真心的，还是逃离必要独处？ 若符合现况，先说明旧选项为何空洞，再选择一个新机会。"
+        },
+        "reflection": {
+          "en": "What are you dismissing because it arrived in an ordinary form?",
+          "zh": "你忽略了什么，只因为它以平凡形式出现？"
+        },
+        "action": {
+          "en": "Review one overlooked option and list what it actually offers.",
+          "zh": "重新查看一个被忽略的选项，列出它真正提供的东西。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The card holds renewed awareness, acceptance, or choosing to re-engage inside until its proportion becomes clearer.",
+          "zh": "这张牌把重新觉察、接纳，或选择再次投入留在内在，直到比例变得清楚。"
+        },
+        "tension": {
+          "en": "The private tension is how to make room for withdrawal, contemplation, and questioning what satisfies.",
+          "zh": "私下张力在于如何为退回内心、沉思，以及重新询问何为满足腾出空间。"
+        },
+        "reflection": {
+          "en": "Is re-engagement genuine, or just an escape from necessary solitude?",
+          "zh": "重新参与是真心的，还是逃离必要独处？"
+        },
+        "action": {
+          "en": "Choose one offer only after naming why the previous options felt empty.",
+          "zh": "先说明旧选项为何空洞，再选择一个新机会。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The Four of Cups reflects a present shaped by withdrawal, contemplation, and questioning what satisfies.",
+          "zh": "圣杯四映照出一个由退回内心、沉思，以及重新询问何为满足塑造的当下。"
+        },
+        "challenge": {
+          "en": "Hold the uncertainty long enough to ask: Is re-engagement genuine, or just an escape from necessary solitude?",
+          "zh": "容纳不确定，直到你能问：重新参与是真心的，还是逃离必要独处？"
+        },
+        "guidance": {
+          "en": "Guidance here is behavioral, not predictive: review one overlooked option and list what it actually offers.",
+          "zh": "这里的指引关于行为，而非预测：重新查看一个被忽略的选项，列出它真正提供的东西。"
+        }
+      }
     },
     {
       "id": "CUPS-05",
@@ -925,18 +2685,62 @@ window.CELESTIAL_DECK = {
       "zh": "圣杯五",
       "motif": "spilled vessels",
       "rationale": "An original spilled vessels composition translates the traditional Five of Cups scene into this deck’s celestial line language.",
-      "keywords": "grief · disappointment · and attention fixed on what was lost",
-      "keywordsZh": "悲伤 · 失望，以及注意力停留在失去之物",
-      "meaning": "grief, disappointment, and attention fixed on what was lost",
-      "meaningZh": "悲伤、失望，以及注意力停留在失去之物",
-      "shadow": "acceptance, emotional repair, and noticing what remains",
-      "shadowZh": "接纳、情感修复，以及看见仍然拥有的事物",
-      "reflection": "Where is grief, disappointment, and attention fixed on what was lost asking for your attention rather than certainty?",
-      "reflectionZh": "悲伤、失望，以及注意力停留在失去之物正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Make room for the feeling, then give it one honest boundary or invitation.",
-      "practiceZh": "为这份感受留出空间，再给它一个诚实的边界或邀请。",
+      "keywords": {
+        "en": "grief · disappointment · and attention fixed on what was lost",
+        "zh": "悲伤 · 失望，以及注意力停留在失去之物"
+      },
       "src": "assets/cards/r1/generated/cups-05-five-of-cups.png",
-      "sha256": "b97f5cfdb1d9de4702f898f940d31d9642cd5a010ebeb7c8cf60b6e0c87dab14"
+      "sha256": "b97f5cfdb1d9de4702f898f940d31d9642cd5a010ebeb7c8cf60b6e0c87dab14",
+      "upright": {
+        "core": {
+          "en": "Grief, disappointment, and attention fixed on what was lost.",
+          "zh": "悲伤、失望，以及注意力停留在失去之物。"
+        },
+        "tension": {
+          "en": "Do not call it fate; work with the question: Are you rushing forgiveness or using recovery to avoid sorrow? If it applies, let one trusted person hear the unedited loss before planning the comeback.",
+          "zh": "不要把它称为命运；请处理这个问题：你是否急着原谅，或用恢复来逃避悲伤？ 若符合现况，规划复原前，先让可信任的人听见未经修饰的失落。"
+        },
+        "reflection": {
+          "en": "What loss needs room before you can notice what remains?",
+          "zh": "哪一种失去需要空间，你才能看见仍然存在的？"
+        },
+        "action": {
+          "en": "Set aside fifteen minutes to grieve, then name two supports still present.",
+          "zh": "留十五分钟哀悼，再说出两项仍在的支持。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Reversal brings the blocked or excessive side of acceptance, emotional repair, and noticing what remains into view.",
+          "zh": "逆位让接纳、情感修复，以及看见仍然拥有的事物受阻或过度的一面进入视野。"
+        },
+        "tension": {
+          "en": "The symbol folds back on itself around grief, disappointment, and attention fixed on what was lost.",
+          "zh": "象征围绕悲伤、失望，以及注意力停留在失去之物折回自身。"
+        },
+        "reflection": {
+          "en": "Are you rushing forgiveness or using recovery to avoid sorrow?",
+          "zh": "你是否急着原谅，或用恢复来逃避悲伤？"
+        },
+        "action": {
+          "en": "Let one trusted person hear the unedited loss before planning the comeback.",
+          "zh": "规划复原前，先让可信任的人听见未经修饰的失落。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "Before choosing a response, recognize grief, disappointment, and attention fixed on what was lost.",
+          "zh": "选择回应前，先承认悲伤、失望，以及注意力停留在失去之物。"
+        },
+        "challenge": {
+          "en": "The card makes one demand for honesty: Are you rushing forgiveness or using recovery to avoid sorrow?",
+          "zh": "这张牌只要求一件诚实的事：你是否急着原谅，或用恢复来逃避悲伤？"
+        },
+        "guidance": {
+          "en": "Carry the card forward by doing this: set aside fifteen minutes to grieve, then name two supports still present.",
+          "zh": "用这个行动把牌带往前方：留十五分钟哀悼，再说出两项仍在的支持。"
+        }
+      }
     },
     {
       "id": "CUPS-06",
@@ -947,18 +2751,62 @@ window.CELESTIAL_DECK = {
       "zh": "圣杯六",
       "motif": "flower-filled memory cups",
       "rationale": "An original flower-filled memory cups composition translates the traditional Six of Cups scene into this deck’s celestial line language.",
-      "keywords": "kind memories · familiarity · and gentle emotional healing",
-      "keywordsZh": "温暖回忆 · 熟悉感，以及柔和的情感疗愈",
-      "meaning": "kind memories, familiarity, and gentle emotional healing",
-      "meaningZh": "温暖回忆、熟悉感，以及柔和的情感疗愈",
-      "shadow": "outgrowing the past, independence, or leaving old comfort",
-      "shadowZh": "走出过去、建立独立，或离开旧有舒适",
-      "reflection": "Where is kind memories, familiarity, and gentle emotional healing asking for your attention rather than certainty?",
-      "reflectionZh": "温暖回忆、熟悉感，以及柔和的情感疗愈正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Make room for the feeling, then give it one honest boundary or invitation.",
-      "practiceZh": "为这份感受留出空间，再给它一个诚实的边界或邀请。",
+      "keywords": {
+        "en": "kind memories · familiarity · and gentle emotional healing",
+        "zh": "温暖回忆 · 熟悉感，以及柔和的情感疗愈"
+      },
       "src": "assets/cards/r1/generated/cups-06-six-of-cups.png",
-      "sha256": "42594600023b16a8a63ca9403f95b315026b7f09a994daedfdd21dc89cadd69e"
+      "sha256": "42594600023b16a8a63ca9403f95b315026b7f09a994daedfdd21dc89cadd69e",
+      "upright": {
+        "core": {
+          "en": "Kind memories, familiarity, and gentle emotional healing.",
+          "zh": "温暖回忆、熟悉感，以及柔和的情感疗愈。"
+        },
+        "tension": {
+          "en": "The difficult work begins here: Has the past become a refuge from adult responsibility? If it applies, return one old comfort to its proper place and make a present-day choice.",
+          "zh": "困难功课从这里开始：过去是否成为逃避成年责任的避难所？ 若符合现况，把一个旧安慰放回适当位置，并作出当下的选择。"
+        },
+        "reflection": {
+          "en": "Which memory offers nourishment without asking you to live there?",
+          "zh": "哪一段记忆能滋养你，却不要求你住回过去？"
+        },
+        "action": {
+          "en": "Revisit one kind memory, keep its lesson, and do something new today.",
+          "zh": "重温一段温柔记忆，保留它的教训，然后今天做一件新事。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The quality of outgrowing the past, independence, or leaving old comfort is active inwardly, even if little is visible.",
+          "zh": "走出过去、建立独立，或离开旧有舒适正在内在活跃，即使外在几乎看不见。"
+        },
+        "tension": {
+          "en": "The card delays action until kind memories, familiarity, and gentle emotional healing can become workable.",
+          "zh": "这张牌延迟行动，直到温暖回忆、熟悉感，以及柔和的情感疗愈变得可行。"
+        },
+        "reflection": {
+          "en": "Has the past become a refuge from adult responsibility?",
+          "zh": "过去是否成为逃避成年责任的避难所？"
+        },
+        "action": {
+          "en": "Return one old comfort to its proper place and make a present-day choice.",
+          "zh": "把一个旧安慰放回适当位置，并作出当下的选择。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "Six of Cups says the situation is already carrying kind memories, familiarity, and gentle emotional healing.",
+          "zh": "圣杯六说明现状已经承载着温暖回忆、熟悉感，以及柔和的情感疗愈。"
+        },
+        "challenge": {
+          "en": "This tension is workable once you consider: Has the past become a refuge from adult responsibility?",
+          "zh": "当你考虑这个问题，张力就能被处理：过去是否成为逃避成年责任的避难所？"
+        },
+        "guidance": {
+          "en": "The spread closes with a practical choice: revisit one kind memory, keep its lesson, and do something new today.",
+          "zh": "牌阵以一个务实选择收尾：重温一段温柔记忆，保留它的教训，然后今天做一件新事。"
+        }
+      }
     },
     {
       "id": "CUPS-07",
@@ -969,18 +2817,62 @@ window.CELESTIAL_DECK = {
       "zh": "圣杯七",
       "motif": "seven dream vessels",
       "rationale": "An original seven dream vessels composition translates the traditional Seven of Cups scene into this deck’s celestial line language.",
-      "keywords": "many possibilities · imagination · and a search for purpose",
-      "keywordsZh": "众多可能 · 想象力，以及寻找方向",
-      "meaning": "many possibilities, imagination, and a search for purpose",
-      "meaningZh": "众多可能、想象力，以及寻找方向",
-      "shadow": "confusion clearing, distractions falling away, or a needed choice",
-      "shadowZh": "混乱渐清、干扰退去，或需要作出选择",
-      "reflection": "Where is many possibilities, imagination, and a search for purpose asking for your attention rather than certainty?",
-      "reflectionZh": "众多可能、想象力，以及寻找方向正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Make room for the feeling, then give it one honest boundary or invitation.",
-      "practiceZh": "为这份感受留出空间，再给它一个诚实的边界或邀请。",
+      "keywords": {
+        "en": "many possibilities · imagination · and a search for purpose",
+        "zh": "众多可能 · 想象力，以及寻找方向"
+      },
       "src": "assets/cards/r1/generated/cups-07-seven-of-cups.png",
-      "sha256": "cef327367efdbb8daba001b90f2409ed1e689de38249f4448142b8ddf1dbb4a7"
+      "sha256": "cef327367efdbb8daba001b90f2409ed1e689de38249f4448142b8ddf1dbb4a7",
+      "upright": {
+        "core": {
+          "en": "Many possibilities, imagination, and a search for purpose.",
+          "zh": "众多可能、想象力，以及寻找方向。"
+        },
+        "tension": {
+          "en": "This position sharpens one issue: Is sudden certainty hiding fear of choosing? If it applies, sleep on the shortlist and reject any option that depends on pretending.",
+          "zh": "这个位置让一个议题变得尖锐：突然的确定感是否掩盖了选择的恐惧？ 若符合现况，让候选清单过一夜，排除任何依赖自欺的选项。"
+        },
+        "reflection": {
+          "en": "Which possibility remains meaningful after fantasy is removed?",
+          "zh": "哪一个可能性在去除幻想后仍然有意义？"
+        },
+        "action": {
+          "en": "Reduce the list to three options and verify one fact about each.",
+          "zh": "把清单缩到三个选项，并各验证一项事实。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "This position asks whether confusion clearing, distractions falling away, or a needed choice has stalled or gone too far.",
+          "zh": "这个位置追问混乱渐清、干扰退去，或需要作出选择是否已经停滞或走得太远。"
+        },
+        "tension": {
+          "en": "Inside, the image wrestles with access to many possibilities, imagination, and a search for purpose.",
+          "zh": "图像在内心与如何取得众多可能、想象力，以及寻找方向搏斗。"
+        },
+        "reflection": {
+          "en": "Is sudden certainty hiding fear of choosing?",
+          "zh": "突然的确定感是否掩盖了选择的恐惧？"
+        },
+        "action": {
+          "en": "Sleep on the shortlist and reject any option that depends on pretending.",
+          "zh": "让候选清单过一夜，排除任何依赖自欺的选项。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The current chapter has the texture of many possibilities, imagination, and a search for purpose.",
+          "zh": "当前章节带着众多可能、想象力，以及寻找方向的质感。"
+        },
+        "challenge": {
+          "en": "The challenge is neither fixed nor hidden: Is sudden certainty hiding fear of choosing?",
+          "zh": "挑战并非固定，也不隐藏：突然的确定感是否掩盖了选择的恐惧？"
+        },
+        "guidance": {
+          "en": "Make the symbol accountable to reality: reduce the list to three options and verify one fact about each.",
+          "zh": "让象征接受现实检验：把清单缩到三个选项，并各验证一项事实。"
+        }
+      }
     },
     {
       "id": "CUPS-08",
@@ -991,18 +2883,62 @@ window.CELESTIAL_DECK = {
       "zh": "圣杯八",
       "motif": "moonlit departure",
       "rationale": "An original moonlit departure composition translates the traditional Eight of Cups scene into this deck’s celestial line language.",
-      "keywords": "walking away from hollow rewards to seek deeper truth",
-      "keywordsZh": "离开空洞回报，转而寻找更深的真相",
-      "meaning": "walking away from hollow rewards to seek deeper truth",
-      "meaningZh": "离开空洞回报，转而寻找更深的真相",
-      "shadow": "avoiding change, fearing loss, or remaining in an empty pattern",
-      "shadowZh": "回避改变、害怕失去，或停留在空洞模式",
-      "reflection": "Where is walking away from hollow rewards to seek deeper truth asking for your attention rather than certainty?",
-      "reflectionZh": "离开空洞回报，转而寻找更深的真相正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Make room for the feeling, then give it one honest boundary or invitation.",
-      "practiceZh": "为这份感受留出空间，再给它一个诚实的边界或邀请。",
+      "keywords": {
+        "en": "walking away from hollow rewards to seek deeper truth",
+        "zh": "离开空洞回报，转而寻找更深的真相"
+      },
       "src": "assets/cards/r1/generated/cups-08-eight-of-cups.png",
-      "sha256": "d946bb81476ac0f137634e94ff522b9751a9f671b7a2d8d9bccb82fbf8dca622"
+      "sha256": "d946bb81476ac0f137634e94ff522b9751a9f671b7a2d8d9bccb82fbf8dca622",
+      "upright": {
+        "core": {
+          "en": "Walking away from hollow rewards to seek deeper truth.",
+          "zh": "离开空洞回报，转而寻找更深的真相。"
+        },
+        "tension": {
+          "en": "The obstacle becomes clearer when you ask: Are fear and sunk cost keeping you inside an empty pattern? If it applies, calculate the real cost of staying for one more month.",
+          "zh": "当你这样提问，障碍会更清楚：恐惧与沉没成本是否让你留在空洞模式中？ 若符合现况，计算再留下一个月的真实代价。"
+        },
+        "reflection": {
+          "en": "What no longer deserves your emotional investment?",
+          "zh": "什么已经不值得你继续投入情感？"
+        },
+        "action": {
+          "en": "Name what you are leaving, tell the affected person if appropriate, and set a departure step.",
+          "zh": "说出你要离开的事，适当时告知相关的人，并设定离开步骤。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The reversed image slows avoiding change, fearing loss, or remaining in an empty pattern so its distortion can be noticed.",
+          "zh": "逆位图像放慢回避改变、害怕失去，或停留在空洞模式，让扭曲能够被察觉。"
+        },
+        "tension": {
+          "en": "The reversed current searches for a proportionate form of walking away from hollow rewards to seek deeper truth.",
+          "zh": "逆位流动正在寻找离开空洞回报，转而寻找更深的真相的适当形式。"
+        },
+        "reflection": {
+          "en": "Are fear and sunk cost keeping you inside an empty pattern?",
+          "zh": "恐惧与沉没成本是否让你留在空洞模式中？"
+        },
+        "action": {
+          "en": "Calculate the real cost of staying for one more month.",
+          "zh": "计算再留下一个月的真实代价。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "In the Situation place, walking away from hollow rewards to seek deeper truth is the starting evidence.",
+          "zh": "在现状位置，离开空洞回报，转而寻找更深的真相是起始证据。"
+        },
+        "challenge": {
+          "en": "Use the difficult edge of the image to ask: Are fear and sunk cost keeping you inside an empty pattern?",
+          "zh": "利用图像困难的一面提问：恐惧与沉没成本是否让你留在空洞模式中？"
+        },
+        "guidance": {
+          "en": "The card recommends a testable response: name what you are leaving, tell the affected person if appropriate, and set a departure step.",
+          "zh": "这张牌建议一个可检验的回应：说出你要离开的事，适当时告知相关的人，并设定离开步骤。"
+        }
+      }
     },
     {
       "id": "CUPS-09",
@@ -1013,18 +2949,62 @@ window.CELESTIAL_DECK = {
       "zh": "圣杯九",
       "motif": "curved banquet",
       "rationale": "An original curved banquet composition translates the traditional Nine of Cups scene into this deck’s celestial line language.",
-      "keywords": "satisfaction · comfort · and a wish taking tangible form",
-      "keywordsZh": "满足 · 舒适，以及愿望逐渐成形",
-      "meaning": "satisfaction, comfort, and a wish taking tangible form",
-      "meaningZh": "满足、舒适，以及愿望逐渐成形",
-      "shadow": "smugness, excess, or pleasure that cannot fill the inner gap",
-      "shadowZh": "自满、过度，或无法填补内在空缺的享受",
-      "reflection": "Where is satisfaction, comfort, and a wish taking tangible form asking for your attention rather than certainty?",
-      "reflectionZh": "满足、舒适，以及愿望逐渐成形正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Make room for the feeling, then give it one honest boundary or invitation.",
-      "practiceZh": "为这份感受留出空间，再给它一个诚实的边界或邀请。",
+      "keywords": {
+        "en": "satisfaction · comfort · and a wish taking tangible form",
+        "zh": "满足 · 舒适，以及愿望逐渐成形"
+      },
       "src": "assets/cards/r1/generated/cups-09-nine-of-cups.png",
-      "sha256": "a36b984163f8b46281890b6ab46cfd87c9f0bbf8dcd51432094bafacb59ee63a"
+      "sha256": "a36b984163f8b46281890b6ab46cfd87c9f0bbf8dcd51432094bafacb59ee63a",
+      "upright": {
+        "core": {
+          "en": "Satisfaction, comfort, and a wish taking tangible form.",
+          "zh": "满足、舒适，以及愿望逐渐成形。"
+        },
+        "tension": {
+          "en": "What needs attention is not punishment but inquiry: Is comfort covering loneliness, excess, or a wish that cannot satisfy? If it applies, remove one numbing indulgence for a day and observe the unmet need beneath it.",
+          "zh": "需要的不是惩罚，而是追问：舒适是否掩盖孤独、过度或无法满足的愿望？ 若符合现况，一天不使用一种麻痹式享受，观察底下未被满足的需要。"
+        },
+        "reflection": {
+          "en": "Which satisfaction can be enjoyed without needing more?",
+          "zh": "哪一种满足可以享受，而不必继续索取？"
+        },
+        "action": {
+          "en": "Pause after one pleasure, notice enoughness, and record what genuinely nourished you.",
+          "zh": "一次享受后停下来，感受已经足够，并记录真正滋养你的是什么。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Inside the card, smugness, excess, or pleasure that cannot fill the inner gap is being renegotiated.",
+          "zh": "在这张牌内部，自满、过度，或无法填补内在空缺的享受正在被重新协商。"
+        },
+        "tension": {
+          "en": "Its hidden labor is restoring satisfaction, comfort, and a wish taking tangible form.",
+          "zh": "它隐藏的工作是恢复满足、舒适，以及愿望逐渐成形。"
+        },
+        "reflection": {
+          "en": "Is comfort covering loneliness, excess, or a wish that cannot satisfy?",
+          "zh": "舒适是否掩盖孤独、过度或无法满足的愿望？"
+        },
+        "action": {
+          "en": "Remove one numbing indulgence for a day and observe the unmet need beneath it.",
+          "zh": "一天不使用一种麻痹式享受，观察底下未被满足的需要。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "This moment is asking to be seen through satisfaction, comfort, and a wish taking tangible form.",
+          "zh": "这一刻需要透过满足、舒适，以及愿望逐渐成形被看见。"
+        },
+        "challenge": {
+          "en": "The spread places pressure on this question: Is comfort covering loneliness, excess, or a wish that cannot satisfy?",
+          "zh": "牌阵把压力放在这个问题上：舒适是否掩盖孤独、过度或无法满足的愿望？"
+        },
+        "guidance": {
+          "en": "Use the available agency in this step: pause after one pleasure, notice enoughness, and record what genuinely nourished you.",
+          "zh": "在这一步使用你现有的主动权：一次享受后停下来，感受已经足够，并记录真正滋养你的是什么。"
+        }
+      }
     },
     {
       "id": "CUPS-10",
@@ -1035,18 +3015,62 @@ window.CELESTIAL_DECK = {
       "zh": "圣杯十",
       "motif": "rainbow household",
       "rationale": "An original rainbow household composition translates the traditional Ten of Cups scene into this deck’s celestial line language.",
-      "keywords": "emotional fulfillment · harmony · and shared belonging",
-      "keywordsZh": "情感圆满 · 和谐，以及共同归属",
-      "meaning": "emotional fulfillment, harmony, and shared belonging",
-      "meaningZh": "情感圆满、和谐，以及共同归属",
-      "shadow": "fractured expectations, family tension, or a dream losing coherence",
-      "shadowZh": "期待破裂、家庭张力，或梦想失去一致",
-      "reflection": "Where is emotional fulfillment, harmony, and shared belonging asking for your attention rather than certainty?",
-      "reflectionZh": "情感圆满、和谐，以及共同归属正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Make room for the feeling, then give it one honest boundary or invitation.",
-      "practiceZh": "为这份感受留出空间，再给它一个诚实的边界或邀请。",
+      "keywords": {
+        "en": "emotional fulfillment · harmony · and shared belonging",
+        "zh": "情感圆满 · 和谐，以及共同归属"
+      },
       "src": "assets/cards/r1/generated/cups-10-ten-of-cups.png",
-      "sha256": "11492302c6452ac5e5dc84c2fc9390a942f2cee48c5deecdb680f5cdea579116"
+      "sha256": "11492302c6452ac5e5dc84c2fc9390a942f2cee48c5deecdb680f5cdea579116",
+      "upright": {
+        "core": {
+          "en": "Emotional fulfillment, harmony, and shared belonging.",
+          "zh": "情感圆满、和谐，以及共同归属。"
+        },
+        "tension": {
+          "en": "The card tests your response through this question: Are idealized harmony and real relationships drifting apart? If it applies, replace one perfect-family expectation with a direct, workable conversation.",
+          "zh": "这张牌通过这个问题检验你的回应：理想化和谐是否与真实关系渐行渐远？ 若符合现况，把一个完美家庭期待改成直接且可实行的对话。"
+        },
+        "reflection": {
+          "en": "What form of belonging is built through daily behavior?",
+          "zh": "哪一种归属感是由日常行为建立的？"
+        },
+        "action": {
+          "en": "Create one repeatable household or team ritual that includes everyone affected.",
+          "zh": "建立一个可重复、并包含所有相关者的家庭或团队仪式。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Reversal does not negate fractured expectations, family tension, or a dream losing coherence; it questions its timing and expression.",
+          "zh": "逆位不否定期待破裂、家庭张力，或梦想失去一致；它质问时机与表达方式。"
+        },
+        "tension": {
+          "en": "The Ten of Cups protects a wounded relationship with emotional fulfillment, harmony, and shared belonging.",
+          "zh": "圣杯十保护着一段与情感圆满、和谐，以及共同归属有关的受伤关系。"
+        },
+        "reflection": {
+          "en": "Are idealized harmony and real relationships drifting apart?",
+          "zh": "理想化和谐是否与真实关系渐行渐远？"
+        },
+        "action": {
+          "en": "Replace one perfect-family expectation with a direct, workable conversation.",
+          "zh": "把一个完美家庭期待改成直接且可实行的对话。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The visible pattern is emotional fulfillment, harmony, and shared belonging, held in the image of the Ten of Cups.",
+          "zh": "可见模式是情感圆满、和谐，以及共同归属，并由圣杯十具体呈现。"
+        },
+        "challenge": {
+          "en": "The obstacle is best approached through inquiry: Are idealized harmony and real relationships drifting apart?",
+          "zh": "最适合以追问接近这个障碍：理想化和谐是否与真实关系渐行渐远？"
+        },
+        "guidance": {
+          "en": "The direction is small enough to begin: create one repeatable household or team ritual that includes everyone affected.",
+          "zh": "这个方向足够小，可以开始：建立一个可重复、并包含所有相关者的家庭或团队仪式。"
+        }
+      }
     },
     {
       "id": "CUPS-11",
@@ -1057,18 +3081,62 @@ window.CELESTIAL_DECK = {
       "zh": "圣杯侍从",
       "motif": "fish-bearing cup",
       "rationale": "An original fish-bearing cup composition translates the traditional Page of Cups scene into this deck’s celestial line language.",
-      "keywords": "sensitivity · a sweet surprise · and permission to dream",
-      "keywordsZh": "敏感 · 温柔惊喜，以及允许自己做梦",
-      "meaning": "sensitivity, a sweet surprise, and permission to dream",
-      "meaningZh": "敏感、温柔惊喜，以及允许自己做梦",
-      "shadow": "emotional immaturity, insecurity, or disappointment escaping into fantasy",
-      "shadowZh": "情感不成熟、不安，或失望后逃入幻想",
-      "reflection": "Where is sensitivity, a sweet surprise, and permission to dream asking for your attention rather than certainty?",
-      "reflectionZh": "敏感、温柔惊喜，以及允许自己做梦正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Make room for the feeling, then give it one honest boundary or invitation.",
-      "practiceZh": "为这份感受留出空间，再给它一个诚实的边界或邀请。",
+      "keywords": {
+        "en": "sensitivity · a sweet surprise · and permission to dream",
+        "zh": "敏感 · 温柔惊喜，以及允许自己做梦"
+      },
       "src": "assets/cards/r1/generated/cups-11-page-of-cups.png",
-      "sha256": "8e7975694d72308f39371d736ec27f65d8e2386a10144163e968824398f0392a"
+      "sha256": "8e7975694d72308f39371d736ec27f65d8e2386a10144163e968824398f0392a",
+      "upright": {
+        "core": {
+          "en": "Sensitivity, a sweet surprise, and permission to dream.",
+          "zh": "敏感、温柔惊喜，以及允许自己做梦。"
+        },
+        "tension": {
+          "en": "Face the tension without dramatizing it: Is fantasy replacing the awkward work of emotional maturity? If it applies, keep the imagination, but pair it with one reliable promise you can fulfill.",
+          "zh": "面对张力，但不要把它戏剧化：幻想是否取代了情感成熟中笨拙的工作？ 若符合现况，保留想象，同时配上一项你能兑现的可靠承诺。"
+        },
+        "reflection": {
+          "en": "What tender message deserves curiosity instead of embarrassment?",
+          "zh": "哪一个温柔讯息值得好奇，而不是尴尬？"
+        },
+        "action": {
+          "en": "Write, draw, or say the feeling before editing it for sophistication.",
+          "zh": "在把感受修饰得成熟之前，先写、画或说出来。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The energy turns private where emotional immaturity, insecurity, or disappointment escaping into fantasy lacks a safe outlet.",
+          "zh": "当情感不成熟、不安，或失望后逃入幻想缺少安全出口，能量就会转为私密。"
+        },
+        "tension": {
+          "en": "This orientation makes sensitivity, a sweet surprise, and permission to dream an internal negotiation.",
+          "zh": "这个方向让敏感、温柔惊喜，以及允许自己做梦成为内在协商。"
+        },
+        "reflection": {
+          "en": "Is fantasy replacing the awkward work of emotional maturity?",
+          "zh": "幻想是否取代了情感成熟中笨拙的工作？"
+        },
+        "action": {
+          "en": "Keep the imagination, but pair it with one reliable promise you can fulfill.",
+          "zh": "保留想象，同时配上一项你能兑现的可靠承诺。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "Page of Cups names sensitivity, a sweet surprise, and permission to dream as the condition already present.",
+          "zh": "圣杯侍从把敏感、温柔惊喜，以及允许自己做梦说成已经存在的条件。"
+        },
+        "challenge": {
+          "en": "Let the challenge interrupt certainty: Is fantasy replacing the awkward work of emotional maturity?",
+          "zh": "让挑战打断确定感：幻想是否取代了情感成熟中笨拙的工作？"
+        },
+        "guidance": {
+          "en": "Ground the reading in a visible act: write, draw, or say the feeling before editing it for sophistication.",
+          "zh": "用一个可见行动落实解读：在把感受修饰得成熟之前，先写、画或说出来。"
+        }
+      }
     },
     {
       "id": "CUPS-12",
@@ -1079,18 +3147,62 @@ window.CELESTIAL_DECK = {
       "zh": "圣杯骑士",
       "motif": "tide-crossing rider",
       "rationale": "An original tide-crossing rider composition translates the traditional Knight of Cups scene into this deck’s celestial line language.",
-      "keywords": "following the heart with romance · imagination · and grace",
-      "keywordsZh": "以浪漫 · 想象与优雅追随内心",
-      "meaning": "following the heart with romance, imagination, and grace",
-      "meaningZh": "以浪漫、想象与优雅追随内心",
-      "shadow": "moodiness, idealization, or promises that dissolve",
-      "shadowZh": "情绪化、过度理想化，或承诺消散",
-      "reflection": "Where is following the heart with romance, imagination, and grace asking for your attention rather than certainty?",
-      "reflectionZh": "以浪漫、想象与优雅追随内心正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Make room for the feeling, then give it one honest boundary or invitation.",
-      "practiceZh": "为这份感受留出空间，再给它一个诚实的边界或邀请。",
+      "keywords": {
+        "en": "following the heart with romance · imagination · and grace",
+        "zh": "以浪漫 · 想象与优雅追随内心"
+      },
       "src": "assets/cards/r1/generated/cups-12-knight-of-cups.png",
-      "sha256": "a80114e49707018da0fb27934e0d3d271aa2be1398a1d8f71354f824d5bef574"
+      "sha256": "a80114e49707018da0fb27934e0d3d271aa2be1398a1d8f71354f824d5bef574",
+      "upright": {
+        "core": {
+          "en": "Following the heart with romance, imagination, and grace.",
+          "zh": "以浪漫、想象与优雅追随内心。"
+        },
+        "tension": {
+          "en": "The challenge stays practical when framed this way: Are mood and idealization writing promises reality cannot keep? If it applies, revise one romantic promise into a smaller dependable action.",
+          "zh": "这样表达，挑战就会保持务实：情绪与理想化是否写下现实无法兑现的承诺？ 若符合现况，把一个浪漫承诺改成较小但可靠的行动。"
+        },
+        "reflection": {
+          "en": "Which heartfelt offer needs both beauty and follow-through?",
+          "zh": "哪一个真心提议既需要美感，也需要落实？"
+        },
+        "action": {
+          "en": "Make the invitation specific: say what, when, and what you can sustain.",
+          "zh": "把邀请说具体：做什么、何时做，以及你能持续多久。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "This orientation shows moodiness, idealization, or promises that dissolve caught between restraint and excess.",
+          "zh": "这个方向显示情绪化、过度理想化，或承诺消散卡在压抑与过度之间。"
+        },
+        "tension": {
+          "en": "The card may compensate loudly for missing following the heart with romance, imagination, and grace.",
+          "zh": "这张牌可能用高调表现补偿缺失的以浪漫、想象与优雅追随内心。"
+        },
+        "reflection": {
+          "en": "Are mood and idealization writing promises reality cannot keep?",
+          "zh": "情绪与理想化是否写下现实无法兑现的承诺？"
+        },
+        "action": {
+          "en": "Revise one romantic promise into a smaller dependable action.",
+          "zh": "把一个浪漫承诺改成较小但可靠的行动。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The reading starts where following the heart with romance, imagination, and grace meets daily life.",
+          "zh": "解读从以浪漫、想象与优雅追随内心进入日常生活的地方开始。"
+        },
+        "challenge": {
+          "en": "The card turns resistance into a useful question: Are mood and idealization writing promises reality cannot keep?",
+          "zh": "这张牌把阻力转成有用问题：情绪与理想化是否写下现实无法兑现的承诺？"
+        },
+        "guidance": {
+          "en": "The card becomes useful when you act: make the invitation specific: say what, when, and what you can sustain.",
+          "zh": "当你行动，这张牌才真正有用：把邀请说具体：做什么、何时做，以及你能持续多久。"
+        }
+      }
     },
     {
       "id": "CUPS-13",
@@ -1101,18 +3213,62 @@ window.CELESTIAL_DECK = {
       "zh": "圣杯王后",
       "motif": "shell throne",
       "rationale": "An original shell throne composition translates the traditional Queen of Cups scene into this deck’s celestial line language.",
-      "keywords": "compassion · calm listening · and emotionally intelligent care",
-      "keywordsZh": "慈悲 · 平静倾听，以及有智慧的情感照顾",
-      "meaning": "compassion, calm listening, and emotionally intelligent care",
-      "meaningZh": "慈悲、平静倾听，以及有智慧的情感照顾",
-      "shadow": "self-sacrifice, dependence, or absorbing everyone else’s feelings",
-      "shadowZh": "过度牺牲、依赖，或吸收他人的所有情绪",
-      "reflection": "Where is compassion, calm listening, and emotionally intelligent care asking for your attention rather than certainty?",
-      "reflectionZh": "慈悲、平静倾听，以及有智慧的情感照顾正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Make room for the feeling, then give it one honest boundary or invitation.",
-      "practiceZh": "为这份感受留出空间，再给它一个诚实的边界或邀请。",
+      "keywords": {
+        "en": "compassion · calm listening · and emotionally intelligent care",
+        "zh": "慈悲 · 平静倾听，以及有智慧的情感照顾"
+      },
       "src": "assets/cards/r1/generated/cups-13-queen-of-cups.png",
-      "sha256": "f31ad859574649df30c0f132cce9904ef847b0ea1ba9bee5941c5569524f0022"
+      "sha256": "f31ad859574649df30c0f132cce9904ef847b0ea1ba9bee5941c5569524f0022",
+      "upright": {
+        "core": {
+          "en": "Compassion, calm listening, and emotionally intelligent care.",
+          "zh": "慈悲、平静倾听，以及有智慧的情感照顾。"
+        },
+        "tension": {
+          "en": "This is the knot to examine: Has empathy erased the line between care and self-abandonment? If it applies, return one emotion that is not yours and choose one restorative boundary.",
+          "zh": "这是需要检视的结：同理心是否抹去了照顾与放弃自己的界线？ 若符合现况，归还一种不属于你的情绪，并选择一条恢复性的边界。"
+        },
+        "reflection": {
+          "en": "Whose feelings need to be heard without being absorbed?",
+          "zh": "谁的感受需要被听见，却不必被你吸收？"
+        },
+        "action": {
+          "en": "Listen for ten minutes, reflect what you heard, and do not volunteer to fix it.",
+          "zh": "倾听十分钟，复述你听见的，不要主动承担修复。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The card asks how self-sacrifice, dependence, or absorbing everyone else’s feelings can return without repeating the old pattern.",
+          "zh": "这张牌追问过度牺牲、依赖，或吸收他人的所有情绪如何回来，同时不重复旧模式。"
+        },
+        "tension": {
+          "en": "Its inward turn asks for a safer route toward compassion, calm listening, and emotionally intelligent care.",
+          "zh": "它向内转，寻找通往慈悲、平静倾听，以及有智慧的情感照顾的更安全路线。"
+        },
+        "reflection": {
+          "en": "Has empathy erased the line between care and self-abandonment?",
+          "zh": "同理心是否抹去了照顾与放弃自己的界线？"
+        },
+        "action": {
+          "en": "Return one emotion that is not yours and choose one restorative boundary.",
+          "zh": "归还一种不属于你的情绪，并选择一条恢复性的边界。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The Queen of Cups makes compassion, calm listening, and emotionally intelligent care the present-tense concern.",
+          "zh": "圣杯王后让慈悲、平静倾听，以及有智慧的情感照顾成为当下议题。"
+        },
+        "challenge": {
+          "en": "This position asks for courage, not prediction: Has empathy erased the line between care and self-abandonment?",
+          "zh": "这个位置要求勇气，而非预测：同理心是否抹去了照顾与放弃自己的界线？"
+        },
+        "guidance": {
+          "en": "Let this be the response, not a promise about the future: listen for ten minutes, reflect what you heard, and do not volunteer to fix it.",
+          "zh": "让这成为回应，而不是未来承诺：倾听十分钟，复述你听见的，不要主动承担修复。"
+        }
+      }
     },
     {
       "id": "CUPS-14",
@@ -1123,18 +3279,62 @@ window.CELESTIAL_DECK = {
       "zh": "圣杯国王",
       "motif": "still-water throne",
       "rationale": "An original still-water throne composition translates the traditional King of Cups scene into this deck’s celestial line language.",
-      "keywords": "emotional balance · wise compassion · and steady counsel",
-      "keywordsZh": "情感平衡 · 成熟慈悲，以及稳定建议",
-      "meaning": "emotional balance, wise compassion, and steady counsel",
-      "meaningZh": "情感平衡、成熟慈悲，以及稳定建议",
-      "shadow": "coldness, unstable moods, or advice shaped by hidden feelings",
-      "shadowZh": "冷淡、情绪不稳，或被隐藏感受左右的建议",
-      "reflection": "Where is emotional balance, wise compassion, and steady counsel asking for your attention rather than certainty?",
-      "reflectionZh": "情感平衡、成熟慈悲，以及稳定建议正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Make room for the feeling, then give it one honest boundary or invitation.",
-      "practiceZh": "为这份感受留出空间，再给它一个诚实的边界或邀请。",
+      "keywords": {
+        "en": "emotional balance · wise compassion · and steady counsel",
+        "zh": "情感平衡 · 成熟慈悲，以及稳定建议"
+      },
       "src": "assets/cards/r1/generated/cups-14-king-of-cups.png",
-      "sha256": "6d453d36cc6c300eba39e3b3c78ffb26cc5a0d208e4211b0adfad0933f35e1bc"
+      "sha256": "6d453d36cc6c300eba39e3b3c78ffb26cc5a0d208e4211b0adfad0933f35e1bc",
+      "upright": {
+        "core": {
+          "en": "Emotional balance, wise compassion, and steady counsel.",
+          "zh": "情感平衡、成熟慈悲，以及稳定建议。"
+        },
+        "tension": {
+          "en": "Rather than predict an outcome, ask: Is composure becoming coldness or hidden mood control? If it applies, tell the truth about your state before offering advice to anyone else.",
+          "zh": "不要预测结果，而要问：镇定是否变成冷漠或隐藏的情绪操控？ 若符合现况，给别人建议前，先诚实说明自己的状态。"
+        },
+        "reflection": {
+          "en": "What emotion can be held steadily without being denied?",
+          "zh": "哪一种情绪可以被稳定承接，而不必否认？"
+        },
+        "action": {
+          "en": "Name the feeling and choose a response that still respects tomorrow.",
+          "zh": "说出感受，并选择一个仍然尊重明天的回应。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "A delayed or internalized form of coldness, unstable moods, or advice shaped by hidden feelings is seeking room.",
+          "zh": "延迟或内化的冷淡、情绪不稳，或被隐藏感受左右的建议正在寻找空间。"
+        },
+        "tension": {
+          "en": "Delay reveals where emotional balance, wise compassion, and steady counsel lacks support.",
+          "zh": "延迟揭示情感平衡、成熟慈悲，以及稳定建议在哪里缺乏支持。"
+        },
+        "reflection": {
+          "en": "Is composure becoming coldness or hidden mood control?",
+          "zh": "镇定是否变成冷漠或隐藏的情绪操控？"
+        },
+        "action": {
+          "en": "Tell the truth about your state before offering advice to anyone else.",
+          "zh": "给别人建议前，先诚实说明自己的状态。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The first card establishes emotional balance, wise compassion, and steady counsel as the working context.",
+          "zh": "第一张牌把情感平衡、成熟慈悲，以及稳定建议建立为可工作的背景。"
+        },
+        "challenge": {
+          "en": "The tension has a clear doorway: Is composure becoming coldness or hidden mood control?",
+          "zh": "张力有一个清楚入口：镇定是否变成冷漠或隐藏的情绪操控？"
+        },
+        "guidance": {
+          "en": "Guidance takes form in one task: name the feeling and choose a response that still respects tomorrow.",
+          "zh": "指引在一项任务中成形：说出感受，并选择一个仍然尊重明天的回应。"
+        }
+      }
     },
     {
       "id": "SWORDS-01",
@@ -1145,18 +3345,62 @@ window.CELESTIAL_DECK = {
       "zh": "宝剑一",
       "motif": "crowned blade",
       "rationale": "An original crowned blade composition translates the traditional Ace of Swords scene into this deck’s celestial line language.",
-      "keywords": "a breakthrough · clean perception · and a truth that cuts through",
-      "keywordsZh": "突破 · 清晰洞察，以及斩开迷雾的真相",
-      "meaning": "a breakthrough, clean perception, and a truth that cuts through",
-      "meaningZh": "突破、清晰洞察，以及斩开迷雾的真相",
-      "shadow": "mental fog, harsh judgment, or conflict without clarity",
-      "shadowZh": "思绪迷雾、严苛判断，或缺乏清晰的冲突",
-      "reflection": "Where is a breakthrough, clean perception, and a truth that cuts through asking for your attention rather than certainty?",
-      "reflectionZh": "突破、清晰洞察，以及斩开迷雾的真相正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Separate the observable fact from the story, then write the clearest next sentence.",
-      "practiceZh": "将可观察的事实与想象区分开，再写下最清楚的下一句话。",
+      "keywords": {
+        "en": "a breakthrough · clean perception · and a truth that cuts through",
+        "zh": "突破 · 清晰洞察，以及斩开迷雾的真相"
+      },
       "src": "assets/cards/r1/generated/swords-01-ace-of-swords.png",
-      "sha256": "11bcb8ab07184e57e6093b984e3305d1f6eb460eb6b678e2174be46e1692c354"
+      "sha256": "11bcb8ab07184e57e6093b984e3305d1f6eb460eb6b678e2174be46e1692c354",
+      "upright": {
+        "core": {
+          "en": "A breakthrough, clean perception, and a truth that cuts through.",
+          "zh": "突破、清晰洞察，以及斩开迷雾的真相。"
+        },
+        "tension": {
+          "en": "The position exposes a decision point: Is clarity being used as permission for cruelty or combat? If it applies, remove the insult, keep the fact, and deliver it to the right person.",
+          "zh": "这个位置揭示一个决定点：清晰是否被用来合理化残酷或争斗？ 若符合现况，删掉侮辱，保留事实，并告诉正确的人。"
+        },
+        "reflection": {
+          "en": "Which truth would simplify the problem if stated cleanly?",
+          "zh": "哪一项真相若被清楚说出，会让问题变简单？"
+        },
+        "action": {
+          "en": "Write the claim in one sentence and attach the strongest available evidence.",
+          "zh": "用一句话写下主张，并附上目前最强的证据。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Reversed, the lesson of mental fog, harsh judgment, or conflict without clarity is still being integrated.",
+          "zh": "逆位时，思绪迷雾、严苛判断，或缺乏清晰的冲突的功课仍在整合。"
+        },
+        "tension": {
+          "en": "The symbol contains more a breakthrough, clean perception, and a truth that cuts through than it can currently use.",
+          "zh": "象征容纳了超过当前能使用的突破、清晰洞察，以及斩开迷雾的真相。"
+        },
+        "reflection": {
+          "en": "Is clarity being used as permission for cruelty or combat?",
+          "zh": "清晰是否被用来合理化残酷或争斗？"
+        },
+        "action": {
+          "en": "Remove the insult, keep the fact, and deliver it to the right person.",
+          "zh": "删掉侮辱，保留事实，并告诉正确的人。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The situation carries a breakthrough, clean perception, and a truth that cuts through; the image makes it concrete.",
+          "zh": "现状承载着突破、清晰洞察，以及斩开迷雾的真相；图像让它变得具体。"
+        },
+        "challenge": {
+          "en": "Work the problem from this angle: Is clarity being used as permission for cruelty or combat?",
+          "zh": "从这个角度处理问题：清晰是否被用来合理化残酷或争斗？"
+        },
+        "guidance": {
+          "en": "Bring the image down to earth: write the claim in one sentence and attach the strongest available evidence.",
+          "zh": "让图像落到现实地面：用一句话写下主张，并附上目前最强的证据。"
+        }
+      }
     },
     {
       "id": "SWORDS-02",
@@ -1167,18 +3411,62 @@ window.CELESTIAL_DECK = {
       "zh": "宝剑二",
       "motif": "blindfolded crossing",
       "rationale": "An original blindfolded crossing composition translates the traditional Two of Swords scene into this deck’s celestial line language.",
-      "keywords": "a hard choice · suspended judgment · and a guarded stalemate",
-      "keywordsZh": "艰难选择 · 暂缓判断，以及防御性的僵局",
-      "meaning": "a hard choice, suspended judgment, and a guarded stalemate",
-      "meaningZh": "艰难选择、暂缓判断，以及防御性的僵局",
-      "shadow": "confusion, information overload, or choosing between imperfect paths",
-      "shadowZh": "混乱、资讯过载，或在不完美道路间选择",
-      "reflection": "Where is a hard choice, suspended judgment, and a guarded stalemate asking for your attention rather than certainty?",
-      "reflectionZh": "艰难选择、暂缓判断，以及防御性的僵局正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Separate the observable fact from the story, then write the clearest next sentence.",
-      "practiceZh": "将可观察的事实与想象区分开，再写下最清楚的下一句话。",
+      "keywords": {
+        "en": "a hard choice · suspended judgment · and a guarded stalemate",
+        "zh": "艰难选择 · 暂缓判断，以及防御性的僵局"
+      },
       "src": "assets/cards/r1/generated/swords-02-two-of-swords.png",
-      "sha256": "8b2dbef4786a79fb0b96c95fd8dbdf9ad13dc692b3f7d367f644e31c176837fb"
+      "sha256": "8b2dbef4786a79fb0b96c95fd8dbdf9ad13dc692b3f7d367f644e31c176837fb",
+      "upright": {
+        "core": {
+          "en": "A hard choice, suspended judgment, and a guarded stalemate.",
+          "zh": "艰难选择、暂缓判断，以及防御性的僵局。"
+        },
+        "tension": {
+          "en": "The friction in the spread can be named simply: Has gathering more information become a way to avoid choosing? If it applies, set the minimum evidence threshold and decide when it is met.",
+          "zh": "牌阵中的摩擦可以简单说成：继续收集资讯是否已经成为逃避选择的方法？ 若符合现况，设定最低证据门槛，达到时就作决定。"
+        },
+        "reflection": {
+          "en": "What decision is blocked because two imperfect truths coexist?",
+          "zh": "哪一个决定因为两个不完美真相并存而停住？"
+        },
+        "action": {
+          "en": "List what each option protects and what each option costs.",
+          "zh": "列出每个选项保护什么、代价是什么。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The current cannot flow until confusion, information overload, or choosing between imperfect paths becomes honest and proportionate.",
+          "zh": "在混乱、资讯过载，或在不完美道路间选择变得诚实且适度前，流动无法恢复。"
+        },
+        "tension": {
+          "en": "Reversal asks for integration before a hard choice, suspended judgment, and a guarded stalemate returns outward.",
+          "zh": "逆位要求先整合，再让艰难选择、暂缓判断，以及防御性的僵局回到外在。"
+        },
+        "reflection": {
+          "en": "Has gathering more information become a way to avoid choosing?",
+          "zh": "继续收集资讯是否已经成为逃避选择的方法？"
+        },
+        "action": {
+          "en": "Set the minimum evidence threshold and decide when it is met.",
+          "zh": "设定最低证据门槛，达到时就作决定。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "a hard choice, suspended judgment, and a guarded stalemate is the atmosphere this card asks you to acknowledge.",
+          "zh": "艰难选择、暂缓判断，以及防御性的僵局是这张牌请你承认的氛围。"
+        },
+        "challenge": {
+          "en": "The challenge becomes specific in one question: Has gathering more information become a way to avoid choosing?",
+          "zh": "挑战在一个问题中变得具体：继续收集资讯是否已经成为逃避选择的方法？"
+        },
+        "guidance": {
+          "en": "End reflection with this concrete move: list what each option protects and what each option costs.",
+          "zh": "用这个具体行动结束反思：列出每个选项保护什么、代价是什么。"
+        }
+      }
     },
     {
       "id": "SWORDS-03",
@@ -1189,18 +3477,62 @@ window.CELESTIAL_DECK = {
       "zh": "宝剑三",
       "motif": "pierced storm heart",
       "rationale": "An original pierced storm heart composition translates the traditional Three of Swords scene into this deck’s celestial line language.",
-      "keywords": "heartbreak · sorrow · and pain that asks to be acknowledged",
-      "keywordsZh": "心碎 · 悲伤，以及需要被承认的痛",
-      "meaning": "heartbreak, sorrow, and pain that asks to be acknowledged",
-      "meaningZh": "心碎、悲伤，以及需要被承认的痛",
-      "shadow": "healing, forgiveness, and beginning to move beyond grief",
-      "shadowZh": "疗愈、原谅，以及开始走出悲伤",
-      "reflection": "Where is heartbreak, sorrow, and pain that asks to be acknowledged asking for your attention rather than certainty?",
-      "reflectionZh": "心碎、悲伤，以及需要被承认的痛正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Separate the observable fact from the story, then write the clearest next sentence.",
-      "practiceZh": "将可观察的事实与想象区分开，再写下最清楚的下一句话。",
+      "keywords": {
+        "en": "heartbreak · sorrow · and pain that asks to be acknowledged",
+        "zh": "心碎 · 悲伤，以及需要被承认的痛"
+      },
       "src": "assets/cards/r1/approved/swords-03-three-of-swords.png",
-      "sha256": "8f0f2429f66e35f13aea3bbc327095c7ccb576f04139b780784435eae45502e9"
+      "sha256": "8f0f2429f66e35f13aea3bbc327095c7ccb576f04139b780784435eae45502e9",
+      "upright": {
+        "core": {
+          "en": "Heartbreak, sorrow, and pain that asks to be acknowledged.",
+          "zh": "心碎、悲伤，以及需要被承认的痛。"
+        },
+        "tension": {
+          "en": "Hold the uncertainty long enough to ask: Are you calling the wound healed because you can discuss it calmly? If it applies, notice one remaining trigger and plan a kinder response to it.",
+          "zh": "容纳不确定，直到你能问：你是否因为能平静谈论伤口，就称它已经痊愈？ 若符合现况，找出一个仍会触发的点，并计划更温和的回应。"
+        },
+        "reflection": {
+          "en": "Which pain needs acknowledgment before interpretation?",
+          "zh": "哪一种痛需要先被承认，再被解释？"
+        },
+        "action": {
+          "en": "Describe what hurt without explaining it away, then seek appropriate support.",
+          "zh": "描述伤害，不要替它开脱，然后寻求合适支持。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Reversed, healing, forgiveness, and beginning to move beyond grief may be blocked, delayed, private, or excessive.",
+          "zh": "逆位时，疗愈、原谅，以及开始走出悲伤可能受阻、延迟、转向内在或表现过度。"
+        },
+        "tension": {
+          "en": "The Three of Swords turns inward when its central quality has no honest outlet.",
+          "zh": "当心碎、悲伤，以及需要被承认的痛没有诚实出口时，宝剑三会转向内在。"
+        },
+        "reflection": {
+          "en": "Are you calling the wound healed because you can discuss it calmly?",
+          "zh": "你是否因为能平静谈论伤口，就称它已经痊愈？"
+        },
+        "action": {
+          "en": "Notice one remaining trigger and plan a kinder response to it.",
+          "zh": "找出一个仍会触发的点，并计划更温和的回应。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The Three of Swords places heartbreak, sorrow, and pain that asks to be acknowledged at the center of the present moment.",
+          "zh": "宝剑三把心碎、悲伤，以及需要被承认的痛放在当下核心。"
+        },
+        "challenge": {
+          "en": "The challenge is to answer this honestly: Are you calling the wound healed because you can discuss it calmly?",
+          "zh": "挑战在于诚实回答：你是否因为能平静谈论伤口，就称它已经痊愈？"
+        },
+        "guidance": {
+          "en": "Put the card to work now: describe what hurt without explaining it away, then seek appropriate support.",
+          "zh": "现在把这张牌用在行动上：描述伤害，不要替它开脱，然后寻求合适支持。"
+        }
+      }
     },
     {
       "id": "SWORDS-04",
@@ -1211,18 +3543,62 @@ window.CELESTIAL_DECK = {
       "zh": "宝剑四",
       "motif": "resting knight",
       "rationale": "An original resting knight composition translates the traditional Four of Swords scene into this deck’s celestial line language.",
-      "keywords": "rest · recovery · and quiet mental restoration",
-      "keywordsZh": "休息 · 恢复，以及安静的心智修复",
-      "meaning": "rest, recovery, and quiet mental restoration",
-      "meaningZh": "休息、恢复，以及安静的心智修复",
-      "shadow": "restlessness, stress, or returning before you are ready",
-      "shadowZh": "坐立不安、压力，或尚未准备好就再次出发",
-      "reflection": "Where is rest, recovery, and quiet mental restoration asking for your attention rather than certainty?",
-      "reflectionZh": "休息、恢复，以及安静的心智修复正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Separate the observable fact from the story, then write the clearest next sentence.",
-      "practiceZh": "将可观察的事实与想象区分开，再写下最清楚的下一句话。",
+      "keywords": {
+        "en": "rest · recovery · and quiet mental restoration",
+        "zh": "休息 · 恢复，以及安静的心智修复"
+      },
       "src": "assets/cards/r1/generated/swords-04-four-of-swords.png",
-      "sha256": "5498256ab94d4431db354065ead7908add406e67c7259152bb782fea952d252b"
+      "sha256": "5498256ab94d4431db354065ead7908add406e67c7259152bb782fea952d252b",
+      "upright": {
+        "core": {
+          "en": "Rest, recovery, and quiet mental restoration.",
+          "zh": "休息、恢复，以及安静的心智修复。"
+        },
+        "tension": {
+          "en": "The card makes one demand for honesty: Are agitation and guilt sending you back before recovery is complete? If it applies, extend the pause by one practical unit and tell others when you will return.",
+          "zh": "这张牌只要求一件诚实的事：躁动与内疚是否让你在恢复完成前返回？ 若符合现况，把暂停延长一个实际单位，并告诉他人你何时回来。"
+        },
+        "reflection": {
+          "en": "What form of rest would actually restore your thinking?",
+          "zh": "哪一种休息真的能恢复你的思考？"
+        },
+        "action": {
+          "en": "Block a defined rest period and remove the device or task that interrupts it.",
+          "zh": "划出明确休息时段，并移开会打断你的设备或任务。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "This orientation turns restlessness, stress, or returning before you are ready inward for closer examination.",
+          "zh": "这个方向让坐立不安、压力，或尚未准备好就再次出发转向内在，接受更仔细的检视。"
+        },
+        "tension": {
+          "en": "Its inner work is to recover rest, recovery, and quiet mental restoration without forcing it.",
+          "zh": "它的内在功课是恢复休息、恢复，以及安静的心智修复，但不强迫。"
+        },
+        "reflection": {
+          "en": "Are agitation and guilt sending you back before recovery is complete?",
+          "zh": "躁动与内疚是否让你在恢复完成前返回？"
+        },
+        "action": {
+          "en": "Extend the pause by one practical unit and tell others when you will return.",
+          "zh": "把暂停延长一个实际单位，并告诉他人你何时回来。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "Four of Swords shows the current pattern through rest, recovery, and quiet mental restoration.",
+          "zh": "宝剑四以休息、恢复，以及安静的心智修复呈现当前模式。"
+        },
+        "challenge": {
+          "en": "Do not call it fate; work with the question: Are agitation and guilt sending you back before recovery is complete?",
+          "zh": "不要把它称为命运；请处理这个问题：躁动与内疚是否让你在恢复完成前返回？"
+        },
+        "guidance": {
+          "en": "Guidance becomes credible through action: block a defined rest period and remove the device or task that interrupts it.",
+          "zh": "指引通过行动变得可信：划出明确休息时段，并移开会打断你的设备或任务。"
+        }
+      }
     },
     {
       "id": "SWORDS-05",
@@ -1233,18 +3609,62 @@ window.CELESTIAL_DECK = {
       "zh": "宝剑五",
       "motif": "victor gathering blades",
       "rationale": "An original victor gathering blades composition translates the traditional Five of Swords scene into this deck’s celestial line language.",
-      "keywords": "ambition · hollow victory · and winning at too high a cost",
-      "keywordsZh": "野心 · 空洞胜利，以及付出过高代价的获胜",
-      "meaning": "ambition, hollow victory, and winning at too high a cost",
-      "meaningZh": "野心、空洞胜利，以及付出过高代价的获胜",
-      "shadow": "resentment easing, reconciliation, or reconsidering the fight",
-      "shadowZh": "怨气缓和、和解，或重新思考这场争斗",
-      "reflection": "Where is ambition, hollow victory, and winning at too high a cost asking for your attention rather than certainty?",
-      "reflectionZh": "野心、空洞胜利，以及付出过高代价的获胜正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Separate the observable fact from the story, then write the clearest next sentence.",
-      "practiceZh": "将可观察的事实与想象区分开，再写下最清楚的下一句话。",
+      "keywords": {
+        "en": "ambition · hollow victory · and winning at too high a cost",
+        "zh": "野心 · 空洞胜利，以及付出过高代价的获胜"
+      },
       "src": "assets/cards/r1/generated/swords-05-five-of-swords.png",
-      "sha256": "590f4af64358fc20f1ac5473d37f9074ba50b5b91fd22db81393442c1d25a5bb"
+      "sha256": "590f4af64358fc20f1ac5473d37f9074ba50b5b91fd22db81393442c1d25a5bb",
+      "upright": {
+        "core": {
+          "en": "Ambition, hollow victory, and winning at too high a cost.",
+          "zh": "野心、空洞胜利，以及付出过高代价的获胜。"
+        },
+        "tension": {
+          "en": "This tension is workable once you consider: Is reconciliation being offered without accountability, or resentment being rehearsed? If it applies, name the harm and one condition for repair; stop replaying the contest.",
+          "zh": "当你考虑这个问题，张力就能被处理：和解是否没有责任，怨恨是否不断被重演？ 若符合现况，说出伤害与一项修复条件，然后停止重播竞争。"
+        },
+        "reflection": {
+          "en": "Which victory would cost more trust than it is worth?",
+          "zh": "哪一种胜利会付出超过价值的信任代价？"
+        },
+        "action": {
+          "en": "Define the acceptable outcome before the argument begins.",
+          "zh": "争论开始前，先定义可接受的结果。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The reversal asks how resentment easing, reconciliation, or reconsidering the fight is being withheld or overused.",
+          "zh": "逆位追问怨气缓和、和解，或重新思考这场争斗如何被压住或过度使用。"
+        },
+        "tension": {
+          "en": "The symbol asks how ambition, hollow victory, and winning at too high a cost became blocked inside.",
+          "zh": "象征追问野心、空洞胜利，以及付出过高代价的获胜如何在心里受阻。"
+        },
+        "reflection": {
+          "en": "Is reconciliation being offered without accountability, or resentment being rehearsed?",
+          "zh": "和解是否没有责任，怨恨是否不断被重演？"
+        },
+        "action": {
+          "en": "Name the harm and one condition for repair; stop replaying the contest.",
+          "zh": "说出伤害与一项修复条件，然后停止重播竞争。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "Here, ambition, hollow victory, and winning at too high a cost is already shaping what happens next.",
+          "zh": "此刻，野心、空洞胜利，以及付出过高代价的获胜已经在影响下一步。"
+        },
+        "challenge": {
+          "en": "The difficult work begins here: Is reconciliation being offered without accountability, or resentment being rehearsed?",
+          "zh": "困难功课从这里开始：和解是否没有责任，怨恨是否不断被重演？"
+        },
+        "guidance": {
+          "en": "The grounded response is direct: define the acceptable outcome before the argument begins.",
+          "zh": "可落实的回应很直接：争论开始前，先定义可接受的结果。"
+        }
+      }
     },
     {
       "id": "SWORDS-06",
@@ -1255,18 +3675,62 @@ window.CELESTIAL_DECK = {
       "zh": "宝剑六",
       "motif": "boat through grey water",
       "rationale": "An original boat through grey water composition translates the traditional Six of Swords scene into this deck’s celestial line language.",
-      "keywords": "transition · departure · and carrying lessons toward calmer ground",
-      "keywordsZh": "转变 · 离开，以及带着经验驶向平静之地",
-      "meaning": "transition, departure, and carrying lessons toward calmer ground",
-      "meaningZh": "转变、离开，以及带着经验驶向平静之地",
-      "shadow": "unresolved baggage, resistance, or repeatedly returning to the past",
-      "shadowZh": "未解包袱、抗拒，或反复回到过去",
-      "reflection": "Where is transition, departure, and carrying lessons toward calmer ground asking for your attention rather than certainty?",
-      "reflectionZh": "转变、离开，以及带着经验驶向平静之地正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Separate the observable fact from the story, then write the clearest next sentence.",
-      "practiceZh": "将可观察的事实与想象区分开，再写下最清楚的下一句话。",
+      "keywords": {
+        "en": "transition · departure · and carrying lessons toward calmer ground",
+        "zh": "转变 · 离开，以及带着经验驶向平静之地"
+      },
       "src": "assets/cards/r1/generated/swords-06-six-of-swords.png",
-      "sha256": "b8eb09edca2f4115ac9dc133452ec8da5a078ce7adcf664a19958e1a3e183ce4"
+      "sha256": "b8eb09edca2f4115ac9dc133452ec8da5a078ce7adcf664a19958e1a3e183ce4",
+      "upright": {
+        "core": {
+          "en": "Transition, departure, and carrying lessons toward calmer ground.",
+          "zh": "转变、离开，以及带着经验驶向平静之地。"
+        },
+        "tension": {
+          "en": "The challenge is neither fixed nor hidden: Are unresolved details becoming reasons to return to familiar pain? If it applies, close one practical loose end without reopening the whole chapter.",
+          "zh": "挑战并非固定，也不隐藏：未解决细节是否成为回到熟悉痛苦的理由？ 若符合现况，收好一个实际尾巴，不要重新打开整个章节。"
+        },
+        "reflection": {
+          "en": "What can be carried forward, and what must stay on the old shore?",
+          "zh": "什么可以带往前方，什么必须留在旧岸？"
+        },
+        "action": {
+          "en": "Pack one lesson, make one transition plan, and leave one burden behind.",
+          "zh": "带上一项教训，制定一项过渡计划，并留下一个负担。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Here, unresolved baggage, resistance, or repeatedly returning to the past is present but cannot yet move cleanly.",
+          "zh": "此时，未解包袱、抗拒，或反复回到过去仍然存在，却尚未顺畅流动。"
+        },
+        "tension": {
+          "en": "A private struggle forms where transition, departure, and carrying lessons toward calmer ground cannot be expressed safely.",
+          "zh": "当转变、离开，以及带着经验驶向平静之地无法安全表达，私下挣扎就会形成。"
+        },
+        "reflection": {
+          "en": "Are unresolved details becoming reasons to return to familiar pain?",
+          "zh": "未解决细节是否成为回到熟悉痛苦的理由？"
+        },
+        "action": {
+          "en": "Close one practical loose end without reopening the whole chapter.",
+          "zh": "收好一个实际尾巴，不要重新打开整个章节。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The scene begins with transition, departure, and carrying lessons toward calmer ground, not with a prediction.",
+          "zh": "画面从转变、离开，以及带着经验驶向平静之地开始，而不是从预言开始。"
+        },
+        "challenge": {
+          "en": "This position sharpens one issue: Are unresolved details becoming reasons to return to familiar pain?",
+          "zh": "这个位置让一个议题变得尖锐：未解决细节是否成为回到熟悉痛苦的理由？"
+        },
+        "guidance": {
+          "en": "Use the image as a prompt for one move: pack one lesson, make one transition plan, and leave one burden behind.",
+          "zh": "把图像当成一次行动提示：带上一项教训，制定一项过渡计划，并留下一个负担。"
+        }
+      }
     },
     {
       "id": "SWORDS-07",
@@ -1277,18 +3741,62 @@ window.CELESTIAL_DECK = {
       "zh": "宝剑七",
       "motif": "moonlit strategist",
       "rationale": "An original moonlit strategist composition translates the traditional Seven of Swords scene into this deck’s celestial line language.",
-      "keywords": "strategy · secrecy · and acting outside the obvious route",
-      "keywordsZh": "策略 · 隐秘，以及采取非常规路线",
-      "meaning": "strategy, secrecy, and acting outside the obvious route",
-      "meaningZh": "策略、隐秘，以及采取非常规路线",
-      "shadow": "coming clean, revising the plan, or deception turning inward",
-      "shadowZh": "坦白、修正计划，或欺骗转向自身",
-      "reflection": "Where is strategy, secrecy, and acting outside the obvious route asking for your attention rather than certainty?",
-      "reflectionZh": "策略、隐秘，以及采取非常规路线正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Separate the observable fact from the story, then write the clearest next sentence.",
-      "practiceZh": "将可观察的事实与想象区分开，再写下最清楚的下一句话。",
+      "keywords": {
+        "en": "strategy · secrecy · and acting outside the obvious route",
+        "zh": "策略 · 隐秘，以及采取非常规路线"
+      },
       "src": "assets/cards/r1/generated/swords-07-seven-of-swords.png",
-      "sha256": "a33a6b5ba37514540cbb13cef6713ee70f34b880e285fc3efb5efdc14dec398c"
+      "sha256": "a33a6b5ba37514540cbb13cef6713ee70f34b880e285fc3efb5efdc14dec398c",
+      "upright": {
+        "core": {
+          "en": "Strategy, secrecy, and acting outside the obvious route.",
+          "zh": "策略、隐秘，以及采取非常规路线。"
+        },
+        "tension": {
+          "en": "Use the difficult edge of the image to ask: Has strategy turned into concealment from yourself or others? If it applies, correct one misleading impression before it compounds.",
+          "zh": "利用图像困难的一面提问：策略是否已经变成对自己或他人的隐瞒？ 若符合现况，在误导印象扩大前，纠正其中一项。"
+        },
+        "reflection": {
+          "en": "Which plan needs discretion, and which part needs honesty?",
+          "zh": "哪一个计划需要谨慎，哪一部分需要诚实？"
+        },
+        "action": {
+          "en": "Write who truly needs to know, then communicate only the relevant facts.",
+          "zh": "写下真正需要知情的人，再只沟通相关事实。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The card revisits coming clean, revising the plan, or deception turning inward through delay, interiority, or excess.",
+          "zh": "这张牌通过延迟、内在化或过度重新检视坦白、修正计划，或欺骗转向自身。"
+        },
+        "tension": {
+          "en": "The reversed image holds strategy, secrecy, and acting outside the obvious route behind the surface.",
+          "zh": "逆位图像把策略、隐秘，以及采取非常规路线留在表面之下。"
+        },
+        "reflection": {
+          "en": "Has strategy turned into concealment from yourself or others?",
+          "zh": "策略是否已经变成对自己或他人的隐瞒？"
+        },
+        "action": {
+          "en": "Correct one misleading impression before it compounds.",
+          "zh": "在误导印象扩大前，纠正其中一项。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "Seven of Swords brings the lived reality of strategy, secrecy, and acting outside the obvious route into view.",
+          "zh": "宝剑七让策略、隐秘，以及采取非常规路线的现实处境显现出来。"
+        },
+        "challenge": {
+          "en": "The obstacle becomes clearer when you ask: Has strategy turned into concealment from yourself or others?",
+          "zh": "当你这样提问，障碍会更清楚：策略是否已经变成对自己或他人的隐瞒？"
+        },
+        "guidance": {
+          "en": "This card offers a practical direction: write who truly needs to know, then communicate only the relevant facts.",
+          "zh": "这张牌提供务实方向：写下真正需要知情的人，再只沟通相关事实。"
+        }
+      }
     },
     {
       "id": "SWORDS-08",
@@ -1299,18 +3807,62 @@ window.CELESTIAL_DECK = {
       "zh": "宝剑八",
       "motif": "bound circle of blades",
       "rationale": "An original bound circle of blades composition translates the traditional Eight of Swords scene into this deck’s celestial line language.",
-      "keywords": "feeling trapped by fear · story · or self-limiting belief",
-      "keywordsZh": "被恐惧 · 叙事，或自我限制的信念困住",
-      "meaning": "feeling trapped by fear, story, or self-limiting belief",
-      "meaningZh": "被恐惧、叙事，或自我限制的信念困住",
-      "shadow": "self-acceptance, a new viewpoint, and reclaiming freedom",
-      "shadowZh": "自我接纳、新视角，以及重新取回自由",
-      "reflection": "Where is feeling trapped by fear, story, or self-limiting belief asking for your attention rather than certainty?",
-      "reflectionZh": "被恐惧、叙事，或自我限制的信念困住正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Separate the observable fact from the story, then write the clearest next sentence.",
-      "practiceZh": "将可观察的事实与想象区分开，再写下最清楚的下一句话。",
+      "keywords": {
+        "en": "feeling trapped by fear · story · or self-limiting belief",
+        "zh": "被恐惧 · 叙事，或自我限制的信念困住"
+      },
       "src": "assets/cards/r1/generated/swords-08-eight-of-swords.png",
-      "sha256": "4fc96b7ba1f85d85b054848257e69a188617d60ce96601012ac8b966c257e39b"
+      "sha256": "4fc96b7ba1f85d85b054848257e69a188617d60ce96601012ac8b966c257e39b",
+      "upright": {
+        "core": {
+          "en": "Feeling trapped by fear, story, or self-limiting belief.",
+          "zh": "被恐惧、叙事，或自我限制的信念困住。"
+        },
+        "tension": {
+          "en": "The spread places pressure on this question: Is sudden confidence skipping the support needed for lasting freedom? If it applies, ask for help with one real constraint while releasing one imagined one.",
+          "zh": "牌阵把压力放在这个问题上：突然的信心是否跳过了长久自由所需的支持？ 若符合现况，为一个真实限制求助，同时放下一个想象限制。"
+        },
+        "reflection": {
+          "en": "Which barrier is made of facts, and which is made of a repeated story?",
+          "zh": "哪一道障碍来自事实，哪一道来自重复故事？"
+        },
+        "action": {
+          "en": "Test one restriction with a small reversible action.",
+          "zh": "用一个可逆的小行动测试一项限制。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Reversal makes the current condition of self-acceptance, a new viewpoint, and reclaiming freedom visible.",
+          "zh": "逆位让自我接纳、新视角，以及重新取回自由当前的状态显现出来。"
+        },
+        "tension": {
+          "en": "Its delay concerns the missing conditions for feeling trapped by fear, story, or self-limiting belief.",
+          "zh": "它的延迟与被恐惧、叙事，或自我限制的信念困住所缺少的条件有关。"
+        },
+        "reflection": {
+          "en": "Is sudden confidence skipping the support needed for lasting freedom?",
+          "zh": "突然的信心是否跳过了长久自由所需的支持？"
+        },
+        "action": {
+          "en": "Ask for help with one real constraint while releasing one imagined one.",
+          "zh": "为一个真实限制求助，同时放下一个想象限制。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "At present, the card's Eight of Swords points to feeling trapped by fear, story, or self-limiting belief.",
+          "zh": "目前，这张牌的宝剑八指向被恐惧、叙事，或自我限制的信念困住。"
+        },
+        "challenge": {
+          "en": "What needs attention is not punishment but inquiry: Is sudden confidence skipping the support needed for lasting freedom?",
+          "zh": "需要的不是惩罚，而是追问：突然的信心是否跳过了长久自由所需的支持？"
+        },
+        "guidance": {
+          "en": "Let the guidance end in something observable: test one restriction with a small reversible action.",
+          "zh": "让指引结束在可观察的事上：用一个可逆的小行动测试一项限制。"
+        }
+      }
     },
     {
       "id": "SWORDS-09",
@@ -1321,18 +3873,62 @@ window.CELESTIAL_DECK = {
       "zh": "宝剑九",
       "motif": "nine shadows above the bed",
       "rationale": "An original nine shadows above the bed composition translates the traditional Nine of Swords scene into this deck’s celestial line language.",
-      "keywords": "anxiety · sleepless thought · and pain amplified in solitude",
-      "keywordsZh": "焦虑 · 失眠思绪，以及独处时被放大的痛苦",
-      "meaning": "anxiety, sleepless thought, and pain amplified in solitude",
-      "meaningZh": "焦虑、失眠思绪，以及独处时被放大的痛苦",
-      "shadow": "reaching out, fragile hope, or a fear beginning to loosen",
-      "shadowZh": "寻求支持、脆弱希望，或恐惧开始松动",
-      "reflection": "Where is anxiety, sleepless thought, and pain amplified in solitude asking for your attention rather than certainty?",
-      "reflectionZh": "焦虑、失眠思绪，以及独处时被放大的痛苦正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Separate the observable fact from the story, then write the clearest next sentence.",
-      "practiceZh": "将可观察的事实与想象区分开，再写下最清楚的下一句话。",
+      "keywords": {
+        "en": "anxiety · sleepless thought · and pain amplified in solitude",
+        "zh": "焦虑 · 失眠思绪，以及独处时被放大的痛苦"
+      },
       "src": "assets/cards/r1/generated/swords-09-nine-of-swords.png",
-      "sha256": "f199f9941c5b50d028e431277ad0458a1870c63d05dc7d6bc70e578c702aa6eb"
+      "sha256": "f199f9941c5b50d028e431277ad0458a1870c63d05dc7d6bc70e578c702aa6eb",
+      "upright": {
+        "core": {
+          "en": "Anxiety, sleepless thought, and pain amplified in solitude.",
+          "zh": "焦虑、失眠思绪，以及独处时被放大的痛苦。"
+        },
+        "tension": {
+          "en": "The obstacle is best approached through inquiry: Are you minimizing distress because a little hope has returned? If it applies, tell one trusted person how bad the nights have been and ask for concrete support.",
+          "zh": "最适合以追问接近这个障碍：一点希望回来后，你是否开始淡化痛苦？ 若符合现况，告诉可信任的人夜晚有多难，并请求具体支持。"
+        },
+        "reflection": {
+          "en": "Which thought grows louder because it remains private at night?",
+          "zh": "哪一个念头因为夜里独自承受而越来越响？"
+        },
+        "action": {
+          "en": "Write the fear before bed and schedule a daytime response to the solvable part.",
+          "zh": "睡前写下恐惧，并为可解决部分安排白天行动。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The energy of reaching out, fragile hope, or a fear beginning to loosen needs recalibration rather than rejection.",
+          "zh": "寻求支持、脆弱希望，或恐惧开始松动的能量需要重新调整，而不是被否定。"
+        },
+        "tension": {
+          "en": "Energy gathers internally around the need for anxiety, sleepless thought, and pain amplified in solitude.",
+          "zh": "能量围绕对焦虑、失眠思绪，以及独处时被放大的痛苦的需要向内聚集。"
+        },
+        "reflection": {
+          "en": "Are you minimizing distress because a little hope has returned?",
+          "zh": "一点希望回来后，你是否开始淡化痛苦？"
+        },
+        "action": {
+          "en": "Tell one trusted person how bad the nights have been and ask for concrete support.",
+          "zh": "告诉可信任的人夜晚有多难，并请求具体支持。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "What is happening now is best read as anxiety, sleepless thought, and pain amplified in solitude.",
+          "zh": "眼前发生的事，可以先理解为焦虑、失眠思绪，以及独处时被放大的痛苦。"
+        },
+        "challenge": {
+          "en": "The card tests your response through this question: Are you minimizing distress because a little hope has returned?",
+          "zh": "这张牌通过这个问题检验你的回应：一点希望回来后，你是否开始淡化痛苦？"
+        },
+        "guidance": {
+          "en": "The next response can remain modest: write the fear before bed and schedule a daytime response to the solvable part.",
+          "zh": "下一步可以保持朴素：睡前写下恐惧，并为可解决部分安排白天行动。"
+        }
+      }
     },
     {
       "id": "SWORDS-10",
@@ -1343,18 +3939,62 @@ window.CELESTIAL_DECK = {
       "zh": "宝剑十",
       "motif": "dawn beyond ten blades",
       "rationale": "An original dawn beyond ten blades composition translates the traditional Ten of Swords scene into this deck’s celestial line language.",
-      "keywords": "collapse · finality · and the truth of an ending",
-      "keywordsZh": "崩塌 · 终局，以及结束本身的真相",
-      "meaning": "collapse, finality, and the truth of an ending",
-      "meaningZh": "崩塌、终局，以及结束本身的真相",
-      "shadow": "survival, an inevitable closure, and the first upward turn",
-      "shadowZh": "幸存、不可避免的收尾，以及首次回升",
-      "reflection": "Where is collapse, finality, and the truth of an ending asking for your attention rather than certainty?",
-      "reflectionZh": "崩塌、终局，以及结束本身的真相正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Separate the observable fact from the story, then write the clearest next sentence.",
-      "practiceZh": "将可观察的事实与想象区分开，再写下最清楚的下一句话。",
+      "keywords": {
+        "en": "collapse · finality · and the truth of an ending",
+        "zh": "崩塌 · 终局，以及结束本身的真相"
+      },
       "src": "assets/cards/r1/generated/swords-10-ten-of-swords.png",
-      "sha256": "25da24bd4c327935775204c304a03a464a73312e94efa56d2fee6186c9f70040"
+      "sha256": "25da24bd4c327935775204c304a03a464a73312e94efa56d2fee6186c9f70040",
+      "upright": {
+        "core": {
+          "en": "Collapse, finality, and the truth of an ending.",
+          "zh": "崩塌、终局，以及结束本身的真相。"
+        },
+        "tension": {
+          "en": "Let the challenge interrupt certainty: Are you trying to revive what now requires burial and rest? If it applies, stop one rescue attempt and direct that energy toward stabilization.",
+          "zh": "让挑战打断确定感：你是否试图复活现在需要安葬与休息的事？ 若符合现况，停止一次抢救，把那份精力转向稳定自己。"
+        },
+        "reflection": {
+          "en": "What ending becomes undeniable when you stop bargaining?",
+          "zh": "当你停止讨价还价时，哪一个结束变得无法否认？"
+        },
+        "action": {
+          "en": "Protect your body, document what ended, and choose the first recovery task.",
+          "zh": "先保护身体，记录已经结束的事，再选择第一项恢复任务。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "This side of the card shows survival, an inevitable closure, and the first upward turn working below the surface.",
+          "zh": "这张牌的一面显示幸存、不可避免的收尾，以及首次回升正在表面之下运作。"
+        },
+        "tension": {
+          "en": "The Ten of Swords becomes defensive when collapse, finality, and the truth of an ending feels unavailable.",
+          "zh": "当崩塌、终局，以及结束本身的真相显得无法取得，宝剑十会变得防御。"
+        },
+        "reflection": {
+          "en": "Are you trying to revive what now requires burial and rest?",
+          "zh": "你是否试图复活现在需要安葬与休息的事？"
+        },
+        "action": {
+          "en": "Stop one rescue attempt and direct that energy toward stabilization.",
+          "zh": "停止一次抢救，把那份精力转向稳定自己。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The Ten of Swords marks a situation organized around collapse, finality, and the truth of an ending.",
+          "zh": "宝剑十标示出一个围绕崩塌、终局，以及结束本身的真相形成的处境。"
+        },
+        "challenge": {
+          "en": "Face the tension without dramatizing it: Are you trying to revive what now requires burial and rest?",
+          "zh": "面对张力，但不要把它戏剧化：你是否试图复活现在需要安葬与休息的事？"
+        },
+        "guidance": {
+          "en": "Translate the symbol into daily life: protect your body, document what ended, and choose the first recovery task.",
+          "zh": "把象征翻译进日常生活：先保护身体，记录已经结束的事，再选择第一项恢复任务。"
+        }
+      }
     },
     {
       "id": "SWORDS-11",
@@ -1365,18 +4005,62 @@ window.CELESTIAL_DECK = {
       "zh": "宝剑侍从",
       "motif": "windborne observer",
       "rationale": "An original windborne observer composition translates the traditional Page of Swords scene into this deck’s celestial line language.",
-      "keywords": "curiosity · alert thinking · and restless mental energy",
-      "keywordsZh": "好奇 · 警觉思考，以及活跃的心智能量",
-      "meaning": "curiosity, alert thinking, and restless mental energy",
-      "meaningZh": "好奇、警觉思考，以及活跃的心智能量",
-      "shadow": "all talk, manipulation, or information used carelessly",
-      "shadowZh": "只说不做、操控，或轻率使用信息",
-      "reflection": "Where is curiosity, alert thinking, and restless mental energy asking for your attention rather than certainty?",
-      "reflectionZh": "好奇、警觉思考，以及活跃的心智能量正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Separate the observable fact from the story, then write the clearest next sentence.",
-      "practiceZh": "将可观察的事实与想象区分开，再写下最清楚的下一句话。",
+      "keywords": {
+        "en": "curiosity · alert thinking · and restless mental energy",
+        "zh": "好奇 · 警觉思考，以及活跃的心智能量"
+      },
       "src": "assets/cards/r1/generated/swords-11-page-of-swords.png",
-      "sha256": "bf45e06c76d5f4f118c7415ea32f8d44c2d0fda12068fabab47fe80bf6878c46"
+      "sha256": "bf45e06c76d5f4f118c7415ea32f8d44c2d0fda12068fabab47fe80bf6878c46",
+      "upright": {
+        "core": {
+          "en": "Curiosity, alert thinking, and restless mental energy.",
+          "zh": "好奇、警觉思考，以及活跃的心智能量。"
+        },
+        "tension": {
+          "en": "The card turns resistance into a useful question: Is quick intelligence becoming gossip, provocation, or empty talk? If it applies, verify one claim you repeated and correct it where necessary.",
+          "zh": "这张牌把阻力转成有用问题：快速思考是否变成闲话、挑衅或空谈？ 若符合现况，核实一项你转述过的说法，并在需要处更正。"
+        },
+        "reflection": {
+          "en": "Which question deserves investigation rather than instant opinion?",
+          "zh": "哪一个问题值得调查，而不是立刻发表意见？"
+        },
+        "action": {
+          "en": "Find one primary source and summarize it before sharing a conclusion.",
+          "zh": "找一个第一手来源，先总结，再分享结论。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "In reversal, all talk, manipulation, or information used carelessly may need recovery, restraint, or more time.",
+          "zh": "逆位时，只说不做、操控，或轻率使用信息可能需要恢复、节制或更多时间。"
+        },
+        "tension": {
+          "en": "Overexpression can hide a deeper lack of curiosity, alert thinking, and restless mental energy.",
+          "zh": "过度表现可能掩盖更深的好奇、警觉思考，以及活跃的心智能量不足。"
+        },
+        "reflection": {
+          "en": "Is quick intelligence becoming gossip, provocation, or empty talk?",
+          "zh": "快速思考是否变成闲话、挑衅或空谈？"
+        },
+        "action": {
+          "en": "Verify one claim you repeated and correct it where necessary.",
+          "zh": "核实一项你转述过的说法，并在需要处更正。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "curiosity, alert thinking, and restless mental energy describes the ground beneath this reading.",
+          "zh": "好奇、警觉思考，以及活跃的心智能量描述了这次解读脚下的地面。"
+        },
+        "challenge": {
+          "en": "The challenge stays practical when framed this way: Is quick intelligence becoming gossip, provocation, or empty talk?",
+          "zh": "这样表达，挑战就会保持务实：快速思考是否变成闲话、挑衅或空谈？"
+        },
+        "guidance": {
+          "en": "The card points toward a bounded action: find one primary source and summarize it before sharing a conclusion.",
+          "zh": "这张牌指向一项有边界的行动：找一个第一手来源，先总结，再分享结论。"
+        }
+      }
     },
     {
       "id": "SWORDS-12",
@@ -1387,18 +4071,62 @@ window.CELESTIAL_DECK = {
       "zh": "宝剑骑士",
       "motif": "charging blade",
       "rationale": "An original charging blade composition translates the traditional Knight of Swords scene into this deck’s celestial line language.",
-      "keywords": "decisive action and fierce defense of a conviction",
-      "keywordsZh": "果断行动，以及猛烈捍卫信念",
-      "meaning": "decisive action and fierce defense of a conviction",
-      "meaningZh": "果断行动，以及猛烈捍卫信念",
-      "shadow": "recklessness, poor direction, or ignoring consequences",
-      "shadowZh": "鲁莽、方向不清，或忽视后果",
-      "reflection": "Where is decisive action and fierce defense of a conviction asking for your attention rather than certainty?",
-      "reflectionZh": "果断行动，以及猛烈捍卫信念正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Separate the observable fact from the story, then write the clearest next sentence.",
-      "practiceZh": "将可观察的事实与想象区分开，再写下最清楚的下一句话。",
+      "keywords": {
+        "en": "decisive action and fierce defense of a conviction",
+        "zh": "果断行动，以及猛烈捍卫信念"
+      },
       "src": "assets/cards/r1/generated/swords-12-knight-of-swords.png",
-      "sha256": "b11a69bce3b79e64e7cb36827f8123fb9f22a78db0fc9d24d8bbb44d7bf833a1"
+      "sha256": "b11a69bce3b79e64e7cb36827f8123fb9f22a78db0fc9d24d8bbb44d7bf833a1",
+      "upright": {
+        "core": {
+          "en": "Decisive action and fierce defense of a conviction.",
+          "zh": "果断行动，以及猛烈捍卫信念。"
+        },
+        "tension": {
+          "en": "This position asks for courage, not prediction: Has decisiveness become a charge without direction? If it applies, delay the move until one informed person has challenged your plan.",
+          "zh": "这个位置要求勇气，而非预测：果断是否变成没有方向的冲锋？ 若符合现况，等一位知情者挑战过你的计划后再行动。"
+        },
+        "reflection": {
+          "en": "Which conviction can survive a pause for consequences?",
+          "zh": "哪一种信念经得起暂停并检视后果？"
+        },
+        "action": {
+          "en": "Write the intended result and three likely side effects before acting.",
+          "zh": "行动前写下预期结果与三个可能副作用。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The image turns inward to examine how recklessness, poor direction, or ignoring consequences is functioning.",
+          "zh": "图像转向内在，检视鲁莽、方向不清，或忽视后果如何运作。"
+        },
+        "tension": {
+          "en": "The card internalizes the unfinished work of decisive action and fierce defense of a conviction.",
+          "zh": "这张牌把果断行动，以及猛烈捍卫信念未完成的功课内化。"
+        },
+        "reflection": {
+          "en": "Has decisiveness become a charge without direction?",
+          "zh": "果断是否变成没有方向的冲锋？"
+        },
+        "action": {
+          "en": "Delay the move until one informed person has challenged your plan.",
+          "zh": "等一位知情者挑战过你的计划后再行动。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "Knight of Swords locates the present issue in decisive action and fierce defense of a conviction.",
+          "zh": "宝剑骑士把当前议题定位在果断行动，以及猛烈捍卫信念。"
+        },
+        "challenge": {
+          "en": "This is the knot to examine: Has decisiveness become a charge without direction?",
+          "zh": "这是需要检视的结：果断是否变成没有方向的冲锋？"
+        },
+        "guidance": {
+          "en": "Keep the guidance concrete: write the intended result and three likely side effects before acting.",
+          "zh": "让指引保持具体：行动前写下预期结果与三个可能副作用。"
+        }
+      }
     },
     {
       "id": "SWORDS-13",
@@ -1409,18 +4137,62 @@ window.CELESTIAL_DECK = {
       "zh": "宝剑王后",
       "motif": "clear-eyed throne",
       "rationale": "An original clear-eyed throne composition translates the traditional Queen of Swords scene into this deck’s celestial line language.",
-      "keywords": "discernment · independence · and truth spoken without fog",
-      "keywordsZh": "辨别力 · 独立，以及不含迷雾地说出真相",
-      "meaning": "discernment, independence, and truth spoken without fog",
-      "meaningZh": "辨别力、独立，以及不含迷雾地说出真相",
-      "shadow": "bitterness, cruelty, or intellect severed from empathy",
-      "shadowZh": "苦涩、残酷，或理性与同理心断开",
-      "reflection": "Where is discernment, independence, and truth spoken without fog asking for your attention rather than certainty?",
-      "reflectionZh": "辨别力、独立，以及不含迷雾地说出真相正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Separate the observable fact from the story, then write the clearest next sentence.",
-      "practiceZh": "将可观察的事实与想象区分开，再写下最清楚的下一句话。",
+      "keywords": {
+        "en": "discernment · independence · and truth spoken without fog",
+        "zh": "辨别力 · 独立，以及不含迷雾地说出真相"
+      },
       "src": "assets/cards/r1/generated/swords-13-queen-of-swords.png",
-      "sha256": "9940f0e58149a780b609d6072ff402429ccb54279e9a2bd51d322961d40deb32"
+      "sha256": "9940f0e58149a780b609d6072ff402429ccb54279e9a2bd51d322961d40deb32",
+      "upright": {
+        "core": {
+          "en": "Discernment, independence, and truth spoken without fog.",
+          "zh": "辨别力、独立，以及不含迷雾地说出真相。"
+        },
+        "tension": {
+          "en": "The tension has a clear doorway: Has discernment hardened into contempt or isolation? If it applies, add one sentence that recognizes context without weakening the truth.",
+          "zh": "张力有一个清楚入口：辨识力是否已经硬化为轻蔑或孤立？ 若符合现况，加上一句承认背景的话，但不要削弱事实。"
+        },
+        "reflection": {
+          "en": "Which truth can be spoken firmly without removing dignity?",
+          "zh": "哪一项真相可以坚定说出，同时不剥夺尊严？"
+        },
+        "action": {
+          "en": "Prepare the boundary in neutral language and deliver it once.",
+          "zh": "用中性语言准备边界，并清楚说一次。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "This orientation treats bitterness, cruelty, or intellect severed from empathy as unavailable, private, or overextended.",
+          "zh": "这个方向把苦涩、残酷，或理性与同理心断开视为暂时难以取得、私密或过度延伸。"
+        },
+        "tension": {
+          "en": "Its inward face asks what prevents discernment, independence, and truth spoken without fog from moving.",
+          "zh": "它向内的一面追问什么阻止辨别力、独立，以及不含迷雾地说出真相流动。"
+        },
+        "reflection": {
+          "en": "Has discernment hardened into contempt or isolation?",
+          "zh": "辨识力是否已经硬化为轻蔑或孤立？"
+        },
+        "action": {
+          "en": "Add one sentence that recognizes context without weakening the truth.",
+          "zh": "加上一句承认背景的话，但不要削弱事实。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The immediate landscape carries discernment, independence, and truth spoken without fog.",
+          "zh": "眼前的环境带着辨别力、独立，以及不含迷雾地说出真相。"
+        },
+        "challenge": {
+          "en": "Rather than predict an outcome, ask: Has discernment hardened into contempt or isolation?",
+          "zh": "不要预测结果，而要问：辨识力是否已经硬化为轻蔑或孤立？"
+        },
+        "guidance": {
+          "en": "A useful response is available now: prepare the boundary in neutral language and deliver it once.",
+          "zh": "现在已经有可用的回应：用中性语言准备边界，并清楚说一次。"
+        }
+      }
     },
     {
       "id": "SWORDS-14",
@@ -1431,18 +4203,62 @@ window.CELESTIAL_DECK = {
       "zh": "宝剑国王",
       "motif": "butterfly crown",
       "rationale": "An original butterfly crown composition translates the traditional King of Swords scene into this deck’s celestial line language.",
-      "keywords": "discipline · ethical reason · and authority guided by truth",
-      "keywordsZh": "纪律 · 伦理理性，以及由真相引导的权威",
-      "meaning": "discipline, ethical reason, and authority guided by truth",
-      "meaningZh": "纪律、伦理理性，以及由真相引导的权威",
-      "shadow": "manipulation, weakness miscast as force, or cold control",
-      "shadowZh": "操控、把软弱伪装成强势，或冷酷控制",
-      "reflection": "Where is discipline, ethical reason, and authority guided by truth asking for your attention rather than certainty?",
-      "reflectionZh": "纪律、伦理理性，以及由真相引导的权威正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Separate the observable fact from the story, then write the clearest next sentence.",
-      "practiceZh": "将可观察的事实与想象区分开，再写下最清楚的下一句话。",
+      "keywords": {
+        "en": "discipline · ethical reason · and authority guided by truth",
+        "zh": "纪律 · 伦理理性，以及由真相引导的权威"
+      },
       "src": "assets/cards/r1/generated/swords-14-king-of-swords.png",
-      "sha256": "665b7ce181a11c37f3e2fb031d01a1079f8f5953ccab4ed586bbb9109152dc32"
+      "sha256": "665b7ce181a11c37f3e2fb031d01a1079f8f5953ccab4ed586bbb9109152dc32",
+      "upright": {
+        "core": {
+          "en": "Discipline, ethical reason, and authority guided by truth.",
+          "zh": "纪律、伦理理性，以及由真相引导的权威。"
+        },
+        "tension": {
+          "en": "Work the problem from this angle: Is logic being used to manipulate, intimidate, or avoid human impact? If it applies, invite an ethical challenge and revise any conclusion that depends on power alone.",
+          "zh": "从这个角度处理问题：逻辑是否被用来操控、威吓或逃避人的影响？ 若符合现况，邀请伦理质疑，并修正任何只依赖权力的结论。"
+        },
+        "reflection": {
+          "en": "Which decision needs principle, evidence, and calm authority?",
+          "zh": "哪一个决定需要原则、证据与平静权威？"
+        },
+        "action": {
+          "en": "State the rule, cite the evidence, and document the reason for the choice.",
+          "zh": "说明规则、引用证据，并记录选择理由。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The reversed current asks for a more workable form of manipulation, weakness miscast as force, or cold control.",
+          "zh": "逆位流动要求操控、把软弱伪装成强势，或冷酷控制找到更可行的形式。"
+        },
+        "tension": {
+          "en": "The reversal contains discipline, ethical reason, and authority guided by truth without yet releasing it.",
+          "zh": "逆位容纳着纪律、伦理理性，以及由真相引导的权威，但尚未释放。"
+        },
+        "reflection": {
+          "en": "Is logic being used to manipulate, intimidate, or avoid human impact?",
+          "zh": "逻辑是否被用来操控、威吓或逃避人的影响？"
+        },
+        "action": {
+          "en": "Invite an ethical challenge and revise any conclusion that depends on power alone.",
+          "zh": "邀请伦理质疑，并修正任何只依赖权力的结论。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "This position makes discipline, ethical reason, and authority guided by truth the fact to notice first.",
+          "zh": "这个位置让纪律、伦理理性，以及由真相引导的权威成为首先要留意的事实。"
+        },
+        "challenge": {
+          "en": "The position exposes a decision point: Is logic being used to manipulate, intimidate, or avoid human impact?",
+          "zh": "这个位置揭示一个决定点：逻辑是否被用来操控、威吓或逃避人的影响？"
+        },
+        "guidance": {
+          "en": "Rather than wait for certainty: state the rule, cite the evidence, and document the reason for the choice.",
+          "zh": "不必等待完全确定：说明规则、引用证据，并记录选择理由。"
+        }
+      }
     },
     {
       "id": "PENTACLES-01",
@@ -1453,18 +4269,62 @@ window.CELESTIAL_DECK = {
       "zh": "星币一",
       "motif": "seeded golden gate",
       "rationale": "An original seeded golden gate composition translates the traditional Ace of Pentacles scene into this deck’s celestial line language.",
-      "keywords": "a grounded opportunity · prosperity · and a practical beginning",
-      "keywordsZh": "落地的机会 · 丰盛，以及务实的开始",
-      "meaning": "a grounded opportunity, prosperity, and a practical beginning",
-      "meaningZh": "落地的机会、丰盛，以及务实的开始",
-      "shadow": "a missed opening, weak investment, or potential left unused",
-      "shadowZh": "错失窗口、不佳投入，或潜能未被使用",
-      "reflection": "Where is a grounded opportunity, prosperity, and a practical beginning asking for your attention rather than certainty?",
-      "reflectionZh": "落地的机会、丰盛，以及务实的开始正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Turn the insight into one practical step you can complete or measure.",
-      "practiceZh": "把领悟化为一个可以完成或衡量的实际步骤。",
+      "keywords": {
+        "en": "a grounded opportunity · prosperity · and a practical beginning",
+        "zh": "落地的机会 · 丰盛，以及务实的开始"
+      },
       "src": "assets/cards/r1/generated/pentacles-01-ace-of-pentacles.png",
-      "sha256": "717c7099d22cb5e6575c26d352dfb0bc6184745010fe10cdc20ecd515847c41f"
+      "sha256": "717c7099d22cb5e6575c26d352dfb0bc6184745010fe10cdc20ecd515847c41f",
+      "upright": {
+        "core": {
+          "en": "A grounded opportunity, prosperity, and a practical beginning.",
+          "zh": "落地的机会、丰盛，以及务实的开始。"
+        },
+        "tension": {
+          "en": "The challenge becomes specific in one question: Are you overlooking the opportunity or expecting reward without investment? If it applies, name the missing resource and make one realistic request for it.",
+          "zh": "挑战在一个问题中变得具体：你是否忽略机会，或期待没有投入的回报？ 若符合现况，说出缺少的资源，并提出一个现实请求。"
+        },
+        "reflection": {
+          "en": "Which practical opening could become real with immediate care?",
+          "zh": "哪一个现实机会只要立即照顾，就能开始成形？"
+        },
+        "action": {
+          "en": "Create the account, application, budget line, or workspace that gives it a place to grow.",
+          "zh": "建立账户、申请、预算项目或工作空间，让它有地方成长。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Delay exposes what a missed opening, weak investment, or potential left unused needs before it can move outward.",
+          "zh": "延迟揭示错失窗口、不佳投入，或潜能未被使用向外流动前所需要的条件。"
+        },
+        "tension": {
+          "en": "A bottleneck appears between intention and a grounded opportunity, prosperity, and a practical beginning.",
+          "zh": "意图与落地的机会、丰盛，以及务实的开始之间出现瓶颈。"
+        },
+        "reflection": {
+          "en": "Are you overlooking the opportunity or expecting reward without investment?",
+          "zh": "你是否忽略机会，或期待没有投入的回报？"
+        },
+        "action": {
+          "en": "Name the missing resource and make one realistic request for it.",
+          "zh": "说出缺少的资源，并提出一个现实请求。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The card opens on a grounded opportunity, prosperity, and a practical beginning as the active condition.",
+          "zh": "这张牌以落地的机会、丰盛，以及务实的开始作为活跃条件展开。"
+        },
+        "challenge": {
+          "en": "The friction in the spread can be named simply: Are you overlooking the opportunity or expecting reward without investment?",
+          "zh": "牌阵中的摩擦可以简单说成：你是否忽略机会，或期待没有投入的回报？"
+        },
+        "guidance": {
+          "en": "The image earns its meaning through this step: create the account, application, budget line, or workspace that gives it a place to grow.",
+          "zh": "图像通过这一步获得意义：建立账户、申请、预算项目或工作空间，让它有地方成长。"
+        }
+      }
     },
     {
       "id": "PENTACLES-02",
@@ -1475,18 +4335,62 @@ window.CELESTIAL_DECK = {
       "zh": "星币二",
       "motif": "infinite juggling coins",
       "rationale": "An original infinite juggling coins composition translates the traditional Two of Pentacles scene into this deck’s celestial line language.",
-      "keywords": "adaptability · shifting priorities · and balance in motion",
-      "keywordsZh": "适应力 · 变化中的优先顺序，以及动态平衡",
-      "meaning": "adaptability, shifting priorities, and balance in motion",
-      "meaningZh": "适应力、变化中的优先顺序，以及动态平衡",
-      "shadow": "disorganization, overload, or too many demands at once",
-      "shadowZh": "失序、超载，或同时承担太多要求",
-      "reflection": "Where is adaptability, shifting priorities, and balance in motion asking for your attention rather than certainty?",
-      "reflectionZh": "适应力、变化中的优先顺序，以及动态平衡正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Turn the insight into one practical step you can complete or measure.",
-      "practiceZh": "把领悟化为一个可以完成或衡量的实际步骤。",
+      "keywords": {
+        "en": "adaptability · shifting priorities · and balance in motion",
+        "zh": "适应力 · 变化中的优先顺序，以及动态平衡"
+      },
       "src": "assets/cards/r1/generated/pentacles-02-two-of-pentacles.png",
-      "sha256": "ede1682ef798258022bf5ffe780e0eecc89d75bcdbf2b58f46b94cee1712c63b"
+      "sha256": "ede1682ef798258022bf5ffe780e0eecc89d75bcdbf2b58f46b94cee1712c63b",
+      "upright": {
+        "core": {
+          "en": "Adaptability, shifting priorities, and balance in motion.",
+          "zh": "适应力、变化中的优先顺序，以及动态平衡。"
+        },
+        "tension": {
+          "en": "The challenge is to answer this honestly: Has flexibility become chaos or constant reaction? If it applies, drop one low-value demand and restore a predictable routine.",
+          "zh": "挑战在于诚实回答：弹性是否已经变成混乱或不断救火？ 若符合现况，放下一项低价值要求，恢复可预测的习惯。"
+        },
+        "reflection": {
+          "en": "Which two priorities need rhythm rather than perfect balance?",
+          "zh": "哪两个优先事项需要节奏，而不是完美平衡？"
+        },
+        "action": {
+          "en": "Put both on the calendar with limits and review the load after one week.",
+          "zh": "为两者设定时间与限制，一周后检视负荷。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The card holds disorganization, overload, or too many demands at once inside until its proportion becomes clearer.",
+          "zh": "这张牌把失序、超载，或同时承担太多要求留在内在，直到比例变得清楚。"
+        },
+        "tension": {
+          "en": "The private tension is how to make room for adaptability, shifting priorities, and balance in motion.",
+          "zh": "私下张力在于如何为适应力、变化中的优先顺序，以及动态平衡腾出空间。"
+        },
+        "reflection": {
+          "en": "Has flexibility become chaos or constant reaction?",
+          "zh": "弹性是否已经变成混乱或不断救火？"
+        },
+        "action": {
+          "en": "Drop one low-value demand and restore a predictable routine.",
+          "zh": "放下一项低价值要求，恢复可预测的习惯。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The Two of Pentacles reflects a present shaped by adaptability, shifting priorities, and balance in motion.",
+          "zh": "星币二映照出一个由适应力、变化中的优先顺序，以及动态平衡塑造的当下。"
+        },
+        "challenge": {
+          "en": "Hold the uncertainty long enough to ask: Has flexibility become chaos or constant reaction?",
+          "zh": "容纳不确定，直到你能问：弹性是否已经变成混乱或不断救火？"
+        },
+        "guidance": {
+          "en": "Guidance here is behavioral, not predictive: put both on the calendar with limits and review the load after one week.",
+          "zh": "这里的指引关于行为，而非预测：为两者设定时间与限制，一周后检视负荷。"
+        }
+      }
     },
     {
       "id": "PENTACLES-03",
@@ -1497,18 +4401,62 @@ window.CELESTIAL_DECK = {
       "zh": "星币三",
       "motif": "three-part cathedral",
       "rationale": "An original three-part cathedral composition translates the traditional Three of Pentacles scene into this deck’s celestial line language.",
-      "keywords": "teamwork · skilled contribution · and building something lasting",
-      "keywordsZh": "团队合作 · 专业贡献，以及建造长久成果",
-      "meaning": "teamwork, skilled contribution, and building something lasting",
-      "meaningZh": "团队合作、专业贡献，以及建造长久成果",
-      "shadow": "poor coordination, conflict in the group, or work without shared standards",
-      "shadowZh": "协调不良、团队冲突，或缺少共同标准的工作",
-      "reflection": "Where is teamwork, skilled contribution, and building something lasting asking for your attention rather than certainty?",
-      "reflectionZh": "团队合作、专业贡献，以及建造长久成果正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Turn the insight into one practical step you can complete or measure.",
-      "practiceZh": "把领悟化为一个可以完成或衡量的实际步骤。",
+      "keywords": {
+        "en": "teamwork · skilled contribution · and building something lasting",
+        "zh": "团队合作 · 专业贡献，以及建造长久成果"
+      },
       "src": "assets/cards/r1/generated/pentacles-03-three-of-pentacles.png",
-      "sha256": "4b4d972c826afdb15aa56dd5d9ba3c18a19e33b05477479163e801bffab3e8b3"
+      "sha256": "4b4d972c826afdb15aa56dd5d9ba3c18a19e33b05477479163e801bffab3e8b3",
+      "upright": {
+        "core": {
+          "en": "Teamwork, skilled contribution, and building something lasting.",
+          "zh": "团队合作、专业贡献，以及建造长久成果。"
+        },
+        "tension": {
+          "en": "Do not call it fate; work with the question: Are mismatched expectations undermining otherwise capable work? If it applies, hold a short alignment check before anyone produces another draft.",
+          "zh": "不要把它称为命运；请处理这个问题：不一致的期待是否正在破坏原本有能力的合作？ 若符合现况，任何人继续做下一版前，先进行一次简短对齐。"
+        },
+        "reflection": {
+          "en": "What standard would help several people build well together?",
+          "zh": "哪一种标准能帮助多人一起把事情做好？"
+        },
+        "action": {
+          "en": "Agree on one example of finished quality and assign the next contribution.",
+          "zh": "共同确认一个完成品质范例，并分配下一项贡献。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Reversal brings the blocked or excessive side of poor coordination, conflict in the group, or work without shared standards into view.",
+          "zh": "逆位让协调不良、团队冲突，或缺少共同标准的工作受阻或过度的一面进入视野。"
+        },
+        "tension": {
+          "en": "The symbol folds back on itself around teamwork, skilled contribution, and building something lasting.",
+          "zh": "象征围绕团队合作、专业贡献，以及建造长久成果折回自身。"
+        },
+        "reflection": {
+          "en": "Are mismatched expectations undermining otherwise capable work?",
+          "zh": "不一致的期待是否正在破坏原本有能力的合作？"
+        },
+        "action": {
+          "en": "Hold a short alignment check before anyone produces another draft.",
+          "zh": "任何人继续做下一版前，先进行一次简短对齐。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "Before choosing a response, recognize teamwork, skilled contribution, and building something lasting.",
+          "zh": "选择回应前，先承认团队合作、专业贡献，以及建造长久成果。"
+        },
+        "challenge": {
+          "en": "The card makes one demand for honesty: Are mismatched expectations undermining otherwise capable work?",
+          "zh": "这张牌只要求一件诚实的事：不一致的期待是否正在破坏原本有能力的合作？"
+        },
+        "guidance": {
+          "en": "Carry the card forward by doing this: agree on one example of finished quality and assign the next contribution.",
+          "zh": "用这个行动把牌带往前方：共同确认一个完成品质范例，并分配下一项贡献。"
+        }
+      }
     },
     {
       "id": "PENTACLES-04",
@@ -1519,18 +4467,62 @@ window.CELESTIAL_DECK = {
       "zh": "星币四",
       "motif": "four guarded coins",
       "rationale": "An original four guarded coins composition translates the traditional Four of Pentacles scene into this deck’s celestial line language.",
-      "keywords": "saving · firm boundaries · and protecting material stability",
-      "keywordsZh": "储蓄 · 清楚边界，以及守护现实稳定",
-      "meaning": "saving, firm boundaries, and protecting material stability",
-      "meaningZh": "储蓄、清楚边界，以及守护现实稳定",
-      "shadow": "possessiveness, fear-driven control, or reckless release",
-      "shadowZh": "占有、由恐惧驱动的控制，或鲁莽放手",
-      "reflection": "Where is saving, firm boundaries, and protecting material stability asking for your attention rather than certainty?",
-      "reflectionZh": "储蓄、清楚边界，以及守护现实稳定正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Turn the insight into one practical step you can complete or measure.",
-      "practiceZh": "把领悟化为一个可以完成或衡量的实际步骤。",
+      "keywords": {
+        "en": "saving · firm boundaries · and protecting material stability",
+        "zh": "储蓄 · 清楚边界，以及守护现实稳定"
+      },
       "src": "assets/cards/r1/generated/pentacles-04-four-of-pentacles.png",
-      "sha256": "8a270636b607b6e54e3e17296226dc3d477991f4b38080ba1a44fa934ab541e1"
+      "sha256": "8a270636b607b6e54e3e17296226dc3d477991f4b38080ba1a44fa934ab541e1",
+      "upright": {
+        "core": {
+          "en": "Saving, firm boundaries, and protecting material stability.",
+          "zh": "储蓄、清楚边界，以及守护现实稳定。"
+        },
+        "tension": {
+          "en": "The difficult work begins here: Has security become hoarding, control, or fear of circulation? If it applies, release one tightly held resource where its purpose is clear and bounded.",
+          "zh": "困难功课从这里开始：安全感是否变成囤积、控制或害怕流动？ 若符合现况，在用途清楚且有边界的地方，释放一项紧握的资源。"
+        },
+        "reflection": {
+          "en": "What are you protecting, and what does that protection cost?",
+          "zh": "你在保护什么，而这种保护付出什么代价？"
+        },
+        "action": {
+          "en": "Set a clear reserve amount, then allow one planned use of the remainder.",
+          "zh": "设定明确储备金额，再允许剩余部分有一次计划用途。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The quality of possessiveness, fear-driven control, or reckless release is active inwardly, even if little is visible.",
+          "zh": "占有、由恐惧驱动的控制，或鲁莽放手正在内在活跃，即使外在几乎看不见。"
+        },
+        "tension": {
+          "en": "The card delays action until saving, firm boundaries, and protecting material stability can become workable.",
+          "zh": "这张牌延迟行动，直到储蓄、清楚边界，以及守护现实稳定变得可行。"
+        },
+        "reflection": {
+          "en": "Has security become hoarding, control, or fear of circulation?",
+          "zh": "安全感是否变成囤积、控制或害怕流动？"
+        },
+        "action": {
+          "en": "Release one tightly held resource where its purpose is clear and bounded.",
+          "zh": "在用途清楚且有边界的地方，释放一项紧握的资源。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "Four of Pentacles says the situation is already carrying saving, firm boundaries, and protecting material stability.",
+          "zh": "星币四说明现状已经承载着储蓄、清楚边界，以及守护现实稳定。"
+        },
+        "challenge": {
+          "en": "This tension is workable once you consider: Has security become hoarding, control, or fear of circulation?",
+          "zh": "当你考虑这个问题，张力就能被处理：安全感是否变成囤积、控制或害怕流动？"
+        },
+        "guidance": {
+          "en": "The spread closes with a practical choice: set a clear reserve amount, then allow one planned use of the remainder.",
+          "zh": "牌阵以一个务实选择收尾：设定明确储备金额，再允许剩余部分有一次计划用途。"
+        }
+      }
     },
     {
       "id": "PENTACLES-05",
@@ -1541,18 +4533,62 @@ window.CELESTIAL_DECK = {
       "zh": "星币五",
       "motif": "winter window",
       "rationale": "An original winter window composition translates the traditional Five of Pentacles scene into this deck’s celestial line language.",
-      "keywords": "scarcity · insecurity · and the pain of feeling unsupported",
-      "keywordsZh": "匮乏 · 不安全感，以及缺少支持的痛",
-      "meaning": "scarcity, insecurity, and the pain of feeling unsupported",
-      "meaningZh": "匮乏、不安全感，以及缺少支持的痛",
-      "shadow": "recovery, receiving help, and signs of material improvement",
-      "shadowZh": "恢复、接受帮助，以及现实改善的迹象",
-      "reflection": "Where is scarcity, insecurity, and the pain of feeling unsupported asking for your attention rather than certainty?",
-      "reflectionZh": "匮乏、不安全感，以及缺少支持的痛正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Turn the insight into one practical step you can complete or measure.",
-      "practiceZh": "把领悟化为一个可以完成或衡量的实际步骤。",
+      "keywords": {
+        "en": "scarcity · insecurity · and the pain of feeling unsupported",
+        "zh": "匮乏 · 不安全感，以及缺少支持的痛"
+      },
       "src": "assets/cards/r1/generated/pentacles-05-five-of-pentacles.png",
-      "sha256": "79d64528128e1c38590e2616b3c4deb02bd51c3ee71de721b73916c17b737ede"
+      "sha256": "79d64528128e1c38590e2616b3c4deb02bd51c3ee71de721b73916c17b737ede",
+      "upright": {
+        "core": {
+          "en": "Scarcity, insecurity, and the pain of feeling unsupported.",
+          "zh": "匮乏、不安全感，以及缺少支持的痛。"
+        },
+        "tension": {
+          "en": "This position sharpens one issue: Are you refusing help because improvement would change your identity? If it applies, accept one concrete offer without apologizing for needing it.",
+          "zh": "这个位置让一个议题变得尖锐：你是否因为改善会改变自我认同，而拒绝帮助？ 若符合现况，接受一项具体帮助，不必为需要它道歉。"
+        },
+        "reflection": {
+          "en": "Which support is nearby but difficult to ask for?",
+          "zh": "哪一种支持就在附近，却很难开口？"
+        },
+        "action": {
+          "en": "Contact one service, person, or community and state the need plainly.",
+          "zh": "联系一项服务、一个人或一个社群，直接说明需要。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "This position asks whether recovery, receiving help, and signs of material improvement has stalled or gone too far.",
+          "zh": "这个位置追问恢复、接受帮助，以及现实改善的迹象是否已经停滞或走得太远。"
+        },
+        "tension": {
+          "en": "Inside, the image wrestles with access to scarcity, insecurity, and the pain of feeling unsupported.",
+          "zh": "图像在内心与如何取得匮乏、不安全感，以及缺少支持的痛搏斗。"
+        },
+        "reflection": {
+          "en": "Are you refusing help because improvement would change your identity?",
+          "zh": "你是否因为改善会改变自我认同，而拒绝帮助？"
+        },
+        "action": {
+          "en": "Accept one concrete offer without apologizing for needing it.",
+          "zh": "接受一项具体帮助，不必为需要它道歉。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The current chapter has the texture of scarcity, insecurity, and the pain of feeling unsupported.",
+          "zh": "当前章节带着匮乏、不安全感，以及缺少支持的痛的质感。"
+        },
+        "challenge": {
+          "en": "The challenge is neither fixed nor hidden: Are you refusing help because improvement would change your identity?",
+          "zh": "挑战并非固定，也不隐藏：你是否因为改善会改变自我认同，而拒绝帮助？"
+        },
+        "guidance": {
+          "en": "Make the symbol accountable to reality: contact one service, person, or community and state the need plainly.",
+          "zh": "让象征接受现实检验：联系一项服务、一个人或一个社群，直接说明需要。"
+        }
+      }
     },
     {
       "id": "PENTACLES-06",
@@ -1563,18 +4599,62 @@ window.CELESTIAL_DECK = {
       "zh": "星币六",
       "motif": "balanced gift scales",
       "rationale": "An original balanced gift scales composition translates the traditional Six of Pentacles scene into this deck’s celestial line language.",
-      "keywords": "generosity · reciprocal support · and resources circulating well",
-      "keywordsZh": "慷慨 · 互相支持，以及资源良性流动",
-      "meaning": "generosity, reciprocal support, and resources circulating well",
-      "meaningZh": "慷慨、互相支持，以及资源良性流动",
-      "shadow": "strings attached, withheld help, or power hidden inside giving",
-      "shadowZh": "附带条件、吝于援助，或给予中隐藏权力",
-      "reflection": "Where is generosity, reciprocal support, and resources circulating well asking for your attention rather than certainty?",
-      "reflectionZh": "慷慨、互相支持，以及资源良性流动正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Turn the insight into one practical step you can complete or measure.",
-      "practiceZh": "把领悟化为一个可以完成或衡量的实际步骤。",
+      "keywords": {
+        "en": "generosity · reciprocal support · and resources circulating well",
+        "zh": "慷慨 · 互相支持，以及资源良性流动"
+      },
       "src": "assets/cards/r1/generated/pentacles-06-six-of-pentacles.png",
-      "sha256": "fc35bf5ceb6ee26503ad0c72055d9aa5e43c21dcc1b9022c5a5f3dde63b19c5c"
+      "sha256": "fc35bf5ceb6ee26503ad0c72055d9aa5e43c21dcc1b9022c5a5f3dde63b19c5c",
+      "upright": {
+        "core": {
+          "en": "Generosity, reciprocal support, and resources circulating well.",
+          "zh": "慷慨、互相支持，以及资源良性流动。"
+        },
+        "tension": {
+          "en": "The obstacle becomes clearer when you ask: Are hidden conditions or pride distorting an act of support? If it applies, remove one unspoken condition or decline the exchange honestly.",
+          "zh": "当你这样提问，障碍会更清楚：隐藏条件或自尊是否扭曲了一次支持？ 若符合现况，移除一个未说出口的条件，或诚实拒绝交换。"
+        },
+        "reflection": {
+          "en": "Where are giving, receiving, and power out of balance?",
+          "zh": "给予、接受与权力在哪里失衡？"
+        },
+        "action": {
+          "en": "Clarify whether the resource is a gift, loan, exchange, or obligation.",
+          "zh": "说明资源是赠与、借贷、交换还是义务。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The reversed image slows strings attached, withheld help, or power hidden inside giving so its distortion can be noticed.",
+          "zh": "逆位图像放慢附带条件、吝于援助，或给予中隐藏权力，让扭曲能够被察觉。"
+        },
+        "tension": {
+          "en": "The reversed current searches for a proportionate form of generosity, reciprocal support, and resources circulating well.",
+          "zh": "逆位流动正在寻找慷慨、互相支持，以及资源良性流动的适当形式。"
+        },
+        "reflection": {
+          "en": "Are hidden conditions or pride distorting an act of support?",
+          "zh": "隐藏条件或自尊是否扭曲了一次支持？"
+        },
+        "action": {
+          "en": "Remove one unspoken condition or decline the exchange honestly.",
+          "zh": "移除一个未说出口的条件，或诚实拒绝交换。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "In the Situation place, generosity, reciprocal support, and resources circulating well is the starting evidence.",
+          "zh": "在现状位置，慷慨、互相支持，以及资源良性流动是起始证据。"
+        },
+        "challenge": {
+          "en": "Use the difficult edge of the image to ask: Are hidden conditions or pride distorting an act of support?",
+          "zh": "利用图像困难的一面提问：隐藏条件或自尊是否扭曲了一次支持？"
+        },
+        "guidance": {
+          "en": "The card recommends a testable response: clarify whether the resource is a gift, loan, exchange, or obligation.",
+          "zh": "这张牌建议一个可检验的回应：说明资源是赠与、借贷、交换还是义务。"
+        }
+      }
     },
     {
       "id": "PENTACLES-07",
@@ -1585,18 +4665,62 @@ window.CELESTIAL_DECK = {
       "zh": "星币七",
       "motif": "patient garden",
       "rationale": "An original patient garden composition translates the traditional Seven of Pentacles scene into this deck’s celestial line language.",
-      "keywords": "long effort · careful assessment · and growth that needs time",
-      "keywordsZh": "长期投入 · 谨慎评估，以及需要时间的成长",
-      "meaning": "long effort, careful assessment, and growth that needs time",
-      "meaningZh": "长期投入、谨慎评估，以及需要时间的成长",
-      "shadow": "poor return, distraction, or labor disconnected from purpose",
-      "shadowZh": "回报不足、分心，或与目标脱节的劳动",
-      "reflection": "Where is long effort, careful assessment, and growth that needs time asking for your attention rather than certainty?",
-      "reflectionZh": "长期投入、谨慎评估，以及需要时间的成长正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Turn the insight into one practical step you can complete or measure.",
-      "practiceZh": "把领悟化为一个可以完成或衡量的实际步骤。",
+      "keywords": {
+        "en": "long effort · careful assessment · and growth that needs time",
+        "zh": "长期投入 · 谨慎评估，以及需要时间的成长"
+      },
       "src": "assets/cards/r1/generated/pentacles-07-seven-of-pentacles.png",
-      "sha256": "f6eb5c10dd4dd70fe413b3268d46e580e23667b9ec60a3d12c3ea2cd29b9b085"
+      "sha256": "f6eb5c10dd4dd70fe413b3268d46e580e23667b9ec60a3d12c3ea2cd29b9b085",
+      "upright": {
+        "core": {
+          "en": "Long effort, careful assessment, and growth that needs time.",
+          "zh": "长期投入、谨慎评估，以及需要时间的成长。"
+        },
+        "tension": {
+          "en": "What needs attention is not punishment but inquiry: Are you abandoning sound work for novelty or tending a field with no return? If it applies, set a review date and one threshold that will determine whether to continue.",
+          "zh": "需要的不是惩罚，而是追问：你是在为新鲜感放弃好工作，还是照料没有回报的田地？ 若符合现况，设定复盘日期和一个决定是否继续的门槛。"
+        },
+        "reflection": {
+          "en": "Which long effort deserves evaluation rather than impatience?",
+          "zh": "哪一项长期努力需要评估，而不是不耐烦？"
+        },
+        "action": {
+          "en": "Compare today with the starting point and choose one metric for the next month.",
+          "zh": "比较今天与起点，并为下个月选择一个指标。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Inside the card, poor return, distraction, or labor disconnected from purpose is being renegotiated.",
+          "zh": "在这张牌内部，回报不足、分心，或与目标脱节的劳动正在被重新协商。"
+        },
+        "tension": {
+          "en": "Its hidden labor is restoring long effort, careful assessment, and growth that needs time.",
+          "zh": "它隐藏的工作是恢复长期投入、谨慎评估，以及需要时间的成长。"
+        },
+        "reflection": {
+          "en": "Are you abandoning sound work for novelty or tending a field with no return?",
+          "zh": "你是在为新鲜感放弃好工作，还是照料没有回报的田地？"
+        },
+        "action": {
+          "en": "Set a review date and one threshold that will determine whether to continue.",
+          "zh": "设定复盘日期和一个决定是否继续的门槛。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "This moment is asking to be seen through long effort, careful assessment, and growth that needs time.",
+          "zh": "这一刻需要透过长期投入、谨慎评估，以及需要时间的成长被看见。"
+        },
+        "challenge": {
+          "en": "The spread places pressure on this question: Are you abandoning sound work for novelty or tending a field with no return?",
+          "zh": "牌阵把压力放在这个问题上：你是在为新鲜感放弃好工作，还是照料没有回报的田地？"
+        },
+        "guidance": {
+          "en": "Use the available agency in this step: compare today with the starting point and choose one metric for the next month.",
+          "zh": "在这一步使用你现有的主动权：比较今天与起点，并为下个月选择一个指标。"
+        }
+      }
     },
     {
       "id": "PENTACLES-08",
@@ -1607,18 +4731,62 @@ window.CELESTIAL_DECK = {
       "zh": "星币八",
       "motif": "craft bench",
       "rationale": "An original craft bench composition translates the traditional Eight of Pentacles scene into this deck’s celestial line language.",
-      "keywords": "apprenticeship · focused practice · and pride in high standards",
-      "keywordsZh": "学徒精神 · 专注练习，以及对高标准的自豪",
-      "meaning": "apprenticeship, focused practice, and pride in high standards",
-      "meaningZh": "学徒精神、专注练习，以及对高标准的自豪",
-      "shadow": "low motivation, uninspired repetition, or skill without care",
-      "shadowZh": "动力不足、机械重复，或缺少用心的技巧",
-      "reflection": "Where is apprenticeship, focused practice, and pride in high standards asking for your attention rather than certainty?",
-      "reflectionZh": "学徒精神、专注练习，以及对高标准的自豪正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Turn the insight into one practical step you can complete or measure.",
-      "practiceZh": "把领悟化为一个可以完成或衡量的实际步骤。",
+      "keywords": {
+        "en": "apprenticeship · focused practice · and pride in high standards",
+        "zh": "学徒精神 · 专注练习，以及对高标准的自豪"
+      },
       "src": "assets/cards/r1/generated/pentacles-08-eight-of-pentacles.png",
-      "sha256": "621e52d689fd8f48ab9215f964f43a89aee8e75147572da855feda2127980f7f"
+      "sha256": "621e52d689fd8f48ab9215f964f43a89aee8e75147572da855feda2127980f7f",
+      "upright": {
+        "core": {
+          "en": "Apprenticeship, focused practice, and pride in high standards.",
+          "zh": "学徒精神、专注练习，以及对高标准的自豪。"
+        },
+        "tension": {
+          "en": "The card tests your response through this question: Has craft become empty repetition, perfectionism, or avoidance of real delivery? If it applies, finish and share one usable piece before polishing another exercise.",
+          "zh": "这张牌通过这个问题检验你的回应：技艺是否变成空洞重复、完美主义或逃避交付？ 若符合现况，先完成并分享一个可用成果，再润饰另一项练习。"
+        },
+        "reflection": {
+          "en": "Which skill improves only through attentive repetition?",
+          "zh": "哪一种技能只能通过专注重复来提升？"
+        },
+        "action": {
+          "en": "Complete one deliberate practice cycle and note the specific error to correct next.",
+          "zh": "完成一次刻意练习，并记下下次要修正的具体错误。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Reversal does not negate low motivation, uninspired repetition, or skill without care; it questions its timing and expression.",
+          "zh": "逆位不否定动力不足、机械重复，或缺少用心的技巧；它质问时机与表达方式。"
+        },
+        "tension": {
+          "en": "The Eight of Pentacles protects a wounded relationship with apprenticeship, focused practice, and pride in high standards.",
+          "zh": "星币八保护着一段与学徒精神、专注练习，以及对高标准的自豪有关的受伤关系。"
+        },
+        "reflection": {
+          "en": "Has craft become empty repetition, perfectionism, or avoidance of real delivery?",
+          "zh": "技艺是否变成空洞重复、完美主义或逃避交付？"
+        },
+        "action": {
+          "en": "Finish and share one usable piece before polishing another exercise.",
+          "zh": "先完成并分享一个可用成果，再润饰另一项练习。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The visible pattern is apprenticeship, focused practice, and pride in high standards, held in the image of the Eight of Pentacles.",
+          "zh": "可见模式是学徒精神、专注练习，以及对高标准的自豪，并由星币八具体呈现。"
+        },
+        "challenge": {
+          "en": "The obstacle is best approached through inquiry: Has craft become empty repetition, perfectionism, or avoidance of real delivery?",
+          "zh": "最适合以追问接近这个障碍：技艺是否变成空洞重复、完美主义或逃避交付？"
+        },
+        "guidance": {
+          "en": "The direction is small enough to begin: complete one deliberate practice cycle and note the specific error to correct next.",
+          "zh": "这个方向足够小，可以开始：完成一次刻意练习，并记下下次要修正的具体错误。"
+        }
+      }
     },
     {
       "id": "PENTACLES-09",
@@ -1629,18 +4797,62 @@ window.CELESTIAL_DECK = {
       "zh": "星币九",
       "motif": "falcon garden",
       "rationale": "An original falcon garden composition translates the traditional Nine of Pentacles scene into this deck’s celestial line language.",
-      "keywords": "self-sufficiency · earned reward · and cultivated comfort",
-      "keywordsZh": "自给自足 · 赢得回报，以及经营出的舒适",
-      "meaning": "self-sufficiency, earned reward, and cultivated comfort",
-      "meaningZh": "自给自足、赢得回报，以及经营出的舒适",
-      "shadow": "living beyond means, guarded success, or a polished facade",
-      "shadowZh": "超出能力消费、防守型成功，或光鲜表面",
-      "reflection": "Where is self-sufficiency, earned reward, and cultivated comfort asking for your attention rather than certainty?",
-      "reflectionZh": "自给自足、赢得回报，以及经营出的舒适正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Turn the insight into one practical step you can complete or measure.",
-      "practiceZh": "把领悟化为一个可以完成或衡量的实际步骤。",
+      "keywords": {
+        "en": "self-sufficiency · earned reward · and cultivated comfort",
+        "zh": "自给自足 · 赢得回报，以及经营出的舒适"
+      },
       "src": "assets/cards/r1/generated/pentacles-09-nine-of-pentacles.png",
-      "sha256": "7a3da2fdffc482e8005177bada3bbcec8738296786cde4ddd0ac4e36366a2532"
+      "sha256": "7a3da2fdffc482e8005177bada3bbcec8738296786cde4ddd0ac4e36366a2532",
+      "upright": {
+        "core": {
+          "en": "Self-sufficiency, earned reward, and cultivated comfort.",
+          "zh": "自给自足、赢得回报，以及经营出的舒适。"
+        },
+        "tension": {
+          "en": "Face the tension without dramatizing it: Is independence becoming isolation, display, or spending beyond reality? If it applies, review one expense or boundary and bring it back in line with actual resources.",
+          "zh": "面对张力，但不要把它戏剧化：独立是否变成孤立、炫耀或超出实际的消费？ 若符合现况，检视一项支出或边界，让它重新符合真实资源。"
+        },
+        "reflection": {
+          "en": "Which comfort reflects work you genuinely completed?",
+          "zh": "哪一种舒适反映了你真正完成的努力？"
+        },
+        "action": {
+          "en": "Enjoy one earned pleasure, then update the system that made it possible.",
+          "zh": "享受一项应得的成果，再更新让它实现的系统。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The energy turns private where living beyond means, guarded success, or a polished facade lacks a safe outlet.",
+          "zh": "当超出能力消费、防守型成功，或光鲜表面缺少安全出口，能量就会转为私密。"
+        },
+        "tension": {
+          "en": "This orientation makes self-sufficiency, earned reward, and cultivated comfort an internal negotiation.",
+          "zh": "这个方向让自给自足、赢得回报，以及经营出的舒适成为内在协商。"
+        },
+        "reflection": {
+          "en": "Is independence becoming isolation, display, or spending beyond reality?",
+          "zh": "独立是否变成孤立、炫耀或超出实际的消费？"
+        },
+        "action": {
+          "en": "Review one expense or boundary and bring it back in line with actual resources.",
+          "zh": "检视一项支出或边界，让它重新符合真实资源。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "Nine of Pentacles names self-sufficiency, earned reward, and cultivated comfort as the condition already present.",
+          "zh": "星币九把自给自足、赢得回报，以及经营出的舒适说成已经存在的条件。"
+        },
+        "challenge": {
+          "en": "Let the challenge interrupt certainty: Is independence becoming isolation, display, or spending beyond reality?",
+          "zh": "让挑战打断确定感：独立是否变成孤立、炫耀或超出实际的消费？"
+        },
+        "guidance": {
+          "en": "Ground the reading in a visible act: enjoy one earned pleasure, then update the system that made it possible.",
+          "zh": "用一个可见行动落实解读：享受一项应得的成果，再更新让它实现的系统。"
+        }
+      }
     },
     {
       "id": "PENTACLES-10",
@@ -1651,18 +4863,62 @@ window.CELESTIAL_DECK = {
       "zh": "星币十",
       "motif": "ancestral arch",
       "rationale": "An original ancestral arch composition translates the traditional Ten of Pentacles scene into this deck’s celestial line language.",
-      "keywords": "legacy · durable security · and wealth shared across generations",
-      "keywordsZh": "传承 · 长久安全，以及跨世代共享的丰盛",
-      "meaning": "legacy, durable security, and wealth shared across generations",
-      "meaningZh": "传承、长久安全，以及跨世代共享的丰盛",
-      "shadow": "fragile success, unstable foundations, or resources slipping away",
-      "shadowZh": "脆弱成功、基础不稳，或资源逐渐流失",
-      "reflection": "Where is legacy, durable security, and wealth shared across generations asking for your attention rather than certainty?",
-      "reflectionZh": "传承、长久安全，以及跨世代共享的丰盛正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Turn the insight into one practical step you can complete or measure.",
-      "practiceZh": "把领悟化为一个可以完成或衡量的实际步骤。",
+      "keywords": {
+        "en": "legacy · durable security · and wealth shared across generations",
+        "zh": "传承 · 长久安全，以及跨世代共享的丰盛"
+      },
       "src": "assets/cards/r1/approved/pentacles-10-ten-of-pentacles.png",
-      "sha256": "18bd92140b4f4d5a549d7f402efd0b99072ddb1ea1b82ff523779302f28d0caf"
+      "sha256": "18bd92140b4f4d5a549d7f402efd0b99072ddb1ea1b82ff523779302f28d0caf",
+      "upright": {
+        "core": {
+          "en": "Legacy, durable security, and wealth shared across generations.",
+          "zh": "传承、长久安全，以及跨世代共享的丰盛。"
+        },
+        "tension": {
+          "en": "The challenge stays practical when framed this way: Are inherited expectations or fragile foundations threatening the legacy? If it applies, repair one structural weakness before adding another visible asset.",
+          "zh": "这样表达，挑战就会保持务实：继承期待或脆弱基础是否正在威胁传承？ 若符合现况，增加可见资产前，先修复一个结构弱点。"
+        },
+        "reflection": {
+          "en": "What resource or value should outlast the present moment?",
+          "zh": "哪一种资源或价值应该超越眼前时刻？"
+        },
+        "action": {
+          "en": "Document one process, beneficiary, and maintenance plan for what you are building.",
+          "zh": "为正在建立的事记录流程、受益者与维护计划。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "This orientation shows fragile success, unstable foundations, or resources slipping away caught between restraint and excess.",
+          "zh": "这个方向显示脆弱成功、基础不稳，或资源逐渐流失卡在压抑与过度之间。"
+        },
+        "tension": {
+          "en": "The card may compensate loudly for missing legacy, durable security, and wealth shared across generations.",
+          "zh": "这张牌可能用高调表现补偿缺失的传承、长久安全，以及跨世代共享的丰盛。"
+        },
+        "reflection": {
+          "en": "Are inherited expectations or fragile foundations threatening the legacy?",
+          "zh": "继承期待或脆弱基础是否正在威胁传承？"
+        },
+        "action": {
+          "en": "Repair one structural weakness before adding another visible asset.",
+          "zh": "增加可见资产前，先修复一个结构弱点。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The reading starts where legacy, durable security, and wealth shared across generations meets daily life.",
+          "zh": "解读从传承、长久安全，以及跨世代共享的丰盛进入日常生活的地方开始。"
+        },
+        "challenge": {
+          "en": "The card turns resistance into a useful question: Are inherited expectations or fragile foundations threatening the legacy?",
+          "zh": "这张牌把阻力转成有用问题：继承期待或脆弱基础是否正在威胁传承？"
+        },
+        "guidance": {
+          "en": "The card becomes useful when you act: document one process, beneficiary, and maintenance plan for what you are building.",
+          "zh": "当你行动，这张牌才真正有用：为正在建立的事记录流程、受益者与维护计划。"
+        }
+      }
     },
     {
       "id": "PENTACLES-11",
@@ -1673,18 +4929,62 @@ window.CELESTIAL_DECK = {
       "zh": "星币侍从",
       "motif": "coin-studying messenger",
       "rationale": "An original coin-studying messenger composition translates the traditional Page of Pentacles scene into this deck’s celestial line language.",
-      "keywords": "ambition · diligent study · and making a practical plan real",
-      "keywordsZh": "企图心 · 勤奋学习，以及让务实计划成真",
-      "meaning": "ambition, diligent study, and making a practical plan real",
-      "meaningZh": "企图心、勤奋学习，以及让务实计划成真",
-      "shadow": "weak commitment, greed, or postponing the work",
-      "shadowZh": "承诺不足、贪心，或拖延真正的工作",
-      "reflection": "Where is ambition, diligent study, and making a practical plan real asking for your attention rather than certainty?",
-      "reflectionZh": "企图心、勤奋学习，以及让务实计划成真正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Turn the insight into one practical step you can complete or measure.",
-      "practiceZh": "把领悟化为一个可以完成或衡量的实际步骤。",
+      "keywords": {
+        "en": "ambition · diligent study · and making a practical plan real",
+        "zh": "企图心 · 勤奋学习，以及让务实计划成真"
+      },
       "src": "assets/cards/r1/generated/pentacles-11-page-of-pentacles.png",
-      "sha256": "5db6bf42ac2750cc699a92f8dea4ef806f1853d8c37e5cdff709f589da140482"
+      "sha256": "5db6bf42ac2750cc699a92f8dea4ef806f1853d8c37e5cdff709f589da140482",
+      "upright": {
+        "core": {
+          "en": "Ambition, diligent study, and making a practical plan real.",
+          "zh": "企图心、勤奋学习，以及让务实计划成真。"
+        },
+        "tension": {
+          "en": "This is the knot to examine: Is ambition turning into shortcuts, greed, or postponed practice? If it applies, choose a modest study schedule and show the first completed result.",
+          "zh": "这是需要检视的结：企图心是否变成捷径、贪心或延后练习？ 若符合现况，选择朴素的学习进度，并展示第一个完成成果。"
+        },
+        "reflection": {
+          "en": "Which practical subject deserves beginner-level attention?",
+          "zh": "哪一个现实主题值得用初学者心态认真学习？"
+        },
+        "action": {
+          "en": "Study one reliable lesson and complete the exercise instead of collecting more material.",
+          "zh": "学习一堂可靠课程并完成练习，不再只收集资料。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The card asks how weak commitment, greed, or postponing the work can return without repeating the old pattern.",
+          "zh": "这张牌追问承诺不足、贪心，或拖延真正的工作如何回来，同时不重复旧模式。"
+        },
+        "tension": {
+          "en": "Its inward turn asks for a safer route toward ambition, diligent study, and making a practical plan real.",
+          "zh": "它向内转，寻找通往企图心、勤奋学习，以及让务实计划成真的更安全路线。"
+        },
+        "reflection": {
+          "en": "Is ambition turning into shortcuts, greed, or postponed practice?",
+          "zh": "企图心是否变成捷径、贪心或延后练习？"
+        },
+        "action": {
+          "en": "Choose a modest study schedule and show the first completed result.",
+          "zh": "选择朴素的学习进度，并展示第一个完成成果。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The Page of Pentacles makes ambition, diligent study, and making a practical plan real the present-tense concern.",
+          "zh": "星币侍从让企图心、勤奋学习，以及让务实计划成真成为当下议题。"
+        },
+        "challenge": {
+          "en": "This position asks for courage, not prediction: Is ambition turning into shortcuts, greed, or postponed practice?",
+          "zh": "这个位置要求勇气，而非预测：企图心是否变成捷径、贪心或延后练习？"
+        },
+        "guidance": {
+          "en": "Let this be the response, not a promise about the future: study one reliable lesson and complete the exercise instead of collecting more material.",
+          "zh": "让这成为回应，而不是未来承诺：学习一堂可靠课程并完成练习，不再只收集资料。"
+        }
+      }
     },
     {
       "id": "PENTACLES-12",
@@ -1695,18 +4995,62 @@ window.CELESTIAL_DECK = {
       "zh": "星币骑士",
       "motif": "steady field rider",
       "rationale": "An original steady field rider composition translates the traditional Knight of Pentacles scene into this deck’s celestial line language.",
-      "keywords": "reliability · patient labor · and responsibility carried through",
-      "keywordsZh": "可靠 · 耐心劳动，以及贯彻责任",
-      "meaning": "reliability, patient labor, and responsibility carried through",
-      "meaningZh": "可靠、耐心劳动，以及贯彻责任",
-      "shadow": "stagnation, work obsession, or effort without meaningful reward",
-      "shadowZh": "停滞、工作成瘾，或缺少意义回报的付出",
-      "reflection": "Where is reliability, patient labor, and responsibility carried through asking for your attention rather than certainty?",
-      "reflectionZh": "可靠、耐心劳动，以及贯彻责任正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Turn the insight into one practical step you can complete or measure.",
-      "practiceZh": "把领悟化为一个可以完成或衡量的实际步骤。",
+      "keywords": {
+        "en": "reliability · patient labor · and responsibility carried through",
+        "zh": "可靠 · 耐心劳动，以及贯彻责任"
+      },
       "src": "assets/cards/r1/generated/pentacles-12-knight-of-pentacles.png",
-      "sha256": "93f1a59540382218c027f5a48dba83079e9642b0a2b9f0dbe2003d1a5fa5d249"
+      "sha256": "93f1a59540382218c027f5a48dba83079e9642b0a2b9f0dbe2003d1a5fa5d249",
+      "upright": {
+        "core": {
+          "en": "Reliability, patient labor, and responsibility carried through.",
+          "zh": "可靠、耐心劳动，以及贯彻责任。"
+        },
+        "tension": {
+          "en": "Rather than predict an outcome, ask: Has reliability become stagnation, overwork, or refusal to adapt? If it applies, change one inefficient routine while keeping the promise it was meant to serve.",
+          "zh": "不要预测结果，而要问：可靠是否变成停滞、过劳或拒绝调整？ 若符合现况，改变一个低效习惯，同时保留它原本要服务的承诺。"
+        },
+        "reflection": {
+          "en": "Which responsibility needs steady pace more than excitement?",
+          "zh": "哪一项责任需要稳定节奏，而不是兴奋感？"
+        },
+        "action": {
+          "en": "Do the scheduled block, record completion, and prepare tomorrow’s starting point.",
+          "zh": "完成计划时段，记录进度，并准备明天的起点。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "A delayed or internalized form of stagnation, work obsession, or effort without meaningful reward is seeking room.",
+          "zh": "延迟或内化的停滞、工作成瘾，或缺少意义回报的付出正在寻找空间。"
+        },
+        "tension": {
+          "en": "Delay reveals where reliability, patient labor, and responsibility carried through lacks support.",
+          "zh": "延迟揭示可靠、耐心劳动，以及贯彻责任在哪里缺乏支持。"
+        },
+        "reflection": {
+          "en": "Has reliability become stagnation, overwork, or refusal to adapt?",
+          "zh": "可靠是否变成停滞、过劳或拒绝调整？"
+        },
+        "action": {
+          "en": "Change one inefficient routine while keeping the promise it was meant to serve.",
+          "zh": "改变一个低效习惯，同时保留它原本要服务的承诺。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The first card establishes reliability, patient labor, and responsibility carried through as the working context.",
+          "zh": "第一张牌把可靠、耐心劳动，以及贯彻责任建立为可工作的背景。"
+        },
+        "challenge": {
+          "en": "The tension has a clear doorway: Has reliability become stagnation, overwork, or refusal to adapt?",
+          "zh": "张力有一个清楚入口：可靠是否变成停滞、过劳或拒绝调整？"
+        },
+        "guidance": {
+          "en": "Guidance takes form in one task: do the scheduled block, record completion, and prepare tomorrow’s starting point.",
+          "zh": "指引在一项任务中成形：完成计划时段，记录进度，并准备明天的起点。"
+        }
+      }
     },
     {
       "id": "PENTACLES-13",
@@ -1717,18 +5061,62 @@ window.CELESTIAL_DECK = {
       "zh": "星币王后",
       "motif": "garden throne",
       "rationale": "An original garden throne composition translates the traditional Queen of Pentacles scene into this deck’s celestial line language.",
-      "keywords": "practical care · bodily wisdom · and secure abundance",
-      "keywordsZh": "务实照顾 · 身体智慧，以及安稳丰盛",
-      "meaning": "practical care, bodily wisdom, and secure abundance",
-      "meaningZh": "务实照顾、身体智慧，以及安稳丰盛",
-      "shadow": "smothering control, jealousy, or neglecting yourself while providing",
-      "shadowZh": "窒息式控制、嫉妒，或照顾他人时忽略自己",
-      "reflection": "Where is practical care, bodily wisdom, and secure abundance asking for your attention rather than certainty?",
-      "reflectionZh": "务实照顾、身体智慧，以及安稳丰盛正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Turn the insight into one practical step you can complete or measure.",
-      "practiceZh": "把领悟化为一个可以完成或衡量的实际步骤。",
+      "keywords": {
+        "en": "practical care · bodily wisdom · and secure abundance",
+        "zh": "务实照顾 · 身体智慧，以及安稳丰盛"
+      },
       "src": "assets/cards/r1/generated/pentacles-13-queen-of-pentacles.png",
-      "sha256": "cf444eaedd4f17c3d35469121389ac6af906271da73e08db39ebcf8d3d195fe7"
+      "sha256": "cf444eaedd4f17c3d35469121389ac6af906271da73e08db39ebcf8d3d195fe7",
+      "upright": {
+        "core": {
+          "en": "Practical care, bodily wisdom, and secure abundance.",
+          "zh": "务实照顾、身体智慧，以及安稳丰盛。"
+        },
+        "tension": {
+          "en": "The position exposes a decision point: Are you providing for everyone while neglecting or controlling yourself? If it applies, reserve one resource for your own care and let another person manage their share.",
+          "zh": "这个位置揭示一个决定点：你是否照顾所有人，却忽略或控制自己？ 若符合现况，为自己的照顾保留一项资源，也让别人管理自己的部分。"
+        },
+        "reflection": {
+          "en": "What practical care would make the whole environment safer?",
+          "zh": "哪一种务实照顾能让整个环境更安全？"
+        },
+        "action": {
+          "en": "Prepare a meal, budget, rest plan, or tidy space that supports real bodies.",
+          "zh": "准备一顿饭、一份预算、休息计划或整洁空间，支持真实身体需要。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "Reversed, the lesson of smothering control, jealousy, or neglecting yourself while providing is still being integrated.",
+          "zh": "逆位时，窒息式控制、嫉妒，或照顾他人时忽略自己的功课仍在整合。"
+        },
+        "tension": {
+          "en": "The symbol contains more practical care, bodily wisdom, and secure abundance than it can currently use.",
+          "zh": "象征容纳了超过当前能使用的务实照顾、身体智慧，以及安稳丰盛。"
+        },
+        "reflection": {
+          "en": "Are you providing for everyone while neglecting or controlling yourself?",
+          "zh": "你是否照顾所有人，却忽略或控制自己？"
+        },
+        "action": {
+          "en": "Reserve one resource for your own care and let another person manage their share.",
+          "zh": "为自己的照顾保留一项资源，也让别人管理自己的部分。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "The situation carries practical care, bodily wisdom, and secure abundance; the image makes it concrete.",
+          "zh": "现状承载着务实照顾、身体智慧，以及安稳丰盛；图像让它变得具体。"
+        },
+        "challenge": {
+          "en": "Work the problem from this angle: Are you providing for everyone while neglecting or controlling yourself?",
+          "zh": "从这个角度处理问题：你是否照顾所有人，却忽略或控制自己？"
+        },
+        "guidance": {
+          "en": "Bring the image down to earth: prepare a meal, budget, rest plan, or tidy space that supports real bodies.",
+          "zh": "让图像落到现实地面：准备一顿饭、一份预算、休息计划或整洁空间，支持真实身体需要。"
+        }
+      }
     },
     {
       "id": "PENTACLES-14",
@@ -1739,18 +5127,63 @@ window.CELESTIAL_DECK = {
       "zh": "星币国王",
       "motif": "vine-wrapped throne",
       "rationale": "An original vine-wrapped throne composition translates the traditional King of Pentacles scene into this deck’s celestial line language.",
-      "keywords": "material mastery · stewardship · and prosperity built to last",
-      "keywordsZh": "现实掌控 · 善于管理，以及可持续的繁荣",
-      "meaning": "material mastery, stewardship, and prosperity built to last",
-      "meaningZh": "现实掌控、善于管理，以及可持续的繁荣",
-      "shadow": "greed, indulgence, or measuring worth only through possessions",
-      "shadowZh": "贪婪、纵欲，或只以物质衡量价值",
-      "reflection": "Where is material mastery, stewardship, and prosperity built to last asking for your attention rather than certainty?",
-      "reflectionZh": "现实掌控、善于管理，以及可持续的繁荣正在何处邀请你保持关注，而不是急于确定？",
-      "practice": "Turn the insight into one practical step you can complete or measure.",
-      "practiceZh": "把领悟化为一个可以完成或衡量的实际步骤。",
+      "keywords": {
+        "en": "material mastery · stewardship · and prosperity built to last",
+        "zh": "现实掌控 · 善于管理，以及可持续的繁荣"
+      },
       "src": "assets/cards/r1/generated/pentacles-14-king-of-pentacles.png",
-      "sha256": "03d177da0ef42a238830ac949ec46ed8f694f3c2cc99147cfb44311a33ef20d8"
+      "sha256": "03d177da0ef42a238830ac949ec46ed8f694f3c2cc99147cfb44311a33ef20d8",
+      "upright": {
+        "core": {
+          "en": "Material mastery, stewardship, and prosperity built to last.",
+          "zh": "现实掌控、善于管理，以及可持续的繁荣。"
+        },
+        "tension": {
+          "en": "The friction in the spread can be named simply: Has material success become greed, indulgence, or the only measure of worth? If it applies, choose one resource to manage responsibly and one status display to stop funding.",
+          "zh": "牌阵中的摩擦可以简单说成：物质成功是否变成贪婪、纵欲或唯一价值标准？ 若符合现况，选择一项资源负责管理，并停止资助一个地位展示。"
+        },
+        "reflection": {
+          "en": "Which asset needs stewardship rather than possession?",
+          "zh": "哪一项资产需要管理，而不只是占有？"
+        },
+        "action": {
+          "en": "Review its condition, purpose, and next maintenance date.",
+          "zh": "检视它的状态、用途与下一次维护日期。"
+        }
+      },
+      "reversed": {
+        "core": {
+          "en": "The current cannot flow until greed, indulgence, or measuring worth only through possessions becomes honest and proportionate.",
+          "zh": "在贪婪、纵欲，或只以物质衡量价值变得诚实且适度前，流动无法恢复。"
+        },
+        "tension": {
+          "en": "Reversal asks for integration before material mastery, stewardship, and prosperity built to last returns outward.",
+          "zh": "逆位要求先整合，再让现实掌控、善于管理，以及可持续的繁荣回到外在。"
+        },
+        "reflection": {
+          "en": "Has material success become greed, indulgence, or the only measure of worth?",
+          "zh": "物质成功是否变成贪婪、纵欲或唯一价值标准？"
+        },
+        "action": {
+          "en": "Choose one resource to manage responsibly and one status display to stop funding.",
+          "zh": "选择一项资源负责管理，并停止资助一个地位展示。"
+        }
+      },
+      "position": {
+        "situation": {
+          "en": "material mastery, stewardship, and prosperity built to last is the atmosphere this card asks you to acknowledge.",
+          "zh": "现实掌控、善于管理，以及可持续的繁荣是这张牌请你承认的氛围。"
+        },
+        "challenge": {
+          "en": "The challenge becomes specific in one question: Has material success become greed, indulgence, or the only measure of worth?",
+          "zh": "挑战在一个问题中变得具体：物质成功是否变成贪婪、纵欲或唯一价值标准？"
+        },
+        "guidance": {
+          "en": "End reflection with this concrete move: review its condition, purpose, and next maintenance date.",
+          "zh": "用这个具体行动结束反思：检视它的状态、用途与下一次维护日期。"
+        }
+      }
     }
-  ]
+  ],
+  "meaningEdition": "CA-MEANINGS-2026.1"
 };

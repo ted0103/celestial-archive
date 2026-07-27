@@ -14,7 +14,7 @@ for(const entry of manifest.files){const path=resolve(dist,entry.url.replace(/^\
 
 const core=manifest.files.filter(file=>file.pack==='core'),gesture=manifest.files.filter(file=>file.pack==='gesture'),coreBytes=core.reduce((sum,file)=>sum+file.bytes,0),gestureBytes=gesture.reduce((sum,file)=>sum+file.bytes,0);
 if(coreBytes>35*1024*1024)failures.push(`Core exceeds 35 MiB: ${coreBytes}`);
-if(gestureBytes>14*1024*1024)failures.push(`Gesture exceeds 14 MiB: ${gestureBytes}`);
+if(gestureBytes>20*1024*1024)failures.push(`Gesture exceeds 20 MiB: ${gestureBytes}`);
 for(const file of core)if(file.bytes>2.5*1024*1024)failures.push(`Core file exceeds 2.5 MiB: ${file.url}`);
 for(const file of gesture)if(file.url.endsWith('.wasm')?file.bytes>6*1024*1024:file.bytes>5*1024*1024)failures.push(`Gesture file exceeds its exception budget: ${file.url}`);
 
@@ -23,10 +23,12 @@ const assetLinks=JSON.parse(await readFile(resolve(dist,'.well-known/assetlinks.
 if(data.cards.length!==78||data.cards.some(card=>!card.src.endsWith('.webp'))||!data.back.endsWith('.webp'))failures.push('Release registry does not contain 78 optimized WebP faces plus the back');
 if(/assets\/(cards|backgrounds)\/[^)'"\s]+\.(png|jpe?g)/i.test(css))failures.push('Release CSS still references an unoptimized card/background image');
 if([...actual].some(path=>/rejected|catalog|prompt|provenance/i.test(path)))failures.push('Non-runtime review/source material leaked into dist');
-if(!html.includes('rel="manifest"')||!html.includes('Content-Security-Policy')||!sw.includes(manifest.releaseId)||!sw.includes('PACK_PROGRESS')||!sw.includes('PACK_STATUS')||!sw.includes('self.skipWaiting()')||!sw.includes("event.request.mode==='navigate'"))failures.push('Manifest, meta CSP, release-bound update-safe worker, or resumable pack messaging is missing');
+if(!html.includes('rel="manifest"')||!html.includes('Content-Security-Policy')||!sw.includes(manifest.releaseId)||!sw.includes('PACK_PROGRESS')||!sw.includes('PACK_STATUS')||sw.includes('self.skipWaiting()')||!sw.includes("data.type==='RELEASE_ID'")||!sw.includes("event.request.mode==='navigate'"))failures.push('Manifest, meta CSP, release-bound update-safe worker, or resumable pack messaging is missing');
 if(pkg.dependencies['@mediapipe/hands']!=='0.4.1675469240'||pkg.devDependencies?.sharp!=='0.35.3')failures.push('MediaPipe runtime or Sharp build encoder is not exactly pinned');
 if(assetLinks[0]?.target?.package_name!=='io.github.ted0103.twa'||assetLinks[0]?.target?.sha256_cert_fingerprints?.length!==1)failures.push('Root Digital Asset Links association is missing or malformed');
 for(const path of ['assets/fonts/OFL-NotoSansSC.txt','assets/vendor/mediapipe-hands/LICENSE.txt','assets/icons/icon-192.png','assets/icons/icon-512.png'])if(!actual.has(path))failures.push(`Required release notice/icon missing: ${path}`);
+for(const path of ['assets/audio/celestial-ambient.mp3','assets/vendor/mediapipe-hands/hands_solution_simd_wasm_bin.js','assets/vendor/mediapipe-hands/hands_solution_simd_wasm_bin.wasm','assets/vendor/mediapipe-hands/hands_solution_wasm_bin.js','assets/vendor/mediapipe-hands/hands_solution_wasm_bin.wasm'])if(!actual.has(path))failures.push(`Required music/gesture runtime missing: ${path}`);
+const music=manifest.files.find(file=>file.url==='./assets/audio/celestial-ambient.mp3');if(music?.mime!=='audio/mpeg'||music?.sha256!=='41c593c7336faa72004b5b74577c4094c954d545fcc536e722ba4b3a3bef5d0f')failures.push('Distributed ambient MP3 MIME or source hash is wrong');
 for(const source of [html,dataRaw,await readFile(resolve(dist,'app.js'),'utf8')])if(/https?:\/\//.test(source))failures.push('Release runtime contains a remote URL');
 
 if(failures.length){console.error(failures.join('\n'));process.exit(1);}
