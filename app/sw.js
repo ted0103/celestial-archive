@@ -1,4 +1,4 @@
-const RELEASE_ID='source-20260727-7',CACHE='celestial-archive-shell-'+RELEASE_ID;
+const RELEASE_ID='source-20260727-9',CACHE='celestial-archive-shell-'+RELEASE_ID;
 const SHELL=['./','./index.html','./styles.css','./data.js','./logic.js','./app.js','./assets/audio/celestial-ambient.mp3','./manifest.webmanifest'];
 
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL))));
