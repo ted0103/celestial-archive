@@ -1,0 +1,15 @@
+dist/
+dist 2/
+node_modules/
+graphify-out/
+.DS_Store
+*.keystore
+*.jks
+release/private/
+release/**/*signing*.zip
+android/twa/.gradle/
+android/twa/app/build/
+android/twa/build/
+android/twa/.signing/
+android/twa/*.apk
+android/twa/*.aab

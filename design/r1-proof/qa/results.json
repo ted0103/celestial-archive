@@ -1,0 +1,31 @@
+{
+  "checkedAt": "2026-07-18T01:11:17.783Z",
+  "consoleErrors": [],
+  "checks": {
+    "openingSequenceVisible": true,
+    "introAndCollageOverlap": true,
+    "entryArrivalAnimation": true,
+    "stagedGatewayElements": true,
+    "cardFlightBetweenDeckAndSlot": true,
+    "cinematicRevealVisible": true,
+    "revealStagesSeparated": true,
+    "threeCardReveal": true,
+    "detailedMeanings": true,
+    "imageExport": true,
+    "exportDimensions": true,
+    "clickParticles": true,
+    "sixProofFaces": true,
+    "detailFlipsFromBack": true,
+    "singleGalleryFocus": true,
+    "finiteReviewManifest": true,
+    "cardImagesLoaded": true,
+    "phoneGatewayNoHorizontalOverflow": true,
+    "phoneZhNoHorizontalOverflow": true,
+    "zhModeActive": true,
+    "cameraGestureStream": true,
+    "cameraIdleDoesNotSelect": true,
+    "cameraGestureSelects": true,
+    "revisionTwoPaletteSheet": true
+  },
+  "passed": true
+}

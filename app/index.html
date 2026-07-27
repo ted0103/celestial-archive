@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080909">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; media-src 'self' blob:; connect-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>The Celestial Archive · 天穹秘典</title>
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="stylesheet" href="styles.css?v=20260722-2">
+</head>
+<body>
+  <div class="film" aria-hidden="true"></div>
+  <canvas class="click-particle-canvas" id="click-particle-canvas" aria-hidden="true"></canvas>
+
+  <section class="opening-sequence" id="opening-sequence" aria-label="Opening sequence">
+    <canvas id="opening-particle-canvas" aria-hidden="true"></canvas>
+    <div class="opening-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="opening-ident" aria-hidden="true">
+      <div class="ident-orbit orbit-a"></div>
+      <div class="ident-orbit orbit-b"></div>
+      <div class="ident-crescent"></div>
+      <div class="ident-star">✦</div>
+      <div class="ident-wing wing-left"></div>
+      <div class="ident-wing wing-right"></div>
+    </div>
+    <div class="opening-wordmark"><span>THE CELESTIAL ARCHIVE</span><b>天穹秘典</b><small>AN ORIGINAL CELESTIAL RITUAL</small></div>
+    <button class="opening-skip" id="opening-skip" type="button">SKIP INTRO</button>
+  </section>
+
+  <section class="entry is-active" id="entry" aria-labelledby="entry-title">
+    <div class="entry-art" aria-hidden="true"></div>
+    <div class="entry-copy">
+      <p class="eyebrow">THE COMPLETE 78-CARD CELESTIAL DECK</p>
+      <h1 id="entry-title"><span>The Celestial Archive</span><small>天穹秘典</small></h1>
+      <p class="entry-lede" data-i18n="entryLede">A private archive for questions, symbols, and the cards that find you.</p>
+      <button class="seal-button" id="enter-button" type="button">
+        <span class="seal-mark" aria-hidden="true">✦</span>
+        <span data-i18n="enter">Enter the archive</span>
+      </button>
+      <p class="entry-note" data-i18n="entryNote">Sound begins only after you enter. Headphones recommended.</p>
+      <p class="entry-disclaimer">Tarot is a prompt for reflection—not factual prediction or medical, legal, or financial advice.<br><span>塔罗用于反思，不构成事实预测或医疗、法律、财务建议。</span></p>
+    </div>
+  </section>
+
+  <div class="app" id="app" hidden>
+    <header class="topbar">
+      <button class="brand route-control" type="button" data-route="gateway" aria-label="Return to gateway">
+        <span class="brand-sigil">✦</span>
+        <span><b>The Celestial Archive</b><small>天穹秘典 · MYSTERY TAROT</small></span>
+      </button>
+      <div class="top-actions">
+        <button class="icon-button chamber-shortcut route-control" id="chamber-shortcut" type="button" data-route="chamber" aria-label="Open Reading Chamber">▤</button>
+        <button class="icon-button" id="sound-toggle" type="button" aria-label="Toggle sound">♫</button>
+        <button class="icon-button" id="settings-toggle" type="button" aria-label="Open settings">⚙</button>
+      </div>
+    </header>
+
+    <main class="stage">
+      <section class="view gateway is-active" data-view="gateway" aria-labelledby="gateway-title">
+        <div class="bg-layer"></div>
+        <div class="gateway-heading">
+          <p class="eyebrow">THE CELESTIAL ARCHIVE · 天穹秘典</p>
+          <h2 id="gateway-title" data-i18n="gatewayTitle">Choose a threshold.</h2>
+          <p data-i18n="gatewayLede">Each room keeps its own rhythm, but every path returns to the same sky.</p>
+        </div>
+        <nav class="gateway-grid" aria-label="Primary destinations">
+          <button class="gateway-card primary route-control" type="button" data-route="ritual">
+            <span class="gateway-index">01 / DRAW</span>
+            <span class="gateway-title" data-i18n="ritual">Enter the Ritual</span>
+            <span class="gateway-zh">入仪</span>
+            <span class="gateway-desc" data-i18n="ritualDesc">Ask, shuffle, reveal, understand.</span>
+            <span class="gateway-arrow">↗</span>
+          </button>
+          <button class="gateway-card route-control" type="button" data-route="arcana">
+            <span class="gateway-index">02 / 78</span>
+            <span class="gateway-title" data-i18n="arcana">Arcana</span>
+            <span class="gateway-zh">秘仪之牌</span>
+            <span class="gateway-desc" data-i18n="arcanaDesc">Browse the complete celestial deck.</span>
+            <span class="gateway-arrow">↗</span>
+          </button>
+          <button class="gateway-card route-control" type="button" data-route="chamber">
+            <span class="gateway-index">03 / SAVED</span>
+            <span class="gateway-title" data-i18n="chamber">Reading Chamber</span>
+            <span class="gateway-zh">占卜室</span>
+            <span class="gateway-desc" data-i18n="chamberDesc">Return only to readings you chose to keep.</span>
+            <span class="gateway-arrow">↗</span>
+          </button>
+          <button class="gateway-card route-control" type="button" data-route="grimoire">
+            <span class="gateway-index">04 / LEARN</span>
+            <span class="gateway-title" data-i18n="grimoire">Grimoire</span>
+            <span class="gateway-zh">秘典</span>
+            <span class="gateway-desc" data-i18n="grimoireDesc">Six chapters on reading with care.</span>
+            <span class="gateway-arrow">↗</span>
+          </button>
+        </nav>
+        <p class="gateway-foot">ORIGINAL R1.0 DECK · 78 NAMED CARDS · LOCAL-FIRST</p>
+      </section>
+
+      <section class="view ritual" data-view="ritual" aria-labelledby="ritual-title">
+        <div class="bg-layer"></div>
+        <header class="page-heading">
+          <p class="eyebrow">01 · DRAW / 入仪</p>
+          <h2 id="ritual-title" data-i18n="ritual">Enter the Ritual</h2>
+          <p data-i18n="ritualPageLede">Name what is moving through you—or leave the question unspoken.</p>
+        </header>
+        <div class="ritual-board">
+          <div class="question-panel" id="question-panel">
+            <label for="question" data-i18n="questionLabel">Your question · optional</label>
+            <textarea id="question" maxlength="280" data-i18n-placeholder="questionPlaceholder" placeholder="What deserves my attention now?"></textarea>
+            <div class="question-actions">
+              <button class="button gold" id="begin-ritual" type="button" data-i18n="begin">Begin shuffle</button>
+              <button class="button ghost" id="hand-ritual" type="button"><span aria-hidden="true">◌</span> <span data-i18n="handRitual">Hand Ritual</span></button>
+            </div>
+            <p class="microcopy" data-i18n="privacy">Nothing is saved unless you explicitly choose Save.</p>
+          </div>
+
+          <div class="draw-panel" id="draw-panel" hidden>
+            <div class="ritual-stage-rail" id="ritual-stage-rail" aria-label="Reading progress">
+              <span data-reading-stage="choose">01 · Choose<br><small>选择</small></span>
+              <span data-reading-stage="draw">02 · Draw<br><small>抽牌</small></span>
+              <span data-reading-stage="reveal">03 · Reveal<br><small>揭示</small></span>
+              <span data-reading-stage="meaning">04 · Meaning<br><small>牌义</small></span>
+            </div>
+            <div class="ritual-instruction">
+              <span id="draw-instruction" data-i18n="chooseThree">Choose three cards.</span>
+              <b id="draw-progress">0 / 3</b>
+              <button class="restart-draw-control" id="restart-draw" type="button"><span aria-hidden="true">↻</span><span data-i18n="restartDraw">Restart draw</span></button>
+            </div>
+            <div class="deck-selector" id="deck-selector">
+              <div class="deck-resolve-mark" aria-hidden="true">
+                <i></i><i></i><i></i><i></i><i></i>
+                <span>78</span>
+              </div>
+              <button class="deck-scroll-button" id="deck-scroll-prev" type="button" aria-label="Scroll deck left">←</button>
+              <div class="deck-fan" id="deck-fan" role="listbox" aria-label="Choose three cards from the shuffled 78-card deck" tabindex="0"></div>
+              <button class="deck-scroll-button" id="deck-scroll-next" type="button" aria-label="Scroll deck right">→</button>
+            </div>
+            <div class="deck-position" aria-live="polite">
+              <span id="deck-visible-index">01</span><i></i><span>78</span>
+              <small data-i18n="deckScroll">Scroll left to right through all 78 cards.</small>
+            </div>
+            <div class="reading-slots" id="reading-slots"></div>
+            <button class="button gold reveal-button" id="reveal-cards" type="button" disabled data-i18n="reveal">Reveal the reading</button>
+          </div>
+
+          <article class="meaning-panel" id="meaning-panel" hidden>
+            <div class="meaning-head">
+              <div>
+                <p class="eyebrow">PAST · PRESENT · POSSIBILITY</p>
+                <h3 data-i18n="meaningTitle">The pattern between the cards</h3>
+              </div>
+              <button class="icon-button" id="close-meaning" type="button" aria-label="Close meaning">×</button>
+            </div>
+            <div class="meaning-grid" id="meaning-grid"></div>
+            <div class="synthesis">
+              <p class="eyebrow" data-i18n="synthesis">SYNTHESIS</p>
+              <p id="synthesis-copy" data-i18n="synthesisCopy">A beginning asks for trust, uncertainty asks for patience, and the heart asks to remain open. Move carefully, but keep moving.</p>
+            </div>
+            <div class="reading-details" id="reading-details" aria-label="Detailed interpretation"></div>
+            <p class="reflection-disclaimer">For reflection—not prediction or medical, legal, or financial advice.<span>仅供反思，不构成预测或医疗、法律、财务建议。</span></p>
+            <div class="report-options">
+              <label><input type="checkbox" id="save-question"> <span data-i18n="includeSave">Include question when saving</span></label>
+              <label><input type="checkbox" id="copy-question"> <span data-i18n="includeCopy">Include question when copying</span></label>
+            </div>
+            <div class="report-actions">
+              <button class="button gold" id="save-reading" type="button" data-i18n="save">Save</button>
+              <button class="button" id="export-reading" type="button" data-i18n="export">Export image</button>
+              <button class="button" id="copy-reading" type="button" data-i18n="copy">Copy meaning</button>
+              <button class="button ghost" id="restart-reading" type="button" data-i18n="restartDraw">Restart draw</button>
+              <button class="button ghost" id="new-reading" type="button" data-i18n="newReading">New reading</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="view arcana" data-view="arcana" aria-labelledby="arcana-title">
+        <div class="bg-layer"></div>
+        <header class="page-heading inline-heading">
+          <div><p class="eyebrow">02 · 78 / 秘仪之牌</p><h2 id="arcana-title" data-i18n="arcana">Arcana</h2></div>
+          <label class="search-field"><span class="sr-only">Search cards</span><input id="card-search" type="search" data-i18n-placeholder="searchCards" placeholder="Search all 78 cards"><span>⌕</span></label>
+        </header>
+        <div class="filter-row" role="group" aria-label="Card filters">
+          <button class="chip is-active" type="button" data-filter="all" data-i18n="all">All 78</button>
+          <button class="chip" type="button" data-filter="major">Major · 大阿卡纳</button>
+          <button class="chip" type="button" data-filter="wands">Wands · 权杖</button>
+          <button class="chip" type="button" data-filter="cups">Cups · 圣杯</button>
+          <button class="chip" type="button" data-filter="swords">Swords · 宝剑</button>
+          <button class="chip" type="button" data-filter="pentacles">Pentacles · 星币</button>
+        </div>
+        <div class="arcana-grid" id="arcana-grid"></div>
+        <p class="proof-limit" data-i18n="proofLimit">Complete approved R1.0 deck: 78 named original raster faces and one universal lunar back.</p>
+      </section>
+
+      <section class="view chamber" data-view="chamber" aria-labelledby="chamber-title">
+        <div class="bg-layer"></div>
+        <header class="page-heading chamber-heading">
+          <p class="eyebrow">03 · SAVED / 占卜室</p>
+          <h2 id="chamber-title" data-i18n="chamber">Reading Chamber</h2>
+          <p data-i18n="chamberLede">A finite moving gallery. Only the selected reading comes fully into view.</p>
+        </header>
+        <div class="gallery-shell">
+          <button class="gallery-arrow" id="gallery-prev" type="button" aria-label="Previous reading">←</button>
+          <div class="session-gallery" id="session-gallery" tabindex="0"></div>
+          <button class="gallery-arrow" id="gallery-next" type="button" aria-label="Next reading">→</button>
+        </div>
+        <div class="gallery-index"><span id="gallery-current">00</span><i></i><span id="gallery-total">00</span></div>
+      </section>
+
+      <section class="view grimoire" data-view="grimoire" aria-labelledby="grimoire-title">
+        <div class="bg-layer"></div>
+        <div class="book-layout">
+          <aside class="chapter-nav">
+            <p class="eyebrow">04 · LEARN / 秘典</p>
+            <h2 id="grimoire-title" data-i18n="grimoire">Grimoire</h2>
+            <div id="chapter-list"></div>
+          </aside>
+          <article class="chapter-page" id="chapter-page"></article>
+        </div>
+      </section>
+    </main>
+
+    <aside class="settings-panel" id="settings-panel" aria-labelledby="settings-title" aria-hidden="true" inert>
+      <div class="drawer-head"><div><p class="eyebrow">PREFERENCES</p><h2 id="settings-title" data-i18n="settings">Settings</h2></div><button class="icon-button close-drawer" type="button" data-close="settings">×</button></div>
+      <section>
+        <h3 data-i18n="language">Language</h3>
+        <div class="segmented" id="language-control">
+          <button type="button" data-language="bilingual" class="is-active">EN + 中文</button>
+          <button type="button" data-language="en">EN</button>
+          <button type="button" data-language="zh">中文</button>
+        </div>
+      </section>
+      <section class="setting-list">
+        <label><span><b data-i18n="music">Ambient music</b><small data-i18n="musicNote">Original adaptive violin-like theme</small></span><input id="music-setting" type="checkbox" checked></label>
+        <label class="volume-setting"><span><b>Music volume · 音乐音量</b><small id="music-volume-value">70%</small></span><input id="music-volume" type="range" min="0" max="100" step="1" value="70"></label>
+        <label><span><b data-i18n="sfx">Interaction sound</b><small data-i18n="sfxNote">Menus, cards, save, export, and gestures</small></span><input id="sfx-setting" type="checkbox" checked></label>
+        <label class="volume-setting"><span><b>SFX volume · 音效音量</b><small id="sfx-volume-value">80%</small></span><input id="sfx-volume" type="range" min="0" max="100" step="1" value="80"></label>
+        <p class="audio-state" id="audio-state" role="status" aria-live="polite">SOUND LOCKED UNTIL ENTER · 声音将在进入后开启</p>
+        <label><span><b data-i18n="motion">Motion</b><small data-i18n="motionNote">Morph, gallery, reveal, paper, and ambient layers</small></span><input id="motion-setting" type="checkbox" checked></label>
+        <label><span><b data-i18n="handRitual">Hand Ritual</b><small data-i18n="handNote">Optional invisible local motion tracking; never required</small></span><input id="hand-setting" type="checkbox" checked></label>
+        <label><span><b>Opening sequence</b><small>Replay the ceremonial ident on the next reload</small></span><input id="opening-setting" type="checkbox" checked></label>
+      </section>
+      <section class="offline-settings" aria-labelledby="offline-title">
+        <h3 id="offline-title">Offline availability · 离线可用</h3>
+        <p id="offline-status" data-state="checking" role="status" aria-live="polite">Checking this release… · 正在检查当前版本……</p>
+        <div class="offline-progress" aria-hidden="true"><i id="offline-progress-fill"></i></div>
+        <div class="offline-actions">
+          <button class="button" id="prepare-core" type="button">Prepare Core · 准备核心包</button>
+          <button class="button ghost" id="prepare-gesture" type="button">Prepare Gesture · 准备手势包</button>
+        </div>
+        <small>Core keeps manual drawing, all 78 cards, meanings, save, and export available. Gesture is optional. · 核心包包含手动抽牌、78 张牌、牌义、保存与导出；手势包为可选项。</small>
+      </section>
+      <section class="install-settings" aria-labelledby="install-title">
+        <h3 id="install-title">Install app · 安装应用</h3>
+        <button class="button gold" id="install-app" type="button" hidden>Install The Celestial Archive · 安装天穹秘典</button>
+        <p id="ios-install-note" hidden>On iPhone or iPad: open Share, then choose Add to Home Screen.<br><span>在 iPhone 或 iPad 上：打开“分享”，再选择“添加到主屏幕”。</span></p>
+      </section>
+      <details class="diagnostic-settings" id="diagnostic-settings">
+        <summary>Local diagnostics · 本地诊断</summary>
+        <p>Optional numeric audio and gesture status only. It never includes camera frames, landmarks, questions, cards, or readings.</p>
+        <p>仅包含可选的音频与手势数值状态；绝不包含摄像头画面、关键点、问题、卡牌或解读。</p>
+        <pre id="diagnostic-preview">Open this panel to create a local diagnostic snapshot.</pre>
+        <div class="offline-actions">
+          <button class="button ghost" id="refresh-diagnostics" type="button">Refresh · 刷新</button>
+          <button class="button" id="export-diagnostics" type="button">Save diagnostics · 保存诊断</button>
+        </div>
+      </details>
+      <button class="button ghost" id="clear-readings" type="button">Clear Reading Chamber · 清空占卜室</button>
+      <p class="drawer-note">Questions remain private unless explicitly included in a saved reading or export.</p>
+    </aside>
+
+    <dialog class="card-dialog" id="card-dialog">
+      <button class="icon-button dialog-close" type="button" aria-label="Close card detail">×</button>
+      <div class="dialog-card" id="dialog-card"></div>
+      <div class="dialog-copy" id="dialog-copy"></div>
+    </dialog>
+
+    <dialog class="hand-dialog" id="hand-dialog">
+      <button class="icon-button dialog-close" type="button" aria-label="Close hand ritual">×</button>
+      <div class="hand-stage">
+        <div class="camera-grain"></div>
+        <div class="camera-shell">
+          <video id="gesture-video" autoplay muted playsinline aria-hidden="true"></video>
+          <canvas id="gesture-analysis-canvas" width="320" height="240" aria-hidden="true"></canvas>
+          <div class="gesture-deck-heading"><span>LIVE DECK · 手势牌组</span><b id="gesture-draw-count">0 / 3</b></div>
+          <div class="gesture-deck-rail" id="gesture-deck-rail" aria-hidden="true">
+            <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="gesture-zones" aria-hidden="true"><i data-zone="0">OPEN PALM · BROWSE</i><i data-zone="1">ONE FINGER · AIM</i><i data-zone="2">PINCH · SELECT</i></div>
+          <div class="gesture-card-hud" aria-live="polite">
+            <button class="gesture-candidate-card" id="gesture-candidate-card" type="button" aria-label="Draw highlighted hidden card 01 of 78"><small>HIGHLIGHTED</small><span id="gesture-candidate-index">01 / 78</span><em>TAP OR HOLD · 点击或停留</em></button>
+            <div class="gesture-picked-cards" id="gesture-picked-cards"><i>01</i><i>02</i><i>03</i></div>
+          </div>
+          <div class="gesture-reticle"><span>✦</span></div>
+          <div class="gesture-pointer" id="gesture-pointer" aria-hidden="true"><i></i><span>HAND · 手</span></div>
+          <div class="gesture-mode-badge" id="gesture-mode-badge" data-mode="idle"><b>SHOW YOUR HAND</b><small>请举起手</small></div>
+          <div class="gesture-meter"><i id="gesture-meter-fill"></i></div>
+        </div>
+        <p class="eyebrow">INVISIBLE LOCAL MOTION INPUT · 本地隐形手势输入</p>
+        <h3 data-i18n="handPrompt">Move left or right to browse. Hold in the center to select.</h3>
+        <p class="gesture-guide">OPEN PALM + MOVE TO BROWSE · ONE FINGER TO AIM · PINCH TO SELECT<br>张开手掌并移动以浏览 · 伸出食指瞄准 · 捏合手指选牌</p>
+        <p id="gesture-status" data-i18n="handPrivacy">The camera works only as an invisible local motion sensor. Its preview is never shown, stored, or uploaded.</p>
+        <div class="gesture-sensor-state"><span id="gesture-sensor-state" data-state="idle">HAND TRACKING OFF · 手势追踪关闭</span><small id="gesture-sensor-detail">Tap Enable hand tracking to request camera access.</small></div>
+        <div class="gesture-tuning">
+          <label><span>SHIFT SPEED · 移动速度 <output id="gesture-speed-value">1.2×</output></span><input id="gesture-speed" type="range" min="0.5" max="2.5" step="0.1" value="1.2"></label>
+          <label><span>SENSITIVITY · 灵敏度 <output id="gesture-sensitivity-value">55 / 100</output></span><input id="gesture-sensitivity" type="range" min="0" max="100" step="1" value="55"></label>
+        </div>
+        <div class="gesture-actions">
+          <button class="button gold" id="start-camera" type="button">Enable hand tracking · 启用手势</button>
+          <button class="button ghost" id="stop-camera" type="button" hidden>Stop camera</button>
+          <button class="button ghost" id="simulate-gesture" type="button" data-i18n="simulate">Simulate selection</button>
+        </div>
+      </div>
+    </dialog>
+
+    <div class="reveal-cinema" id="reveal-cinema" aria-hidden="true" hidden>
+      <canvas id="reveal-particle-canvas"></canvas>
+      <div class="reveal-haze"></div>
+      <div class="cinema-ribbon"></div>
+      <div class="cinema-cards" id="cinema-cards"></div>
+      <p><span>THE CARDS REMEMBER</span><b>牌已记起你</b></p>
+    </div>
+
+    <div class="save-transition" id="save-transition" aria-hidden="true">
+      <canvas id="save-trail-canvas"></canvas>
+      <div class="save-light-beam"></div>
+      <div class="save-report-sheet" id="save-report-sheet"><div class="save-report-cards" id="save-report-cards"></div><span>THE READING</span><b>ARCHIVED · 已保存</b></div>
+      <div class="origami-pigeon save-pigeon"><i class="pigeon-body"></i><i class="pigeon-wing wing-a"></i><i class="pigeon-wing wing-b"></i><i class="pigeon-star">✦</i></div>
+      <div class="save-destination"><span>▤</span><b>READING CHAMBER</b><small>占卜室</small></div>
+    </div>
+    <div class="export-transition" id="export-transition" aria-hidden="true">
+      <div class="export-halo"></div>
+      <div class="export-report-sheet"><span>THE CELESTIAL ARCHIVE</span><b>IMAGE REPORT · 图像报告</b><i class="lunar-stamp"><em>☾</em></i></div>
+      <div class="origami-pigeon export-pigeon"><i class="pigeon-body"></i><i class="pigeon-wing wing-a"></i><i class="pigeon-wing wing-b"></i><i class="pigeon-star">✦</i></div>
+      <p>SEALED FOR EXPORT · 已封印导出</p>
+    </div>
+    <dialog class="export-dialog" id="export-dialog" aria-labelledby="export-dialog-title">
+      <div class="export-dialog-frame">
+        <p class="eyebrow">LOCAL IMAGE REPORT · 本地图像报告</p>
+        <h2 id="export-dialog-title">Prepare the archive</h2>
+        <p class="export-dialog-lede" id="export-dialog-lede">Two high-resolution PNG pages will be created locally. Nothing is saved to the Reading Chamber.</p>
+
+        <div class="export-dialog-options" data-export-phase="options">
+          <label><input type="checkbox" id="export-dialog-question"> <span>Include question on Page 2</span><small>在第二页包含问题</small></label>
+          <p class="export-dialog-note">The question is off by default for every export. · 每次导出默认不包含问题。</p>
+          <p class="export-question-error" id="export-question-error" role="alert" hidden></p>
+          <div class="export-dialog-actions">
+            <button class="button gold" id="export-generate" type="button">Generate two pages · 生成两页</button>
+            <button class="button ghost" id="export-cancel" type="button">Cancel · 取消</button>
+          </div>
+        </div>
+
+        <div class="export-dialog-progress" data-export-phase="rendering" hidden>
+          <div class="export-progress-mark" aria-hidden="true"><i></i><span>☾</span></div>
+          <p id="export-progress-copy" role="status" aria-live="polite">Composing Cover + Synthesis…</p>
+          <button class="button ghost" id="export-render-cancel" type="button">Cancel export · 取消导出</button>
+        </div>
+
+        <div class="export-dialog-ready" data-export-phase="ready" hidden>
+          <p class="export-ready-mark" aria-hidden="true">✦</p>
+          <h3>Two archival pages are ready.</h3>
+          <p>Choose each page to save or open it. The links remain available until this window closes.</p>
+          <div class="export-downloads">
+            <a class="button gold" id="export-page-one" href="#" download>01 · Save or open Cover + Synthesis</a>
+            <a class="button" id="export-page-two" href="#" download>02 · Save or open Detailed Meanings</a>
+          </div>
+          <div class="export-dialog-actions">
+            <button class="button ghost" id="export-copy-report" type="button">Copy report text · 复制报告文字</button>
+            <button class="button ghost" id="export-close" type="button">Close · 关闭</button>
+          </div>
+        </div>
+
+        <div class="export-dialog-error" data-export-phase="error" hidden>
+          <h3>The report could not be completed.</h3>
+          <p id="export-error-copy" role="alert"></p>
+          <div class="export-dialog-actions">
+            <button class="button gold" id="export-retry" type="button">Try again · 重试</button>
+            <button class="button ghost" id="export-error-copy-report" type="button">Copy report text · 复制报告文字</button>
+            <button class="button ghost" id="export-error-close" type="button">Close · 关闭</button>
+          </div>
+        </div>
+      </div>
+    </dialog>
+    <div class="dissolve-layer" id="dissolve-layer" aria-hidden="true"></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+
+  <script src="data.js?v=20260722-2"></script>
+  <script src="logic.js?v=20260722-2"></script>
+  <script src="assets/vendor/mediapipe-hands/hands.js"></script>
+  <script src="app.js?v=20260722-2"></script>
+</body>
+</html>

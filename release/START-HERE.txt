@@ -1,0 +1,24 @@
+THE CELESTIAL ARCHIVE · FRIEND PREVIEW
+
+Recommended: open https://ted0103.github.io/ on any phone, tablet, or computer.
+
+iPhone / iPad:
+1. Open the direct website in Safari.
+2. Tap Share, then Add to Home Screen.
+
+Android:
+1. Open the direct website in Chrome and choose Install app; or install the attached APK.
+2. Android may ask you to allow installs from this source for the friend-preview APK.
+
+Windows:
+1. Extract this ZIP.
+2. Open PowerShell in this folder.
+3. Run: py -m http.server 47831
+4. Visit: http://localhost:47831
+
+macOS:
+1. Open Terminal in this folder.
+2. Run: python3 -m http.server 47831
+3. Visit: http://localhost:47831
+
+Camera hand tracking is optional. Readings remain on your device unless you explicitly save or export them.

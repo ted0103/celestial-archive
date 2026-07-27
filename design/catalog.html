@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050505">
+  <title>Celestial Archive — 78-Card Design Review</title>
+  <link rel="stylesheet" href="./catalog.css">
+</head>
+<body>
+  <a class="skip-link" href="#catalog-grid">Skip to card catalog</a>
+
+  <header class="masthead">
+    <div class="masthead__mark" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="masthead__copy">
+      <p class="eyebrow">Design Gate 01 · 视觉审核阶段</p>
+      <h1>Celestial Archive</h1>
+      <p class="lede">78 high-resolution local-image tarot faces for visual approval only. Draft 3.1 uses a restored 4× master of your supplied antique-gold deck image—no procedural figures, geometric card art, or code-drawn substitutes.</p>
+    </div>
+    <aside class="reference-chip" aria-label="Approved visual direction">
+      <img src="../references/engraved-tarot-reference-enhanced-4x.webp" alt="Traditional black and antique-gold engraved 78-card tarot reference" width="160" height="112">
+      <div>
+        <span>Research synthesis</span>
+        <strong>Antique engraving · Figurative scenes · Traditional symbolism</strong>
+      </div>
+    </aside>
+  </header>
+
+  <section class="catalog-intro" aria-labelledby="review-status-heading">
+    <div>
+      <p class="section-index">00 / REVIEW PROTOCOL</p>
+      <h2 id="review-status-heading">Review the family, then the exceptions.</h2>
+      <p class="source-note">The supplied composite has been restored and upscaled 4× while preserving its composition. Any duplicate cards or incorrect internal labels already present in the source remain visible for you to flag.</p>
+    </div>
+    <dl class="status-metrics">
+      <div><dt>Concepts</dt><dd id="metric-count">78</dd></div>
+      <div><dt>Art system</dt><dd>4× proof 3.1</dd></div>
+      <div><dt>Approval</dt><dd class="pending">Pending</dd></div>
+    </dl>
+  </section>
+
+  <div class="toolbar-wrap">
+    <section class="toolbar" aria-label="Catalog controls">
+      <label class="search-field">
+        <span>Search / 搜索</span>
+        <input id="search" type="search" placeholder="Moon, 月亮, MAJOR-18…" autocomplete="off" spellcheck="false">
+      </label>
+      <div class="filter-group" id="filters" aria-label="Filter by tarot family"></div>
+      <div class="view-switch" aria-label="Catalog density">
+        <button type="button" data-view="grid" aria-pressed="true">Grid</button>
+        <button type="button" data-view="annotated" aria-pressed="false">Annotated</button>
+      </div>
+    </section>
+  </div>
+
+  <main id="main-content">
+    <div class="results-line" aria-live="polite">
+      <span id="results-count">78 concepts</span>
+      <span id="active-family">All Arcana</span>
+    </div>
+    <section class="catalog-grid" id="catalog-grid" aria-label="Tarot card design concepts"></section>
+    <p class="empty-state" id="empty-state" hidden>No card matches this search. / 没有匹配的牌。</p>
+  </main>
+
+  <dialog class="card-dialog" id="card-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" type="button" id="dialog-close" aria-label="Close card detail">×</button>
+    <div class="dialog-layout">
+      <div class="dialog-preview"><canvas id="dialog-canvas" aria-hidden="true"></canvas></div>
+      <article class="dialog-content">
+        <p class="dialog-id" id="dialog-id"></p>
+        <h2 id="dialog-title"></h2>
+        <p class="dialog-motif" id="dialog-motif"></p>
+        <p class="dialog-rationale" id="dialog-rationale"></p>
+        <div class="meaning-pair">
+          <section>
+            <span>Upright · 正位</span>
+            <p id="dialog-upright-en"></p>
+            <p lang="zh-CN" id="dialog-upright-zh"></p>
+          </section>
+          <section>
+            <span>Reversed · 逆位</span>
+            <p id="dialog-reversed-en"></p>
+            <p lang="zh-CN" id="dialog-reversed-zh"></p>
+          </section>
+        </div>
+        <p class="meaning-source">Meaning reference: Labyrinthos 78-card index. All displayed guidance is paraphrased and bilingual, not copied.</p>
+        <div class="revision-box">
+          <span>Revision shorthand</span>
+          <code id="revision-code"></code>
+          <button type="button" id="copy-request">Copy Change Request</button>
+          <p id="copy-status" aria-live="polite"></p>
+        </div>
+      </article>
+    </div>
+  </dialog>
+
+  <template id="card-template">
+    <article class="card-entry">
+      <button type="button" class="card-open">
+        <span class="card-canvas-wrap"><canvas aria-hidden="true"></canvas></span>
+        <span class="card-caption">
+          <span class="card-id"></span>
+          <strong class="card-name"></strong>
+          <span class="card-name-zh" lang="zh-CN"></span>
+          <span class="card-motif"></span>
+        </span>
+      </button>
+    </article>
+  </template>
+
+  <script type="module" src="./catalog.js"></script>
+</body>
+</html>

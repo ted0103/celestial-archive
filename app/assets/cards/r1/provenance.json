@@ -1,0 +1,54 @@
+{
+  "version": "R1.0",
+  "status": "complete_catalog_user_approved",
+  "proofApprovedAt": "2026-07-18T01:16:10Z",
+  "catalogApprovedAt": "2026-07-18T03:56:31Z",
+  "productionAuthorized": true,
+  "nextGate": "production_integration_and_release_qa",
+  "generationMode": "one_original_raster_asset_per_card",
+  "runtimeGeometryFacesForbidden": true,
+  "bakedTextForbidden": true,
+  "approvedPalette": {
+    "nearBlack": "#0b0d0d",
+    "mutedAntiqueGold": "#a88952",
+    "warmIvory": "#ead9b2",
+    "dustyRose": "#b88478"
+  },
+  "approvedAnchors": [
+    {
+      "id": "CARD-BACK",
+      "file": "approved/card-back-lunar-seal.png",
+      "sha256": "da709e356a3d91284e1f07f4195cba0b9fe724b2027fcae19718717aae4db253"
+    },
+    {
+      "id": "CUPS-01",
+      "file": "approved/cups-01-ace-of-cups.png",
+      "sha256": "edbca998c7546fbde597fd89548a70a3d5b7a0eacb0800494b1d40df8f8e6872"
+    },
+    {
+      "id": "MAJOR-00",
+      "file": "approved/major-00-the-fool.png",
+      "sha256": "9a6682ae5a9814782ecf3c6977743edc268ff0278749cbe42827731a844125d4"
+    },
+    {
+      "id": "MAJOR-18",
+      "file": "approved/major-18-the-moon.png",
+      "sha256": "a8a5c05d8c10c2a4f48b9ea2cc34a6017fbabfd3cd0fc517985a329b075b3817"
+    },
+    {
+      "id": "PENTACLES-10",
+      "file": "approved/pentacles-10-ten-of-pentacles.png",
+      "sha256": "18bd92140b4f4d5a549d7f402efd0b99072ddb1ea1b82ff523779302f28d0caf"
+    },
+    {
+      "id": "SWORDS-03",
+      "file": "approved/swords-03-three-of-swords.png",
+      "sha256": "8f0f2429f66e35f13aea3bbc327095c7ccb576f04139b780784435eae45502e9"
+    },
+    {
+      "id": "WANDS-13",
+      "file": "approved/wands-queen-queen-of-wands.png",
+      "sha256": "272d2dbaa1c017eb796860cc95eddeccfcf236ed62b79a11a10a85d55c0c2455"
+    }
+  ]
+}

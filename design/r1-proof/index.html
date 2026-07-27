@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#080909">
+  <title>The Celestial Archive · R1.0 Review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="film" aria-hidden="true"></div>
+  <canvas class="click-particle-canvas" id="click-particle-canvas" aria-hidden="true"></canvas>
+
+  <section class="opening-sequence" id="opening-sequence" aria-label="Opening sequence">
+    <canvas id="opening-particle-canvas" aria-hidden="true"></canvas>
+    <div class="opening-frame" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+    <div class="opening-ident" aria-hidden="true">
+      <div class="ident-orbit orbit-a"></div>
+      <div class="ident-orbit orbit-b"></div>
+      <div class="ident-crescent"></div>
+      <div class="ident-star">✦</div>
+      <div class="ident-wing wing-left"></div>
+      <div class="ident-wing wing-right"></div>
+    </div>
+    <div class="opening-wordmark"><span>THE CELESTIAL ARCHIVE</span><b>天穹秘典</b><small>AN ORIGINAL CELESTIAL RITUAL</small></div>
+    <button class="opening-skip" id="opening-skip" type="button">SKIP INTRO</button>
+  </section>
+
+  <section class="entry is-active" id="entry" aria-labelledby="entry-title">
+    <div class="entry-art" aria-hidden="true"></div>
+    <div class="entry-copy">
+      <p class="eyebrow">R1.0 · INTERACTIVE DESIGN PROOF</p>
+      <h1 id="entry-title"><span>The Celestial Archive</span><small>天穹秘典</small></h1>
+      <p class="entry-lede" data-i18n="entryLede">A private archive for questions, symbols, and the cards that find you.</p>
+      <button class="seal-button" id="enter-button" type="button">
+        <span class="seal-mark" aria-hidden="true">✦</span>
+        <span data-i18n="enter">Enter the archive</span>
+      </button>
+      <p class="entry-note" data-i18n="entryNote">Sound begins only after you enter. Headphones recommended.</p>
+    </div>
+  </section>
+
+  <div class="app" id="app" hidden>
+    <header class="topbar">
+      <button class="brand route-control" type="button" data-route="gateway" aria-label="Return to gateway">
+        <span class="brand-sigil">✦</span>
+        <span><b>The Celestial Archive</b><small>天穹秘典 · MYSTERY TAROT</small></span>
+      </button>
+      <div class="top-actions">
+        <button class="icon-button" id="sound-toggle" type="button" aria-label="Toggle sound">♫</button>
+        <button class="text-button" id="review-toggle" type="button"><span data-i18n="review">Review</span> <b id="review-count">0/0</b></button>
+        <button class="icon-button" id="settings-toggle" type="button" aria-label="Open settings">⚙</button>
+      </div>
+    </header>
+
+    <main class="stage">
+      <section class="view gateway is-active" data-view="gateway" aria-labelledby="gateway-title">
+        <div class="bg-layer"></div>
+        <div class="gateway-heading">
+          <p class="eyebrow">THE CELESTIAL ARCHIVE · 天穹秘典</p>
+          <h2 id="gateway-title" data-i18n="gatewayTitle">Choose a threshold.</h2>
+          <p data-i18n="gatewayLede">Each room keeps its own rhythm, but every path returns to the same sky.</p>
+        </div>
+        <nav class="gateway-grid" aria-label="Primary destinations">
+          <button class="gateway-card primary route-control" type="button" data-route="ritual">
+            <span class="gateway-index">01 / DRAW</span>
+            <span class="gateway-title" data-i18n="ritual">Enter the Ritual</span>
+            <span class="gateway-zh">入仪</span>
+            <span class="gateway-desc" data-i18n="ritualDesc">Ask, shuffle, reveal, understand.</span>
+            <span class="gateway-arrow">↗</span>
+          </button>
+          <button class="gateway-card route-control" type="button" data-route="arcana">
+            <span class="gateway-index">02 / 78</span>
+            <span class="gateway-title" data-i18n="arcana">Arcana</span>
+            <span class="gateway-zh">秘仪之牌</span>
+            <span class="gateway-desc" data-i18n="arcanaDesc">Browse the complete celestial deck.</span>
+            <span class="gateway-arrow">↗</span>
+          </button>
+          <button class="gateway-card route-control" type="button" data-route="chamber">
+            <span class="gateway-index">03 / SAVED</span>
+            <span class="gateway-title" data-i18n="chamber">Reading Chamber</span>
+            <span class="gateway-zh">占卜室</span>
+            <span class="gateway-desc" data-i18n="chamberDesc">Return only to readings you chose to keep.</span>
+            <span class="gateway-arrow">↗</span>
+          </button>
+          <button class="gateway-card route-control" type="button" data-route="grimoire">
+            <span class="gateway-index">04 / LEARN</span>
+            <span class="gateway-title" data-i18n="grimoire">Grimoire</span>
+            <span class="gateway-zh">秘典</span>
+            <span class="gateway-desc" data-i18n="grimoireDesc">Six chapters on reading with care.</span>
+            <span class="gateway-arrow">↗</span>
+          </button>
+        </nav>
+        <p class="gateway-foot">ORIGINAL R1.0 PROOF · NO PRODUCTION INTEGRATION</p>
+      </section>
+
+      <section class="view ritual" data-view="ritual" aria-labelledby="ritual-title">
+        <div class="bg-layer"></div>
+        <header class="page-heading">
+          <p class="eyebrow">01 · DRAW / 入仪</p>
+          <h2 id="ritual-title" data-i18n="ritual">Enter the Ritual</h2>
+          <p data-i18n="ritualPageLede">Name what is moving through you—or leave the question unspoken.</p>
+        </header>
+        <div class="ritual-board">
+          <div class="question-panel" id="question-panel">
+            <label for="question" data-i18n="questionLabel">Your question · optional</label>
+            <textarea id="question" maxlength="240" data-i18n-placeholder="questionPlaceholder" placeholder="What deserves my attention now?"></textarea>
+            <div class="question-actions">
+              <button class="button gold" id="begin-ritual" type="button" data-i18n="begin">Begin shuffle</button>
+              <button class="button ghost" id="hand-ritual" type="button"><span aria-hidden="true">◌</span> <span data-i18n="handRitual">Hand Ritual</span></button>
+            </div>
+            <p class="microcopy" data-i18n="privacy">Nothing is saved unless you explicitly choose Save.</p>
+          </div>
+
+          <div class="draw-panel" id="draw-panel" hidden>
+            <div class="ritual-instruction">
+              <span id="draw-instruction" data-i18n="chooseThree">Choose three cards.</span>
+              <b id="draw-progress">0 / 3</b>
+            </div>
+            <div class="deck-fan" id="deck-fan" aria-label="Choose three tarot cards"></div>
+            <div class="reading-slots" id="reading-slots"></div>
+            <button class="button gold reveal-button" id="reveal-cards" type="button" disabled data-i18n="reveal">Reveal the reading</button>
+          </div>
+
+          <article class="meaning-panel" id="meaning-panel" hidden>
+            <div class="meaning-head">
+              <div>
+                <p class="eyebrow">PAST · PRESENT · POSSIBILITY</p>
+                <h3 data-i18n="meaningTitle">The pattern between the cards</h3>
+              </div>
+              <button class="icon-button" id="close-meaning" type="button" aria-label="Close meaning">×</button>
+            </div>
+            <div class="meaning-grid" id="meaning-grid"></div>
+            <div class="synthesis">
+              <p class="eyebrow" data-i18n="synthesis">SYNTHESIS</p>
+              <p id="synthesis-copy" data-i18n="synthesisCopy">A beginning asks for trust, uncertainty asks for patience, and the heart asks to remain open. Move carefully, but keep moving.</p>
+            </div>
+            <div class="reading-details" id="reading-details" aria-label="Detailed interpretation"></div>
+            <div class="report-options">
+              <label><input type="checkbox" id="save-question"> <span data-i18n="includeSave">Include question when saving</span></label>
+              <label><input type="checkbox" id="export-question"> <span data-i18n="includeExport">Include question in exported image</span></label>
+              <label><input type="checkbox" id="copy-question"> <span data-i18n="includeCopy">Include question when copying</span></label>
+            </div>
+            <div class="report-actions">
+              <button class="button gold" id="save-reading" type="button" data-i18n="save">Save</button>
+              <button class="button" id="export-reading" type="button" data-i18n="export">Export image</button>
+              <button class="button" id="copy-reading" type="button" data-i18n="copy">Copy meaning</button>
+              <button class="button ghost" id="new-reading" type="button" data-i18n="newReading">New reading</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="view arcana" data-view="arcana" aria-labelledby="arcana-title">
+        <div class="bg-layer"></div>
+        <header class="page-heading inline-heading">
+          <div><p class="eyebrow">02 · 78 / 秘仪之牌</p><h2 id="arcana-title" data-i18n="arcana">Arcana</h2></div>
+          <label class="search-field"><span class="sr-only">Search cards</span><input id="card-search" type="search" data-i18n-placeholder="searchCards" placeholder="Search the proof deck"><span>⌕</span></label>
+        </header>
+        <div class="filter-row" role="group" aria-label="Card filters">
+          <button class="chip is-active" type="button" data-filter="all" data-i18n="all">All proof cards</button>
+          <button class="chip" type="button" data-filter="major">Major</button>
+          <button class="chip" type="button" data-filter="minor">Minor</button>
+        </div>
+        <div class="arcana-grid" id="arcana-grid"></div>
+        <p class="proof-limit" data-i18n="proofLimit">Approved R1.0 baseline: 6 faces + 1 back. The remaining 72 faces are now being produced for the second catalog gate.</p>
+      </section>
+
+      <section class="view chamber" data-view="chamber" aria-labelledby="chamber-title">
+        <div class="bg-layer"></div>
+        <header class="page-heading chamber-heading">
+          <p class="eyebrow">03 · SAVED / 占卜室</p>
+          <h2 id="chamber-title" data-i18n="chamber">Reading Chamber</h2>
+          <p data-i18n="chamberLede">A finite moving gallery. Only the selected reading comes fully into view.</p>
+        </header>
+        <div class="gallery-shell">
+          <button class="gallery-arrow" id="gallery-prev" type="button" aria-label="Previous reading">←</button>
+          <div class="session-gallery" id="session-gallery" tabindex="0"></div>
+          <button class="gallery-arrow" id="gallery-next" type="button" aria-label="Next reading">→</button>
+        </div>
+        <div class="gallery-index"><span id="gallery-current">01</span><i></i><span id="gallery-total">03</span></div>
+      </section>
+
+      <section class="view grimoire" data-view="grimoire" aria-labelledby="grimoire-title">
+        <div class="bg-layer"></div>
+        <div class="book-layout">
+          <aside class="chapter-nav">
+            <p class="eyebrow">04 · LEARN / 秘典</p>
+            <h2 id="grimoire-title" data-i18n="grimoire">Grimoire</h2>
+            <div id="chapter-list"></div>
+          </aside>
+          <article class="chapter-page" id="chapter-page"></article>
+        </div>
+      </section>
+    </main>
+
+    <aside class="settings-panel" id="settings-panel" aria-labelledby="settings-title" aria-hidden="true">
+      <div class="drawer-head"><div><p class="eyebrow">PREFERENCES</p><h2 id="settings-title" data-i18n="settings">Settings</h2></div><button class="icon-button close-drawer" type="button" data-close="settings">×</button></div>
+      <section>
+        <h3 data-i18n="language">Language</h3>
+        <div class="segmented" id="language-control">
+          <button type="button" data-language="bilingual" class="is-active">EN + 中文</button>
+          <button type="button" data-language="en">EN</button>
+          <button type="button" data-language="zh">中文</button>
+        </div>
+      </section>
+      <section class="setting-list">
+        <label><span><b data-i18n="music">Ambient music</b><small data-i18n="musicNote">Original adaptive violin-like theme</small></span><input id="music-setting" type="checkbox" checked></label>
+        <label><span><b data-i18n="sfx">Interaction sound</b><small data-i18n="sfxNote">Menus, cards, save, export, and gestures</small></span><input id="sfx-setting" type="checkbox" checked></label>
+        <label><span><b data-i18n="motion">Motion</b><small data-i18n="motionNote">Morph, gallery, reveal, paper, and ambient layers</small></span><input id="motion-setting" type="checkbox" checked></label>
+        <label><span><b data-i18n="handRitual">Hand Ritual</b><small data-i18n="handNote">Optional gesture preview; never required</small></span><input id="hand-setting" type="checkbox" checked></label>
+        <label><span><b>Opening sequence</b><small>Replay the ceremonial ident on the next reload</small></span><input id="opening-setting" type="checkbox" checked></label>
+      </section>
+      <p class="drawer-note">R1.0 REVIEW STATE · NOT PRODUCTION SETTINGS</p>
+    </aside>
+
+    <aside class="review-panel" id="review-panel" aria-labelledby="review-title" aria-hidden="true">
+      <div class="drawer-head"><div><p class="eyebrow">APPROVAL MANIFEST · R1.0</p><h2 id="review-title" data-i18n="reviewTitle">Review every decision</h2></div><button class="icon-button close-drawer" type="button" data-close="review">×</button></div>
+      <p class="review-intro" data-i18n="reviewIntro">Approve or request revision for each finite item. Export your decisions when finished; nothing here changes production.</p>
+      <div class="review-filters">
+        <button class="chip is-active" type="button" data-review-filter="all">All</button>
+        <button class="chip" type="button" data-review-filter="pending">Pending</button>
+        <button class="chip" type="button" data-review-filter="approved">Approved</button>
+        <button class="chip" type="button" data-review-filter="revise">Revise</button>
+      </div>
+      <div class="review-list" id="review-list"></div>
+      <div class="review-footer">
+        <button class="button" id="approve-visible" type="button">Approve visible</button>
+        <button class="button gold" id="export-decisions" type="button">Export decisions</button>
+      </div>
+    </aside>
+
+    <dialog class="card-dialog" id="card-dialog">
+      <button class="icon-button dialog-close" type="button" aria-label="Close card detail">×</button>
+      <div class="dialog-card" id="dialog-card"></div>
+      <div class="dialog-copy" id="dialog-copy"></div>
+    </dialog>
+
+    <dialog class="hand-dialog" id="hand-dialog">
+      <button class="icon-button dialog-close" type="button" aria-label="Close hand ritual">×</button>
+      <div class="hand-stage">
+        <div class="camera-grain"></div>
+        <div class="camera-shell">
+          <video id="gesture-video" autoplay muted playsinline></video>
+          <canvas id="gesture-analysis-canvas" width="64" height="48" aria-hidden="true"></canvas>
+          <div class="gesture-zones" aria-hidden="true"><i data-zone="0">LEFT</i><i data-zone="1">CENTER</i><i data-zone="2">RIGHT</i></div>
+          <div class="gesture-reticle"><span>✦</span></div>
+          <div class="gesture-meter"><i id="gesture-meter-fill"></i></div>
+        </div>
+        <p class="eyebrow">LIVE LOCAL CAMERA GESTURE</p>
+        <h3 data-i18n="handPrompt">Wave in the left, center, or right zone.</h3>
+        <p id="gesture-status" data-i18n="handPrivacy">Camera frames stay on this device and are never stored or uploaded.</p>
+        <div class="gesture-actions">
+          <button class="button gold" id="start-camera" type="button">Enable camera</button>
+          <button class="button ghost" id="stop-camera" type="button" hidden>Stop camera</button>
+          <button class="button ghost" id="simulate-gesture" type="button" data-i18n="simulate">Simulate selection</button>
+        </div>
+      </div>
+    </dialog>
+
+    <div class="reveal-cinema" id="reveal-cinema" aria-hidden="true" hidden>
+      <canvas id="reveal-particle-canvas"></canvas>
+      <div class="reveal-haze"></div>
+      <div class="cinema-ribbon"></div>
+      <div class="cinema-cards" id="cinema-cards"></div>
+      <p><span>THE CARDS REMEMBER</span><b>牌已记起你</b></p>
+    </div>
+
+    <div class="pigeon-flight" id="pigeon-flight" aria-hidden="true"><div class="paper-report"></div><div class="paper-pigeon">➶</div></div>
+    <div class="dissolve-layer" id="dissolve-layer" aria-hidden="true"></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

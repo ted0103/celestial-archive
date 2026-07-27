@@ -1,0 +1,47 @@
+{
+  "version": "R1.0",
+  "records": [
+    {
+      "id": "WANDS-06",
+      "attempt": 1,
+      "file": "wands-06-six-of-wands-attempt-1.png",
+      "sha256": "9b768f7d3e28ddce3cd4d55308422766235f5429e79ad11a5d13281fe22a5723",
+      "reason": "Pip-count failure: image contains five staffs instead of six."
+    },
+    {
+      "id": "WANDS-06",
+      "attempt": 2,
+      "file": "wands-06-six-of-wands-attempt-2.png",
+      "sha256": "49b0d9bbd7de9f6744e60ab1c6d30a43c6bafd353519e060f532f44e0221d0d0",
+      "reason": "Pip-count failure: image contains seven staffs instead of six."
+    },
+    {
+      "id": "WANDS-08",
+      "attempt": 1,
+      "file": "wands-08-eight-of-wands-attempt-1.png",
+      "sha256": "5f864e8c000998541b2571c281f360210cd348d72c1bd21a4acffabedaf0a491",
+      "reason": "Pip-count failure: image contains seven visible staffs instead of eight."
+    },
+    {
+      "id": "WANDS-10",
+      "attempt": 1,
+      "file": "wands-10-ten-of-wands-attempt-1.png",
+      "sha256": "5a02a7767765a24c5f9598c023e14512a7e391e9a6d9524a1e8962221a335812",
+      "reason": "Pip-count ambiguity: the bundle does not expose ten reliably countable shafts."
+    },
+    {
+      "id": "WANDS-10",
+      "attempt": 2,
+      "file": "wands-10-ten-of-wands-attempt-2.png",
+      "sha256": "8582c289d99baaf0182da24dc54c5f0bf86b005b24729f4c9ce4e5a7495b58f0",
+      "reason": "Pip-count failure: upper branches imply ten but merged lower shafts expose only six ends."
+    },
+    {
+      "id": "PENTACLES-09",
+      "attempt": 1,
+      "file": "pentacles-09-attempt-1-eight-coins.png",
+      "sha256": "ae54f4b93398239a487effebdfba30d26f308173b0d6c4238abc13d933e1b64b",
+      "reason": "Pip-count failure: image contains eight pentacles instead of nine because the falcon displaced the center coin."
+    }
+  ]
+}

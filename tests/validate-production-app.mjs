@@ -1,0 +1,63 @@
+import {readFile, stat} from 'node:fs/promises';
+import {resolve} from 'node:path';
+
+const root=resolve(import.meta.dirname,'..');
+const html=await readFile(resolve(root,'app/index.html'),'utf8');
+const css=await readFile(resolve(root,'app/styles.css'),'utf8');
+const app=await readFile(resolve(root,'app/app.js'),'utf8');
+const server=await readFile(resolve(root,'scripts/serve-production.mjs'),'utf8');
+const raw=await readFile(resolve(root,'app/data.js'),'utf8');
+const data=JSON.parse(raw.replace(/^window\.CELESTIAL_DECK = /,'').replace(/;\s*$/,''));
+const failures=[];
+
+if(data.cards.length!==78)failures.push(`Expected 78 production cards, received ${data.cards.length}`);
+for(const key of ['id','name','zh','src','meaning','meaningZh','shadow','shadowZh','reflection','reflectionZh','practice','practiceZh']){
+  const missing=data.cards.filter(card=>!String(card[key]||'').trim());if(missing.length)failures.push(`${missing.length} cards missing ${key}`);
+}
+for(const [label,values] of [['IDs',data.cards.map(card=>card.id)],['English names',data.cards.map(card=>card.name)],['Chinese names',data.cards.map(card=>card.zh)],['image paths',data.cards.map(card=>card.src)]])if(new Set(values).size!==78)failures.push(`${label} are not unique`);
+for(const card of data.cards){try{const info=await stat(resolve(root,'app',card.src));if(!info.isFile())failures.push(`Not a file: ${card.src}`);}catch{failures.push(`Missing image: ${card.src}`);}}
+try{await stat(resolve(root,'app',data.back));}catch{failures.push(`Missing card back: ${data.back}`);}
+for(const asset of ['assets/fonts/celestial-cjk.ttf','assets/fonts/OFL-NotoSansSC.txt'])try{await stat(resolve(root,'app',asset));}catch{failures.push(`Missing licensed export font asset: ${asset}`);}
+if(html.indexOf('data.js')<0||html.indexOf('logic.js')<html.indexOf('data.js')||html.indexOf('logic.js')>html.indexOf('app.js'))failures.push('Production data and runtime logic must load before app.js');
+for(const id of ['entry','gateway-title','question','deck-selector','deck-fan','deck-scroll-prev','restart-draw','restart-reading','reading-slots','meaning-panel','arcana-grid','session-gallery','chapter-list','settings-panel','offline-status','prepare-core','prepare-gesture','install-app','ios-install-note','diagnostic-settings','diagnostic-preview','export-diagnostics','hand-dialog','gesture-speed','gesture-sensitivity','gesture-candidate-card','gesture-deck-rail','gesture-draw-count','gesture-pointer','gesture-mode-badge','gesture-sensor-state','gesture-sensor-detail','save-transition','export-transition','export-dialog','export-dialog-question','export-page-one','export-page-two','export-copy-report','chamber-shortcut'])if(!html.includes(`id="${id}"`))failures.push(`Missing production UI node #${id}`);
+for(const legacy of ['assets/cards/revision-2','NO PRODUCTION INTEGRATION','Search the proof deck','remaining 72'])if(`${html}\n${css}\n${app}`.includes(legacy))failures.push(`Legacy proof marker remains: ${legacy}`);
+if(/https?:\/\//.test(app)||/https?:\/\//.test(raw))failures.push('Runtime application/data contains a remote URL');
+if(!app.includes('secureShuffle(cards)')||!app.includes('randomOrientation()'))failures.push('Secure shuffle/orientation hooks are missing');
+if(!app.includes('currentDeck.forEach((baseCard,index)')||!app.includes('deckAssignments.set(button'))failures.push('The ritual must bind all 78 shuffled cards to the horizontal selector');
+if(!css.includes('grimoire-celestial-pigeon-4k.jpg')||!css.includes('gateway-editorial-collage-v2.png')||!css.includes('deckRibbonResolve')||!css.includes('scroll-snap-type:x proximity'))failures.push('Requested generated gateway/Grimoire backgrounds or smooth 78-card resolve/scroll treatment is missing');
+if(!app.includes('runSaveTransition(session)')||!app.includes('runExportTransition(snapshot,[firstBlob,secondBlob],generation)')||!app.includes('gesture-sensitivity')||!app.includes('gesture-speed'))failures.push('Save/export page rituals or adjustable hand controls are missing');
+if(!app.includes('node.style.backgroundImage=card?')||!app.includes('Draw highlighted hidden card'))failures.push('Hand Ritual does not identify the highlighted position and selected card artwork');
+if(!app.includes('animateGestureDraw(card,selectedCards.length-1)')||!css.includes('.gesture-draw-clone.is-revealing')||!css.includes('@keyframes gestureSlotArrive'))failures.push('Hand Ritual draw, flip, and settle choreography is missing');
+if(!css.includes('#gesture-video{position:absolute!important')||!css.includes('opacity:0!important')||!html.includes('invisible local motion sensor'))failures.push('The Hand Ritual camera preview is not explicitly hidden from the user');
+if(!app.includes('globalThis.isSecureContext')||!app.includes("navigator.mediaDevices.getUserMedia({audio:false,video:true})")||!app.includes('gestureCameraError(error)'))failures.push('Camera permission preflight and error-specific recovery are missing');
+if(!css.includes('.camera-grain{pointer-events:none'))failures.push('Decorative Hand Ritual texture can intercept camera permission controls');
+if(!server.includes("Permissions-Policy', 'camera=(self)"))failures.push('Production server does not permit same-origin camera access');
+if(!app.includes('registerServiceWorker')||!app.includes("prepareOfflinePack('core')")||!app.includes("prepareOfflinePack('gesture')")||!css.includes('.offline-settings'))failures.push('Installable Core/Gesture offline preparation controls are missing');
+if(!app.includes('beforeinstallprompt')||!app.includes('appinstalled')||!html.includes('reflection-disclaimer')||!html.includes('entry-disclaimer'))failures.push('Quiet install affordance or reflective-use disclaimer is missing');
+if(!html.includes('mediapipe-hands/hands.js')||!app.includes('new window.Hands')||!app.includes('modelComplexity:0'))failures.push('Local hand-landmark model is not wired for low-latency use');
+if(!app.includes("setGestureMode('palm'")||!app.includes("setGestureMode('point'")||!app.includes("setGestureMode('pinch'")||!app.includes('logic.updatePinch')||!app.includes('pinchUpdate.commitCandidate'))failures.push('Palm browse, pointing aim, or elapsed-time pinch-only selection grammar is missing');
+if(!app.includes('commitGestureSelection(2,pinchUpdate.commitCandidate)')||!css.includes('.gesture-pointer.is-pinching')||!css.includes('.gesture-pointer.is-pointing'))failures.push('Visible gesture cursor is not wired to pinch-only confirmation and pointing mode');
+if(!server.includes("['.wasm','application/wasm']")||!server.includes("'wasm-unsafe-eval'"))failures.push('Production server cannot load the local WebAssembly hand model');
+if(!app.includes('beginExportTransition()')||!app.includes('canvasToPngBlob(pageOne)')||!app.includes('canvasToPngBlob(pageTwo)')||!app.includes('data-export-session'))failures.push('Universal two-page export animation or PNG encoder is missing');
+if(!app.includes("ctx.fillText('THE DRAWN ARCHIVE'")||!app.includes("ctx.fillText('卡牌映射'")||!app.includes('createExportCanvas(2400)')||!app.includes("-page-${String(index+1).padStart(2,'0')}.png"))failures.push('Approved 3200×1800 cover, 3200×2400 detail page, naming, or Page 2 title is missing');
+if(!css.includes('font-family:CelestialCJK')||!app.includes("document.fonts.check('16px CelestialCJK')"))failures.push('Bundled Simplified Chinese type is not loaded and verified before Canvas export');
+if(!app.includes('wrapCanvasText')||!app.includes('drawFittedText')||!app.includes('graphemes(token)')||app.includes('wrapText(ctx,exportCopy')||app.includes('toDataURL('))failures.push('Export text fitting still clips, lacks grapheme fallback, or retains the base64 encoder fallback');
+if(!app.includes("for(const mode of ['bilingual','en','zh'])for(const base of cards)for(const reversed of [false,true])")||!app.includes('validateExportRegistryCapacity()'))failures.push('Export capacity is not checked across all cards, orientations, and language modes');
+if(!app.includes('releaseExportUrls()')||!app.includes('URL.revokeObjectURL')||!html.includes('01 · Save or open Cover + Synthesis')||!html.includes('02 · Save or open Detailed Meanings'))failures.push('Persistent two-link completion flow or object-URL cleanup is missing');
+if(!app.includes('applyBilingualNode')||!app.includes('bilingualMarkup')||!css.includes('.bilingual-lines'))failures.push('English and Chinese are not rendered as separate bilingual lines');
+if(!css.includes('Bilingual type containment')||!css.includes('.button.bilingual-lines')||!css.includes('.chapter-button>.bilingual-lines'))failures.push('Bilingual labels are not contained in headings, controls, and chapter navigation');
+if(!app.includes("hud.classList.add('is-changing')")||!app.includes("rail.classList.add('is-shifting')")||!css.includes('@keyframes gestureCandidateFocus')||!css.includes('@keyframes gestureRailRipple'))failures.push('Hand browsing does not visibly animate each newly focused card');
+if(!app.includes('meaning-card-head')||!app.includes('meaning-core')||!app.includes('meaning-depth-item')||!css.includes('Reading hierarchy: position, card identity'))failures.push('Reading report lacks the layered role, card, meaning, and context hierarchy');
+if(!app.includes('function capitalizeFirst(value)')||!app.includes('function titleCase(value)')||!css.includes('font-size:clamp(36px,4vw,56px)')||!css.includes('font-size:clamp(16px,1.5vw,22px)')||!css.includes('font-size:1em!important;font-weight:800')||!css.includes('.meaning-card-name [lang="en"]{color:var(--report-white);font-size:1em;font-weight:800'))failures.push('Meaning titles and section headers are not capitalized, larger, and bold relative to interpretation copy');
+if(!css.includes('.meaning-core h5::after,.meaning-depth-item h5::after')||!css.includes('.session-copy h3::after')||!css.includes('.export-report-sheet>span::before')||!app.includes('class="session-summary-label"')||!app.includes('ctx.moveTo(875,652)'))failures.push('Approved gold-rule hierarchy is not shared by active readings, saved readings, save/export ceremonies, and PNG reports');
+if(!css.includes('Gateway hierarchy stays legible')||!css.includes('A longer three-beat focus response')||!app.includes('},1050)'))failures.push('Gateway contrast or satisfying directional focus timing is missing');
+if(!app.includes('function restartDrawingSession()')||!app.includes("$('#restart-draw').addEventListener('click',restartDrawingSession)")||!app.includes("$('#restart-reading').addEventListener('click',restartDrawingSession)")||!css.includes('@keyframes restartDrawFold'))failures.push('Restart-draw controls do not preserve the question and reshuffle the active session');
+if(!css.includes('letter-spacing:.1em!important')||!css.includes('rgba(7,9,9,.72)'))failures.push('Meaning copy spacing or image-preserving gateway veil is missing');
+for(const breakpoint of ['@media(max-width:900px)','@media(max-width:700px)','@media(max-width:430px)','@media(max-height:620px)'])if(!css.includes(breakpoint))failures.push(`Missing responsive containment rule ${breakpoint}`);
+try{await stat(resolve(root,'app/assets/backgrounds/grimoire-celestial-pigeon-4k.jpg'));}catch{failures.push('Missing generated 4K Grimoire celestial-pigeon background');}
+try{await stat(resolve(root,'app/assets/backgrounds/gateway-editorial-collage-v2.png'));}catch{failures.push('Missing generated editorial gateway background');}
+for(const asset of ['hands.js','hands.binarypb','hand_landmark_lite.tflite','hands_solution_simd_wasm_bin.wasm'])try{await stat(resolve(root,'app/assets/vendor/mediapipe-hands',asset));}catch{failures.push(`Missing local hand-model asset: ${asset}`);}
+if(!app.includes("$('#save-reading').addEventListener('click',saveReading)"))failures.push('Explicit save control is not wired');
+if(!app.includes("$('#export-reading').addEventListener('click',event=>exportReading(null,event.currentTarget))"))failures.push('Explicit export control is not wired');
+
+if(failures.length){console.error(failures.join('\n'));process.exit(1);}console.log('Production app validation passed: 78 named cards, local assets, explicit save/export, secure draw hooks, and no proof paths.');

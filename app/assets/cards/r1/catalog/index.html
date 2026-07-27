@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <title>The Celestial Archive — Complete R1 Deck Review</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <canvas id="particles" aria-hidden="true"></canvas>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="masthead">
+    <a class="brand" href="#top" aria-label="Return to catalog top">
+      <span class="brand-seal">✦</span>
+      <span><b>The Celestial Archive</b><small>天穹秘典 · R1 COMPLETE DECK REVIEW</small></span>
+    </a>
+    <div class="gate"><i></i><span>SECOND APPROVAL GATE</span><b>CATALOG APPROVED</b></div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CATALOG 01 · 18 JUL 2026</p>
+        <h1>Seventy-eight<br><em>doors.</em></h1>
+        <p class="lede">The complete original raster deck, held outside production for your review. Every title below is live JetBrains Mono UI text; the card images contain illustration only.</p>
+      </div>
+      <div class="hero-orbit" aria-hidden="true"><span>78</span><i></i><b>+1 BACK</b></div>
+      <dl class="summary">
+        <div><dt>78</dt><dd>Card faces</dd></div>
+        <div><dt>72</dt><dd>New originals</dd></div>
+        <div><dt>06</dt><dd>Approved anchors</dd></div>
+        <div><dt>01</dt><dd>Universal back</dd></div>
+      </dl>
+    </section>
+
+    <section class="controls" aria-label="Catalog controls">
+      <div class="filters" id="filters"></div>
+      <label class="search"><span>SEARCH</span><input id="search" type="search" autocomplete="off" placeholder="Name, 中文, motif, ID"><b>⌕</b></label>
+    </section>
+
+    <section class="decision-bar" aria-live="polite">
+      <div><span id="review-count">0 / 79 reviewed</span><i><b id="progress"></b></i></div>
+      <p><strong id="approved-count">0 approved</strong> · <span id="revise-count">0 marked revise</span></p>
+      <div class="decision-actions">
+        <button id="export-decisions" type="button">Export review JSON</button>
+        <button id="copy-summary" type="button">Copy approval summary</button>
+      </div>
+    </section>
+
+    <section class="catalog" id="catalog" aria-label="Complete tarot deck"></section>
+    <p class="empty" id="empty" hidden>No cards match this view.</p>
+
+    <footer>
+      <p>R1.0 · 79 UNIQUE LOCAL PNG ASSETS · 1024 × 1536 · HASH LOCKED</p>
+      <p>All 78 named faces and the universal back were explicitly approved in the Codex task on 18 July 2026.</p>
+    </footer>
+  </main>
+
+  <dialog id="detail">
+    <button class="close" type="button" aria-label="Close detail">×</button>
+    <button class="nav prev" type="button" aria-label="Previous card">←</button>
+    <article>
+      <div class="detail-image"><img id="detail-image" alt=""><span id="detail-state"></span></div>
+      <div class="detail-copy">
+        <p class="eyebrow" id="detail-id"></p>
+        <h2 id="detail-name"></h2>
+        <p class="zh" id="detail-zh"></p>
+        <dl>
+          <div><dt>Motif</dt><dd id="detail-motif"></dd></div>
+          <div><dt>Design rationale</dt><dd id="detail-rationale"></dd></div>
+          <div><dt>Asset state</dt><dd id="detail-asset"></dd></div>
+          <div><dt>SHA-256</dt><dd id="detail-hash"></dd></div>
+        </dl>
+        <p class="gate-note">Your choice is recorded only in this open review session. It does not unlock production.</p>
+        <div class="choice">
+          <button type="button" data-choice="approved">Approve this design</button>
+          <button type="button" data-choice="revise">Mark for revision</button>
+        </div>
+      </div>
+    </article>
+    <button class="nav next" type="button" aria-label="Next card">→</button>
+  </dialog>
+
+  <div class="toast" id="toast" role="status"></div>
+  <script src="catalog-data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

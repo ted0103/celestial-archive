@@ -1,0 +1,27 @@
+{
+  "name": "celestial-tarot-catalog",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-release.mjs",
+    "test": "node tests/validate-deck.mjs && node tests/validate-runtime-logic.mjs && node tests/validate-production-app.mjs && npm run test:release",
+    "build:catalog": "node scripts/build-review-catalog.cjs",
+    "render:catalog": "node scripts/render-catalog.cjs",
+    "qa:catalog": "node scripts/qa-catalog.cjs",
+    "build:r1-catalog": "node scripts/build-r1-register.mjs && node scripts/build-r1-catalog.mjs",
+    "validate:r1-assets": "node scripts/validate-r1-assets.mjs",
+    "build:production-data": "node scripts/build-production-data.mjs",
+    "build:export-font": "node scripts/build-export-font-subset.mjs",
+    "start": "npm run build && node scripts/serve-production.mjs --dist",
+    "start:source": "node scripts/serve-production.mjs",
+    "start:dist": "node scripts/serve-production.mjs --dist",
+    "test:production": "node tests/validate-production-app.mjs",
+    "test:release": "npm run build && node tests/validate-release.mjs"
+  },
+  "dependencies": {
+    "@mediapipe/hands": "0.4.1675469240"
+  },
+  "devDependencies": {
+    "sharp": "0.35.3"
+  }
+}
