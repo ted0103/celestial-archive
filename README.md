@@ -8,7 +8,7 @@ Explore a complete 78-card tarot collection through a private and immersive expe
 
 [![Live Demo](https://img.shields.io/badge/Open_Live_Demo-6C4CCF?style=for-the-badge\&logo=googlechrome\&logoColor=white)](https://ted0103.github.io/celestial-archive/)
 [![Installation Guide](https://img.shields.io/badge/Installation_Guide-171717?style=for-the-badge\&logo=readthedocs\&logoColor=white)](https://ted0103.github.io/celestial-archive/download.html)
-[![Release Candidate](https://img.shields.io/badge/Release-v0.3.1--rc-d2ad62?style=for-the-badge)](https://github.com/ted0103/celestial-archive/releases/tag/v0.3.1)
+[![Release Candidate](https://img.shields.io/badge/Release-v0.3.2--rc-d2ad62?style=for-the-badge)](https://github.com/ted0103/celestial-archive/releases/tag/v0.3.2)
 
 </div>
 
@@ -39,7 +39,7 @@ The core tarot experience works without hand tracking. The optional **Hand Ritua
 | **Live web app**       | iPhone, iPad, Android, Windows, and macOS | [Open The Celestial Archive](https://ted0103.github.io/celestial-archive/)                                                                 |
 | **Installation guide** | Step-by-step setup instructions           | [View the illustrated guide](https://ted0103.github.io/celestial-archive/download.html)                                                    |
 | **Android APK**        | Standalone Android installation           | [Download Android APK v0.3.0](https://github.com/ted0103/celestial-archive/releases/download/v0.3.0/celestial-archive-android-v0.3.0.apk) |
-| **Offline package**    | Desktop use and local hosting             | [View the v0.3.1 release](https://github.com/ted0103/celestial-archive/releases/tag/v0.3.1)                                              |
+| **Offline package**    | Desktop use and local hosting             | [View the v0.3.2 release](https://github.com/ted0103/celestial-archive/releases/tag/v0.3.2)                                              |
 
 ## Installation
 
@@ -77,7 +77,7 @@ Because this preview is distributed outside Google Play, Android may request per
 <details>
 <summary><strong>Windows</strong></summary>
 
-1. Download `celestial-archive-friend-preview-v0.3.1.zip` from the [v0.3.1 release](https://github.com/ted0103/celestial-archive/releases/tag/v0.3.1).
+1. Download `celestial-archive-friend-preview-v0.3.2.zip` from the [v0.3.2 release](https://github.com/ted0103/celestial-archive/releases/tag/v0.3.2).
 2. Right-click the ZIP file and select **Extract All**.
 3. Open PowerShell inside the extracted folder.
 4. Start a local server:
@@ -103,7 +103,7 @@ http://localhost:47831
 <details>
 <summary><strong>macOS</strong></summary>
 
-1. Download and unzip `celestial-archive-friend-preview-v0.3.1.zip`.
+1. Download and unzip `celestial-archive-friend-preview-v0.3.2.zip`.
 2. Open Terminal inside the extracted folder.
 3. Start a local server:
 
