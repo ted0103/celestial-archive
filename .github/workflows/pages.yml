@@ -23,7 +23,7 @@ jobs:
           persist-credentials: false
       - name: Prepare path-scoped release site
         run: |
-          curl -fsSL -o app.zip https://github.com/ted0103/celestial-archive/releases/download/v0.2.0/celestial-archive-friend-preview-v0.2.0.zip
+          curl -fsSL -o app.zip https://github.com/ted0103/celestial-archive/releases/download/v0.3.0/celestial-archive-friend-preview-v0.3.0.zip
           mkdir site
           unzip -q app.zip -d site
           cp download.html site/download.html
