@@ -51,6 +51,18 @@ npm run start                  # serve the production app at its stable origin
 npm run start:dist             # serve the generated friend-release artifact
 ```
 
+## Canonical source and release flow
+
+- Runtime application: `app/index.html`, `app/app.js`, and `app/styles.css`
+- Canonical card registry: the source used by `npm run build:production-data`
+- Source-worker release marker: `app/asset-manifest.json` and `app/sw.js` must
+  carry the same release ID
+- Generated release: `npm run build` creates the allowlisted `dist/` artifact and
+  its content-derived release manifest; do not hand-edit `dist/`
+
+Use the stable local hostname for browser checks, then deploy only the validated
+`dist/` artifact through the repository's GitHub Pages release workflow.
+
 ## Content and font sources
 
 - Tarot meaning structure was researched against the [Labyrinthos tarot meanings index](https://labyrinthos.co/blogs/tarot-card-meanings-list); all production copy is written for this project rather than reproduced verbatim.

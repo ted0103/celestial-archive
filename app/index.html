@@ -6,9 +6,10 @@
   <meta name="theme-color" content="#080909">
   <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self' 'wasm-unsafe-eval' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob:; font-src 'self'; media-src 'self' blob:; connect-src 'self'; worker-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
   <title>The Celestial Archive · 天穹秘典</title>
+  <link rel="icon" href="assets/icons/icon-192.png" type="image/png">
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
-  <link rel="stylesheet" href="styles.css?v=20260727-9">
+  <link rel="stylesheet" href="styles.css?v=20260730-11">
 </head>
 <body>
   <div class="film" aria-hidden="true"></div>
@@ -290,7 +291,7 @@
           </div>
           <div class="gesture-zones" aria-hidden="true"><i data-zone="0">OPEN PALM · BROWSE</i><i data-zone="1">ONE FINGER · AIM</i><i data-zone="2">PINCH · SELECT</i></div>
           <div class="gesture-card-hud" aria-live="polite">
-            <button class="gesture-candidate-card" id="gesture-candidate-card" type="button" aria-label="Draw highlighted hidden card 01 of 78"><small>HIGHLIGHTED</small><span id="gesture-candidate-index">01 / 78</span><em>TAP OR HOLD · 点击或停留</em></button>
+            <button class="gesture-candidate-card" id="gesture-candidate-card" type="button" aria-label="Draw highlighted hidden card 01 of 78"><small>HIGHLIGHTED</small><span id="gesture-candidate-index">01 / 78</span><em>TAP OR PINCH · 点击或捏合</em></button>
             <div class="gesture-picked-cards" id="gesture-picked-cards"><i>01</i><i>02</i><i>03</i></div>
           </div>
           <div class="gesture-reticle"><span>✦</span></div>
@@ -299,7 +300,7 @@
           <div class="gesture-meter"><i id="gesture-meter-fill"></i></div>
         </div>
         <p class="eyebrow">INVISIBLE LOCAL MOTION INPUT · 本地隐形手势输入</p>
-        <h3 data-i18n="handPrompt">Move left or right to browse. Hold in the center to select.</h3>
+        <h3 data-i18n="handPrompt">Open palm to browse. Point to aim. Pinch to select.</h3>
         <p class="gesture-guide">OPEN PALM + MOVE TO BROWSE · ONE FINGER TO AIM · PINCH TO SELECT<br>张开手掌并移动以浏览 · 伸出食指瞄准 · 捏合手指选牌</p>
         <p id="gesture-status" data-i18n="handPrivacy">The camera works only as an invisible local motion sensor. Its preview is never shown, stored, or uploaded.</p>
         <div class="gesture-sensor-state"><span id="gesture-sensor-state" data-state="idle">HAND TRACKING OFF · 手势追踪关闭</span><small id="gesture-sensor-detail">Tap Enable hand tracking to request camera access.</small></div>
@@ -387,9 +388,9 @@
     <div class="toast" id="toast" role="status" aria-live="polite"></div>
   </div>
 
-  <script src="data.js?v=20260727-9"></script>
-  <script src="logic.js?v=20260727-9"></script>
+  <script src="data.js?v=20260730-11"></script>
+  <script src="logic.js?v=20260730-11"></script>
   <script src="assets/vendor/mediapipe-hands/hands.js"></script>
-  <script src="app.js?v=20260727-9"></script>
+  <script src="app.js?v=20260730-11"></script>
 </body>
 </html>
