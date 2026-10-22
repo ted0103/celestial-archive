@@ -399,3 +399,6 @@ html[data-motion="off"] :is(.view,.topbar,.entry) .scene-element {translate:none
 @media(prefers-reduced-transparency:reduce) {.topbar {background:#151511;backdrop-filter:none;}}
 
 .chapter-nav h2 {font-size:clamp(1.6rem,2.5vw,2rem);word-break:normal;overflow-wrap:normal;letter-spacing:-.025em;}
+
+/* WAAPI owns scene entrances; the resting state must always be visible. */
+html[data-motion] :is(.view,.topbar,.entry) .scene-element.is-scene-visible {opacity:1;translate:0 0;transition:none;}

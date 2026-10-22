@@ -227,7 +227,7 @@
   async function installApp(){if(!installPrompt)return;installPrompt.prompt();await installPrompt.userChoice;installPrompt=null;$('#install-app').hidden=true;}
 
   const sceneSelector = [
-    '.entry-copy > *','.gallery-art','.topbar > *','.bg-layer','.gateway-heading > *','.gateway-card','.gateway-foot',
+    '.entry-copy > *','.gallery-art','.topbar > .brand','.primary-nav > button','.top-actions > *','.gateway-heading > *','.gateway-card','.gateway-foot',
     '.page-heading > *','.question-panel','.ritual-stage-rail','.draw-panel > .ritual-instruction','.deck-selector','.deck-position','.reveal-button',
     '.meaning-head > *','.meaning-card','.synthesis','.reading-detail','.report-options','.report-actions',
     '.filter-row .chip','.arcana-item','.proof-limit','.gallery-arrow','.session-card','.gallery-index > *',
@@ -235,10 +235,20 @@
     '.drawer-head > *','.settings-panel section','.drawer-note','.review-intro','.review-filters','.review-item','.review-footer',
     '.dialog-card','.dialog-copy > *','.camera-shell','.hand-stage > .eyebrow','.hand-stage > h3','.hand-stage > p','.gesture-actions'
   ].join(',');
+  const sceneAnimations=new WeakMap();
   function revealScene(root,startIndex=0){
-    if(!root)return;const candidates=[];if(root.matches?.(sceneSelector))candidates.push(root);candidates.push(...$$(sceneSelector,root));const nodes=[...new Set(candidates)].filter(node=>!node.hidden&&!node.closest('[hidden]'));
-    nodes.forEach((node,index)=>{node.classList.add('scene-element');node.classList.remove('is-scene-visible');node.style.setProperty('--scene-index',String(Math.min(startIndex+index,18)));node.dataset.sceneKind=node.matches('.gateway-card,.arcana-item,.session-card,.meaning-card,.dialog-card,.camera-shell')?'card':node.matches('.eyebrow,.chip,.gateway-foot,.proof-limit,.drawer-note')?'micro':'rise';});
-    requestAnimationFrame(()=>requestAnimationFrame(()=>nodes.forEach(node=>node.classList.add('is-scene-visible'))));
+    if(!root)return;
+    const candidates=root.matches?.(sceneSelector)?[root]:[];
+    candidates.push(...$$(sceneSelector,root));
+    const nodes=[...new Set(candidates)].filter(node=>!node.hidden&&!node.closest('[hidden]'));
+    const motion=document.documentElement.dataset.motion!=='off'&&document.documentElement.dataset.input!=='keyboard'&&!matchMedia('(prefers-reduced-motion: reduce)').matches;
+    nodes.forEach((node,index)=>{
+      sceneAnimations.get(node)?.cancel();
+      node.classList.add('scene-element','is-scene-visible');
+      if(!motion)return;
+      const animation=node.animate([{opacity:0,translate:'0 24px'},{opacity:1,translate:'0 0'}],{duration:600,delay:Math.min(startIndex+index,8)*55,easing:'cubic-bezier(.22,1,.36,1)',fill:'backwards'});
+      sceneAnimations.set(node,animation);
+    });
   }
 
   function navigate(route,source){

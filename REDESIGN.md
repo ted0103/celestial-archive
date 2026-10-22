@@ -56,3 +56,12 @@ Verified browser gateway and ritual layouts, phone gateway at 390px, guide navig
 ## Release v0.3.5
 
 The current release includes the redesigned web app and offline ZIP. The Android download is the unchanged signed v0.3.0 web wrapper, verified to target the live repository site. Native Android hardware testing remains pending.
+
+## Entrance correction v0.3.6
+
+| Before | After | Why |
+| --- | --- | --- |
+| Competing transition selectors and frame-scheduled class toggles | Explicit replayable Web Animations entrances | Reliable appearance on first entry and route return |
+| Header navigation treated as one block | Four individually staggered menu items | Clear, visible menu entrance |
+
+Verified intermediate opacity/translation and settled state in browser; regression checks cover replay, cancellation, hidden elements, keyboard and reduced motion. Save/export functions unchanged.
