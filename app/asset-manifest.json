@@ -1,8 +1,8 @@
 {
-  "releaseId": "49562c0db2fcf9c2",
+  "releaseId": "6efdf0871dbc540e",
   "generatedAt": "2026-10-22T00:00:00Z",
   "totals": {
-    "coreBytes": 9324458,
+    "coreBytes": 9895504,
     "gestureBytes": 18960376
   },
   "files": [
@@ -630,6 +630,20 @@
       "pack": "core"
     },
     {
+      "url": "./assets/fonts/archive-display.woff2",
+      "mime": "font/woff2",
+      "pack": "core",
+      "bytes": 87844,
+      "sha256": "4d6bf13164b3c9220f5ba761ef3da77f336e4d16fe7351efb95e3ab506ec4f90"
+    },
+    {
+      "url": "./assets/fonts/archive-song.woff2",
+      "mime": "font/woff2",
+      "pack": "core",
+      "bytes": 477596,
+      "sha256": "5a22f2eec2fd2576b3c9a8f68ea92619146b4a70d7b63b6c9de4cdc9de3086cf"
+    },
+    {
       "url": "./assets/fonts/celestial-cjk.ttf",
       "bytes": 413404,
       "mime": "font/ttf",
@@ -766,14 +780,14 @@
       "url": "./gallery.css",
       "mime": "text/css; charset=utf-8",
       "pack": "core",
-      "bytes": 28675,
-      "sha256": "c7abae3083b09e56a3ac733e31a7a716588bd9c9085f20bd8b1bacf901c20665"
+      "bytes": 34275,
+      "sha256": "715243f49f644069b1b89a1837f60a5fc5a0fa3da05dc8836e1b2e9db2c5ee1d"
     },
     {
       "url": "./index.html",
-      "bytes": 29237,
+      "bytes": 29243,
       "mime": "text/html; charset=utf-8",
-      "sha256": "ed0f4553605046c0e1848115d6c02ea683bebc20a6f47206188917668a85ef4e",
+      "sha256": "31ae875faeaeed57ff0d2e93b8c6b8f3a3885ca5f39c9020628eb8b07019359e",
       "pack": "core"
     },
     {

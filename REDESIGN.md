@@ -65,3 +65,19 @@ The current release includes the redesigned web app and offline ZIP. The Android
 | Header navigation treated as one block | Four individually staggered menu items | Clear, visible menu entrance |
 
 Verified intermediate opacity/translation and settled state in browser; regression checks cover replay, cancellation, hidden elements, keyboard and reduced motion. Save/export functions unchanged.
+
+## Candlelit typography v0.3.7
+
+Approved direction: slender serif headlines and matching Chinese Song-style headings, inspired by the latest dark antique-gold reference.
+
+| Before | After | Why |
+| --- | --- | --- |
+| Geometric display headings | Cormorant Garamond and Noto Serif SC | Fine editorial letterforms matching the reference |
+| Olive/ivory surfaces | Umber, aged gold and soft amber bloom | Warm candlelit atmosphere |
+| Light guide panel | Dark warm reading surface | Consistent visual atmosphere across pages |
+
+Body copy stays in Manrope/Noto Sans SC. Motion and save/export code is unchanged. Both display fonts are local WOFF2 assets with OFL licenses, totaling about 550 KB. Chinese display subset covers current app source characters; newly added Chinese headings may require regenerating it. Unknown glyphs fall back to the system serif.
+
+Font sources: Google Fonts ofl/cormorantgaramond and ofl/notoserifsc. Subset with fonttools pyftsubset plus Brotli: use all characters from app/index.html, app/app.js and app/data.js for Chinese; Latin U+0000-024F and U+2000-206F for the English face. Preserve all layout features and variable weights.
+
+Validation: desktop gateway/guide, 390px phone gateway, declared bilingual font pairing, no document horizontal overflow at 805px, JavaScript syntax and entrance regression checks. Save/export function source remains unchanged. Physical-device rendering not tested.

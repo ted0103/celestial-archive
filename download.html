@@ -7,11 +7,13 @@
   <meta name="description" content="Open or download The Celestial Archive, a bilingual 78-card tarot reflection experience.">
   <title>The Celestial Archive — Open & Download</title>
   <style>
+    @font-face {font-family:ArchiveDisplay;src:url("assets/fonts/archive-display.woff2") format("woff2");font-weight:300 700;font-display:swap;}
+
     @font-face {font-family:ArchiveSans;src:url("assets/fonts/manrope-variable.ttf") format("truetype");font-weight:200 800;font-display:swap;}
 
     :root {
       color-scheme: dark;
-      --ink: #0b0d0d;
+      --ink: #120c08;
       --paper: #ece6d7;
       --paper-dim: #c8bfaa;
       --gold: #d2ad62;
@@ -57,7 +59,7 @@
       text-transform: uppercase;
     }
     .hero { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(260px, .55fr); gap: clamp(32px, 7vw, 96px); align-items: end; }
-    h1, h2 { font-family: ArchiveSans, system-ui, sans-serif; font-weight: 500; }
+    h1, h2 { font-family: ArchiveDisplay, Georgia, serif; font-weight: 400; color:#e2c98e; text-shadow:0 0 24px #dba24a30; }
     h1 {
       max-width: 900px;
       margin: 18px 0 0;
@@ -124,8 +126,8 @@
       </div>
       <div class="actions">
         <a class="button primary" href="./">Enter the Archive ↗</a>
-        <a class="button" href="https://github.com/ted0103/celestial-archive/releases/tag/v0.3.6">GitHub Downloads ↓</a>
-        <a class="button" href="https://github.com/ted0103/celestial-archive/releases/download/v0.3.6/celestial-archive-android-v0.3.0.apk">Android APK ↓</a>
+        <a class="button" href="https://github.com/ted0103/celestial-archive/releases/tag/v0.3.7">GitHub Downloads ↓</a>
+        <a class="button" href="https://github.com/ted0103/celestial-archive/releases/download/v0.3.7/celestial-archive-android-v0.3.0.apk">Android APK ↓</a>
       </div>
     </section>
 
@@ -152,20 +154,20 @@
           <p class="note">Because this friend preview is shared outside Google Play, Android may ask you to allow installs from this source.</p>
           <div class="actions">
             <a class="button" href="./">Open website</a>
-            <a class="button" href="https://github.com/ted0103/celestial-archive/releases/download/v0.3.6/celestial-archive-android-v0.3.0.apk">Download APK</a><p>Signed Android wrapper v0.3.0 · loads the current v0.3.6 website. No separate native update is required for the redesigned interface.</p>
+            <a class="button" href="https://github.com/ted0103/celestial-archive/releases/download/v0.3.7/celestial-archive-android-v0.3.0.apk">Download APK</a><p>Signed Android wrapper v0.3.0 · loads the current v0.3.7 website. No separate native update is required for the redesigned interface.</p>
           </div>
         </article>
         <article class="card">
           <p class="label">03 · Windows</p>
           <h3>Keep an offline copy</h3>
           <ol><li>Download and extract the ZIP.</li><li>Open PowerShell in the folder.</li><li>Run <code>py -m http.server 47831</code>.</li><li>Visit <code>localhost:47831</code>.</li></ol>
-          <a class="button" href="https://github.com/ted0103/celestial-archive/releases/tag/v0.3.6">Download ZIP</a>
+          <a class="button" href="https://github.com/ted0103/celestial-archive/releases/tag/v0.3.7">Download ZIP</a>
         </article>
         <article class="card">
           <p class="label">04 · macOS</p>
           <h3>Keep an offline copy</h3>
           <ol><li>Download and unzip the archive.</li><li>Open Terminal in the folder.</li><li>Run <code>python3 -m http.server 47831</code>.</li><li>Visit <code>localhost:47831</code>.</li></ol>
-          <a class="button" href="https://github.com/ted0103/celestial-archive/releases/tag/v0.3.6">Download ZIP</a>
+          <a class="button" href="https://github.com/ted0103/celestial-archive/releases/tag/v0.3.7">Download ZIP</a>
         </article>
       </div>
     </section>

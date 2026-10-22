@@ -10,6 +10,8 @@ manifest = json.loads((root / 'asset-manifest.json').read_text())
 files = {item['url']: item for item in manifest['files']}
 files['./gallery.css'] = {'url': './gallery.css', 'mime': 'text/css; charset=utf-8', 'pack': 'core'}
 files['./assets/fonts/manrope-variable.ttf'] = {'url':'./assets/fonts/manrope-variable.ttf','mime':'font/ttf','pack':'core'}
+for font in ['archive-display.woff2','archive-song.woff2']:
+    files['./assets/fonts/'+font]={'url':'./assets/fonts/'+font,'mime':'font/woff2','pack':'core'}
 for url, item in files.items():
     path = (root / url).resolve()
     assert path.is_relative_to(root.resolve()), 'Asset path escapes app directory'
