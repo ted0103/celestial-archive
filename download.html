@@ -7,6 +7,8 @@
   <meta name="description" content="Open or download The Celestial Archive, a bilingual 78-card tarot reflection experience.">
   <title>The Celestial Archive — Open & Download</title>
   <style>
+    @font-face {font-family:ArchiveSans;src:url("assets/fonts/manrope-variable.ttf") format("truetype");font-weight:200 800;font-display:swap;}
+
     :root {
       color-scheme: dark;
       --ink: #0b0d0d;
@@ -25,7 +27,7 @@
         radial-gradient(circle at 80% 12%, rgba(210,173,98,.12), transparent 27rem),
         radial-gradient(circle at 12% 74%, rgba(236,230,215,.07), transparent 25rem),
         linear-gradient(135deg, #111414 0%, var(--ink) 46%, #070808 100%);
-      font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+      font-family: ArchiveSans, system-ui, sans-serif;
     }
     body::before {
       content: "";
@@ -55,13 +57,13 @@
       text-transform: uppercase;
     }
     .hero { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(260px, .55fr); gap: clamp(32px, 7vw, 96px); align-items: end; }
-    h1, h2 { font-family: Didot, "Bodoni 72", Georgia, serif; font-weight: 500; }
+    h1, h2 { font-family: ArchiveSans, system-ui, sans-serif; font-weight: 500; }
     h1 {
       max-width: 900px;
       margin: 18px 0 0;
       font-size: clamp(3.4rem, 9.8vw, 8.7rem);
-      line-height: .86;
-      letter-spacing: -.055em;
+      line-height: 1.1;
+      letter-spacing: -.025em;
     }
     .zh { display: block; margin-top: 22px; color: var(--gold); font: 800 clamp(1rem, 2.4vw, 1.8rem)/1.3 system-ui, sans-serif; letter-spacing: .2em; }
     .intro { margin: 0 0 7px; color: var(--paper-dim); font-size: clamp(.9rem, 1.3vw, 1.03rem); line-height: 1.75; }
@@ -122,8 +124,8 @@
       </div>
       <div class="actions">
         <a class="button primary" href="./">Enter the Archive ↗</a>
-        <a class="button" href="https://github.com/ted0103/celestial-archive/releases/tag/v0.3.4">GitHub Downloads ↓</a>
-        <a class="button" href="https://github.com/ted0103/celestial-archive/releases/download/v0.3.0/celestial-archive-android-v0.3.0.apk">Android APK ↓</a>
+        <a class="button" href="https://github.com/ted0103/celestial-archive/releases/tag/v0.3.5">GitHub Downloads ↓</a>
+        <a class="button" href="https://github.com/ted0103/celestial-archive/releases/download/v0.3.5/celestial-archive-android-v0.3.0.apk">Android APK ↓</a>
       </div>
     </section>
 
@@ -150,20 +152,20 @@
           <p class="note">Because this friend preview is shared outside Google Play, Android may ask you to allow installs from this source.</p>
           <div class="actions">
             <a class="button" href="./">Open website</a>
-            <a class="button" href="https://github.com/ted0103/celestial-archive/releases/download/v0.3.0/celestial-archive-android-v0.3.0.apk">Download APK</a>
+            <a class="button" href="https://github.com/ted0103/celestial-archive/releases/download/v0.3.5/celestial-archive-android-v0.3.0.apk">Download APK</a><p>Signed Android wrapper v0.3.0 · loads the current v0.3.5 website. No separate native update is required for the redesigned interface.</p>
           </div>
         </article>
         <article class="card">
           <p class="label">03 · Windows</p>
           <h3>Keep an offline copy</h3>
           <ol><li>Download and extract the ZIP.</li><li>Open PowerShell in the folder.</li><li>Run <code>py -m http.server 47831</code>.</li><li>Visit <code>localhost:47831</code>.</li></ol>
-          <a class="button" href="https://github.com/ted0103/celestial-archive/releases/tag/v0.3.4">Download ZIP</a>
+          <a class="button" href="https://github.com/ted0103/celestial-archive/releases/tag/v0.3.5">Download ZIP</a>
         </article>
         <article class="card">
           <p class="label">04 · macOS</p>
           <h3>Keep an offline copy</h3>
           <ol><li>Download and unzip the archive.</li><li>Open Terminal in the folder.</li><li>Run <code>python3 -m http.server 47831</code>.</li><li>Visit <code>localhost:47831</code>.</li></ol>
-          <a class="button" href="https://github.com/ted0103/celestial-archive/releases/tag/v0.3.4">Download ZIP</a>
+          <a class="button" href="https://github.com/ted0103/celestial-archive/releases/tag/v0.3.5">Download ZIP</a>
         </article>
       </div>
     </section>

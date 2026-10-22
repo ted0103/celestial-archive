@@ -1,6 +1,6 @@
 # Antique gallery redesign
 
-Local implementation on `codex/antique-gallery`, based on the official v0.3.4 application archive. Not published.
+Local implementation on `codex/antique-gallery`, based on the official v0.3.4 application archive. Published as the v0.3.5 web release.
 
 | Before | After | Why |
 | --- | --- | --- |
@@ -52,3 +52,7 @@ Replaced display serifs with locally bundled Manrope (Google Fonts, SIL OFL lice
 | Plain dark surfaces | Quiet inset highlights and shallow shadows | Subtle depth without additional animation |
 
 Verified browser gateway and ritual layouts, phone gateway at 390px, guide navigation, computed headline glow, and no document horizontal overflow at 805px. Refreshed 113 asset hashes and verified final CSS/manifest/worker source parity. CSS-only refinement; existing motion, save and export logic unchanged. Physical devices and full save/export workflow were not retested. Preview: http://localhost:47840/
+
+## Release v0.3.5
+
+The current release includes the redesigned web app and offline ZIP. The Android download is the unchanged signed v0.3.0 web wrapper, verified to target the live repository site. Native Android hardware testing remains pending.
