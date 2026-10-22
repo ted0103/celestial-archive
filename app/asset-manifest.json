@@ -1,0 +1,801 @@
+{
+  "releaseId": "590c7a60c9cfbb14",
+  "generatedAt": "2026-10-22T00:00:00Z",
+  "totals": {
+    "coreBytes": 9324043,
+    "gestureBytes": 18960376
+  },
+  "files": [
+    {
+      "url": "./app.js",
+      "bytes": 121395,
+      "mime": "text/javascript; charset=utf-8",
+      "sha256": "eb0d09c566180356cc580773c0bd1f3ea466069f2b94944a7342df9ac0aefab7",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/audio/celestial-ambient.mp3",
+      "bytes": 860594,
+      "mime": "audio/mpeg",
+      "sha256": "41c593c7336faa72004b5b74577c4094c954d545fcc536e722ba4b3a3bef5d0f",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/backgrounds/arcana-archive.webp",
+      "bytes": 131200,
+      "mime": "image/webp",
+      "sha256": "1808f1fa59bf52e4dfe3cee718d44e82342f33057b333dce05fc4a2a8d59ea1d",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/backgrounds/gateway-collage.webp",
+      "bytes": 152792,
+      "mime": "image/webp",
+      "sha256": "c98240620b4b75b1f384d0aca7a1d91e636ef83c7bb0fa0b4254d8f18c697887",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/backgrounds/gateway-editorial-collage-v2.webp",
+      "bytes": 117972,
+      "mime": "image/webp",
+      "sha256": "8d0198bf45027dd52d93ac1def26652a1aad50d0d838ccbc6b06588f5f3881c7",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/backgrounds/grimoire-celestial-pigeon-4k.webp",
+      "bytes": 365678,
+      "mime": "image/webp",
+      "sha256": "969f8327aa6d1d22f66bd898782064fe3918dd5cb3f4f05a0acf04ac10928c10",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/backgrounds/grimoire-paper-flight.webp",
+      "bytes": 80054,
+      "mime": "image/webp",
+      "sha256": "d2c5eca6f82672f91b5a966230663ba74190644ea1434c7c42a2ece7ff68d70a",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/backgrounds/reading-chamber.webp",
+      "bytes": 109876,
+      "mime": "image/webp",
+      "sha256": "5ffb926c451394c587438f6d1ec32eca3c9c00a0d7fe0782c621665fecfed195",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/backgrounds/ritual-chamber.webp",
+      "bytes": 180718,
+      "mime": "image/webp",
+      "sha256": "56d8a2199df2e463675c9a355b95cfdda4cca1583d753e2f216e5ef874ac0dbc",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/approved/card-back-lunar-seal.webp",
+      "bytes": 76818,
+      "mime": "image/webp",
+      "sha256": "87e20ac32ec71500fd23b3eea30a240aa867df1cf9a28e8372a691c3b3992a76",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/approved/cups-01-ace-of-cups.webp",
+      "bytes": 55194,
+      "mime": "image/webp",
+      "sha256": "cd5d7f1bba55b3781e76979bcd901570843f3a25bbd61832b9997346fce00e3b",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/approved/major-00-the-fool.webp",
+      "bytes": 67110,
+      "mime": "image/webp",
+      "sha256": "220ae200155ac8452689de494a18b78dbd2c6cb768772f626f114a353b7b1cfb",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/approved/major-18-the-moon.webp",
+      "bytes": 65898,
+      "mime": "image/webp",
+      "sha256": "7186c50cb9021d3061ed15670a7cc71f901c4660b8227367db09c63403f02fb9",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/approved/pentacles-10-ten-of-pentacles.webp",
+      "bytes": 76720,
+      "mime": "image/webp",
+      "sha256": "659e197bfee0f06547998d2b97a76b8c7a34ebf7769a44d9cfe704ce45a252c6",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/approved/swords-03-three-of-swords.webp",
+      "bytes": 46606,
+      "mime": "image/webp",
+      "sha256": "987494b2b442a058201d8f0a7bd5a6baf256bdf19884d6d29d60e3de5a116db7",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/approved/wands-queen-queen-of-wands.webp",
+      "bytes": 70636,
+      "mime": "image/webp",
+      "sha256": "96ca0237598d04f959a17c132bbda4238439e8832eb50271bbc193b6c5022aab",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/cups-02-two-of-cups.webp",
+      "bytes": 59982,
+      "mime": "image/webp",
+      "sha256": "662ee068acf0f0ea44b14e34f0954124c68adbec42b9eabb2e3ae2108bb26d42",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/cups-03-three-of-cups.webp",
+      "bytes": 60578,
+      "mime": "image/webp",
+      "sha256": "d971c02593726caf76fa42c32105e0e175742c3e3b02b8d37abd2ad8fc3b5f42",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/cups-04-four-of-cups.webp",
+      "bytes": 55950,
+      "mime": "image/webp",
+      "sha256": "8cb4522c30d46913307583097f219f18aca963fe3e33d2fb169b2dee5c3bb0b4",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/cups-05-five-of-cups.webp",
+      "bytes": 72560,
+      "mime": "image/webp",
+      "sha256": "4f596c3f26ccff09b1abb31555ce747d9d9af0bc093fe612ba153d37134a2504",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/cups-06-six-of-cups.webp",
+      "bytes": 74880,
+      "mime": "image/webp",
+      "sha256": "d1170329080fb6752ef260938ab285fb280e14c6998e6b7a73fa9c55efab4cbb",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/cups-07-seven-of-cups.webp",
+      "bytes": 72276,
+      "mime": "image/webp",
+      "sha256": "96db106e8438749ede4d62756cda4aced4d759aa69a421cd53f59cbed4542009",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/cups-08-eight-of-cups.webp",
+      "bytes": 80786,
+      "mime": "image/webp",
+      "sha256": "2bac23b729dc68f8c796f91c0f1c8d7a19243b09f97b08ac85bfed4bba1ce8fe",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/cups-09-nine-of-cups.webp",
+      "bytes": 88330,
+      "mime": "image/webp",
+      "sha256": "2b2e2a6f760036e64301d8b0d6a5cde4ff0a549127721a74fe6e5a61fa101a6b",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/cups-10-ten-of-cups.webp",
+      "bytes": 106672,
+      "mime": "image/webp",
+      "sha256": "1de774e1871fb4bad11577b00883f690f07b78b35075d7dcf3368dfc92a8ec93",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/cups-11-page-of-cups.webp",
+      "bytes": 51990,
+      "mime": "image/webp",
+      "sha256": "649105a857af6d5b7f46e50831c9821fe047d9fb8b25f1411f45c10235d44a0e",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/cups-12-knight-of-cups.webp",
+      "bytes": 52052,
+      "mime": "image/webp",
+      "sha256": "cb68ec5a4e87b28504713b5139ebf41ebf3bc897155934eb7301cf4d84b2fbcf",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/cups-13-queen-of-cups.webp",
+      "bytes": 64298,
+      "mime": "image/webp",
+      "sha256": "36f43834c0c968372541523b16307af42745d80ea97a036f6da675fd49bdfe3b",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/cups-14-king-of-cups.webp",
+      "bytes": 63498,
+      "mime": "image/webp",
+      "sha256": "c5c007feef4048f9d5d419dec8ae7dab1a3f309f7bf0b27c1fbf4755d830942a",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-01-the-magician.webp",
+      "bytes": 64108,
+      "mime": "image/webp",
+      "sha256": "ae6f9fcc235da0a9b66cc3d047afb1eb4294eaba566b0c92bb3accc1460e711c",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-02-the-high-priestess.webp",
+      "bytes": 52246,
+      "mime": "image/webp",
+      "sha256": "418d5d418e1d9e9ab0f5478fd4876a6cf5fb0b75518f66c3c47301910716601f",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-03-the-empress.webp",
+      "bytes": 67204,
+      "mime": "image/webp",
+      "sha256": "8ec1f340f4769d742193a7aefd0ec40e49bf85076fd8bd66851bc13b598cd89b",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-04-the-emperor.webp",
+      "bytes": 66390,
+      "mime": "image/webp",
+      "sha256": "46f8dee25fed900d972e6bc0374db782256a8259b55c869265366c11c283c77e",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-05-the-hierophant.webp",
+      "bytes": 64046,
+      "mime": "image/webp",
+      "sha256": "8095058b0ab7217c11530b4324fd910f4791d7d86c3aeb13adf4bc9a4403f9b1",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-06-the-lovers.webp",
+      "bytes": 58150,
+      "mime": "image/webp",
+      "sha256": "a81b975b8374893200ff04f7e09fc7caf882ba8688cb2d5e37a49b77c0ffab03",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-07-the-chariot.webp",
+      "bytes": 72242,
+      "mime": "image/webp",
+      "sha256": "50f2adca9fcb3d8e945cd8fc4a733e693237c471cbfd6b21dcee7abea14627c4",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-08-strength.webp",
+      "bytes": 72306,
+      "mime": "image/webp",
+      "sha256": "ab0741e47a033d1a1900974ea2e04e8ec974da47a8b07202159b7094cd9744bf",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-09-the-hermit.webp",
+      "bytes": 57132,
+      "mime": "image/webp",
+      "sha256": "13581a38210aee987d6f7dae430c26cac63a10eb5f6cb3fe3d15f564da7f71ee",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-10-wheel-of-fortune.webp",
+      "bytes": 59194,
+      "mime": "image/webp",
+      "sha256": "6dfb6fa3317d53e8ca622171ed7e0f3bdf94b461c36ccb705ffb0a8e8d5320eb",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-11-justice.webp",
+      "bytes": 57568,
+      "mime": "image/webp",
+      "sha256": "9620bfddbbb2b1ecf1e8de838bf7e63822cc0d331fe282aedbc17380914a083c",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-12-the-hanged-man.webp",
+      "bytes": 51384,
+      "mime": "image/webp",
+      "sha256": "dcb629534b611271aca72e6ae5780291a3e893e438d6ea739be57ef401069847",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-13-death.webp",
+      "bytes": 67180,
+      "mime": "image/webp",
+      "sha256": "e057965a398c43cebdd808a632639f8386ed4dc8ba47d56ee90f78f6b52a490b",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-14-temperance.webp",
+      "bytes": 53566,
+      "mime": "image/webp",
+      "sha256": "ccc4fb88966fc5b58b595e46deb41f08c9ced09f3008d79138c6ef98b68d69bd",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-15-the-devil.webp",
+      "bytes": 60620,
+      "mime": "image/webp",
+      "sha256": "9301c8597af8fc6185361f33247ebb1e6ac4c95ad86e2784fd7ce6dbb3d1a64a",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-16-the-tower.webp",
+      "bytes": 50790,
+      "mime": "image/webp",
+      "sha256": "8ff1c54d60021fe60755be08e16880330806a59c52e002d3480e54ca8969ec50",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-17-the-star.webp",
+      "bytes": 50880,
+      "mime": "image/webp",
+      "sha256": "882bfe3abb6fa9c7d7e0f8e114c49cafe313dfcc0f19017e99a831474f8c2520",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-19-the-sun.webp",
+      "bytes": 87352,
+      "mime": "image/webp",
+      "sha256": "1151313883ec44b6337b4aa1080dd033dd0c51b753503bd06e35250dc045e4fa",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-20-judgement.webp",
+      "bytes": 53114,
+      "mime": "image/webp",
+      "sha256": "01b2d909bd60d1b1d9e36dac4c1e9a7b4e15a21ef109d8e161f4194cf98cca2b",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/major-21-the-world.webp",
+      "bytes": 56096,
+      "mime": "image/webp",
+      "sha256": "7a2bb3826389c9e6038f0630e60913ea8ac2cea06d8c0b272f7b03bffc3a6072",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/pentacles-01-ace-of-pentacles.webp",
+      "bytes": 87420,
+      "mime": "image/webp",
+      "sha256": "7cb1f0afd66d1d093aa3ab72fc1b5e8246477a63f32485c406874804e4446a46",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/pentacles-02-two-of-pentacles.webp",
+      "bytes": 72438,
+      "mime": "image/webp",
+      "sha256": "21f6535028c99c56cf9c8ffd87f0f30c75ffa3e949117b5d76b598780efcb410",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/pentacles-03-three-of-pentacles.webp",
+      "bytes": 90426,
+      "mime": "image/webp",
+      "sha256": "751c0347c25c2188cb0653685d29287b7fb575352fa5b86df5aaca5c9a87d86c",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/pentacles-04-four-of-pentacles.webp",
+      "bytes": 76500,
+      "mime": "image/webp",
+      "sha256": "279cd09900619eaff5c8683cac81f4dcce365254c6427e33b3057bd0b9e0bb40",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/pentacles-05-five-of-pentacles.webp",
+      "bytes": 95306,
+      "mime": "image/webp",
+      "sha256": "cae3bb34177e61a5bb33b59840f5fdd5cdecfc500b104817157dbcf26c8c8896",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/pentacles-06-six-of-pentacles.webp",
+      "bytes": 95964,
+      "mime": "image/webp",
+      "sha256": "094ac6fb072aeb34b80c10cbba701163573e524202afcdbb9edaa9582d46a856",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/pentacles-07-seven-of-pentacles.webp",
+      "bytes": 113416,
+      "mime": "image/webp",
+      "sha256": "fda01d76eab64e9f07cb0d8dd2116a82ea26cb552037dbc5e005f758ad812871",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/pentacles-08-eight-of-pentacles.webp",
+      "bytes": 113624,
+      "mime": "image/webp",
+      "sha256": "e0a9548baaf72e079c44e021bcde9bae84e3bbf4c9f9423459e00d8bc3a88f52",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/pentacles-09-nine-of-pentacles.webp",
+      "bytes": 140430,
+      "mime": "image/webp",
+      "sha256": "b2660393f031187b6ac613dc847c8f364a35548bad659068e9d826fd418e0828",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/pentacles-11-page-of-pentacles.webp",
+      "bytes": 57524,
+      "mime": "image/webp",
+      "sha256": "d439b595e3b95abea478261343452faa294702ebd3c359995c83d07dbb18ec1e",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/pentacles-12-knight-of-pentacles.webp",
+      "bytes": 113560,
+      "mime": "image/webp",
+      "sha256": "b52b1f2da5bd128ee04a4f519df5727bba969443016c01108916f35c7b77f710",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/pentacles-13-queen-of-pentacles.webp",
+      "bytes": 155194,
+      "mime": "image/webp",
+      "sha256": "5fbe2a58ed5c8453438df6e86b8fc45cfd98893e27517a5328634ee707b04db6",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/pentacles-14-king-of-pentacles.webp",
+      "bytes": 121042,
+      "mime": "image/webp",
+      "sha256": "8d9910f81a2c85808e608bb730159ffdc785e6bd49d6732fd800469ff3765bef",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/swords-01-ace-of-swords.webp",
+      "bytes": 55702,
+      "mime": "image/webp",
+      "sha256": "e72f6035d3aba535d7df84f6586b1bf7cdfa9c27f356467848741948250f748b",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/swords-02-two-of-swords.webp",
+      "bytes": 54128,
+      "mime": "image/webp",
+      "sha256": "09b287a82396b5e55c428370f4a6f34508fdcc3dd9d08764df0f00d6b71a4d36",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/swords-04-four-of-swords.webp",
+      "bytes": 54548,
+      "mime": "image/webp",
+      "sha256": "7d8c97b22013a21735e30038d83a93fa0cfc1eec7fc6a6b7d8eee46a7a0d54c3",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/swords-05-five-of-swords.webp",
+      "bytes": 68184,
+      "mime": "image/webp",
+      "sha256": "6493de880add284d6f5667a253360191737ac1e07ff8eec79693239f802b8cd7",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/swords-06-six-of-swords.webp",
+      "bytes": 54454,
+      "mime": "image/webp",
+      "sha256": "95ea675e7a866bc60e07c5edb6c1faec866ba80c6faf86a972213ebba601ddd9",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/swords-07-seven-of-swords.webp",
+      "bytes": 78242,
+      "mime": "image/webp",
+      "sha256": "9211445a26a22c4fdbb29edd7345d84fd4b8271b710c602203516aa9956d9d43",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/swords-08-eight-of-swords.webp",
+      "bytes": 57754,
+      "mime": "image/webp",
+      "sha256": "647307bb823a7b3e6832441022212e5ef61e11fdbbe3fded0334fad5bb188269",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/swords-09-nine-of-swords.webp",
+      "bytes": 54296,
+      "mime": "image/webp",
+      "sha256": "7cfe95e5e431ea7276294d41a55778b0d52c86ce5cf92904ca8ccd95aa02814a",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/swords-10-ten-of-swords.webp",
+      "bytes": 62510,
+      "mime": "image/webp",
+      "sha256": "9cdb9c432570c09c47153c7f48295348bf86a8bb8c3e17f6a31cf73a2c12ca20",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/swords-11-page-of-swords.webp",
+      "bytes": 57472,
+      "mime": "image/webp",
+      "sha256": "09d33345c3b874adc845311532d8a35a0661a806ac6a5f73eee2f82bd5b52862",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/swords-12-knight-of-swords.webp",
+      "bytes": 86834,
+      "mime": "image/webp",
+      "sha256": "9ccf57a0cb2a79c1d02dcf28aa9bb813cb201a1581258ce09627531788441d96",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/swords-13-queen-of-swords.webp",
+      "bytes": 116730,
+      "mime": "image/webp",
+      "sha256": "ab09e6db48c9cabfa5e58b1ec4089cdb2ade86014ac5d0360d7d78459bbee2f1",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/swords-14-king-of-swords.webp",
+      "bytes": 83436,
+      "mime": "image/webp",
+      "sha256": "8c155788136b8dbca45fbcb52f2998e63c01a9be1af8e95e101c4572162c1481",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/wands-01-ace-of-wands.webp",
+      "bytes": 47024,
+      "mime": "image/webp",
+      "sha256": "299fe15e9db71b3558129f54d2d1f69b4fd29ae125b3f52e15ff1006ac38a3e7",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/wands-02-two-of-wands.webp",
+      "bytes": 53606,
+      "mime": "image/webp",
+      "sha256": "daaf7edc5b6914bcd020ff41e5632e16513f27967f3c1648dab2963c0af13f06",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/wands-03-three-of-wands.webp",
+      "bytes": 51346,
+      "mime": "image/webp",
+      "sha256": "00dfd281e32561b5d308149260f613e3caf7193067189c0b7660873be37422e0",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/wands-04-four-of-wands.webp",
+      "bytes": 62080,
+      "mime": "image/webp",
+      "sha256": "2cf671d191fb56531219c0159e64cfe59e7d18989bbb7eabfa3f1186705c6544",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/wands-05-five-of-wands.webp",
+      "bytes": 47934,
+      "mime": "image/webp",
+      "sha256": "d32ce0738a6c66fe9f9130756941344cffa11c8e9423c0966d5d28857db0af85",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/wands-06-six-of-wands.webp",
+      "bytes": 76906,
+      "mime": "image/webp",
+      "sha256": "cf219075e7499166cb42c1a31feb7ccf4b366b16e96a508069b89cf403069b47",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/wands-07-seven-of-wands.webp",
+      "bytes": 62390,
+      "mime": "image/webp",
+      "sha256": "7586717b54d4fc315b6f3eaea8ed0b47352355986108f69a8d172b8e4d043c64",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/wands-08-eight-of-wands.webp",
+      "bytes": 68124,
+      "mime": "image/webp",
+      "sha256": "4e1df2282fa12b5510d441fb464c59734dfe1ce90a7cf1fb52872ecf8823e3fc",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/wands-09-nine-of-wands.webp",
+      "bytes": 61074,
+      "mime": "image/webp",
+      "sha256": "99a1878d4d6f50433d3180f727315b737a3587a337340b8c8f3440583f92e740",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/wands-10-ten-of-wands.webp",
+      "bytes": 70452,
+      "mime": "image/webp",
+      "sha256": "c3b0f78117577e51e8ccef4801aff45538820b20da32b34ef094f8c6b63db0e2",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/wands-11-page-of-wands.webp",
+      "bytes": 47232,
+      "mime": "image/webp",
+      "sha256": "c4a337d8c0877457f5cdb689cb648545eb4d009a6bf5463c48c1d12e602569bd",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/wands-12-knight-of-wands.webp",
+      "bytes": 64566,
+      "mime": "image/webp",
+      "sha256": "a2a4cacb190f376f241caa4048dbe2882619987cfebe3620ec167eaaeaa6856a",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/cards/r1/generated/wands-14-king-of-wands.webp",
+      "bytes": 59982,
+      "mime": "image/webp",
+      "sha256": "634d9ddc000f8d4d6cad9bb6e43085dfdcf4a08fdd23952f47a51e176c79df8b",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/fonts/OFL-NotoSansSC.txt",
+      "bytes": 4388,
+      "mime": "text/plain; charset=utf-8",
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/fonts/celestial-cjk.ttf",
+      "bytes": 413404,
+      "mime": "font/ttf",
+      "sha256": "2a0de799de87abc2c73ec899e2819fda81945f7c0a84aeeaf38d69ebf1003c84",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/fonts/jetbrains-mono-400.ttf",
+      "bytes": 112172,
+      "mime": "font/ttf",
+      "sha256": "44ce4a84f20d60f24539bd0cef11f79c29e38609e0f8adf18551c9794a5d9dc3",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/fonts/jetbrains-mono-700.ttf",
+      "bytes": 112092,
+      "mime": "font/ttf",
+      "sha256": "a1d92abc6b02a87faed23d98067ab1027e8e95242fd7c9978a072ea383b89d1a",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/fonts/manrope-variable.ttf",
+      "mime": "font/ttf",
+      "pack": "core",
+      "bytes": 164700,
+      "sha256": "3ae11c49db0455a3cc33e37d380f20fdb8c7f8b41dc07625c177e3d87a9d6ae6"
+    },
+    {
+      "url": "./assets/icons/apple-touch-icon.png",
+      "bytes": 34599,
+      "mime": "image/png",
+      "sha256": "a0b36626adb90751abb3dde3d36093aca6d4834d21bc47acc4e6e910a4712acd",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/icons/icon-192.png",
+      "bytes": 39670,
+      "mime": "image/png",
+      "sha256": "98cc5cb963ceda654b96a9171551e0e0619c817a634db1a66bad75e1d920e3e5",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/icons/icon-512.png",
+      "bytes": 302285,
+      "mime": "image/png",
+      "sha256": "eefb47f7b311a3036fade7ebf2b0429db426ae408fecbb67122d2623a57f3288",
+      "pack": "core"
+    },
+    {
+      "url": "./assets/vendor/mediapipe-hands/LICENSE.txt",
+      "bytes": 11358,
+      "mime": "text/plain; charset=utf-8",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "pack": "gesture"
+    },
+    {
+      "url": "./assets/vendor/mediapipe-hands/hand_landmark_lite.tflite",
+      "bytes": 2071408,
+      "mime": "application/octet-stream",
+      "sha256": "d7fde8ac11f8ce03f8663775bfc323f4fc9f2a38062b4f4efa142874ef5b2a48",
+      "pack": "gesture"
+    },
+    {
+      "url": "./assets/vendor/mediapipe-hands/hands.binarypb",
+      "bytes": 550,
+      "mime": "application/octet-stream",
+      "sha256": "ab76c4215fca99cc2db1b5885cb8398d210e59ebe685245f72e692b4b58421e4",
+      "pack": "gesture"
+    },
+    {
+      "url": "./assets/vendor/mediapipe-hands/hands.js",
+      "bytes": 45581,
+      "mime": "text/javascript; charset=utf-8",
+      "sha256": "a68b21c9553d614384f7f459622e46e02e3c9cfdf7392915a2fa1d615e338473",
+      "pack": "gesture"
+    },
+    {
+      "url": "./assets/vendor/mediapipe-hands/hands_solution_packed_assets.data",
+      "bytes": 4326731,
+      "mime": "application/octet-stream",
+      "sha256": "bdce7b66bfc5b39ba86a47775c98e0b186fe73f8308c2279f852af4c89ffdf42",
+      "pack": "gesture"
+    },
+    {
+      "url": "./assets/vendor/mediapipe-hands/hands_solution_packed_assets_loader.js",
+      "bytes": 8327,
+      "mime": "text/javascript; charset=utf-8",
+      "sha256": "d05c073a62a0c8d2d21c18bc8f158424ece0078ea00a636e9527083b10ca1e17",
+      "pack": "gesture"
+    },
+    {
+      "url": "./assets/vendor/mediapipe-hands/hands_solution_simd_wasm_bin.data",
+      "bytes": 0,
+      "mime": "application/octet-stream",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "pack": "gesture"
+    },
+    {
+      "url": "./assets/vendor/mediapipe-hands/hands_solution_simd_wasm_bin.js",
+      "bytes": 276479,
+      "mime": "text/javascript; charset=utf-8",
+      "sha256": "7720172e0775636e64955fb1091958c8294e01aa100c3272b59b2a543c028cb5",
+      "pack": "gesture"
+    },
+    {
+      "url": "./assets/vendor/mediapipe-hands/hands_solution_simd_wasm_bin.wasm",
+      "bytes": 6026259,
+      "mime": "application/wasm",
+      "sha256": "78ef7eb86ebc6424ac06b13f89b9a1fc01ff35e07520e37de98887cf88c06653",
+      "pack": "gesture"
+    },
+    {
+      "url": "./assets/vendor/mediapipe-hands/hands_solution_wasm_bin.js",
+      "bytes": 276474,
+      "mime": "text/javascript; charset=utf-8",
+      "sha256": "2e1faa9965a87f496316e85731c41bde1d9b07dd448f6cd30f5c2262bcd35e29",
+      "pack": "gesture"
+    },
+    {
+      "url": "./assets/vendor/mediapipe-hands/hands_solution_wasm_bin.wasm",
+      "bytes": 5917209,
+      "mime": "application/wasm",
+      "sha256": "4e70eaf8063e0e9ac10e682d9d6b55c08d0788f0a8d49925e2e484636526e157",
+      "pack": "gesture"
+    },
+    {
+      "url": "./data.js",
+      "bytes": 271686,
+      "mime": "text/javascript; charset=utf-8",
+      "sha256": "492b2d770365a5c225e7cecdcf990679e49ed42fcd419978c98a8ac2f82aedd1",
+      "pack": "core"
+    },
+    {
+      "url": "./gallery.css",
+      "mime": "text/css; charset=utf-8",
+      "pack": "core",
+      "bytes": 28479,
+      "sha256": "d5a9a48b203114e931c62100c626fd64f36addf9b1e20aa6db03237202770d13"
+    },
+    {
+      "url": "./index.html",
+      "bytes": 29235,
+      "mime": "text/html; charset=utf-8",
+      "sha256": "2bbda496ea32cdbe395487e567ebeb2ecc85156cebac6350c900860a7ee3147b",
+      "pack": "core"
+    },
+    {
+      "url": "./logic.js",
+      "bytes": 6557,
+      "mime": "text/javascript; charset=utf-8",
+      "sha256": "5274326b227a2bbfe048f418ed5679dd12c351d5daf96458bb877aa1e3dfc080",
+      "pack": "core"
+    },
+    {
+      "url": "./manifest.webmanifest",
+      "bytes": 544,
+      "mime": "application/manifest+json; charset=utf-8",
+      "sha256": "ce0ce18830ec076ded7dcf83d03f463ac0ae793c7b0d99ee5d540ec7303d2e66",
+      "pack": "core"
+    },
+    {
+      "url": "./styles.css",
+      "bytes": 109701,
+      "mime": "text/css; charset=utf-8",
+      "sha256": "9bd7acb361bc116091a032fec66df14fc7225848b15ce802235d6dd9f51a365c",
+      "pack": "core"
+    }
+  ]
+}

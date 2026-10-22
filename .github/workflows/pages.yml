@@ -23,9 +23,8 @@ jobs:
           persist-credentials: false
       - name: Prepare path-scoped release site
         run: |
-          curl -fsSL -o app.zip https://github.com/ted0103/celestial-archive/releases/download/v0.3.4/celestial-archive-friend-preview-v0.3.4.zip
           mkdir site
-          unzip -q app.zip -d site
+          cp -R app/. site/
           cp download.html site/download.html
           touch site/.nojekyll
           jq '.id = "./" | .start_url = "./" | .scope = "./"' site/manifest.webmanifest > site/manifest.tmp
