@@ -27,8 +27,6 @@ jobs:
           cp -R app/. site/
           cp download.html site/download.html
           touch site/.nojekyll
-          jq '.id = "./" | .start_url = "./" | .scope = "./"' site/manifest.webmanifest > site/manifest.tmp
-          mv site/manifest.tmp site/manifest.webmanifest
           test "$(jq -r .start_url site/manifest.webmanifest)" = "./"
           test "$(jq -r .scope site/manifest.webmanifest)" = "./"
           test -f site/index.html

@@ -1,8 +1,8 @@
 {
-  "releaseId": "590c7a60c9cfbb14",
+  "releaseId": "6d2019d31eb1c5d4",
   "generatedAt": "2026-10-22T00:00:00Z",
   "totals": {
-    "coreBytes": 9324043,
+    "coreBytes": 9324120,
     "gestureBytes": 18960376
   },
   "files": [
@@ -785,9 +785,9 @@
     },
     {
       "url": "./manifest.webmanifest",
-      "bytes": 544,
+      "bytes": 621,
       "mime": "application/manifest+json; charset=utf-8",
-      "sha256": "ce0ce18830ec076ded7dcf83d03f463ac0ae793c7b0d99ee5d540ec7303d2e66",
+      "sha256": "b020ba00ce0fa67ada04d9105894d74ecef5d3882b82180a02535b3648bcf74f",
       "pack": "core"
     },
     {
