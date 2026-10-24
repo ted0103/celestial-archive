@@ -48,3 +48,12 @@ console.log('PASS: actual UI consent gate, stale response discard, save-during-r
 
 const html=fs.readFileSync('app/index.html','utf8');
 assert(html.includes("connect-src 'self' https://celestial-archive-ai.tedhangtan.workers.dev;"));
+
+const saveSource=source.slice(source.indexOf('  function saveReading(){'),source.indexOf('  function runSaveTransition('));
+let savedRecord;
+const saveContext=vm.createContext({saveInFlight:false,readingSaved:false,sessions:[],selectedCards:selected,crypto:{randomUUID:()=> 'test-reading'},structuredClone,language:'bilingual',deck:{meaningEdition:'test'},bilingual:en=>en,$:()=>({checked:false,value:''}),createReadingSnapshot:()=>snapshot,persistSessions(){},renderFocusedControls(){},sound:{cue(){}},runSaveTransition(record){savedRecord=record;},showToast(message){throw Error(message);}});
+vm.runInContext(saveSource,saveContext);saveContext.saveReading();
+assert.equal(savedRecord.synthesis.en,result.en);
+assert.equal(savedRecord.focusedReading.en,result.en);
+assert.equal(saveContext.sessions.length,1);
+console.log('PASS: newly saved AI reading exposes its immutable summary to the chamber.');

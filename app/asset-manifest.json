@@ -1,8 +1,8 @@
 {
-  "releaseId": "94fc866dbfd974ab",
+  "releaseId": "84851c65d895fc9b",
   "generatedAt": "2026-10-24T00:00:00Z",
   "totals": {
-    "coreBytes": 9904602,
+    "coreBytes": 9904642,
     "gestureBytes": 18960376
   },
   "files": [
@@ -22,9 +22,9 @@
     },
     {
       "url": "./app.js",
-      "bytes": 125840,
+      "bytes": 125880,
       "mime": "text/javascript; charset=utf-8",
-      "sha256": "6360d525519ffb320011625d3b3ee80a1e59bae659f50de6617e07ec70621ef3",
+      "sha256": "38454456f7b3f69935e1273ed2da0bc7cbed8a7bbbbdfe1680fa77d88a97f1f4",
       "pack": "core"
     },
     {
