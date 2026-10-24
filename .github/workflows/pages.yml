@@ -21,6 +21,10 @@ jobs:
         uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803
         with:
           persist-credentials: false
+      - name: Verify reading and motion behavior
+        run: |
+          node tests/ai-reading.mjs
+          node tests/scene-motion.cjs
       - name: Prepare path-scoped release site
         run: |
           mkdir site

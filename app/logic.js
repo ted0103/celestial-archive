@@ -98,12 +98,13 @@
     return Object.freeze(value);
   }
 
-  function createReadingSnapshot({snapshot,cards,language,question,readingCreatedAt,meaningEdition,legacy=false,legacyLabel=''}) {
+  function createReadingSnapshot({snapshot,cards,language,question,readingCreatedAt,meaningEdition,legacy=false,legacyLabel='',focusedReading=null,focusedChoices=null}) {
     if (snapshot?.version === 2) return deepFreeze(clone(snapshot));
     const capturedCards=clone(cards);
     if (!Array.isArray(capturedCards) || capturedCards.length !== 3) throw new Error('A snapshot requires exactly three cards.');
     const reading=synthesizeReading(capturedCards);
-    return deepFreeze({version:2,language:String(language),legacy:Boolean(legacy),legacyLabel:String(legacyLabel),readingCreatedAt:String(readingCreatedAt),meaningEdition:String(meaningEdition),question:String(question),cards:capturedCards,synthesis:{en:reading.en,zh:reading.zh},movement:clone(reading.movement),groundedAction:clone(reading.action),relation:reading.relation});
+    if(focusedReading){focusedReading=globalThis.CELESTIAL_AI.validateResult(focusedReading);reading.en=focusedReading.en;reading.zh=focusedReading.zh;}
+    return deepFreeze({version:2,focusedReading:clone(focusedReading),focusedChoices:clone(focusedChoices),language:String(language),legacy:Boolean(legacy),legacyLabel:String(legacyLabel),readingCreatedAt:String(readingCreatedAt),meaningEdition:String(meaningEdition),question:String(question),cards:capturedCards,synthesis:{en:reading.en,zh:reading.zh},movement:clone(reading.movement),groundedAction:clone(reading.action),relation:reading.relation});
   }
 
   globalThis.CELESTIAL_LOGIC = Object.freeze({audioPreferences, pinchConfig, freshPinchState, updatePinch, isReversed, cardText, spreadRelation, synthesizeReading, createReadingSnapshot});

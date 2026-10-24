@@ -10,7 +10,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css?v=20260730-11">
-  <link rel="stylesheet" href="gallery.css?v=candlelight-3">
+  <link rel="stylesheet" href="gallery.css?v=focused-reading-1">
 </head>
 <body>
   <div class="film" aria-hidden="true"></div>
@@ -120,6 +120,7 @@
             <label for="question" data-i18n="questionLabel">Your question · optional</label>
             <textarea id="question" maxlength="280" data-i18n-placeholder="questionPlaceholder" placeholder="What deserves my attention now?"></textarea>
             <small>The question stays as your context; this local reading does not analyze its meaning. · 问题只作为你的背景；本地解读不会分析其语义。</small>
+            <fieldset id="ai-presets" class="ai-presets"><legend>Optional reading focus · 可选解读方向</legend><p>Your writing stays on this device. AI uses only these choices and cards. · 文字留在本机；AI 只使用选项与卡牌。</p></fieldset>
             <div class="question-actions">
               <button class="button gold" id="begin-ritual" type="button" data-i18n="begin">Begin shuffle</button>
               <button class="button ghost" id="hand-ritual" type="button"><span aria-hidden="true">◌</span> <span data-i18n="handRitual">Hand Ritual</span></button>
@@ -169,6 +170,7 @@
               <p class="eyebrow" data-i18n="synthesis">SYNTHESIS</p>
               <p id="synthesis-copy" data-i18n="synthesisCopy">A beginning asks for trust, uncertainty asks for patience, and the heart asks to remain open. Move carefully, but keep moving.</p>
             </div>
+            <section class="ai-reading" aria-labelledby="ai-title"><h4 id="ai-title">A focused reflection · 聚焦解读</h4><p id="ai-context"></p><p>Optional Gemini AI · Reflection, not prediction. Google may use free-tier inputs and outputs for product improvement and human review. Your written question is never sent. · 可选 Gemini AI：用于反思而非预测。Google 可能使用免费服务的输入和输出改进产品并进行人工审核。不会发送你填写的问题。</p><label><input id="ai-consent" type="checkbox"> I am 18 or older and agree to send only the choices and cards shown above. · 我已满18岁，同意仅发送上方选项与卡牌。</label><p>Free AI is unavailable in the EEA, Switzerland and UK. · 欧洲经济区、瑞士和英国不提供此免费 AI 功能。</p><button class="button" type="button" id="ai-generate">Focus this reading · 聚焦本次解读</button><p id="ai-status" role="status" aria-live="polite"></p></section>
             <div class="reading-details" id="reading-details" aria-label="Detailed interpretation"></div>
             <p class="reflection-disclaimer">For reflection—not prediction or medical, legal, or financial advice.<span>仅供反思，不构成预测或医疗、法律、财务建议。</span></p>
             <div class="report-options">
@@ -398,8 +400,10 @@
   </div>
 
   <script src="data.js?v=20260730-11"></script>
-  <script src="logic.js?v=20260730-11"></script>
+  <script src="logic.js?v=focused-reading-1"></script>
   <script src="assets/vendor/mediapipe-hands/hands.js"></script>
-  <script src="app.js?v=candlelight-3"></script>
+  <script src="ai-contract.js?v=1"></script>
+  <script src="ai-config.js?v=1"></script>
+  <script src="app.js?v=focused-reading-1"></script>
 </body>
 </html>

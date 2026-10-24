@@ -12,6 +12,8 @@ files['./gallery.css'] = {'url': './gallery.css', 'mime': 'text/css; charset=utf
 files['./assets/fonts/manrope-variable.ttf'] = {'url':'./assets/fonts/manrope-variable.ttf','mime':'font/ttf','pack':'core'}
 for font in ['archive-display.woff2','archive-song.woff2']:
     files['./assets/fonts/'+font]={'url':'./assets/fonts/'+font,'mime':'font/woff2','pack':'core'}
+for name in ['ai-contract.js','ai-config.js']:
+    files['./'+name]={'url':'./'+name,'mime':'text/javascript; charset=utf-8','pack':'core'}
 for url, item in files.items():
     path = (root / url).resolve()
     assert path.is_relative_to(root.resolve()), 'Asset path escapes app directory'
@@ -20,7 +22,7 @@ for url, item in files.items():
 manifest['files'] = sorted(files.values(), key=lambda item: item['url'])
 release = hashlib.sha256(json.dumps(manifest['files'], sort_keys=True).encode()).hexdigest()[:16]
 manifest['releaseId'] = release
-manifest['generatedAt'] = '2026-10-22T00:00:00Z'
+manifest['generatedAt'] = '2026-10-24T00:00:00Z'
 manifest['totals'] = {pack+'Bytes': sum(item['bytes'] for item in files.values() if item['pack'] == pack) for pack in ('core', 'gesture')}
 (root / 'asset-manifest.json').write_text(json.dumps(manifest, indent=2)+'\n')
 html = (root / 'index.html').read_text()

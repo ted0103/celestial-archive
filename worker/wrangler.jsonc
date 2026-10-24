@@ -1,0 +1,24 @@
+{
+  "name": "celestial-archive-ai",
+  "main": "index.mjs",
+  "compatibility_date": "2026-10-23",
+  "workers_dev": true,
+  "vars": {
+    "ALLOWED_ORIGIN": "https://ted0103.github.io",
+    "FREE_TIER_CONFIRMED": "true"
+  },
+  "ratelimits": [
+    {
+      "name": "AI_LIMIT",
+      "namespace_id": "107231",
+      "simple": {
+        "limit": 5,
+        "period": 60
+      }
+    }
+  ],
+  "observability": {
+    "enabled": false
+  },
+  "account_id": "6bab6e51a3d44f2baf239186b752c398"
+}

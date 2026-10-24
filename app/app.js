@@ -142,6 +142,43 @@
   let pageReleaseId = null;
   let installPrompt = null;
   let readingGeneration = 0;
+  let focusedReading = null, focusedChoices = null, aiRequest = null;
+  const ai = window.CELESTIAL_AI;
+  for (const [key, choices] of Object.entries(ai.presets)) {
+    const label=document.createElement('label');
+    label.textContent={topic:'Topic · 主题',situation:'Situation · 状态',clarity:'Desired clarity · 希望了解'}[key];
+    const select=document.createElement('select');select.id=`ai-${key}`;
+    for(const [value,text] of Object.entries(choices)){const option=document.createElement('option');option.value=value;option.textContent=text.join(' · ');select.append(option);}
+    label.append(select);$('#ai-presets').append(label);
+  }
+  function clearFocusedReading(){aiRequest?.abort();aiRequest=null;focusedReading=null;focusedChoices=null;$('#ai-consent').checked=false;$('#ai-status').textContent='';}
+  function renderFocusedControls(){
+    const choices=focusedChoices||Object.fromEntries(Object.keys(ai.presets).map(key=>[key,$(`#ai-${key}`).value]));
+    $('#ai-context').textContent=Object.keys(ai.presets).map(key=>ai.presets[key][choices[key]]?.join(' / ')).join(' · ')+' — '+selectedCards.map(card=>`${card.name} / ${card.zh} (${card.isReversed?'reversed / 逆位':'upright / 正位'})`).join(', ');
+    $('#ai-generate').disabled=Boolean(aiRequest||focusedReading||readingSaved||!window.CELESTIAL_AI_ENDPOINT);
+    if(!window.CELESTIAL_AI_ENDPOINT&&!focusedReading) $('#ai-status').textContent=bilingual('AI is not connected yet. Your offline reading is ready.','AI 尚未连接。离线解读已就绪。');
+    else if(focusedReading) $('#ai-status').textContent=bilingual('AI reflection · based on presets, not your private question.','AI 反思解读 · 根据选项生成，不使用私人问题。');
+    else if(readingSaved) $('#ai-status').textContent=bilingual('Saved readings stay unchanged. Start a new ritual to use AI.','已保存的解读保持不变。开始新仪式即可使用 AI。');
+  }
+  async function focusReading(){
+    if(aiRequest||focusedReading||readingSaved||selectedCards.length!==3||!readingRevealed)return;
+    if(!$('#ai-consent').checked){$('#ai-status').textContent=bilingual('Please read and accept the consent above first.','请先阅读并同意上方说明。');return;}
+    const endpoint=window.CELESTIAL_AI_ENDPOINT;if(!endpoint)return;
+    const generation=readingGeneration,controller=new AbortController();aiRequest=controller;
+    const choices=Object.fromEntries(Object.keys(ai.presets).map(key=>[key,$(`#ai-${key}`).value]));
+    const payload=ai.payload(selectedCards,choices);ai.validateRequest(payload,cards);
+    renderFocusedControls();$('#ai-status').textContent=bilingual('Considering the cards…','正在解读卡牌…');
+    const timeout=setTimeout(()=>controller.abort(),25000);
+    try {
+      const response=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),credentials:'omit',referrerPolicy:'no-referrer',signal:controller.signal});
+      if(!response.ok)throw Error('Unavailable');const result=ai.validateResult(await response.json());
+      if(!readingStillCurrent(generation)||readingSaved)return;
+      focusedReading=result;focusedChoices=choices;renderMeanings();
+    } catch {
+      if(readingStillCurrent(generation))$('#ai-status').textContent=bilingual('AI unavailable or quota reached. Your offline reading is still available; try again later.','AI 暂不可用或额度已用完。离线解读仍可使用，请稍后重试。');
+    } finally {clearTimeout(timeout);if(aiRequest===controller){aiRequest=null;$('#ai-generate').disabled=Boolean(focusedReading||readingSaved||!endpoint);}}
+  }
+  $('#ai-generate').addEventListener('click',focusReading);
   let gestureGeneration = 0;
   let gesturePinchState = logic.freshPinchState();
   let gestureFrozenReadingGeneration = 0;
@@ -278,7 +315,7 @@
   function readingStillCurrent(generation){return generation===readingGeneration;}
 
   function beginRitual(){
-    try{$('#question').value=sanitizeQuestion($('#question').value);}catch{showToast(bilingual('Please shorten the question to 280 characters.','请将问题缩短至 280 个字符以内。'));return;}readingGeneration++;activeSavedSession=null;resetGesturePinch(true);currentDeck=secureShuffle(cards);selectedCards=[];dealsInFlight=0;readingRevealed=false;readingSaved=false;$('#question-panel').hidden=true;$('#draw-panel').hidden=false;$('#meaning-panel').hidden=true;$('#deck-selector').hidden=false;$('.deck-position').hidden=false;$('#reading-slots').innerHTML=Array.from({length:3},()=>'<div class="reading-slot is-empty" aria-hidden="true"></div>').join('');$('#reveal-cards').disabled=true;$('#draw-progress').textContent='0 / 3';setReadingStage('choose');sound.cue('shuffle');
+    try{$('#question').value=sanitizeQuestion($('#question').value);}catch{showToast(bilingual('Please shorten the question to 280 characters.','请将问题缩短至 280 个字符以内。'));return;}readingGeneration++;clearFocusedReading();activeSavedSession=null;resetGesturePinch(true);currentDeck=secureShuffle(cards);selectedCards=[];dealsInFlight=0;readingRevealed=false;readingSaved=false;$('#question-panel').hidden=true;$('#draw-panel').hidden=false;$('#meaning-panel').hidden=true;$('#deck-selector').hidden=false;$('.deck-position').hidden=false;$('#reading-slots').innerHTML=Array.from({length:3},()=>'<div class="reading-slot is-empty" aria-hidden="true"></div>').join('');$('#reveal-cards').disabled=true;$('#draw-progress').textContent='0 / 3';setReadingStage('choose');sound.cue('shuffle');
     const fan=$('#deck-fan'),selector=$('#deck-selector');fan.innerHTML='';currentDeck.forEach((baseCard,index)=>{const button=document.createElement('button');button.type='button';button.className='deck-choice';button.style.setProperty('--deck-delay',`${Math.min(index,20)*24}ms`);button.style.setProperty('--entry-rotate',`${((index%7)-3)*1.4}deg`);button.dataset.deckIndex=String(index);button.setAttribute('role','option');button.setAttribute('aria-selected','false');button.setAttribute('aria-label',`Choose hidden card ${index+1} of 78`);deckAssignments.set(button,{...baseCard,isReversed:randomOrientation()});button.addEventListener('click',()=>pickCard(button));fan.append(button);});fan.scrollLeft=0;selector.classList.remove('is-resolving');void selector.offsetWidth;selector.classList.add('is-resolving');setTimeout(()=>selector.classList.remove('is-resolving'),1550);updateDeckPosition();updateGestureSelectionPreview();revealScene($('#draw-panel'));
   }
   function pickCard(button,source='manual'){
@@ -344,18 +381,19 @@
     function frame(now){if(!readingStillCurrent(generation)){ctx.clearRect(0,0,w,h);return;}ctx.clearRect(0,0,w,h);ctx.globalCompositeOperation='lighter';for(const p of sparks){p.x+=p.vx;p.y+=p.vy;p.vy+=.016;p.life-=1;p.a*=.989;ctx.beginPath();ctx.fillStyle=`rgba(${Math.random()>.28?'218,178,95':'255,244,208'},${p.a})`;ctx.shadowBlur=14;ctx.shadowColor='#d5b470';ctx.arc(p.x,p.y,p.r,0,Math.PI*2);ctx.fill();}if(now-start<4400)requestAnimationFrame(frame);else ctx.clearRect(0,0,w,h);}requestAnimationFrame(frame);
   }
   function renderMeanings(){
+    renderFocusedControls();
     const roles=[["Situation","现状"],["Challenge","挑战"],["Guidance","指引"]];
     $('#meaning-grid').innerHTML=selectedCards.map((card,index)=>{const orientationEn=card.isReversed?'Reversed':'Upright',orientationZh=card.isReversed?'逆位':'正位',text=logic.cardText(card,card.isReversed,['situation','challenge','guidance'][index]);return `<section class="meaning-card"><header class="meaning-card-head"><span class="meaning-card-number">0${index+1}</span><p class="meaning-card-position">${bilingualMarkup(`${roles[index][0]} · ${orientationEn}`,`${roles[index][1]} · ${orientationZh}`)}</p><h4 class="meaning-card-name">${bilingualMarkup(titleCase(card.name),card.zh)}</h4><p class="meaning-card-keywords">${bilingualMarkup(capitalizeFirst(text.keywords.en),text.keywords.zh)}</p></header><section class="meaning-core"><h5>${bilingualMarkup('Core Meaning','核心含义')}</h5><p>${bilingualMarkup(text.core.en,text.core.zh)}</p></section><div class="meaning-depth"><section class="meaning-depth-item"><h5>${bilingualMarkup('Tension To Notice','需要留意的张力')}</h5><p>${bilingualMarkup(text.tension.en,text.tension.zh)}</p></section><section class="meaning-depth-item"><h5>${bilingualMarkup('Reflection Prompt','反思提示')}</h5><p>${bilingualMarkup(text.reflection.en,text.reflection.zh)}</p></section></div></section>`}).join('');
     const {movementEn,movementZh,synthesisEn,synthesisZh}=readingCopy(selectedCards);applyBilingualNode($('#synthesis-copy'),synthesisEn,synthesisZh);
     const action=logic.cardText(selectedCards[2],selectedCards[2].isReversed,'guidance').action;$('#reading-details').innerHTML=`<section class="reading-detail"><span>01</span><div><h4>${bilingualMarkup('How The Spread Moves','牌阵如何流动')}</h4><p>${bilingualMarkup(capitalizeFirst(movementEn),movementZh)}</p></div></section><section class="reading-detail"><span>02</span><div><h4>${bilingualMarkup('A Grounded Next Step','一个可落实的下一步')}</h4><p>${bilingualMarkup(action.en,action.zh)}</p></div></section><section class="reading-detail"><span>03</span><div><h4>${bilingualMarkup('Keep The Reading Honest','让解读保持诚实')}</h4><p>${bilingualMarkup('Treat resonance as a prompt, not proof. Compare the symbols with observable facts, your values, and the consequences of acting.','把共鸣视为提示，而非证据。请将象征与可观察的事实、你的价值观及行动后果相互对照。')}</p></div></section>`;
   }
   function resetReading(withDissolve=true){
-    const generation=++readingGeneration;
+    const generation=++readingGeneration;clearFocusedReading();
     if(withDissolve&&readingRevealed&&!readingSaved){const layer=$('#dissolve-layer');layer.classList.add('is-active');sound.cue('dissolve');setTimeout(()=>layer.classList.remove('is-active'),950);}
     setTimeout(()=>{if(!readingStillCurrent(generation))return;$('#question-panel').hidden=false;$('#draw-panel').hidden=true;$('#meaning-panel').hidden=true;$('#question').value='';selectedCards=[];readingRevealed=false;readingSaved=false;revealScene($('#question-panel'));},withDissolve?520:0);
   }
   function restartDrawingSession(){
-    const generation=++readingGeneration;
+    const generation=++readingGeneration;clearFocusedReading();
     if(gestureStream)stopGestureCamera();
     const surface=!$('#meaning-panel').hidden?$('#meaning-panel'):$('#draw-panel');
     if(surface.classList.contains('is-restarting'))return;
@@ -365,7 +403,7 @@
   function saveReading(){
     if(saveInFlight)return;if(readingSaved){const existing=sessions.find(session=>session.cards.every((card,index)=>card.id===selectedCards[index]?.id&&logic.isReversed(card)===logic.isReversed(selectedCards[index])))||sessions[galleryIndex];if(existing){saveInFlight=true;newSessionId=existing.id;sound.cue('save');runSaveTransition(existing);}else showToast(bilingual('This reading is already saved.','此解读已保存。'));return;}
     const now=new Date(),session={id:crypto.randomUUID?.()||`${Date.now()}-${Math.random().toString(16).slice(2)}`,title:bilingual(`${selectedCards[0].name} · ${selectedCards[2].name}`,`${selectedCards[0].zh} · ${selectedCards[2].zh}`),date:new Intl.DateTimeFormat('en',{day:'2-digit',month:'short',year:'numeric'}).format(now).toUpperCase(),snapshotVersion:2,readingCreatedAt:now.toISOString(),capturedLanguage:language,meaningEdition:deck.meaningEdition,cards:selectedCards.map(card=>structuredClone(card)),question:$('#save-question').checked?$('#question').value.trim():''};session.snapshot=createReadingSnapshot(session);
-    try{saveInFlight=true;sessions.unshift(session);persistSessions();readingSaved=true;activeSavedSession=session;newSessionId=session.id;sound.cue('save');runSaveTransition(session);}
+    try{saveInFlight=true;sessions.unshift(session);persistSessions();readingSaved=true;renderFocusedControls();activeSavedSession=session;newSessionId=session.id;sound.cue('save');runSaveTransition(session);}
     catch(error){saveInFlight=false;sessions=loadSessions();showToast(bilingual('Local storage is unavailable; the reading was not saved.','本地存储不可用；此解读未被保存。'));}
   }
   function runSaveTransition(session){
@@ -380,13 +418,13 @@
     function frame(now){const progress=Math.min(1,(now-start)/duration),eased=1-Math.pow(1-progress,3),x=startX+(targetX-startX)*eased,y=startY+(targetY-startY)*eased-Math.sin(progress*Math.PI)*innerHeight*.16;for(let i=0;i<4;i++)particles.push({x:x+(Math.random()-.5)*26,y:y+(Math.random()-.5)*20,vx:-1.5-Math.random()*2.5,vy:(Math.random()-.5)*2,life:28+Math.random()*32,paper:Math.random()>.62,size:2+Math.random()*6,rotate:Math.random()*Math.PI});ctx.clearRect(0,0,innerWidth,innerHeight);for(const p of particles){p.x+=p.vx;p.y+=p.vy;p.vy+=.025;p.life--;p.rotate+=.05;const alpha=Math.max(0,p.life/60);ctx.save();ctx.translate(p.x,p.y);ctx.rotate(p.rotate);ctx.fillStyle=p.paper?`rgba(238,232,218,${alpha})`:`rgba(213,180,112,${alpha})`;ctx.shadowBlur=p.paper?4:12;ctx.shadowColor='#d5b470';if(p.paper)ctx.fillRect(-p.size,-p.size*.65,p.size*2,p.size*1.3);else{ctx.beginPath();ctx.arc(0,0,p.size*.45,0,Math.PI*2);ctx.fill();}ctx.restore();}for(let i=particles.length-1;i>=0;i--)if(particles[i].life<=0)particles.splice(i,1);if(progress<1||particles.length)requestAnimationFrame(frame);else ctx.clearRect(0,0,innerWidth,innerHeight);}requestAnimationFrame(frame);
   }
   function readingCopy(readingCards){
-    const result=logic.synthesizeReading(readingCards);return {movementEn:result.movement.en,movementZh:result.movement.zh,synthesisEn:result.en,synthesisZh:result.zh,relation:result.relation,action:result.action};
+    const result=logic.synthesizeReading(readingCards);if(focusedReading){result.en=focusedReading.en;result.zh=focusedReading.zh;}return {movementEn:result.movement.en,movementZh:result.movement.zh,synthesisEn:result.en,synthesisZh:result.zh,relation:result.relation,action:result.action};
   }
   function createReadingSnapshot(sourceSession=null){
-    const savedSource=sourceSession||activeSavedSession,sourceCards=savedSource?.cards||selectedCards;if(sourceCards.length!==3)return null;return logic.createReadingSnapshot({snapshot:savedSource?.snapshot,cards:sourceCards,language:savedSource?.capturedLanguage||language,question:String(savedSource?savedSource.question||'':$('#question').value||'').trim(),readingCreatedAt:savedSource?.readingCreatedAt||new Date().toISOString(),meaningEdition:savedSource?.meaningEdition||deck.meaningEdition,legacy:savedSource?.legacy,legacyLabel:savedSource?.legacyLabel});
+    const savedSource=sourceSession||activeSavedSession,sourceCards=savedSource?.cards||selectedCards;if(sourceCards.length!==3)return null;return logic.createReadingSnapshot({snapshot:savedSource?.snapshot,cards:sourceCards,language:savedSource?.capturedLanguage||language,question:String(savedSource?savedSource.question||'':$('#question').value||'').trim(),readingCreatedAt:savedSource?.readingCreatedAt||new Date().toISOString(),meaningEdition:savedSource?.meaningEdition||deck.meaningEdition,focusedReading:savedSource?.snapshot?.focusedReading||(!savedSource?.snapshot?focusedReading:null),focusedChoices:savedSource?.snapshot?savedSource.snapshot.focusedChoices:focusedChoices,legacy:savedSource?.legacy,legacyLabel:savedSource?.legacyLabel});
   }
   function localizedText(snapshot,en,zh){return snapshot.language==='en'?en:snapshot.language==='zh'?zh:`${en}\n${zh}`;}
-  function snapshotSynthesis(snapshot){return localizedText(snapshot,snapshot.synthesis.en,snapshot.synthesis.zh);}
+  function snapshotSynthesis(snapshot){return (snapshot.focusedReading?'AI reflection / AI 反思解读\n':'')+localizedText(snapshot,snapshot.synthesis.en,snapshot.synthesis.zh);}
   function snapshotPlainText(snapshot){
     const roles=[['Situation','现状'],['Challenge','挑战'],['Guidance','指引']],question=snapshot.includeQuestion&&snapshot.question?`QUESTION / 问题\n${snapshot.question}\n\n`:'';
     return (snapshot.legacyLabel?`${snapshot.legacyLabel}\n\n`:'')+question+snapshot.cards.map((card,index)=>{const text=logic.cardText(card,logic.isReversed(card),['situation','challenge','guidance'][index]);return `${roles[index][0]} / ${roles[index][1]}\n${card.name} / ${card.zh} · ${logic.isReversed(card)?'Reversed / 逆位':'Upright / 正位'}\nKeywords / 关键词: ${text.keywords.en} / ${text.keywords.zh}\nCore Meaning / 核心含义: ${text.core.en} / ${text.core.zh}\nTension / 张力: ${text.tension.en} / ${text.tension.zh}\nReflection Prompt / 反思提示: ${text.reflection.en} / ${text.reflection.zh}\nGrounded Action / 落实行动: ${text.action.en} / ${text.action.zh}`;}).join('\n\n')+`\n\nSynthesis / 综合解读\n${snapshotSynthesis(snapshot)}`;
@@ -475,7 +513,7 @@
     galleryIndex=Math.min(galleryIndex,sessions.length-1);$('#session-gallery').innerHTML=sessions.map((session,index)=>`<article class="session-card ${index===galleryIndex?'is-selected':''}" data-session="${index}"><div class="session-cards">${session.cards.map(card=>`<img src="${card.src}" alt="${card.name}, ${logic.isReversed(card)?'reversed':'upright'}">`).join('')}</div><div class="session-copy"><span class="session-date">${session.date}</span><h3>${escapeHtml(session.title)}</h3>${session.legacyLabel?`<small>${escapeHtml(session.legacyLabel)}</small>`:''}<p class="session-summary-label">${bilingualMarkup('Synthesis','综合解读')}</p><p class="session-summary">${escapeHtml(localizedText(session,session.synthesis.en,session.synthesis.zh))}</p><div class="question-actions"><button class="button ghost" type="button" data-open-session="${index}">${bilingualMarkup('Open reading','打开解读')}</button><button class="button ghost" type="button" data-export-session="${index}">${bilingualMarkup('Export image','导出图片')}</button><button class="button ghost" type="button" data-delete-session="${index}">${bilingualMarkup('Delete','删除')}</button></div></div></article>`).join('');$$('.session-card').forEach(card=>card.addEventListener('click',()=>selectSession(Number(card.dataset.session))));$$('[data-open-session]').forEach(button=>button.addEventListener('click',event=>{event.stopPropagation();openSavedSession(Number(button.dataset.openSession));}));$$('[data-export-session]').forEach(button=>button.addEventListener('click',event=>{event.stopPropagation();exportReading(sessions[Number(button.dataset.exportSession)],button);}));$$('[data-delete-session]').forEach(button=>button.addEventListener('click',event=>{event.stopPropagation();deleteSavedSession(Number(button.dataset.deleteSession));}));selectSession(galleryIndex,false);
   }
   function selectSession(index,scroll=true){if(!sessions.length){galleryIndex=0;$('#gallery-current').textContent='00';return;}galleryIndex=(index+sessions.length)%sessions.length;$$('.session-card').forEach((card,i)=>card.classList.toggle('is-selected',i===galleryIndex));$('#gallery-current').textContent=String(galleryIndex+1).padStart(2,'0');if(scroll)$$('.session-card')[galleryIndex]?.scrollIntoView({behavior:'smooth',inline:'center',block:'nearest'});sound.cue('select');}
-  function openSavedSession(index){const session=sessions[index];if(!session)return;readingGeneration++;activeSavedSession=session;selectedCards=session.cards.map(card=>({...card}));readingRevealed=true;readingSaved=true;$('#question').value=session.question||'';$('#question-panel').hidden=true;$('#draw-panel').hidden=false;$('#deck-selector').hidden=true;$('.deck-position').hidden=true;$('#reading-slots').innerHTML=selectedCards.map(card=>`<div class="reading-slot is-dealt">${cardMarkup(card)}</div>`).join('');$$('#reading-slots .tarot-card').forEach(card=>card.classList.add('is-flipped'));$('#deck-fan').innerHTML='';$('#draw-instruction').textContent=bilingual('Saved reading','已保存的解读');$('#draw-progress').textContent='3 / 3';$('#reveal-cards').disabled=true;navigate('ritual',$('.brand'));showMeaningPanel();}
+  function openSavedSession(index){const session=sessions[index];if(!session)return;readingGeneration++;clearFocusedReading();focusedReading=session.snapshot?.focusedReading||null;focusedChoices=session.snapshot?.focusedChoices||null;activeSavedSession=session;selectedCards=session.cards.map(card=>({...card}));readingRevealed=true;readingSaved=true;$('#question').value=session.question||'';$('#question-panel').hidden=true;$('#draw-panel').hidden=false;$('#deck-selector').hidden=true;$('.deck-position').hidden=true;$('#reading-slots').innerHTML=selectedCards.map(card=>`<div class="reading-slot is-dealt">${cardMarkup(card)}</div>`).join('');$$('#reading-slots .tarot-card').forEach(card=>card.classList.add('is-flipped'));$('#deck-fan').innerHTML='';$('#draw-instruction').textContent=bilingual('Saved reading','已保存的解读');$('#draw-progress').textContent='3 / 3';$('#reveal-cards').disabled=true;navigate('ritual',$('.brand'));showMeaningPanel();}
   function deleteSavedSession(index){const session=sessions[index];if(!session||!confirm(bilingual(`Delete “${session.title}”?`,`删除“${session.title}”？`)))return;sessions.splice(index,1);persistSessions();galleryIndex=Math.max(0,Math.min(galleryIndex,sessions.length-1));renderSessions();sound.cue('dissolve');showToast(bilingual('Saved reading deleted.','已删除保存的解读。'));}
 
   function renderChapters(){

@@ -1,16 +1,30 @@
 {
-  "releaseId": "6efdf0871dbc540e",
-  "generatedAt": "2026-10-22T00:00:00Z",
+  "releaseId": "bf9215357049ec9d",
+  "generatedAt": "2026-10-24T00:00:00Z",
   "totals": {
-    "coreBytes": 9895504,
+    "coreBytes": 9904550,
     "gestureBytes": 18960376
   },
   "files": [
     {
-      "url": "./app.js",
-      "bytes": 121535,
+      "url": "./ai-config.js",
       "mime": "text/javascript; charset=utf-8",
-      "sha256": "b2ee60b3bf334791a84ab5a955732216e6ed7a0ad8373d07914d0083c7835783",
+      "pack": "core",
+      "bytes": 162,
+      "sha256": "6260b36f5057c955db1b15f24a553e257a46a03ee838eda9a1fff0931f1611b0"
+    },
+    {
+      "url": "./ai-contract.js",
+      "mime": "text/javascript; charset=utf-8",
+      "pack": "core",
+      "bytes": 1942,
+      "sha256": "6b29bc6e919afc35f106b8132a66f1a0c780fac3793aa0bad658787c2cff8694"
+    },
+    {
+      "url": "./app.js",
+      "bytes": 125840,
+      "mime": "text/javascript; charset=utf-8",
+      "sha256": "6360d525519ffb320011625d3b3ee80a1e59bae659f50de6617e07ec70621ef3",
       "pack": "core"
     },
     {
@@ -780,21 +794,21 @@
       "url": "./gallery.css",
       "mime": "text/css; charset=utf-8",
       "pack": "core",
-      "bytes": 34275,
-      "sha256": "715243f49f644069b1b89a1837f60a5fc5a0fa3da05dc8836e1b2e9db2c5ee1d"
+      "bytes": 35296,
+      "sha256": "b2b472b82233f166b9cebe3737aa67382e0e77d1240d54c60a4a3e353caf622d"
     },
     {
       "url": "./index.html",
-      "bytes": 29243,
+      "bytes": 30592,
       "mime": "text/html; charset=utf-8",
-      "sha256": "31ae875faeaeed57ff0d2e93b8c6b8f3a3885ca5f39c9020628eb8b07019359e",
+      "sha256": "997f91abd869b89f48314151aa4135e7ff49ad1f6292a7b7d6d1cb3b42143ac1",
       "pack": "core"
     },
     {
       "url": "./logic.js",
-      "bytes": 6557,
+      "bytes": 6824,
       "mime": "text/javascript; charset=utf-8",
-      "sha256": "5274326b227a2bbfe048f418ed5679dd12c351d5daf96458bb877aa1e3dfc080",
+      "sha256": "f94e6986cf8e660ef56af9f140465700ce8ce11aaad9d38cf9e746bd614d6c11",
       "pack": "core"
     },
     {
