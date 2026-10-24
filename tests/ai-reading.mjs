@@ -45,3 +45,6 @@ ui=uiContext();let pending=ui.ctx.focusReading();ui.ctx.readingGeneration++;ui.r
 ui=uiContext();pending=ui.ctx.focusReading();ui.ctx.readingSaved=true;ui.resolve();await pending;assert.equal(ui.ctx.focusedReading,null);
 ui=uiContext();pending=ui.ctx.focusReading();ui.resolve();await pending;assert.equal(ui.ctx.focusedReading.en,result.en);assert.equal(ui.rendered(),1);
 console.log('PASS: actual UI consent gate, stale response discard, save-during-request protection and success.');
+
+const html=fs.readFileSync('app/index.html','utf8');
+assert(html.includes("connect-src 'self' https://celestial-archive-ai.tedhangtan.workers.dev;"));

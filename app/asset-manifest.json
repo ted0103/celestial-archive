@@ -1,8 +1,8 @@
 {
-  "releaseId": "bf9215357049ec9d",
+  "releaseId": "94fc866dbfd974ab",
   "generatedAt": "2026-10-24T00:00:00Z",
   "totals": {
-    "coreBytes": 9904550,
+    "coreBytes": 9904602,
     "gestureBytes": 18960376
   },
   "files": [
@@ -799,9 +799,9 @@
     },
     {
       "url": "./index.html",
-      "bytes": 30592,
+      "bytes": 30644,
       "mime": "text/html; charset=utf-8",
-      "sha256": "997f91abd869b89f48314151aa4135e7ff49ad1f6292a7b7d6d1cb3b42143ac1",
+      "sha256": "a10563fef66d10d1c04676e6d85831430abcb2a5ff7ed85fcd915d43d44cf4e2",
       "pack": "core"
     },
     {
