@@ -62,3 +62,14 @@ for(const [code,status,expected] of [['quota',429,'one minute'],['credentials',5
 globalThis.fetch=async()=>Response.json({error:{message:'API key was revoked'}},{status:400});
 assert.equal((await (await worker.fetch(request(),env)).json()).error,'credentials');
 console.log('PASS: quota, credentials, region and provider errors are distinguished without exposing upstream text.');
+
+for(const [message,expected] of [['User location is not supported','provider_region'],['Free tier requires billing in this region','provider_region'],['Billing is not enabled','provider_plan'],['Invalid generationConfig schema','provider_request'],['Model is not supported','provider_model']]){
+ globalThis.fetch=async()=>Response.json({error:{message}},{status:400});
+ const error=await (await worker.fetch(request(),env)).json();assert.equal(error.error,expected);assert(!JSON.stringify(error).includes(message));
+}
+console.log('PASS: provider diagnostic categories never disclose upstream messages.');
+
+globalThis.fetch=async()=>Response.json({candidates:[{finishReason:'STOP',content:{parts:[{text:JSON.stringify({en:'x'.repeat(451),zh:'测试'})}]}}]});
+assert.equal((await (await worker.fetch(request(),env)).json()).error,'invalid_output');
+globalThis.fetch=async()=>{throw new DOMException('timeout','TimeoutError')};
+assert.equal((await (await worker.fetch(request(),env)).json()).error,'timeout');
