@@ -1,0 +1,25 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+require('../app/logic.js');
+const source=fs.readFileSync('app/app.js','utf8');
+const handler=source.slice(source.indexOf('  function handleGestureResults('),source.indexOf('  async function startGestureCamera('));
+let now=1000,commits=[];const node={value:'55',textContent:'01 / 78',style:{},dataset:{},classList:{add(){},remove(){},toggle(){}}};
+const ctx=vm.createContext({logic:globalThis.CELESTIAL_LOGIC,gestureInferenceToken:{generation:1},gestureGeneration:1,gestureStream:{},firstInferenceResolve:null,performance:{now:()=>now},$:()=>node,$$:()=>[],gestureCandidate:{dataset:{deckIndex:'0'}},gesturePinchState:globalThis.CELESTIAL_LOGIC.freshPinchState(),diagnosticLastMetricAt:0,diagnosticInferenceMs:70,recordDiagnostic(){},handDistance2d:(a,b)=>Math.hypot(a.x-b.x,a.y-b.y),fingerExtended:()=>false,readingGeneration:1,gestureSmoothedX:.5,gestureSmoothedY:.5,updateGesturePointer(){},setGestureMode(){},setGestureStatus(){},commitGestureSelection:(zone,id)=>commits.push(id)});
+vm.runInContext(handler,ctx);
+const points=Array.from({length:21},()=>({x:0,y:0,z:0}));points[9]={x:0,y:1,z:0};points[4]={x:.1,y:0,z:0};
+for(now of [1000,1070,1140,1210])ctx.handleGestureResults({multiHandLandmarks:[points]});
+assert.deepEqual(commits,['0']);
+assert.equal(ctx.gestureFrozenReadingGeneration,1);
+assert.equal(ctx.gestureFrozenCameraGeneration,1);
+console.log('PASS: detected hand does not crash metrics; held pinch commits exactly once.');
+const startup=source.slice(source.indexOf('  async function startGestureCamera('),source.indexOf('  async function analyzeGestureFrame('));
+const errors=source.slice(source.indexOf('  function gestureCameraError('),source.indexOf('  function animateGestureDraw('));
+(async()=>{
+ let resolveCamera,stopped=0;const camera=new Promise(resolve=>resolveCamera=resolve),events=[],states=[];
+ const element={hidden:false,disabled:false};
+ const boot=vm.createContext({gestureStream:null,gestureGeneration:0,$:()=>element,resetGesturePinch(){},applyBilingualNode(){},setGestureSensorState:(...args)=>states.push(args),setGestureStatus(){},isSecureContext:true,navigator:{permissions:{query(){throw Error('Redundant query must not run');}},mediaDevices:{getUserMedia:()=>camera}},ensureGestureHands:async()=>{},withTimeout:(promise,ms,code)=>{promise.catch(()=>{});assert.equal(ms,20000);return Promise.reject(Error(code));},recordDiagnostic:(...args)=>events.push(args),showToast(){},bilingual:en=>en});
+ boot.stopGestureCamera=()=>boot.gestureGeneration++;
+ vm.runInContext(errors+startup,boot);await boot.startGestureCamera();
+ assert(states.some(s=>s[0]==='camera'));assert(states.at(-1)[1].includes('permission did not finish'));
+ resolveCamera({getTracks:()=>[{stop(){stopped++;}}]});await new Promise(resolve=>setImmediate(resolve));assert.equal(stopped,1);
+ console.log('PASS: pending camera permission times out clearly; late camera streams are stopped.');
+})().catch(error=>{console.error(error);process.exitCode=1;});

@@ -25,6 +25,7 @@ jobs:
         run: |
           node tests/ai-reading.mjs
           node tests/scene-motion.cjs
+          node tests/hand-ritual.cjs
       - name: Prepare path-scoped release site
         run: |
           mkdir site
