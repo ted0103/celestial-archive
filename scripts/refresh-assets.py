@@ -6,6 +6,14 @@ import re
 from pathlib import Path
 
 root = Path(__file__).resolve().parents[1] / 'app'
+# A waiting older worker must not serve old code to a newly fetched page.
+html_path = root / 'index.html'
+def version_asset(match):
+    attribute, url = match.groups()
+    path = root / url.split('?')[0]
+    digest = hashlib.sha256(path.read_bytes()).hexdigest()[:16]
+    return f'{attribute}="{url.split("?")[0]}?v={digest}"'
+html_path.write_text(re.sub(r'(href|src)="([^"<>]+\.(?:css|js)(?:\?[^"<>]*)?)"', version_asset, html_path.read_text()))
 manifest = json.loads((root / 'asset-manifest.json').read_text())
 files = {item['url']: item for item in manifest['files']}
 files['./gallery.css'] = {'url': './gallery.css', 'mime': 'text/css; charset=utf-8', 'pack': 'core'}
