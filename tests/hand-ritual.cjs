@@ -10,7 +10,15 @@ for(now of [1000,1070,1140,1210])ctx.handleGestureResults({multiHandLandmarks:[p
 assert.deepEqual(commits,['0']);
 assert.equal(ctx.gestureFrozenReadingGeneration,1);
 assert.equal(ctx.gestureFrozenCameraGeneration,1);
-console.log('PASS: detected hand does not crash metrics; held pinch commits exactly once.');
+for(const [id,start] of [['1',2000],['2',3000]]){
+ ctx.gestureCandidate={dataset:{deckIndex:id}};
+ points[4]={x:1,y:0,z:0};
+ for(now of [start,start+70,start+140])ctx.handleGestureResults({multiHandLandmarks:[points]});
+ points[4]={x:.1,y:0,z:0};
+ for(now of [start+210,start+280,start+350,start+420,start+490])ctx.handleGestureResults({multiHandLandmarks:[points]});
+}
+assert.deepEqual(commits,['0','1','2']);
+console.log('PASS: three open/pinch cycles select three distinct cards exactly once each.');
 const startup=source.slice(source.indexOf('  async function startGestureCamera('),source.indexOf('  async function analyzeGestureFrame('));
 const errors=source.slice(source.indexOf('  function gestureCameraError('),source.indexOf('  function animateGestureDraw('));
 (async()=>{
