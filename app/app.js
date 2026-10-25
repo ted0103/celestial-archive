@@ -171,11 +171,13 @@
     const timeout=setTimeout(()=>controller.abort(),25000);
     try {
       const response=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload),credentials:'omit',referrerPolicy:'no-referrer',signal:controller.signal});
-      if(!response.ok)throw Error('Unavailable');const result=ai.validateResult(await response.json());
+      if(!response.ok){const failure=await response.json().catch(()=>({}));throw Object.assign(Error('Unavailable'),{code:failure.error,status:response.status});}const result=ai.validateResult(await response.json());
       if(!readingStillCurrent(generation)||readingSaved)return;
       focusedReading=result;focusedChoices=choices;renderMeanings();
-    } catch {
-      if(readingStillCurrent(generation))$('#ai-status').textContent=bilingual('AI unavailable or quota reached. Your offline reading is still available; try again later.','AI 暂不可用或额度已用完。离线解读仍可使用，请稍后重试。');
+    } catch(error) {
+      const messages={quota:['The shared service is busy. Wait one minute before trying again.','服务暂时繁忙，请等待一分钟后重试。'],credentials:['The AI service key was rejected. The site owner needs to update it.','AI 服务密钥被拒绝，请网站维护者更新密钥。'],unconfigured:['The AI service is not configured yet.','AI 服务尚未配置完成。'],region:['Free AI is unavailable in your region.','你所在地区暂不提供此免费 AI 服务。']};
+      const message=messages[error.code]||(error.status===429?['Google’s free AI quota is currently unavailable. Try again later.','Google 免费 AI 额度暂不可用，请稍后重试。']:error.code==='provider'?['Google rejected the AI request. Please try later or contact the site owner.','Google 拒绝了 AI 请求，请稍后重试或联系网站维护者。']:['AI could not complete this reading. Please try again later.','AI 未能完成本次解读，请稍后重试。']);
+      if(readingStillCurrent(generation))$('#ai-status').textContent=bilingual(...message)+' '+bilingual('Your offline reading is still available.','离线解读仍可使用。');
     } finally {clearTimeout(timeout);if(aiRequest===controller){aiRequest=null;$('#ai-generate').disabled=Boolean(focusedReading||readingSaved||!endpoint);}}
   }
   $('#ai-generate').addEventListener('click',focusReading);

@@ -38,7 +38,7 @@ function uiContext(){
  let resolve;const response=new Promise(r=>resolve=r);let rendered=0,calls=0;
  const ctx=vm.createContext({ai,aiRequest:null,focusedReading:null,focusedChoices:null,readingSaved:false,selectedCards:selected,readingRevealed:true,readingGeneration:1,cards,AbortController,setTimeout,clearTimeout,window:{CELESTIAL_AI_ENDPOINT:'https://worker.test/reading'},$:s=>elements[s],bilingual:en=>en,renderFocusedControls(){},renderMeanings(){rendered++;},fetch:async()=>{calls++;return response;}});
  ctx.readingStillCurrent=g=>g===ctx.readingGeneration;vm.runInContext(focusSource,ctx);
- return {ctx,elements,resolve:()=>resolve(Response.json(result)),rendered:()=>rendered,calls:()=>calls};
+ return {ctx,elements,resolve:(response=Response.json(result))=>resolve(response),rendered:()=>rendered,calls:()=>calls};
 }
 let ui=uiContext();ui.elements['#ai-consent'].checked=false;await ui.ctx.focusReading();assert.equal(ui.calls(),0);
 ui=uiContext();let pending=ui.ctx.focusReading();ui.ctx.readingGeneration++;ui.resolve();await pending;assert.equal(ui.ctx.focusedReading,null);assert.equal(ui.rendered(),0);
@@ -57,3 +57,8 @@ assert.equal(savedRecord.synthesis.en,result.en);
 assert.equal(savedRecord.focusedReading.en,result.en);
 assert.equal(saveContext.sessions.length,1);
 console.log('PASS: newly saved AI reading exposes its immutable summary to the chamber.');
+
+for(const [code,status,expected] of [['quota',429,'one minute'],['credentials',503,'key was rejected'],['provider',400,'Google rejected'],['provider',429,'free AI quota'],['region',403,'your region']]){ui=uiContext();pending=ui.ctx.focusReading();ui.resolve(Response.json({error:code},{status}));await pending;assert(ui.elements['#ai-status'].textContent.includes(expected));}
+globalThis.fetch=async()=>Response.json({error:{message:'API key was revoked'}},{status:400});
+assert.equal((await (await worker.fetch(request(),env)).json()).error,'credentials');
+console.log('PASS: quota, credentials, region and provider errors are distinguished without exposing upstream text.');

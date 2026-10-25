@@ -1,4 +1,4 @@
-const RELEASE_ID="84851c65d895fc9b";
+const RELEASE_ID="f4406b8137c87248";
 const SHELL_CACHE='celestial-shell-'+RELEASE_ID;
 const CORE_CACHE='celestial-core-'+RELEASE_ID;
 const GESTURE_CACHE='celestial-gesture-'+RELEASE_ID;

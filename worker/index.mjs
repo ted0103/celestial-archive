@@ -33,7 +33,12 @@ export default {
         method:'POST',headers:{'Content-Type':'application/json','x-goog-api-key':env.Celestial_Archieve},signal:AbortSignal.timeout(20000),
         body:JSON.stringify({systemInstruction:{parts:[{text:'Write a concise tarot reflection for the supplied preset context. Ground it in all three named cards, their positions and orientations using only the supplied meanings. Give one concrete observable next step. Never invent personal facts, predict outcomes or claim to know another person’s thoughts. No medical, legal or financial advice. Explicitly frame interpretation as a possibility, not fact. Return equivalent English (at most 450 characters) and Simplified Chinese (at most 180 characters), each one paragraph. No markdown.'}]},contents:[{role:'user',parts:[{text:JSON.stringify({context,cards})}]}],generationConfig:{maxOutputTokens:800,responseMimeType:'application/json',responseSchema:{type:'OBJECT',properties:{en:{type:'STRING'},zh:{type:'STRING'}},required:['en','zh']}}})
       });
-      if(!response.ok) return respond(response.status===429?429:503,{error:'provider',status:response.status});
+      if(!response.ok){
+        const failure=await response.json().catch(()=>({}));
+        const reasons=failure.error?.details?.map(detail=>detail.reason)||[];
+        const credential=/api.?key|credential|leaked|expired|revoked/i.test(failure.error?.message||'')||reasons.some(reason=>['API_KEY_INVALID','API_KEY_EXPIRED','API_KEY_SERVICE_BLOCKED','API_KEY_HTTP_REFERRER_BLOCKED','API_KEY_IP_ADDRESS_BLOCKED','API_KEY_API_TARGET_BLOCKED'].includes(reason));
+        return respond(response.status===429?429:503,{error:credential?'credentials':'provider',status:response.status});
+      }
       const data=await response.json(),candidate=data.candidates?.[0];
       if(candidate?.finishReason!=='STOP') return respond(503,{error:'incomplete'});
       return respond(200,contract.validateResult(JSON.parse(candidate.content.parts.map(part=>part.text||'').join(''))));
