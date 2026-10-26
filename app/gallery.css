@@ -663,3 +663,10 @@ html[data-motion=off] .entry.is-leaving,html[data-input=keyboard] .entry.is-leav
 .draw-methods .draw-method small{font-size:12px;line-height:1.65;font-weight:400;}
 .question-panel.manuscript .draw-methods .button.gold :is(span,small),.question-panel.manuscript .draw-methods .button.gold [lang]{color:#fff0cd;}
 @media(max-width:640px){.question-writing-box{padding:16px;}.draw-methods .question-actions{grid-template-columns:1fr;}.draw-methods legend{font-size:24px;}}
+.hand-tutorial{padding:32px;text-align:left;background:#e5d1a1;color:#241b13;}
+.hand-tutorial h2{font-family:ArchiveDisplay,ArchiveSong,serif;font-size:32px;line-height:1.25;margin:12px 0 22px;color:#241b13;}
+.hand-tutorial video{display:block;width:100%;height:auto;border:1px solid #795931;background:#151b1c;}
+.hand-tutorial ol{padding-left:22px;line-height:1.75;font-size:15px;}
+.hand-tutorial li{margin-block:10px;}.hand-tutorial p{font-size:13px;line-height:1.7;color:#49331f;}
+#hand-dialog .hand-stage[hidden],#hand-tutorial[hidden]{display:none;}
+@media(max-width:640px){.hand-tutorial{padding:24px 18px;}.hand-tutorial h2{font-size:28px;}}

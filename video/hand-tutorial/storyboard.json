@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "timing_source": "authored-remotion-timeline",
+  "video": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "duration_limit": 24.0,
+    "audio": false
+  },
+  "caption_style": {
+    "enabled": true,
+    "font_name": "Arial",
+    "font_size": 44,
+    "bottom_margin": 58,
+    "raised_margin": 210
+  },
+  "scenes": [
+    {
+      "id": "browse",
+      "purpose": "Open palm browses",
+      "kind": "video",
+      "source": "../../app/assets/tutorial/hand-ritual.mp4",
+      "trim": {
+        "start": 0,
+        "end": 6
+      },
+      "caption": {
+        "text": "Open your palm. Move gently to browse.\n张开手掌，轻轻左右移动。",
+        "placement": "bottom"
+      },
+      "camera": null,
+      "transition": "cut"
+    },
+    {
+      "id": "aim",
+      "purpose": "One finger aims",
+      "kind": "video",
+      "source": "../../app/assets/tutorial/hand-ritual.mp4",
+      "trim": {
+        "start": 6,
+        "end": 12
+      },
+      "caption": {
+        "text": "Point with one finger to aim.\n伸出食指，瞄准想选的牌。",
+        "placement": "bottom"
+      },
+      "camera": null,
+      "transition": "cut"
+    },
+    {
+      "id": "pinch",
+      "purpose": "Pinch commits once",
+      "kind": "video",
+      "source": "../../app/assets/tutorial/hand-ritual.mp4",
+      "trim": {
+        "start": 12,
+        "end": 18
+      },
+      "caption": {
+        "text": "Pinch and hold briefly to select.\n捏合并短暂停留，选取一张牌。",
+        "placement": "bottom"
+      },
+      "camera": null,
+      "transition": "cut"
+    },
+    {
+      "id": "release",
+      "purpose": "Release before next selection",
+      "kind": "video",
+      "source": "../../app/assets/tutorial/hand-ritual.mp4",
+      "trim": {
+        "start": 18,
+        "end": 24
+      },
+      "caption": {
+        "text": "Open your hand. Repeat for three cards.\n张开手后再次捏合，共选三张牌。",
+        "placement": "bottom"
+      },
+      "camera": null,
+      "transition": "cut"
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 {
-  "releaseId": "734e3f60e2a21f8b",
+  "releaseId": "93f6c65b15508c69",
   "generatedAt": "2026-10-24T00:00:00Z",
   "totals": {
-    "coreBytes": 12165070,
-    "gestureBytes": 18960376
+    "coreBytes": 12168086,
+    "gestureBytes": 20795419
   },
   "files": [
     {
@@ -22,9 +22,9 @@
     },
     {
       "url": "./app.js",
-      "bytes": 128683,
+      "bytes": 129696,
       "mime": "text/javascript; charset=utf-8",
-      "sha256": "4051bf56ec4ff52efdd56062b8c6bd089d4295191054972a98918dbd163b3037",
+      "sha256": "19370af9f5835bafb2659d7f0e5612cbcf002821de633df1c220e1ec8e82655d",
       "pack": "core"
     },
     {
@@ -707,6 +707,20 @@
       "pack": "core"
     },
     {
+      "url": "./assets/tutorial/hand-ritual-poster.jpg",
+      "mime": "image/jpeg",
+      "pack": "gesture",
+      "bytes": 113827,
+      "sha256": "cd4b6703226cf0288ae05a5064cd1ec3dc2c1a0d76b2298c2c726d7c0e0d495e"
+    },
+    {
+      "url": "./assets/tutorial/hand-ritual.mp4",
+      "mime": "video/mp4",
+      "pack": "gesture",
+      "bytes": 1721216,
+      "sha256": "972f5e7c05601ccabe659acca1be66f9a51455a500d9b51fdb67cd466e58f550"
+    },
+    {
       "url": "./assets/vendor/mediapipe-hands/LICENSE.txt",
       "bytes": 11358,
       "mime": "text/plain; charset=utf-8",
@@ -794,14 +808,14 @@
       "url": "./gallery.css",
       "mime": "text/css; charset=utf-8",
       "pack": "core",
-      "bytes": 54923,
-      "sha256": "3c1cf11b7ce4d98db42e8ab67dbc35d611f95ccbfcd1f5fe2adf94093b2cac86"
+      "bytes": 55572,
+      "sha256": "be2ca7eb60bafdb14b08f2f27d64bc8c1446a2e537df96722183ffd9d378b09b"
     },
     {
       "url": "./index.html",
-      "bytes": 31852,
+      "bytes": 33206,
       "mime": "text/html; charset=utf-8",
-      "sha256": "4f3140c5ba8e389450736a4f4240155e2c99ec6cdad63a866fdca03ab5338d24",
+      "sha256": "d9bb28777faf992cd814e8eb42e1932191c7a4844c69672a37d637f266026436",
       "pack": "core"
     },
     {

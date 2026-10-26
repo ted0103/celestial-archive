@@ -1,0 +1,23 @@
+{
+  "video": "/Users/_ted/Documents/Self/celestial-hand-tutorial/hand-ritual-remotion.mp4",
+  "valid": true,
+  "actual": {
+    "probe_backend": "ffprobe",
+    "codec": "h264",
+    "width": 1920,
+    "height": 1080,
+    "fps": 60.0,
+    "duration": 24.0,
+    "audio_streams": 0,
+    "decode_ok": true
+  },
+  "expected": {
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "duration_limit": 24.0,
+    "audio": false
+  },
+  "contact_sheet": "/Users/_ted/Documents/Self/celestial-hand-tutorial/contact-sheet.jpg",
+  "errors": []
+}

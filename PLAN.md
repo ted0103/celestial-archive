@@ -27,3 +27,7 @@ Approved: extend the tactile journal across all rooms, with a black-and-gold the
 Manuscript refinement: question, shuffle/draw, and reading now use numbered illuminated folios, ink flourishes, lunar seals, ruled input, and a rubricated synthesis initial. Readable bilingual type retained; no changes to reading logic or save/export animations. Local preview only.
 
 Publication approved by user: publish the complete journal/manuscript design, landscape Reading Chamber, and dark-ink readability fixes to main. Motion, Hand Ritual, and AI regression suites passed; browser reading flow and saved-reading layout checked. Physical-device validation remains outstanding.
+
+Hand Ritual first-use tutorial: 16-second original schematic MP4, four gesture steps, bilingual text equivalent, skip/continue and replay; per-browser versioned seen marker, storage failures safe, reduced-motion manual playback, no camera request during tutorial. First/return/replay paths verified in browser. Tutorial remains a local preview; approved question-flow commit 02eef78 deployed successfully.
+
+Approved Remotion tutorial exported and integrated: 24s, 1920×1080, 60fps, H.264, silent, 1.7MB. Full decode and contact-sheet inspection passed. First-use, skip, replay, reduced motion and blocked storage tested. Publishing tutorial and source with approval.

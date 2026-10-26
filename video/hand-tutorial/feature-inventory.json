@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "service": {
+    "name": "Celestial Archive Hand Ritual",
+    "audience": "First-time hand-tracking users",
+    "video_goal": "Learn the four gestures before enabling the camera"
+  },
+  "features": [
+    {
+      "id": "browse",
+      "order": 1,
+      "title": "Open palm browses",
+      "purpose": "Open palm browses",
+      "caption": "Open your palm. Move gently to browse.\n张开手掌，轻轻左右移动。",
+      "required": true,
+      "priority": 100,
+      "estimated_seconds": 6,
+      "start_marker": "browse-start",
+      "end_marker": "browse-end",
+      "focus": null
+    },
+    {
+      "id": "aim",
+      "order": 2,
+      "title": "One finger aims",
+      "purpose": "One finger aims",
+      "caption": "Point with one finger to aim.\n伸出食指，瞄准想选的牌。",
+      "required": true,
+      "priority": 100,
+      "estimated_seconds": 6,
+      "start_marker": "aim-start",
+      "end_marker": "aim-end",
+      "focus": null
+    },
+    {
+      "id": "pinch",
+      "order": 3,
+      "title": "Pinch commits once",
+      "purpose": "Pinch commits once",
+      "caption": "Pinch and hold briefly to select.\n捏合并短暂停留，选取一张牌。",
+      "required": true,
+      "priority": 100,
+      "estimated_seconds": 6,
+      "start_marker": "pinch-start",
+      "end_marker": "pinch-end",
+      "focus": null
+    },
+    {
+      "id": "release",
+      "order": 4,
+      "title": "Release before next selection",
+      "purpose": "Release before next selection",
+      "caption": "Open your hand. Repeat for three cards.\n张开手后再次捏合，共选三张牌。",
+      "required": true,
+      "priority": 100,
+      "estimated_seconds": 6,
+      "start_marker": "release-start",
+      "end_marker": "release-end",
+      "focus": null
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),vm=require('node:vm');
+const source=fs.readFileSync('app/app.js','utf8');
+const code=source.slice(source.indexOf('  const handTutorialKey='),source.indexOf("  $('#hand-ritual').addEventListener"));
+let stopped=0,plays=0,paused=0,stored=null,reduced=false;
+const nodes=new Map();const $=selector=>{if(!nodes.has(selector))nodes.set(selector,{hidden:false,focus(){},addEventListener(){},play(){plays++;return Promise.resolve()},pause(){paused++}});return nodes.get(selector)};
+const ctx={$,stopGestureCamera(){stopped++},document:{documentElement:{dataset:{motion:'on'}}},matchMedia(){return {matches:reduced}},localStorage:{setItem(key,value){stored=[key,value]}}};vm.createContext(ctx);vm.runInContext(code,ctx);
+vm.runInContext('showHandTutorial()',ctx);assert.equal(plays,1);assert.equal(stopped,1);assert.equal($('#hand-dialog .hand-stage').hidden,true);
+vm.runInContext('finishHandTutorial()',ctx);assert.equal($('#hand-tutorial').hidden,true);assert.equal($('#hand-dialog .hand-stage').hidden,false);assert.equal(stored[1],'seen');assert.equal(paused,1);
+reduced=true;vm.runInContext('showHandTutorial()',ctx);assert.equal(plays,1);
+ctx.localStorage.setItem=()=>{throw Error('storage blocked')};assert.doesNotThrow(()=>vm.runInContext('finishHandTutorial()',ctx));
+console.log('PASS: tutorial replay, dismissal, seen marker, reduced motion and blocked storage.');

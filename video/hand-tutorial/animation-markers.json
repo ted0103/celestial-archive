@@ -1,0 +1,13 @@
+{
+  "timing_basis": "authored Remotion timeline; not recording timestamps",
+  "markers": {
+    "browse-start": 0,
+    "browse-end": 6,
+    "aim-start": 6,
+    "aim-end": 12,
+    "pinch-start": 12,
+    "pinch-end": 18,
+    "release-start": 18,
+    "release-end": 24
+  }
+}

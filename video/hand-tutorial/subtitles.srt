@@ -1,0 +1,19 @@
+1
+00:00:00,000 --> 00:00:06,000
+Move your open palm gently left or right.
+张开手掌，轻轻左右移动浏览牌组。
+
+2
+00:00:06,000 --> 00:00:12,000
+Extend one finger to aim at a card.
+伸出一根食指，瞄准想选的牌。
+
+3
+00:00:12,000 --> 00:00:18,000
+Pinch and hold briefly. One pinch selects one card.
+捏合并短暂停留，一次捏合选取一张牌。
+
+4
+00:00:18,000 --> 00:00:24,000
+Open fully before the next pinch. Choose three cards.
+完全张开手后再次捏合，共选三张牌。

@@ -22,6 +22,9 @@ for font in ['archive-display.woff2','archive-song.woff2']:
     files['./assets/fonts/'+font]={'url':'./assets/fonts/'+font,'mime':'font/woff2','pack':'core'}
 for name in ['ai-contract.js','ai-config.js']:
     files['./'+name]={'url':'./'+name,'mime':'text/javascript; charset=utf-8','pack':'core'}
+for name,mime in [('hand-ritual.mp4','video/mp4'),('hand-ritual-poster.jpg','image/jpeg')]:
+    url='./assets/tutorial/'+name
+    files[url]={'url':url,'mime':mime,'pack':'gesture'}
 for url, item in files.items():
     path = (root / url).resolve()
     assert path.is_relative_to(root.resolve()), 'Asset path escapes app directory'

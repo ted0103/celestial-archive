@@ -10,7 +10,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css?v=9bd7acb361bc1160">
-  <link rel="stylesheet" href="gallery.css?v=3c1cf11b7ce4d98d">
+  <link rel="stylesheet" href="gallery.css?v=be2ca7eb60bafdb1">
 </head>
 <body>
   <div class="film" aria-hidden="true"></div>
@@ -292,6 +292,13 @@
 
     <dialog class="hand-dialog" id="hand-dialog">
       <button class="icon-button dialog-close" type="button" aria-label="Close hand ritual">×</button>
+      <section id="hand-tutorial" class="hand-tutorial" hidden aria-labelledby="hand-tutorial-title">
+        <p class="eyebrow">A QUICK GUIDE · 手势入门</p><h2 id="hand-tutorial-title">Draw with your hand · 用手势抽牌</h2>
+        <video id="hand-tutorial-video" controls muted playsinline preload="metadata" poster="assets/tutorial/hand-ritual-poster.jpg" aria-label="Illustrated Hand Ritual demonstration; instructions follow below"><source src="assets/tutorial/hand-ritual.mp4" type="video/mp4"></video>
+        <ol><li>Open palm + move left or right to browse. · 张开手掌，左右移动以浏览。</li><li>Point with one finger to aim. · 伸出食指瞄准。</li><li>Pinch and hold briefly to select one card. · 捏合并短暂停留，选取一张牌。</li><li>Open your hand before pinching again. Choose three cards. · 张开手后再次捏合，共选三张牌。</li></ol>
+        <p>No camera is used for this video. Enable tracking afterward, or tap cards instead. · 教学视频不使用摄像头；之后可启用追踪，也可点击选牌。</p>
+        <button class="button gold" id="hand-tutorial-done" type="button">Skip / Continue to ritual · 跳过 / 开始仪式</button>
+      </section>
       <div class="hand-stage">
         <div class="camera-grain"></div>
         <div class="camera-shell">
@@ -311,6 +318,7 @@
           <div class="gesture-mode-badge" id="gesture-mode-badge" data-mode="idle"><b>SHOW YOUR HAND</b><small>请举起手</small></div>
           <div class="gesture-meter"><i id="gesture-meter-fill"></i></div>
         </div>
+        <button class="button ghost" id="hand-tutorial-replay" type="button">Replay tutorial · 重看教学</button>
         <p class="eyebrow">INVISIBLE LOCAL MOTION INPUT · 本地隐形手势输入</p>
         <h3 data-i18n="handPrompt">Open palm to browse. Point to aim. Pinch to select.</h3>
         <p class="gesture-guide">OPEN PALM + MOVE TO BROWSE · ONE FINGER TO AIM · PINCH TO SELECT<br>张开手掌并移动以浏览 · 伸出食指瞄准 · 捏合手指选牌</p>
@@ -405,6 +413,6 @@
   <script src="assets/vendor/mediapipe-hands/hands.js?v=a68b21c9553d6143"></script>
   <script src="ai-contract.js?v=6b29bc6e919afc35"></script>
   <script src="ai-config.js?v=6260b36f5057c955"></script>
-  <script src="app.js?v=4051bf56ec4ff52e"></script>
+  <script src="app.js?v=19370af9f5835baf"></script>
 </body>
 </html>

@@ -177,3 +177,7 @@ The Android APK is the original signed v0.3.0 Trusted Web Activity wrapper for `
 ### Ambient soundtrack
 
 “Enchanted Valley” by Ondrosik is bundled locally under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/), as declared in the [artist’s library](https://ondrosik.sk/music/). See `app/assets/audio/LICENSE.txt` for provenance. Playback starts after entering the archive and respects the existing music toggle and volume preference.
+
+### Hand Ritual first-use tutorial
+
+The first Hand Ritual visit shows a 24-second silent bilingual Remotion animation. Skip/Continue dismisses it for this browser; Replay tutorial remains available. Camera tracking starts only when explicitly enabled. Remotion source and render instructions: `video/hand-tutorial/`.
