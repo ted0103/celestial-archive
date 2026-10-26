@@ -1,8 +1,8 @@
 {
-  "releaseId": "8e42a74d2f446c3f",
+  "releaseId": "b5b33470fe9edfaf",
   "generatedAt": "2026-10-24T00:00:00Z",
   "totals": {
-    "coreBytes": 9925600,
+    "coreBytes": 12162416,
     "gestureBytes": 18960376
   },
   "files": [
@@ -22,16 +22,16 @@
     },
     {
       "url": "./app.js",
-      "bytes": 127904,
+      "bytes": 127930,
       "mime": "text/javascript; charset=utf-8",
-      "sha256": "70fcbd7989422b9521121393df5b746e7035e47291b2eb638a5538c76a923948",
+      "sha256": "2524282d6793b99403e999b1e5e22c990fde363a012c3c8e8754858795238546",
       "pack": "core"
     },
     {
-      "url": "./assets/audio/celestial-ambient.mp3",
-      "bytes": 860594,
+      "url": "./assets/audio/enchanted-valley.mp3",
+      "bytes": 3097384,
       "mime": "audio/mpeg",
-      "sha256": "41c593c7336faa72004b5b74577c4094c954d545fcc536e722ba4b3a3bef5d0f",
+      "sha256": "2673d034cffe38681286e9197678e3d3c06e1d39c00e7275503552a2dbc58f69",
       "pack": "core"
     },
     {
@@ -801,7 +801,7 @@
       "url": "./index.html",
       "bytes": 31489,
       "mime": "text/html; charset=utf-8",
-      "sha256": "3ac1e1b368b283075575c3571b9099ce9cd838d5f00d38f684395fc83d25eff0",
+      "sha256": "fac2087e00ccd8b36be09e486ac668a2b1d978a9dc1f6eb80ffe0fcf2e9b0951",
       "pack": "core"
     },
     {

@@ -173,3 +173,7 @@ Gemini 3.1 Flash-Lite runs through a Cloudflare Worker with an encrypted server-
 The editable website lives in `app/`. Serve it with `python3 -m http.server 47831 --directory app`. After editing assets, run `python3 scripts/refresh-assets.py` to refresh offline hashes and the service worker. The Pages workflow deploys this source from `main`.
 
 The Android APK is the original signed v0.3.0 Trusted Web Activity wrapper for `https://ted0103.github.io/celestial-archive/`. It contains no bundled website, so the web UI updates through the live site. The v0.3.9 release redistributes that identical APK for convenience; it is not a new native build. Physical Android camera/TWA verification remains pending.
+
+### Ambient soundtrack
+
+“Enchanted Valley” by Ondrosik is bundled locally under [CC0 1.0 Universal](https://creativecommons.org/publicdomain/zero/1.0/), as declared in the [artist’s library](https://ondrosik.sk/music/). See `app/assets/audio/LICENSE.txt` for provenance. Playback starts after entering the archive and respects the existing music toggle and volume preference.

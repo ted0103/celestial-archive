@@ -33,7 +33,7 @@
     chooseThree:["Choose three cards.","选择三张牌。"], restartDraw:["Restart draw","重新抽牌"], deckScroll:["Scroll left to right through all 78 cards.","从左向右滑动，浏览全部 78 张牌。"], reveal:["Reveal the reading","揭示解读"], meaningTitle:["The pattern between the cards","牌与牌之间的纹理"], synthesis:["Synthesis","综合解读"], synthesisCopy:["A beginning asks for trust, uncertainty asks for patience, and the heart asks to remain open. Move carefully, but keep moving.","新的开始需要信任，不确定需要耐心，而心仍需保持敞开。谨慎前行，但不要停下。"],
     includeSave:["Include question when saving","保存时包含问题"], includeExport:["Include question in exported image","导出图片时包含问题"], includeCopy:["Include question when copying","复制时包含问题"], save:["Save","保存"], export:["Export image","导出图片"], copy:["Copy meaning","复制解读"], newReading:["New reading","新的解读"],
     searchCards:["Search all 78 cards","搜索全部78张牌"], all:["All 78","全部78张"], proofLimit:["78 original cards. Explore the symbols, meanings, and possibilities.","78 张原创卡牌。探索象征、牌义与可能性。"], chamberLede:["A moving gallery of readings you explicitly chose to keep.","仅展示你明确选择保存之解读的移动画廊。"],
-    settings:["Settings","设置"], language:["Language","语言"], music:["Ambient music","环境音乐"], musicNote:["Mystery & Suspense — John Doe","《Mystery & Suspense》— John Doe"], sfx:["Interaction sound","交互声音"], sfxNote:["Menus, cards, save, export, and gestures","菜单、卡牌、保存、导出与手势"], motion:["Motion","动效"], motionNote:["Morph, gallery, reveal, paper, and ambient layers","变形、画廊、揭示、纸张与环境层"], handNote:["Optional invisible local motion tracking; never required","可选的本地隐形动作追踪；永不强制"],
+    settings:["Settings","设置"], language:["Language","语言"], music:["Ambient music","环境音乐"], musicNote:["Enchanted Valley — Ondrosik · CC0","《Enchanted Valley》— Ondrosik · CC0"], sfx:["Interaction sound","交互声音"], sfxNote:["Menus, cards, save, export, and gestures","菜单、卡牌、保存、导出与手势"], motion:["Motion","动效"], motionNote:["Morph, gallery, reveal, paper, and ambient layers","变形、画廊、揭示、纸张与环境层"], handNote:["Optional invisible local motion tracking; never required","可选的本地隐形动作追踪；永不强制"],
     reviewTitle:["Approved R1.0 baseline","已批准的 R1.0 基准"], reviewIntro:["All finite proof cases were approved on 18 July 2026. They now define the locked baseline for full-deck generation; production remains gated by the completed catalog.","全部有限审核项目已于 2026 年 7 月 18 日获批。它们现为完整牌组生成的锁定基准；生产整合仍须等待完整牌组审核。"], handPrompt:["Open palm to browse. Point to aim. Pinch to select.","张开手掌浏览。伸出食指瞄准。捏合手指选牌。"], handPrivacy:["The camera works only as an invisible local hand-landmark sensor. Its preview is never shown, stored, or uploaded.","摄像头仅作为不可见的本地手部关键点传感器；画面不会显示、保存或上传。"], simulate:["Simulate selection","模拟选择"]
   };
 
@@ -63,7 +63,7 @@
     ["MOTION-10","Motion","Ceremonial opening ident","Original dark-green celestial sigil assembles through orbit, bloom, dust, and typographic reveal."],
     ["MOTION-11","Motion","Glowing click scatter","Gold and ivory particles burst from pointer and touch interactions."],
     ["MOTION-12","Motion","Staged interface entrances","Every page, drawer, dialog, panel, and content group assembles through ordered opacity, translate, scale, blur, line, and clip reveals."],
-    ["SOUND-01","Sound","Ambient soundtrack","Mystery & Suspense by John Doe; supplied for local redistribution."],
+    ["SOUND-01","Sound","Ambient soundtrack","Enchanted Valley by Ondrosik; CC0 1.0 Universal. Source: https://ondrosik.sk/music/"],
     ["SOUND-02","Sound","Menu and button cues","Every interactive control has a restrained tactile cue."],
     ["SOUND-03","Sound","Page morph cue","Destination-specific tonal root accompanies each page change."],
     ["SOUND-04","Sound","Shuffle and select cues","Paper-like shuffle and plucked selection notes."],
@@ -209,7 +209,7 @@
   function persistAudioPreferences(value){try{localStorage.setItem(preferenceKey,JSON.stringify(value));}catch{}}
 
   class SoundEngine {
-    constructor(){this.ctx=null;this.allowed=false;this.master=null;this.sfxBus=null;this.resumePromise=null;this.preferences=loadAudioPreferences();this.track=new Audio('assets/audio/celestial-ambient.mp3');this.track.loop=true;this.track.preload='auto';this.track.addEventListener('pause',()=>this.updateState());this.track.addEventListener('play',()=>this.updateState());}
+    constructor(){this.ctx=null;this.allowed=false;this.master=null;this.sfxBus=null;this.resumePromise=null;this.preferences=loadAudioPreferences();this.track=new Audio('assets/audio/enchanted-valley.mp3');this.track.loop=true;this.track.preload='auto';this.track.addEventListener('pause',()=>this.updateState());this.track.addEventListener('play',()=>this.updateState());}
     get music(){return this.preferences.musicEnabled;} set music(value){this.setPreferences({musicEnabled:Boolean(value)});}
     get sfx(){return this.preferences.sfxEnabled;} set sfx(value){this.setPreferences({sfxEnabled:Boolean(value)});}
     setPreferences(patch){this.preferences=logic.audioPreferences({...this.preferences,...patch});persistAudioPreferences(this.preferences);this.applyGains();this.syncControls();this.syncMusic();}
