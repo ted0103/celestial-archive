@@ -10,7 +10,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css?v=9bd7acb361bc1160">
-  <link rel="stylesheet" href="gallery.css?v=ba2f26d95c6d3267">
+  <link rel="stylesheet" href="gallery.css?v=3c1cf11b7ce4d98d">
 </head>
 <body>
   <div class="film" aria-hidden="true"></div>
@@ -118,14 +118,14 @@
         </header>
         <div class="ritual-board">
           <div class="question-panel manuscript" id="question-panel"><div class="manuscript-heading"><span class="folio-number">FOLIO I · 壹</span><h3>The Question <small lang="zh">问心</small></h3><div class="manuscript-sigil" aria-hidden="true">☾<span>✦</span></div></div>
-            <label for="question" data-i18n="questionLabel">Your question · optional</label>
-            <textarea id="question" maxlength="280" data-i18n-placeholder="questionPlaceholder" placeholder="What deserves my attention now?"></textarea>
-            <small>The question stays as your context; this local reading does not analyze its meaning. · 问题只作为你的背景；本地解读不会分析其语义。</small>
+            <div class="question-writing-box"><label for="question" data-i18n="questionLabel">Your question · optional</label>
+            <textarea id="question" aria-describedby="question-help" maxlength="280" data-i18n-placeholder="questionPlaceholder" placeholder="What deserves my attention now?"></textarea>
+            <small id="question-help" data-i18n="questionHelp">Write your question in the box above, or leave it blank. Your words stay on this device.</small></div>
             <fieldset id="ai-presets" class="ai-presets"><legend>Optional reading focus · 可选解读方向</legend><p>Your writing stays on this device. AI uses only these choices and cards. · 文字留在本机；AI 只使用选项与卡牌。</p></fieldset>
-            <div class="question-actions">
-              <button class="button gold" id="begin-ritual" type="button" data-i18n="begin">Begin shuffle</button>
-              <button class="button ghost" id="hand-ritual" type="button"><span aria-hidden="true">◌</span> <span data-i18n="handRitual">Hand Ritual</span></button>
-            </div>
+            <fieldset class="draw-methods"><legend data-i18n="chooseMethod">Next, choose how to draw</legend><div class="question-actions">
+              <button class="button gold draw-method" id="begin-ritual" type="button"><span data-i18n="tapDraw">Shuffle &amp; tap cards</span><small data-i18n="tapDrawHelp">Choose three cards by tapping. No camera needed.</small></button>
+              <button class="button ghost draw-method" id="hand-ritual" type="button"><span data-i18n="handDraw">Shuffle &amp; use Hand Ritual</span><small data-i18n="handDrawHelp">Use your camera and pinch to choose three cards.</small></button>
+            </div></fieldset>
             <p class="microcopy" data-i18n="privacy">Nothing is saved unless you explicitly choose Save.</p>
           </div>
 
@@ -405,6 +405,6 @@
   <script src="assets/vendor/mediapipe-hands/hands.js?v=a68b21c9553d6143"></script>
   <script src="ai-contract.js?v=6b29bc6e919afc35"></script>
   <script src="ai-config.js?v=6260b36f5057c955"></script>
-  <script src="app.js?v=2524282d6793b994"></script>
+  <script src="app.js?v=4051bf56ec4ff52e"></script>
 </body>
 </html>
