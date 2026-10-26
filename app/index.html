@@ -10,7 +10,7 @@
   <link rel="manifest" href="manifest.webmanifest">
   <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css?v=9bd7acb361bc1160">
-  <link rel="stylesheet" href="gallery.css?v=b2b472b82233f166">
+  <link rel="stylesheet" href="gallery.css?v=ba2f26d95c6d3267">
 </head>
 <body>
   <div class="film" aria-hidden="true"></div>
@@ -33,6 +33,7 @@
 
   <section class="entry is-active" id="entry" aria-labelledby="entry-title">
     <div class="entry-art" aria-hidden="true"></div>
+    <div class="cover-mechanism" aria-hidden="true"><i class="cover-ring"></i><i class="cover-ring secondary"></i><i class="cover-chain"></i><span class="cover-ribbon">THE CELESTIAL ARCHIVE · ENTER A WORLD WITHIN</span><i class="cover-checker"></i></div>
 <div class="gallery-art" aria-hidden="true"><div class="gallery-orbit"></div><img class="art-moon" src="assets/cards/r1/approved/major-18-the-moon.webp" alt=""><img class="art-star" src="assets/cards/r1/generated/major-17-the-star.webp" alt=""><span class="art-caption">THE CELESTIAL COLLECTION / 78 CARDS</span></div>
     <div class="entry-copy">
       <p class="eyebrow">A PRIVATE PRACTICE · 一场私人的仪式</p>
@@ -116,7 +117,7 @@
           <p data-i18n="ritualPageLede">Name what is moving through you—or leave the question unspoken.</p>
         </header>
         <div class="ritual-board">
-          <div class="question-panel" id="question-panel">
+          <div class="question-panel manuscript" id="question-panel"><div class="manuscript-heading"><span class="folio-number">FOLIO I · 壹</span><h3>The Question <small lang="zh">问心</small></h3><div class="manuscript-sigil" aria-hidden="true">☾<span>✦</span></div></div>
             <label for="question" data-i18n="questionLabel">Your question · optional</label>
             <textarea id="question" maxlength="280" data-i18n-placeholder="questionPlaceholder" placeholder="What deserves my attention now?"></textarea>
             <small>The question stays as your context; this local reading does not analyze its meaning. · 问题只作为你的背景；本地解读不会分析其语义。</small>
@@ -128,7 +129,7 @@
             <p class="microcopy" data-i18n="privacy">Nothing is saved unless you explicitly choose Save.</p>
           </div>
 
-          <div class="draw-panel" id="draw-panel" hidden>
+          <div class="draw-panel manuscript" id="draw-panel" hidden><div class="manuscript-heading"><span class="folio-number">FOLIO II · 贰</span><h3>The Gathering <small lang="zh">聚牌</small></h3><div class="manuscript-sigil" aria-hidden="true">☾<span>✦</span></div></div>
             <div class="ritual-stage-rail" id="ritual-stage-rail" aria-label="Reading progress">
               <span data-reading-stage="choose">01 · Choose<br><small>选择</small></span>
               <span data-reading-stage="draw">02 · Draw<br><small>抽牌</small></span>
@@ -157,7 +158,7 @@
             <button class="button gold reveal-button" id="reveal-cards" type="button" disabled data-i18n="reveal">Reveal the reading</button>
           </div>
 
-          <article class="meaning-panel" id="meaning-panel" hidden>
+          <article class="meaning-panel manuscript" id="meaning-panel" hidden><div class="folio-number">FOLIO III · 叁 / THE READING · 解读</div>
             <div class="meaning-head">
               <div>
                 <p class="eyebrow">PAST · PRESENT · POSSIBILITY</p>
@@ -404,6 +405,6 @@
   <script src="assets/vendor/mediapipe-hands/hands.js?v=a68b21c9553d6143"></script>
   <script src="ai-contract.js?v=6b29bc6e919afc35"></script>
   <script src="ai-config.js?v=6260b36f5057c955"></script>
-  <script src="app.js?v=f7743db230c22473"></script>
+  <script src="app.js?v=70fcbd7989422b95"></script>
 </body>
 </html>

@@ -19,3 +19,11 @@ Scope: preset form, strict shared request/output validation, Cloudflare Worker w
 Checks: payload privacy, invalid/extra fields, consent, card identity, immutable snapshots, origin/region restrictions, quota/network/malformed fallback, stale responses and save-during-request; existing scene-motion checks. Live model quality and account free-tier state require secure setup and a synthetic request before publication.
 
 Activation: user confirmed exposed key revoked and replacement saved. Cloudflare secret is named Celestial_Archieve; Worker and tests use that binding. Gemini 3.1 Flash-Lite returned HTTP 200 with grounded English/Chinese output for a synthetic creative/stuck/next reading. Free tier confirmed; no billing changes. Frontend endpoint connected for release v0.3.8. Browser save/export verification pending.
+
+## Celestial journal — whole-app refinement
+
+Approved: extend the tactile journal across all rooms, with a black-and-gold theatrical start screen. Retain English display serif and Chinese Song headings, readable sans body, original card artwork, and save/export choreography. Use existing entrance lifecycle and local CSS illustration; no added dependency or generated artwork. Scope: cover markup and presentation CSS, regenerated offline hashes. Check desktop and narrow layouts, navigation, bilingual type, reduced motion, existing behavior tests. This iteration is a local preview; prior main release remains the verified Hand Ritual fix until publication is requested.
+
+Manuscript refinement: question, shuffle/draw, and reading now use numbered illuminated folios, ink flourishes, lunar seals, ruled input, and a rubricated synthesis initial. Readable bilingual type retained; no changes to reading logic or save/export animations. Local preview only.
+
+Publication approved by user: publish the complete journal/manuscript design, landscape Reading Chamber, and dark-ink readability fixes to main. Motion, Hand Ritual, and AI regression suites passed; browser reading flow and saved-reading layout checked. Physical-device validation remains outstanding.
