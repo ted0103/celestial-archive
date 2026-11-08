@@ -12,7 +12,7 @@ The static app remains usable without this Worker. No API key belongs in `app/`,
 
 No paid model fallback, search grounding, retries, database, or server reading storage. Worker observability is disabled; Google and Cloudflare still process requests under their service policies. Google may use free-tier prompts/results for product improvement and human review. AI requires adult self-attestation. The Worker rejects requests from the EEA, Switzerland and UK and fails closed when country information is absent. Self-attestation and geolocation are limited controls; review suitability before broader public launch.
 
-The 5-per-minute throttle is approximate per Cloudflare location, not a global spending cap. Abuse may exhaust the Gemini free quota; users retain offline readings. Do not enable billing to resolve quota errors. The app ignores late responses after a new draw or a save and never changes an already-saved reading. Results are stored locally only on explicit Save, alongside preset context, and reused for copy/export.
+The 5-per-minute throttle is approximate per client IP and Cloudflare location, not a global spending cap. Abuse across many IPs may exhaust the Gemini free quota; users retain offline readings. Do not enable billing to resolve quota errors. The app ignores late responses after a new draw or a save and never changes an already-saved reading. Results are stored locally only on explicit Save, alongside preset context, and reused for copy/export.
 
 `cards.json` is a generated subset of `app/data.js`; the test checks it for drift. Regenerate it when the curated meanings change.
 

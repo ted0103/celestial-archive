@@ -25,8 +25,8 @@ export default {
       const body=new Uint8Array(bytes);let offset=0;for(const part of parts){body.set(part,offset);offset+=part.length;}
       let input;
       try {input=contract.validateRequest(JSON.parse(new TextDecoder().decode(body)),deck);} catch {return respond(400,{error:'input'});}
-      // shortcut: approximate per-location throttle; Gemini's unbilled project quota is the hard cost boundary.
-      if(!(await env.AI_LIMIT.limit({key:'readings'})).success) return respond(429,{error:'quota'});
+      // shortcut: Cloudflare-local per-IP limits are approximate; the unbilled provider quota remains the hard cap.
+      if(!(await env.AI_LIMIT.limit({key:request.headers.get('CF-Connecting-IP')||'unknown'})).success) return respond(429,{error:'quota'});
       const context=Object.fromEntries(Object.keys(contract.presets).map(key=>[key,contract.presets[key][input[key]][0]]));
       const cards=input.cards.map((item,index)=>{const card=deck.find(card=>card.id===item.id);return {name:card.name,zh:card.zh,position:['situation','challenge','guidance'][index],orientation:item.reversed?'reversed':'upright',meaning:card[item.reversed?'reversed':'upright']};});
       const response=await fetch('https://generativelanguage.googleapis.com/v1beta/models/gemini-3.1-flash-lite:generateContent',{

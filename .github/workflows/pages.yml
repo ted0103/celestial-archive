@@ -27,6 +27,8 @@ jobs:
           node tests/scene-motion.cjs
           node tests/hand-ritual.cjs
           node tests/hand-tutorial.cjs
+          node tests/session-storage.cjs
+          python3 scripts/verify-assets.py
       - name: Prepare path-scoped release site
         run: |
           mkdir site

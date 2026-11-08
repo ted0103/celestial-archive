@@ -96,11 +96,24 @@
   ].map(([id,category,title,description])=>({id,category,title,description,status:"approved",note:"Approved by user on 18 July 2026."}));
 
   function loadSessions(){
-    try {
-      const raw=JSON.parse(localStorage.getItem(archiveKey)||'[]');
-      if(!Array.isArray(raw))return [];
-      let migrated=false;const loaded=raw.map(record=>{const storedCards=record.snapshotVersion===2?record.snapshot?.cards:record.cards,hydratedCards=Array.isArray(storedCards)?storedCards.map(item=>{const base=cardById.get(item.id);return base?{...base,isReversed:logic.isReversed(item)}:null;}).filter(Boolean):[];if(record.snapshotVersion===2&&hydratedCards.length===3)return {...record,...record.snapshot,cards:hydratedCards,snapshot:{...record.snapshot,cards:hydratedCards}};const legacyCards=hydratedCards;if(legacyCards.length!==3)return null;migrated=true;const generated=logic.synthesizeReading(legacyCards),snapshot={version:2,legacy:true,legacyLabel:'Legacy record · rendered with current meaning edition / 旧记录 · 使用当前释义版本呈现',language:record.capturedLanguage||'bilingual',readingCreatedAt:record.readingCreatedAt||null,meaningEdition:deck.meaningEdition,question:String(record.question||''),cards:legacyCards,synthesis:{en:generated.en,zh:generated.zh},movement:generated.movement,groundedAction:generated.action};return {...record,snapshotVersion:2,snapshot,...snapshot,cards:legacyCards};}).filter(Boolean);if(migrated)localStorage.setItem(archiveKey,JSON.stringify(loaded.map(sessionRecord)));return loaded;
-    } catch { return []; }
+    let raw;
+    try { raw=JSON.parse(localStorage.getItem(archiveKey)||'[]'); } catch { return []; }
+    if(!Array.isArray(raw))return [];
+    let migrated=false;
+    const loaded=raw.map(record=>{
+      if(!record||typeof record!=='object')return null;
+      try {
+        const storedCards=record.snapshotVersion===2?record.snapshot?.cards:record.cards;
+        const hydratedCards=Array.isArray(storedCards)?storedCards.map(item=>{const base=cardById.get(item?.id);return base?{...base,isReversed:logic.isReversed(item)}:null;}).filter(Boolean):[];
+        if(record.snapshotVersion===2&&hydratedCards.length===3)return {...record,...record.snapshot,cards:hydratedCards,snapshot:{...record.snapshot,cards:hydratedCards}};
+        if(hydratedCards.length!==3)return null;
+        migrated=true;
+        const generated=logic.synthesizeReading(hydratedCards),snapshot={version:2,legacy:true,legacyLabel:'Legacy record · rendered with current meaning edition / 旧记录 · 使用当前释义版本呈现',language:record.capturedLanguage||'bilingual',readingCreatedAt:record.readingCreatedAt||null,meaningEdition:deck.meaningEdition,question:String(record.question||''),cards:hydratedCards,synthesis:{en:generated.en,zh:generated.zh},movement:generated.movement,groundedAction:generated.action};
+        return {...record,snapshotVersion:2,snapshot,...snapshot,cards:hydratedCards};
+      } catch { return null; }
+    }).filter(Boolean);
+    if(migrated)try{localStorage.setItem(archiveKey,JSON.stringify(loaded.map(sessionRecord)));}catch{}
+    return loaded;
   }
   function sessionRecord(session){const snapshot=createReadingSnapshot(session);return {id:session.id,title:session.title,date:session.date,snapshotVersion:2,snapshot};}
   function persistSessions(){
